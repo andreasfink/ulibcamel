@@ -22,7 +22,7 @@ typedef enum UMCamelErrorCode
     UMCamelErrorCode_unexpectedComponentSequence = 14,
     UMCamelErrorCode_unexpectedDataValue = 15,
     UMCamelErrorCode_unexpectedParameter = 16,
-    UMCamelErrorCode_ unknownLegID = 17,
+    UMCamelErrorCode_unknownLegID = 17,
     UMCamelErrorCode_unknownPDPID = 50,
     UMCamelErrorCode_unknownCSID = 51,
 } UMCamelErrorCode;

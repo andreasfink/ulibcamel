@@ -10,11 +10,14 @@
 
 #import "UMCamelDialogIdentifier.h"
 #import "UMCamelUserProtocol.h"
+#import "UMCamelDialog.h"
+#import "UMCamelErrorCode.h"
 
 @implementation UMLayerCamel
 
 
 //* INIT:   create _dialogIdLock , _dialogs*/
+//dialogTimeout=120
 
 - (UMASN1Object *)decodeASN1:(UMASN1Object *)params
                operationCode:(int64_t)opcode
@@ -30,7 +33,7 @@
     return @"error";
 }
 
-- (UMTCAP_UserDialogIdentifier *)getNewUserDialogId
+- (UMCamelDialogIdentifier *)getNewUserDialogId
 {
 
     static int64_t lastDialogId =1;
@@ -67,16 +70,8 @@
     {
         [logFeed debugText:[NSString stringWithFormat:@"tcapBeginIndication creates a new dialogId: %@\n",dialog.userDialogId]];
     }
-    [dialog MAP_Open_Ind_forUser:_user
-                            tcap:tcapLayer
-                             map:self
-                         variant:var
-                  callingAddress:src
-                   calledAddress:dst
-                 dialoguePortion:xdialoguePortion
-                   transactionId:localTransactionId
-             remoteTransactionId:remoteTransactionId
-                         options:options];
+
+    /* FIXME: open indication */
     if(dialog.tcapLocalTransactionId == NULL)
     {
         dialog.tcapLocalTransactionId = localTransactionId;
@@ -85,7 +80,9 @@
     {
         dialog.tcapRemoteTransactionId = remoteTransactionId;
     }
-    [dialog MAP_ProcessComponents:components
+    
+    /* FIXME component processing */
+/*    [dialog MAP_ProcessComponents:components
                           options:options
                           willEnd:NO];
     [dialog MAP_Delimiter_Ind:options
@@ -95,20 +92,21 @@
               dialoguePortion:xdialoguePortion
                 transactionId:localTransactionId
           remoteTransactionId:remoteTransactionId];
+    */
     if(components.count==0)
     {
         UMTCAP_asn1_Associate_result *r = [[UMTCAP_asn1_Associate_result alloc]initWithValue:0];
         UMTCAP_asn1_Associate_source_diagnostic *d = [[UMTCAP_asn1_Associate_source_diagnostic alloc]init];
         d.dialogue_service_user =[[UMASN1Integer alloc]initWithValue:0];
-        [dialog MAP_Delimiter_Req:options
+        /*[dialog MAP_Delimiter_Req:options
                            result:r
-                       diagnostic:d];
+                       diagnostic:d];*/
     }
 }
 
-- (void)tcapContinueIndication:(UMTCAP_UserDialogIdentifier *)userDialogId
-             tcapTransactionId:(NSString *)localTransactionId
-       tcapRemoteTransactionId:(NSString *)remoteTransactionId
+- (void)tcapContinueIndication:(UMTCAP_UserDialogIdentifier *)tcapUserId
+             tcapTransactionId:(NSString *)xlocalTransactionId
+       tcapRemoteTransactionId:(NSString *)xremoteTransactionId
                        variant:(UMTCAP_Variant)var
                 callingAddress:(SccpAddress *)src
                  calledAddress:(SccpAddress *)dst
@@ -130,13 +128,14 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
          */
         if(dialogId)
         {
-            dialog = [self getNewDialogForUser:user withId:dialogId];
+            dialog = [self getNewDialogForUser:_user withId:dialogId];
         }
         else
         {
-            dialog = [self getNewDialogForUser:user];
+            dialog = [self getNewDialogForUser:_user];
         }
-        [dialog MAP_Open_Ind_forUser:user
+        /*
+        [dialog MAP_Open_Ind_forUser:_user
                                 tcap:tcapLayer
                                  map:self
                              variant:var
@@ -146,6 +145,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
                        transactionId:xlocalTransactionId
                  remoteTransactionId:xremoteTransactionId
                              options:options];
+        */
         dialogId = dialog.userDialogId;
     }
     if(dialog==NULL)
@@ -191,6 +191,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
             
             dialog.tcapContinueSeen=YES;
         }
+        /*
         [dialog MAP_ProcessComponents:components
                               options:options
                               willEnd:NO];
@@ -208,10 +209,12 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
                  dialoguePortion:xdialoguePortion
                    transactionId:xlocalTransactionId
              remoteTransactionId:xremoteTransactionId];
+        */
+        
     }
 }
 
-- (void)tcapEndIndication:(UMTCAP_UserDialogIdentifier *)userDialogId
+- (void)tcapEndIndication:(UMTCAP_UserDialogIdentifier *)tcapUserId
         tcapTransactionId:(NSString *)localTransactionId
   tcapRemoteTransactionId:(NSString *)remoteTransactionId
                   variant:(UMTCAP_Variant)var
@@ -227,7 +230,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
     UMCamelDialog *dialog = [self dialogById:dialogId];
     if(dialog==NULL)
     {
-        [logFeed minorErrorText:[NSString stringWithFormat:@"tcapEndIndication: DialogNotFound %@ for transaction [local %@ remote %@]",dialogId,transactionId,remoteTransactionId]];
+        [logFeed minorErrorText:[NSString stringWithFormat:@"tcapEndIndication: DialogNotFound %@ for transaction [local %@ remote %@]",dialogId,localTransactionId,remoteTransactionId]];
         return;
     }
     else
@@ -247,7 +250,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
         }
         if(dialog.tcapLocalTransactionId == NULL)
         {
-            dialog.tcapLocalTransactionId = transactionId;
+            dialog.tcapLocalTransactionId = localTransactionId;
         }
         if(dialog.tcapRemoteTransactionId == NULL)
         {
@@ -258,9 +261,9 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
         
         @try
         {
-            [dialog MAP_ProcessComponents:components
+           /* [dialog MAP_ProcessComponents:components
                                   options:options
-                                  willEnd:YES];
+                                  willEnd:YES];*/
         }
         @catch(NSException *ex)
         {
@@ -268,7 +271,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
         }
         @try
         {
-            [dialog MAP_Close_Ind:options];
+           // [dialog MAP_Close_Ind:options];
         }
         @catch(NSException *ex)
         {
@@ -277,7 +280,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
     }
 }
 
-- (void)tcapNoticeIndication:(UMTCAP_UserDialogIdentifier *)userDialogId
+- (void)tcapNoticeIndication:(UMTCAP_UserDialogIdentifier *)tcapUserId
            tcapTransactionId:(NSString *)localTransactionId
      tcapRemoteTransactionId:(NSString *)remoteTransactionId
                      variant:(UMTCAP_Variant)variant
@@ -292,13 +295,13 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
     UMCamelDialogIdentifier *dialogId =   [[UMCamelDialogIdentifier alloc] initWithTcapUserDialogIdentifier:tcapUserId];
     
     UMCamelDialog *dialog = [self dialogById:dialogId];
-    
+    /*
     [dialog MAP_Notice_Ind:options
          tcapTransactionId:localTransactionId
-                    reason:reason];
+                    reason:reason];*/
 }
 
-- (void)tcapPAbortIndication:(UMTCAP_UserDialogIdentifier *)userDialogId
+- (void)tcapPAbortIndication:(UMTCAP_UserDialogIdentifier *)tcapUserId
            tcapTransactionId:(NSString *)localTransactionId
      tcapRemoteTransactionId:(NSString *)remoteTransactionId
                      variant:(UMTCAP_Variant)variant
@@ -326,6 +329,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
     
     @try
     {
+        /*
         [dialog MAP_P_Abort_Ind:options
                  callingAddress:src
                   calledAddress:dst
@@ -340,7 +344,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
     }
 }
 
-- (void)tcapUAbortIndication:(UMTCAP_UserDialogIdentifier *)userDialogId
+- (void)tcapUAbortIndication:(UMTCAP_UserDialogIdentifier *)tcapUserId
            tcapTransactionId:(NSString *)localTransactionId
      tcapRemoteTransactionId:(NSString *)remoteTransactionId
                      variant:(UMTCAP_Variant)variant
@@ -367,12 +371,12 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
     dialog.tcapLocalTransactionId = localTransactionId;
     @try
     {
-        [dialog MAP_U_Abort_Ind:options
+     /*   [dialog MAP_U_Abort_Ind:options
                  callingAddress:src
                   calledAddress:dst
                 dialoguePortion:xdialoguePortion
                   transactionId:localTransactionId
-            remoteTransactionId:remoteTransactionId];
+            remoteTransactionId:remoteTransactionId];*/
     }
     @catch(NSException *ex)
     {
@@ -380,7 +384,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
     }
     @try
     {
-        [dialog MAP_Close_Ind:options];
+       // [dialog MAP_Close_Ind:options];
     }
     @catch(NSException *ex)
     {
@@ -388,7 +392,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
     }
 }
 
-- (void)tcapUnidirectionalIndication:(UMTCAP_UserDialogIdentifier *)userDialogId
+- (void)tcapUnidirectionalIndication:(UMTCAP_UserDialogIdentifier *)tcapUserId
                    tcapTransactionId:(NSString *)localTransactionId
              tcapRemoteTransactionId:(NSString *)remoteTransactionId
                              variant:(UMTCAP_Variant)variant
@@ -407,13 +411,14 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
     }
     
     @try
-    {
+    {/*
         [user queueMAP_Unidirectional_Ind:options
                            callingAddress:src
                             calledAddress:dst
                           dialoguePortion:xdialoguePortion
                             transactionId:localTransactionId
                       remoteTransactionId:remoteTransactionId];
+      */
     }
     @catch(NSException *ex)
     {
@@ -421,21 +426,71 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
     }
 }
 
-- (UMCamelDialog *)getNewDialogForUser:(id<UMCamelUserProtocol>)u withId:(UMCamelDialogIdentifier *)dialogId
+
+- (UMCamelDialog *)getNewDialogForUser:(id<UMCamelUserProtocol>)user
 {
-    UMLayerGSMMAP_Dialog *d = [[UMLayerGSMMAP_Dialog alloc]init];
+    UMCamelDialogIdentifier *dialogId  = [self getNewUserDialogId];
+    UMCamelDialog *d = [self getNewDialogForUser:user withId:dialogId];
+    return d;
+}
+
+- (UMCamelDialog *)getNewDialogForUser:(id<UMCamelUserProtocol>)u
+                                withId:(UMCamelDialogIdentifier *)dialogId
+{
+    UMCamelDialog *d = [[UMCamelDialog alloc]init];
     d.userDialogId = dialogId;
-    d.tcapLayer = tcap;
-    d.gsmmapLayer = self;
-    d.mapUser = u;
+    d.tcapLayer = _tcap;
+    d.camelLayer = self;
+    d.camelUser = u;
     d.logFeed = self.logFeed;
     d.logLevel = self.logLevel;
     if(self.dialogTimeout > 0.0)
     {
         d.timeoutInSeconds = self.dialogTimeout;
     }
-    dialogs[d.userDialogId.description] = d;
+    _dialogs[d.userDialogId.description] = d;
     [d touch];
     return d;
 }
+
++ (NSString *)decodeError:(int)err
+{
+    switch(err)
+    {
+        case UMCamelErrorCode_canceled:
+            return @"canceled";
+        case UMCamelErrorCode_cancelFailed:
+            return @"cancelFailed";
+        case UMCamelErrorCode_eTCFailed:
+            return @"eTCFailed";
+        case UMCamelErrorCode_improperCallerResponse:
+            return @"improperCallerResponse";
+        case UMCamelErrorCode_missingCustomerRecord:
+            return @"missingCustomerRecord";
+        case UMCamelErrorCode_parameterOutOfRange:
+            return @"parameterOutOfRange";
+        case UMCamelErrorCode_requestedInfoError
+            return @"requestedInfoError";
+        case UMCamelErrorCode_systemFailure:
+            return @"systemFailure";
+        case UMCamelErrorCode_taskRefused:
+            return @"taskRefused";
+        case UMCamelErrorCode_unavailableResource:
+            return @"unavailableResource";
+        case UMCamelErrorCode_unexpectedComponentSequence:
+            return @"unexpectedComponentSequence";
+        case UMCamelErrorCode_unexpectedDataValue:
+            return @"unexpectedDataValue";
+        case UMCamelErrorCode_unexpectedParameter:
+            return @"unexpectedParameter";
+        case UMCamelErrorCode_unknownLegID:
+            return @"unknownLegID";
+        case UMCamelErrorCode_unknownPDPID:
+            return @"unknownPDPID";
+        case UMCamelErrorCode_unknownCSID:
+            return @"unknownCSID";
+    }
+    return [NSString stringWithFormat:@"unknown-error(%d)",err];
+}
+
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <ulib/ulib.h>
+#import "UMCamelUserIdentifier.h"
 
 @protocol UMCamelUserProtocol <NSObject>
+
+- (UMCamelUserIdentifier *)getNewUserIdentifier;
 @end
 

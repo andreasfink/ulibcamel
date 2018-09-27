@@ -30,6 +30,13 @@
         o = [self getObjectAtPosition:p++]; \
     }
 
+#define GET_CONTEXT_SPECIFIC_NOGRAB(TAG,OBJ,TYPE,o,p) \
+    if((o) && (o.asn1_tag.tagNumber == TAG) && (o.asn1_tag.tagClass == UMASN1Class_ContextSpecific)) \
+    { \
+        OBJ = [[TYPE alloc]initWithASN1Object:o context:context]; \
+    }
+
+
 #define GET_CONTEXT_SPECIFIC_NULL(TAG,OBJ,o,p) \
     if((o) && (o.asn1_tag.tagNumber == TAG) && (o.asn1_tag.tagClass == UMASN1Class_ContextSpecific)) \
     { \
