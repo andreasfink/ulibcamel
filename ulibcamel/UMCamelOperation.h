@@ -1,0 +1,67 @@
+//
+//  UMCamelOperations.h
+//  ulibcamel
+//
+//  Created by Andreas Fink on 27.09.18.
+//  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
+//
+
+
+typedef enum UMCamelOperation
+{
+    UMCamelOperation_initialDP = 0,
+    UMCamelOperation_assistRequestInstructions = 16,
+    UMCamelOperation_establishTemporaryConnection = 17,
+    UMCamelOperation_disconnectForwardConnection = 18,
+    UMCamelOperation_connectToResource = 19,
+    UMCamelOperation_connect = 20,
+    UMCamelOperation_releaseCall = 22,
+    UMCamelOperation_requestReportBCSMEvent = 23,
+    UMCamelOperation_eventReportBCSM = 24,
+    UMCamelOperation_collectInformation = 27,
+    UMCamelOperation_continue = 31,
+    UMCamelOperation_initiateCallAttempt = 32,
+    UMCamelOperation_resetTimer = 33,
+    UMCamelOperation_furnishChargingInformation = 34,
+    UMCamelOperation_applyCharging = 35,
+    UMCamelOperation_applyChargingReport = 36,
+    UMCamelOperation_callGap = 41,
+    UMCamelOperation_callInformationReport = 44,
+    UMCamelOperation_callInformationRequest = 45,
+    UMCamelOperation_sendChargingInformation = 46,
+    UMCamelOperation_playAnnouncement = 47,
+    UMCamelOperation_promptAndCollectUserInformation = 48,
+    UMCamelOperation_specializedResourceReport = 49,
+    UMCamelOperation_cancel = 53,
+    UMCamelOperation_activityTest = 55,
+    UMCamelOperation_continueWithArgument = 56,
+    UMCamelOperation_initialDPSMS = 60,
+    UMCamelOperation_furnishChargingInformationSMS = 61,
+    UMCamelOperation_connectSMS = 62,
+    UMCamelOperation_requestReportSMSEvent = 63,
+    UMCamelOperation_eventReportSMS = 64,
+    UMCamelOperation_continueSMS = 65,
+    UMCamelOperation_releaseSMS = 66,
+    UMCamelOperation_resetTimerSMS = 67,
+    UMCamelOperation_activityTestGPRS = 70,
+    UMCamelOperation_applyChargingGPRS = 71,
+    UMCamelOperation_applyChargingReportGPRS = 72,
+    UMCamelOperation_cancelGPRS = 73,
+    UMCamelOperation_connectGPRS = 74,
+    UMCamelOperation_continueGPRS = 75,
+    UMCamelOperation_entityReleasedGPRS = 76,
+    UMCamelOperation_furnishChargingInformationGPRS = 77,
+    UMCamelOperation_initialDPGPRS = 78,
+    UMCamelOperation_releaseGPRS = 79,
+    UMCamelOperation_eventReportGPRS = 80,
+    UMCamelOperation_requestReportGPRSEvent = 81,
+    UMCamelOperation_resetTimerGPRS = 82,
+    UMCamelOperation_sendChargingInformationGPRS = 83,
+    UMCamelOperation_dFCWithArgument = 86,
+    UMCamelOperation_continueWithArgument = 88,
+    UMCamelOperation_disconnectLeg = 90,
+    UMCamelOperation_moveLeg = 93,
+    UMCamelOperation_splitLeg = 95,
+    UMCamelOperation_entityReleased = 96,
+    UMCamelOperation_playTone = 97,
+} UMCamelOperation;
