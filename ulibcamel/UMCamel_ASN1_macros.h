@@ -1,0 +1,51 @@
+//
+//  UMCamel_ASN1_macros.h
+//  ulibcamel
+//
+//  Created by Andreas Fink on 27.09.18.
+//  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
+//
+
+#define CONTEXT_SPECIFIC_ADD(TAG,OBJ) \
+    if(OBJ) \
+    { \
+        OBJ.asn1_tag.tagNumber = TAG; \
+        OBJ.asn1_tag.tagClass = UMASN1Class_ContextSpecific; \
+        [_asn1_list addObject:OBJ]; \
+    }
+
+#define CONTEXT_SPECIFIC_ADD_NULL(TAG,OBJ) \
+    if(OBJ) \
+    { \
+        UMASN1Null *null = [[UMASN1Null alloc]init];\
+        null.asn1_tag.tagNumber = TAG; \
+        null.asn1_tag.tagClass = UMASN1Class_ContextSpecific; \
+        [_asn1_list addObject:null]; \
+    }
+
+#define GET_CONTEXT_SPECIFIC(TAG,OBJ,TYPE,o,p) \
+    if((o) && (o.asn1_tag.tagNumber == TAG) && (o.asn1_tag.tagClass == UMASN1Class_ContextSpecific)) \
+    { \
+        OBJ = [[TYPE alloc]initWithASN1Object:o context:context]; \
+        o = [self getObjectAtPosition:p++]; \
+    }
+
+#define GET_CONTEXT_SPECIFIC_NULL(TAG,OBJ,o,p) \
+    if((o) && (o.asn1_tag.tagNumber == TAG) && (o.asn1_tag.tagClass == UMASN1Class_ContextSpecific)) \
+    { \
+        OBJ = YES;\
+        o = [self getObjectAtPosition:p++]; \
+    }
+
+
+#define DICT_ADD(DICT,OBJ,NAME)\
+    if(OBJ) \
+    { \
+        dict[NAME] = OBJ.objectValue; \
+    }
+
+#define DICT_ADD_NULL(DICT,OBJ,NAME)\
+    if(OBJ) \
+    { \
+        dict[NAME] = @(YES); \
+    }

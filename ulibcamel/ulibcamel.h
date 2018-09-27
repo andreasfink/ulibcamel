@@ -11,7 +11,7 @@
 #import "UMCamelUserProtocol.h"
 #import "UMCamelProviderProtocol.h"
 
-#import "UMCamelOperation.h"
+#import "UMCamelOperationCode.h"
 #import "UMCamelErrorCode.h"
 #import "UMLayerCAP.h"
 #import "UMCamelDialogIdentifier.h"

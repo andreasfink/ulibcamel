@@ -67,7 +67,7 @@
     {
         [logFeed debugText:[NSString stringWithFormat:@"tcapBeginIndication creates a new dialogId: %@\n",dialog.userDialogId]];
     }
-    [dialog MAP_Open_Ind_forUser:user
+    [dialog MAP_Open_Ind_forUser:_user
                             tcap:tcapLayer
                              map:self
                          variant:var
@@ -77,9 +77,9 @@
                    transactionId:localTransactionId
              remoteTransactionId:remoteTransactionId
                          options:options];
-    if(dialog.tcapTransactionId == NULL)
+    if(dialog.tcapLocalTransactionId == NULL)
     {
-        dialog.tcapTransactionId = localTransactionId;
+        dialog.tcapLocalTransactionId = localTransactionId;
     }
     if(dialog.tcapRemoteTransactionId==NULL)
     {
@@ -163,14 +163,14 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
                            @"    remoteTransactionId: %@\n"
                            @"    userIdentifier: %@\n",
                            dialog.userDialogId,
-                           dialog.tcapTransactionId,
+                           dialog.tcapLocalTransactionId,
                            dialog.tcapRemoteTransactionId,
                            dialog.userIdentifier];
             [logFeed debugText:s];
         }
-        if(dialog.tcapTransactionId == NULL)
+        if(dialog.tcapLocalTransactionId == NULL)
         {
-            dialog.tcapTransactionId = xlocalTransactionId;
+            dialog.tcapLocalTransactionId = xlocalTransactionId;
         }
         if(dialog.tcapRemoteTransactionId == NULL)
         {
@@ -240,14 +240,14 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
                            @"    remoteTransactionId: %@\n"
                            @"    userIdentifier: %@\n",
                            dialog.userDialogId,
-                           dialog.tcapTransactionId,
+                           dialog.tcapLocalTransactionId,
                            dialog.tcapRemoteTransactionId,
                            dialog.userIdentifier];
             [logFeed debugText:s];
         }
-        if(dialog.tcapTransactionId == NULL)
+        if(dialog.tcapLocalTransactionId == NULL)
         {
-            dialog.tcapTransactionId = transactionId;
+            dialog.tcapLocalTransactionId = transactionId;
         }
         if(dialog.tcapRemoteTransactionId == NULL)
         {
@@ -322,7 +322,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
         return;
     }
     
-    dialog.tcapTransactionId = localTransactionId;
+    dialog.tcapLocalTransactionId = localTransactionId;
     
     @try
     {
@@ -364,7 +364,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
         return;
     }
     
-    dialog.tcapTransactionId = localTransactionId;
+    dialog.tcapLocalTransactionId = localTransactionId;
     @try
     {
         [dialog MAP_U_Abort_Ind:options

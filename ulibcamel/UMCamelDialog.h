@@ -10,7 +10,10 @@
 
 #import "UMCamelUserIdentifier.h"
 #import "UMLayerCamel.h"
+#import "UMCamelOperationCode.h"
 #import "UMCamelOperation.h"
+
+@class UMLayerCamel;
 
 @interface UMCamelDialog : UMObject<UMTCAP_UserProtocol>
 {
@@ -97,7 +100,7 @@
                calledAddress:(SccpAddress *)dst
           applicationContext:(UMTCAP_asn1_objectIdentifier *)appContext
                     userInfo:(UMTCAP_asn1_userInformation *)xuserInfo
-              userIdentifier:(UMGSMMAP_UserIdentifier *)userIdentifier
+              userIdentifier:(UMCamelUserIdentifier *)userIdentifier
                      options:(NSDictionary *)xoptions;
 
 - (void) MAP_Open_Ind_forUser:(id<UMCamelUserProtocol>)user
@@ -274,10 +277,6 @@
 - (void)timeOut;
 
 - (void)dump:(NSFileHandle *)filehandler;
-
-@end
-
-
 
 @end
 
