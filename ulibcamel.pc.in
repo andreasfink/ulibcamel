@@ -1,0 +1,16 @@
+# pkg-config source file
+
+prefix=/usr/local
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Cflags: -I${includedir} 
+Libs: -L${libdir} -lulibcamel
+
+Name: ulibcamel
+Description: universal CAMEL library
+Version: @VERSION@
+Requires:  ulibtcap
+
+
