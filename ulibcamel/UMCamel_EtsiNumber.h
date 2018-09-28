@@ -54,5 +54,6 @@ typedef enum ETSI_NpiType
                                     npi:(ETSI_NpiType)xnpi;
 
 - (NSString *)stringValue;
++ (NSString *)decodeSwappedDigitsTerminatedWithF:(NSData *)d;
 
 @end

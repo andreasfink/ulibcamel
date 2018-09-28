@@ -85,6 +85,23 @@ static inline unsigned char    nibble2hex(unsigned char b)
     }
 }
 
+static inline unsigned char    nibble2digit(unsigned char b)
+{
+    if(b < 0x0A)
+    {
+        return '0'+ b;
+    }
+    if(b==0x0B)
+    {
+        return '*';
+    }
+    if(b==0x0C)
+    {
+        return '#';
+    }
+    return 'A'+ b - 0x0A;
+}
+
 @implementation UMCamel_EtsiNumber
 
 
@@ -193,7 +210,6 @@ static inline unsigned char    nibble2hex(unsigned char b)
 }
 
 - (UMCamel_EtsiNumber *)processAfterDecodeWithContext:(id)context
-
 {
     unsigned char c;
     unsigned char a;
@@ -219,14 +235,18 @@ static inline unsigned char    nibble2hex(unsigned char b)
         a =  c & 0x0F;
         b =  ((c & 0xF0) >> 4);
         
-        if((b == 0x0F) && (len < 2))
+        if(a==0x0F)
         {
-            [tmp appendByte:nibble2hex(a)];
+            break;
+        }
+        else if(b == 0x0F)
+        {
+            [tmp appendByte:nibble2digit(a)];
         }
         else
         {
-            [tmp appendByte:nibble2hex(a)];
-            [tmp appendByte:nibble2hex(b)];
+            [tmp appendByte:nibble2digit(a)];
+            [tmp appendByte:nibble2digit(b)];
         }
     }
     _address = [[NSString alloc]initWithData:tmp encoding:NSUTF8StringEncoding];
@@ -256,4 +276,33 @@ static inline unsigned char    nibble2hex(unsigned char b)
     return _address;
 }
 
++(NSString *)decodeSwappedDigitsTerminatedWithF:(NSData *)d
+{
+    const uint8_t *str = d.bytes;
+    NSUInteger len = d.length;
+    NSUInteger pos=0;
+    NSMutableData *tmp = [[NSMutableData alloc]init];
+    pos=2;
+    while(pos < len)
+    {
+        int c = str[pos++];
+        int a =  c & 0x0F;
+        int b =  ((c & 0xF0) >> 4);
+        
+        if(a==0x0F)
+        {
+            break;
+        }
+        else if(b == 0x0F)
+        {
+            [tmp appendByte:nibble2digit(a)];
+        }
+        else
+        {
+            [tmp appendByte:nibble2digit(a)];
+            [tmp appendByte:nibble2digit(b)];
+        }
+    }
+    return [[NSString alloc]initWithData:tmp encoding:NSUTF8StringEncoding];
+}
 @end
