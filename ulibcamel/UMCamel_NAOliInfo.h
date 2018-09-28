@@ -1,15 +1,15 @@
 //
-//  UMCamel_MS_Classmark2.h
+//  UMCamel_NAOliInfo.h
 //  ulibcamel
 //
-//  Created by Andreas Fink on 27.09.18.
+//  Created by Andreas Fink on 28.09.18.
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
 #import <ulibasn1/ulibasn1.h>
 
 
-@interface UMCamel_MS_Classmark2 : UMASN1Object
+@interface UMCamel_NAOliInfo : UMASN1Sequence
 
 @end
 

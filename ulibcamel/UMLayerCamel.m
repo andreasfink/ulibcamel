@@ -12,6 +12,9 @@
 #import "UMCamelUserProtocol.h"
 #import "UMCamelDialog.h"
 #import "UMCamelErrorCode.h"
+#import "UMCamel_InitialDPArg.h"
+#import "UMCamel_ConnectArg.h"
+#import "UMCamelObject.h"
 
 @implementation UMLayerCamel
 
@@ -110,7 +113,7 @@
                        variant:(UMTCAP_Variant)var
                 callingAddress:(SccpAddress *)src
                  calledAddress:(SccpAddress *)dst
-dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
+               dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
                   callingLayer:(UMLayerTCAP *)tcapLayer
                     components:(NSArray<UMTCAP_generic_asn1_componentPDU *> *)components
                        options:(NSDictionary *)options
@@ -336,7 +339,8 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
                 dialoguePortion:xdialoguePortion
                   transactionId:localTransactionId
             remoteTransactionId:remoteTransactionId];
-        /* this is an implicit close */
+        
+         this is an implicit close */
     }
     @catch(NSException *ex)
     {
@@ -469,7 +473,7 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
             return @"missingCustomerRecord";
         case UMCamelErrorCode_parameterOutOfRange:
             return @"parameterOutOfRange";
-        case UMCamelErrorCode_requestedInfoError
+        case UMCamelErrorCode_requestedInfoError:
             return @"requestedInfoError";
         case UMCamelErrorCode_systemFailure:
             return @"systemFailure";
@@ -491,6 +495,12 @@ dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
             return @"unknownCSID";
     }
     return [NSString stringWithFormat:@"unknown-error(%d)",err];
+}
+
+
++(UMASN1Object *)decodeAsn1:(UMASN1Object *)asn1
+{
+    return [[UMCamelObject alloc]initWithASN1Object:asn1 context:NULL];
 }
 
 @end

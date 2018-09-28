@@ -6,8 +6,14 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
+
 #import "UMCamel_CalledPartyNumber.h"
 
 @implementation UMCamel_CalledPartyNumber
+
+- (NSString *)objectName
+{
+    return @"CalledPartyNumber";
+}
 
 @end

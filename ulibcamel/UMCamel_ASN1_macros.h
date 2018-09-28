@@ -14,6 +14,7 @@
         [_asn1_list addObject:OBJ]; \
     }
 
+
 #define CONTEXT_SPECIFIC_ADD_NULL(TAG,OBJ) \
     if(OBJ) \
     { \
@@ -21,6 +22,18 @@
         null.asn1_tag.tagNumber = TAG; \
         null.asn1_tag.tagClass = UMASN1Class_ContextSpecific; \
         [_asn1_list addObject:null]; \
+    }
+
+#define ASN1_ADD_INTEGER(i) \
+    { \
+        UMASN1Integer *in = [[UMASN1Integer alloc]initWithValue:i]; \
+        [_asn1_list addObject:in]; \
+    }
+
+#define ASN1_ADD_SEQUENCE(OBJ) \
+    if(OBJ) \
+    { \
+        [_asn1_list addObject:OBJ]; \
     }
 
 #define GET_CONTEXT_SPECIFIC(TAG,OBJ,TYPE,o,p) \
@@ -44,6 +57,20 @@
         o = [self getObjectAtPosition:p++]; \
     }
 
+#define ASN1_GET_INTEGER(i,o,p) \
+    if((o) && (o.asn1_tag.tagNumber == UMASN1Primitive_integer) && (o.asn1_tag.tagClass == UMASN1Class_Universal)) \
+    { \
+        UMASN1Integer *io = [[UMASN1Integer alloc]initWithASN1Object:o context:context]; \
+        i = io.value; \
+        o = [self getObjectAtPosition:p++]; \
+    }
+
+#define ASN1_GET_SEQUENCE(seq,o,p) \
+if((o) && (o.asn1_tag.tagNumber == UMASN1Primitive_sequence) && (o.asn1_tag.tagClass == UMASN1Class_Universal)) \
+{ \
+    seq = [[UMASN1Sequence alloc]initWithASN1Object:o context:context]; \
+    o = [self getObjectAtPosition:p++]; \
+}
 
 #define DICT_ADD(DICT,OBJ,NAME)\
     if(OBJ) \
@@ -56,3 +83,5 @@
     { \
         dict[NAME] = @(YES); \
     }
+
+

@@ -1,0 +1,27 @@
+-- ConnectArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+ConnectArg ::=
+
+ SEQUENCE
+{
+    destinationRoutingAddress       [0]  DestinationRoutingAddress,
+    alertingPattern                 [1]  AlertingPattern                OPTIONAL,
+    originalCalledPartyID           [6]  OriginalCalledPartyID          OPTIONAL,
+    extensions                      [10] ExtensionsArray                OPTIONAL,
+    carrier                         [11] Carrier                        OPTIONAL,
+    callingPartysCategory           [28] CallingPartysCategory          OPTIONAL,
+    redirectingPartyID              [29] RedirectingPartyID             OPTIONAL,
+    redirectionInformation          [30] RedirectionInformation         OPTIONAL,
+    genericNumbers                  [14] GenericNumbers                 OPTIONAL,
+    serviceInteractionIndicatorsTwo [15] ServiceInteractionIndicatorsTwo OPTIONAL,
+    chargeNumber                    [19] ChargeNumber                   OPTIONAL,
+    legToBeConnected	            [21] LegID				OPTIONAL,
+    cug-Interlock                   [31] CUG-Interlock                  OPTIONAL,
+    cug-OutgoingAccess              [32] NULL                           OPTIONAL,
+    suppressionOfAnnouncement       [55] SuppressionOfAnnouncement      OPTIONAL,
+    oCSIApplicable                  [56] OCSIApplicable                 OPTIONAL,
+	naOliInfo						[57] NAOliInfo						OPTIONAL,
+	bor-InterrogationRequested		[58] NULL							OPTIONAL,
+    ...,
+    suppress-N-CSI		[59] NULL								OPTIONAL
+}

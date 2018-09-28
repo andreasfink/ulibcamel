@@ -13,7 +13,7 @@
 
 #import "UMCamelOperationCode.h"
 #import "UMCamelErrorCode.h"
-#import "UMLayerCAP.h"
+#import "UMLayerCamel.h"
 #import "UMCamelDialogIdentifier.h"
 #import "UMCamelDialog.h"
 

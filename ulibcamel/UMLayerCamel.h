@@ -10,6 +10,7 @@
 #import "UMCamelProviderProtocol.h"
 #import "UMCamelUserProtocol.h"
 #import "UMCamelDialogIdentifier.h"
+#import "UMCamelOperationCode.h"
 
 @class UMCamelDialog;
 
@@ -29,5 +30,7 @@
                                 withId:(UMCamelDialogIdentifier *)dialogId;
 - (UMCamelDialog *)getNewDialogForUser:(id<UMCamelUserProtocol>)user;
 - (UMCamelDialogIdentifier *)getNewUserDialogId;
+
++(UMASN1Object *)decodeAsn1:(UMASN1Object *)input;
 
 @end

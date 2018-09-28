@@ -110,6 +110,42 @@
 		A65781C51CF54A3600211137 /* ulibcamel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65781BA1CF54A3600211137 /* ulibcamel.framework */; };
 		A65781CA1CF54A3600211137 /* ulibcamelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A65781C91CF54A3600211137 /* ulibcamelTests.m */; };
 		A65781D51CF54CF700211137 /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65781D41CF54CF700211137 /* ulib.framework */; };
+		A6BD35D2215DFB86002085BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD35D1215DFB86002085BA /* main.m */; };
+		A6BD35D6215DFBA5002085BA /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65781D41CF54CF700211137 /* ulib.framework */; };
+		A6BD35D7215DFBB1002085BA /* ulibtcap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62E0816215CAC2500D205F0 /* ulibtcap.framework */; };
+		A6BD35D9215DFBC1002085BA /* ulibasn1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BD35D8215DFBC1002085BA /* ulibasn1.framework */; };
+		A6BD35DA215DFBC1002085BA /* ulibasn1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BD35D8215DFBC1002085BA /* ulibasn1.framework */; };
+		A6BD35DB215DFBC1002085BA /* ulibasn1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BD35D8215DFBC1002085BA /* ulibasn1.framework */; };
+		A6BD35DC215DFBC3002085BA /* ulibtcap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62E0816215CAC2500D205F0 /* ulibtcap.framework */; };
+		A6BD35E2215DFD2E002085BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD35DE215DFD2E002085BA /* AppDelegate.m */; };
+		A6BD35E5215E001C002085BA /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD35E3215E001C002085BA /* version.h */; };
+		A6BD35E9215E0874002085BA /* ulibcamel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65781BA1CF54A3600211137 /* ulibcamel.framework */; };
+		A6BD35F0215E0EE9002085BA /* UMCamel_ConnectArg.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD35EE215E0EE9002085BA /* UMCamel_ConnectArg.h */; };
+		A6BD35F1215E0EE9002085BA /* UMCamel_ConnectArg.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD35EF215E0EE9002085BA /* UMCamel_ConnectArg.m */; };
+		A6BD35F4215E0EF6002085BA /* UMCamel_ConnectArg.asn1 in Headers */ = {isa = PBXBuildFile; fileRef = A6BD35F2215E0EF6002085BA /* UMCamel_ConnectArg.asn1 */; };
+		A6BD35F8215E1123002085BA /* UMCamel_DestinationRoutingAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD35F6215E1123002085BA /* UMCamel_DestinationRoutingAddress.h */; };
+		A6BD35F9215E1123002085BA /* UMCamel_DestinationRoutingAddress.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD35F7215E1123002085BA /* UMCamel_DestinationRoutingAddress.m */; };
+		A6BD35FC215E117E002085BA /* UMCamel_AlertingPattern.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD35FA215E117E002085BA /* UMCamel_AlertingPattern.h */; };
+		A6BD35FD215E117E002085BA /* UMCamel_AlertingPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD35FB215E117E002085BA /* UMCamel_AlertingPattern.m */; };
+		A6BD3604215E11B0002085BA /* UMCamel_GenericNumbers.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD3602215E11B0002085BA /* UMCamel_GenericNumbers.h */; };
+		A6BD3605215E11B0002085BA /* UMCamel_GenericNumbers.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD3603215E11B0002085BA /* UMCamel_GenericNumbers.m */; };
+		A6BD3608215E11C0002085BA /* UMCamel_ChargeNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD3606215E11C0002085BA /* UMCamel_ChargeNumber.h */; };
+		A6BD3609215E11C0002085BA /* UMCamel_ChargeNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD3607215E11C0002085BA /* UMCamel_ChargeNumber.m */; };
+		A6BD360C215E11D5002085BA /* UMCamel_LegID.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD360A215E11D5002085BA /* UMCamel_LegID.h */; };
+		A6BD360D215E11D5002085BA /* UMCamel_LegID.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD360B215E11D5002085BA /* UMCamel_LegID.m */; };
+		A6BD3610215E11E9002085BA /* UMCamel_SuppressionOfAnnouncement.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD360E215E11E9002085BA /* UMCamel_SuppressionOfAnnouncement.h */; };
+		A6BD3611215E11E9002085BA /* UMCamel_SuppressionOfAnnouncement.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD360F215E11E9002085BA /* UMCamel_SuppressionOfAnnouncement.m */; };
+		A6BD3614215E11F9002085BA /* UMCamel_OCSIApplicable.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD3612215E11F9002085BA /* UMCamel_OCSIApplicable.h */; };
+		A6BD3615215E11F9002085BA /* UMCamel_OCSIApplicable.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD3613215E11F9002085BA /* UMCamel_OCSIApplicable.m */; };
+		A6BD3618215E120E002085BA /* UMCamel_NAOliInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD3616215E120E002085BA /* UMCamel_NAOliInfo.h */; };
+		A6BD3619215E120E002085BA /* UMCamel_NAOliInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD3617215E120E002085BA /* UMCamel_NAOliInfo.m */; };
+		A6BD361C215E18AA002085BA /* UMCamelObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD361A215E18AA002085BA /* UMCamelObject.h */; };
+		A6BD361D215E18AA002085BA /* UMCamelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD361B215E18AA002085BA /* UMCamelObject.m */; };
+		A6BD3620215E18B4002085BA /* UMCamelInvoke.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD361E215E18B4002085BA /* UMCamelInvoke.h */; };
+		A6BD3621215E18B4002085BA /* UMCamelInvoke.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD361F215E18B4002085BA /* UMCamelInvoke.m */; };
+		A6BD3623215E213B002085BA /* UMCamel_CalledPartyNumber.asn1 in Resources */ = {isa = PBXBuildFile; fileRef = A6BD3622215E213B002085BA /* UMCamel_CalledPartyNumber.asn1 */; };
+		A6BD3628215E24C3002085BA /* UMCamel_EtsiNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD3626215E24C3002085BA /* UMCamel_EtsiNumber.h */; };
+		A6BD3629215E24C3002085BA /* UMCamel_EtsiNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD3627215E24C3002085BA /* UMCamel_EtsiNumber.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -122,8 +158,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A6BD35CD215DFB86002085BA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		A62E0816215CAC2500D205F0 /* ulibtcap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibtcap.framework; path = ../../../../../../Library/Frameworks/ulibtcap.framework; sourceTree = "<group>"; };
+		A62E0816215CAC2500D205F0 /* ulibtcap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibtcap.framework; path = /Library/Frameworks/ulibtcap.framework; sourceTree = "<absolute>"; };
 		A62E0818215CB26B00D205F0 /* UMLayerCamel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMLayerCamel.h; sourceTree = "<group>"; };
 		A62E0819215CB26B00D205F0 /* UMLayerCamel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMLayerCamel.m; sourceTree = "<group>"; };
 		A62E081C215CB29200D205F0 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
@@ -234,6 +282,38 @@
 		A65781C91CF54A3600211137 /* ulibcamelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ulibcamelTests.m; sourceTree = "<group>"; };
 		A65781CB1CF54A3600211137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A65781D41CF54CF700211137 /* ulib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulib.framework; path = /Library/Frameworks/ulib.framework; sourceTree = "<absolute>"; };
+		A6BD35CF215DFB86002085BA /* decode-camel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "decode-camel"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6BD35D1215DFB86002085BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A6BD35D8215DFBC1002085BA /* ulibasn1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibasn1.framework; path = ../../../../../../Library/Frameworks/ulibasn1.framework; sourceTree = "<group>"; };
+		A6BD35DD215DFD2E002085BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A6BD35DE215DFD2E002085BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A6BD35E3215E001C002085BA /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
+		A6BD35EE215E0EE9002085BA /* UMCamel_ConnectArg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_ConnectArg.h; sourceTree = "<group>"; };
+		A6BD35EF215E0EE9002085BA /* UMCamel_ConnectArg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_ConnectArg.m; sourceTree = "<group>"; };
+		A6BD35F2215E0EF6002085BA /* UMCamel_ConnectArg.asn1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_ConnectArg.asn1; sourceTree = "<group>"; };
+		A6BD35F6215E1123002085BA /* UMCamel_DestinationRoutingAddress.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_DestinationRoutingAddress.h; sourceTree = "<group>"; };
+		A6BD35F7215E1123002085BA /* UMCamel_DestinationRoutingAddress.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_DestinationRoutingAddress.m; sourceTree = "<group>"; };
+		A6BD35FA215E117E002085BA /* UMCamel_AlertingPattern.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_AlertingPattern.h; sourceTree = "<group>"; };
+		A6BD35FB215E117E002085BA /* UMCamel_AlertingPattern.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_AlertingPattern.m; sourceTree = "<group>"; };
+		A6BD3602215E11B0002085BA /* UMCamel_GenericNumbers.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_GenericNumbers.h; sourceTree = "<group>"; };
+		A6BD3603215E11B0002085BA /* UMCamel_GenericNumbers.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_GenericNumbers.m; sourceTree = "<group>"; };
+		A6BD3606215E11C0002085BA /* UMCamel_ChargeNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_ChargeNumber.h; sourceTree = "<group>"; };
+		A6BD3607215E11C0002085BA /* UMCamel_ChargeNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_ChargeNumber.m; sourceTree = "<group>"; };
+		A6BD360A215E11D5002085BA /* UMCamel_LegID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_LegID.h; sourceTree = "<group>"; };
+		A6BD360B215E11D5002085BA /* UMCamel_LegID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_LegID.m; sourceTree = "<group>"; };
+		A6BD360E215E11E9002085BA /* UMCamel_SuppressionOfAnnouncement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_SuppressionOfAnnouncement.h; sourceTree = "<group>"; };
+		A6BD360F215E11E9002085BA /* UMCamel_SuppressionOfAnnouncement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_SuppressionOfAnnouncement.m; sourceTree = "<group>"; };
+		A6BD3612215E11F9002085BA /* UMCamel_OCSIApplicable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_OCSIApplicable.h; sourceTree = "<group>"; };
+		A6BD3613215E11F9002085BA /* UMCamel_OCSIApplicable.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_OCSIApplicable.m; sourceTree = "<group>"; };
+		A6BD3616215E120E002085BA /* UMCamel_NAOliInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_NAOliInfo.h; sourceTree = "<group>"; };
+		A6BD3617215E120E002085BA /* UMCamel_NAOliInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_NAOliInfo.m; sourceTree = "<group>"; };
+		A6BD361A215E18AA002085BA /* UMCamelObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamelObject.h; sourceTree = "<group>"; };
+		A6BD361B215E18AA002085BA /* UMCamelObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamelObject.m; sourceTree = "<group>"; };
+		A6BD361E215E18B4002085BA /* UMCamelInvoke.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamelInvoke.h; sourceTree = "<group>"; };
+		A6BD361F215E18B4002085BA /* UMCamelInvoke.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamelInvoke.m; sourceTree = "<group>"; };
+		A6BD3622215E213B002085BA /* UMCamel_CalledPartyNumber.asn1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_CalledPartyNumber.asn1; sourceTree = "<group>"; };
+		A6BD3626215E24C3002085BA /* UMCamel_EtsiNumber.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_EtsiNumber.h; sourceTree = "<group>"; };
+		A6BD3627215E24C3002085BA /* UMCamel_EtsiNumber.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_EtsiNumber.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +323,7 @@
 			files = (
 				A62E0817215CAC2500D205F0 /* ulibtcap.framework in Frameworks */,
 				A65781D51CF54CF700211137 /* ulib.framework in Frameworks */,
+				A6BD35D9215DFBC1002085BA /* ulibasn1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +333,19 @@
 			files = (
 				A624F4172150E1F50075788B /* ulib.framework in Frameworks */,
 				A65781C51CF54A3600211137 /* ulibcamel.framework in Frameworks */,
+				A6BD35DC215DFBC3002085BA /* ulibtcap.framework in Frameworks */,
+				A6BD35DA215DFBC1002085BA /* ulibasn1.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BD35CC215DFB86002085BA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BD35D7215DFBB1002085BA /* ulibtcap.framework in Frameworks */,
+				A6BD35E9215E0874002085BA /* ulibcamel.framework in Frameworks */,
+				A6BD35D6215DFBA5002085BA /* ulib.framework in Frameworks */,
+				A6BD35DB215DFBC1002085BA /* ulibasn1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +370,27 @@
 				A62E0847215CE46600D205F0 /* UMCamel_InitialDPArg.m */,
 				A62E08CE215D064700D205F0 /* UMCamel_InitialDPSMSArg.asn1 */,
 				A62E08CA215D062D00D205F0 /* UMCamel_InitialDPSMSArg.h */,
+				A6BD35F2215E0EF6002085BA /* UMCamel_ConnectArg.asn1 */,
+				A6BD35EE215E0EE9002085BA /* UMCamel_ConnectArg.h */,
+				A6BD35EF215E0EE9002085BA /* UMCamel_ConnectArg.m */,
+				A6BD35F6215E1123002085BA /* UMCamel_DestinationRoutingAddress.h */,
+				A6BD35F7215E1123002085BA /* UMCamel_DestinationRoutingAddress.m */,
+				A6BD35FA215E117E002085BA /* UMCamel_AlertingPattern.h */,
+				A6BD35FB215E117E002085BA /* UMCamel_AlertingPattern.m */,
+				A6BD3602215E11B0002085BA /* UMCamel_GenericNumbers.h */,
+				A6BD3603215E11B0002085BA /* UMCamel_GenericNumbers.m */,
+				A6BD3606215E11C0002085BA /* UMCamel_ChargeNumber.h */,
+				A6BD3607215E11C0002085BA /* UMCamel_ChargeNumber.m */,
+				A6BD360A215E11D5002085BA /* UMCamel_LegID.h */,
+				A6BD360B215E11D5002085BA /* UMCamel_LegID.m */,
 				A62E08EF215D099500D205F0 /* UMCamel_GPRSMSClass.h */,
 				A62E08F0215D099500D205F0 /* UMCamel_GPRSMSClass.m */,
+				A6BD360E215E11E9002085BA /* UMCamel_SuppressionOfAnnouncement.h */,
+				A6BD360F215E11E9002085BA /* UMCamel_SuppressionOfAnnouncement.m */,
+				A6BD3612215E11F9002085BA /* UMCamel_OCSIApplicable.h */,
+				A6BD3613215E11F9002085BA /* UMCamel_OCSIApplicable.m */,
+				A6BD3616215E120E002085BA /* UMCamel_NAOliInfo.h */,
+				A6BD3617215E120E002085BA /* UMCamel_NAOliInfo.m */,
 				A62E08EB215D098600D205F0 /* UMCamel_MS_Classmark2.h */,
 				A62E08EC215D098600D205F0 /* UMCamel_MS_Classmark2.m */,
 				A62E08F3215D09C100D205F0 /* UMCamel_IMEI.h */,
@@ -304,8 +417,11 @@
 				A62E087B215CE8CB00D205F0 /* UMCamel_BearerCapability.m */,
 				A62E08B6215CE99E00D205F0 /* UMCamel_CalledPartyBCDNumber.h */,
 				A62E08B7215CE99E00D205F0 /* UMCamel_CalledPartyBCDNumber.m */,
+				A6BD3622215E213B002085BA /* UMCamel_CalledPartyNumber.asn1 */,
 				A62E0852215CE83800D205F0 /* UMCamel_CalledPartyNumber.h */,
 				A62E0853215CE83800D205F0 /* UMCamel_CalledPartyNumber.m */,
+				A6BD3626215E24C3002085BA /* UMCamel_EtsiNumber.h */,
+				A6BD3627215E24C3002085BA /* UMCamel_EtsiNumber.m */,
 				A62E0856215CE84400D205F0 /* UMCamel_CallingPartyNumber.h */,
 				A62E0857215CE84400D205F0 /* UMCamel_CallingPartyNumber.m */,
 				A62E085A215CE85100D205F0 /* UMCamel_CallingPartysCategory.h */,
@@ -356,6 +472,10 @@
 				A62E08A3215CE92100D205F0 /* UMCamel_SubscriberState.m */,
 				A62E08BA215CE9A600D205F0 /* UMCamel_TimeAndTimezone.h */,
 				A62E08BB215CE9A600D205F0 /* UMCamel_TimeAndTimezone.m */,
+				A6BD361A215E18AA002085BA /* UMCamelObject.h */,
+				A6BD361B215E18AA002085BA /* UMCamelObject.m */,
+				A6BD361E215E18B4002085BA /* UMCamelInvoke.h */,
+				A6BD361F215E18B4002085BA /* UMCamelInvoke.m */,
 			);
 			name = asn1;
 			sourceTree = "<group>";
@@ -367,6 +487,7 @@
 				A62E081E215CB2A900D205F0 /* doc */,
 				A65781BC1CF54A3600211137 /* ulibcamel */,
 				A65781D91CF54D4300211137 /* Libraries */,
+				A6BD35D0215DFB86002085BA /* decode-camel */,
 				A65781D61CF54CFE00211137 /* Frameworks */,
 				A65781C81CF54A3600211137 /* ulibcamelTests */,
 				A65781BB1CF54A3600211137 /* Products */,
@@ -378,6 +499,7 @@
 			children = (
 				A65781BA1CF54A3600211137 /* ulibcamel.framework */,
 				A65781C41CF54A3600211137 /* ulibcamelTests.xctest */,
+				A6BD35CF215DFB86002085BA /* decode-camel */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -418,6 +540,7 @@
 		A65781D61CF54CFE00211137 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A6BD35D8215DFBC1002085BA /* ulibasn1.framework */,
 				A62E0816215CAC2500D205F0 /* ulibtcap.framework */,
 				A65781D41CF54CF700211137 /* ulib.framework */,
 			);
@@ -433,6 +556,17 @@
 			path = ulibcamel;
 			sourceTree = "<group>";
 		};
+		A6BD35D0215DFB86002085BA /* decode-camel */ = {
+			isa = PBXGroup;
+			children = (
+				A6BD35D1215DFB86002085BA /* main.m */,
+				A6BD35E3215E001C002085BA /* version.h */,
+				A6BD35DD215DFD2E002085BA /* AppDelegate.h */,
+				A6BD35DE215DFD2E002085BA /* AppDelegate.m */,
+			);
+			path = "decode-camel";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -440,19 +574,25 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BD361C215E18AA002085BA /* UMCamelObject.h in Headers */,
 				A62E08ED215D098600D205F0 /* UMCamel_MS_Classmark2.h in Headers */,
 				A62E0874215CE8B700D205F0 /* UMCamel_HighLayerCompatibility.h in Headers */,
 				A62E0890215CE8FA00D205F0 /* UMCamel_ServiceInteractionIndicatorsTwo.h in Headers */,
 				A62E088C215CE8F100D205F0 /* UMCamel_Cause.h in Headers */,
 				A62E089C215CE91100D205F0 /* UMCamel_CUG_Interlock.h in Headers */,
 				A62E083F215CDE0D00D205F0 /* UMCamelUserProtocol.h in Headers */,
+				A6BD3614215E11F9002085BA /* UMCamel_OCSIApplicable.h in Headers */,
+				A6BD35E5215E001C002085BA /* version.h in Headers */,
+				A6BD3628215E24C3002085BA /* UMCamel_EtsiNumber.h in Headers */,
 				A62E08C4215CF33F00D205F0 /* UMCamel_ASN1_macros.h in Headers */,
+				A6BD3620215E18B4002085BA /* UMCamelInvoke.h in Headers */,
 				A62E08DD215D094A00D205F0 /* UMCamel_TPShortMessageSpecificInfo.h in Headers */,
 				A62E08D5215D092200D205F0 /* UMCamel_EventTypeSMS.h in Headers */,
 				A62E0880215CE8D500D205F0 /* UMCamel_EventTypeBCSM.h in Headers */,
 				A62E08E9215D097900D205F0 /* UMCamel_TPValidityPeriod.h in Headers */,
 				A62E08A8215CE92800D205F0 /* UMCamel_LocationInformation.h in Headers */,
 				A62E08C8215CF8AA00D205F0 /* UMCamelOperation.h in Headers */,
+				A6BD35F0215E0EE9002085BA /* UMCamel_ConnectArg.h in Headers */,
 				A62E08B4215CE99700D205F0 /* UMCamel_ISDN_AddressString.h in Headers */,
 				A62E08C0215CE9AD00D205F0 /* UMCamel_InitialDPArgExtension.h in Headers */,
 				A62E08F5215D09C100D205F0 /* UMCamel_IMEI.h in Headers */,
@@ -463,13 +603,19 @@
 				A62E0898215CE90900D205F0 /* UMCamel_CUG_Index.h in Headers */,
 				A62E082B215CCDDD00D205F0 /* UMCamelProviderProtocol.h in Headers */,
 				A62E087C215CE8CB00D205F0 /* UMCamel_BearerCapability.h in Headers */,
+				A6BD360C215E11D5002085BA /* UMCamel_LegID.h in Headers */,
+				A6BD3610215E11E9002085BA /* UMCamel_SuppressionOfAnnouncement.h in Headers */,
+				A6BD3618215E120E002085BA /* UMCamel_NAOliInfo.h in Headers */,
 				A62E0868215CE89400D205F0 /* UMCamel_LocationNumber.h in Headers */,
 				A62E0827215CCAB800D205F0 /* UMCamelOperationCode.h in Headers */,
 				A62E0894215CE90200D205F0 /* UMCamel_Carrier.h in Headers */,
+				A6BD3604215E11B0002085BA /* UMCamel_GenericNumbers.h in Headers */,
+				A6BD35F8215E1123002085BA /* UMCamel_DestinationRoutingAddress.h in Headers */,
 				A62E08AC215CE92F00D205F0 /* UMCamel_Ext_BasicServiceCode.h in Headers */,
 				A62E081A215CB26B00D205F0 /* UMLayerCamel.h in Headers */,
 				A62E08E1215D095C00D205F0 /* UMCamel_TPProtocolIdentifier.h in Headers */,
 				A65781BE1CF54A3600211137 /* ulibcamel.h in Headers */,
+				A6BD3608215E11C0002085BA /* UMCamel_ChargeNumber.h in Headers */,
 				A62E08D1215D090700D205F0 /* UMCamel_SMS_AddressString.h in Headers */,
 				A62E08E5215D096F00D205F0 /* UMCamel_TPDataCodingScheme.h in Headers */,
 				A62E08CC215D062D00D205F0 /* UMCamel_InitialDPSMSArg.h in Headers */,
@@ -479,12 +625,14 @@
 				A62E0850215CE82D00D205F0 /* UMCamel_ServiceKey.h in Headers */,
 				A62E0870215CE8AC00D205F0 /* UMCamel_ExtensionsArray.h in Headers */,
 				A62E082F215CCF3900D205F0 /* UMCamelDialogIdentifier.h in Headers */,
+				A6BD35F4215E0EF6002085BA /* UMCamel_ConnectArg.asn1 in Headers */,
 				A62E0854215CE83800D205F0 /* UMCamel_CalledPartyNumber.h in Headers */,
 				A62E085C215CE85100D205F0 /* UMCamel_CallingPartysCategory.h in Headers */,
 				A62E08F1215D099500D205F0 /* UMCamel_GPRSMSClass.h in Headers */,
 				A62E0878215CE8C200D205F0 /* UMCamel_AdditionalCallingPartyNumber.h in Headers */,
 				A62E08BC215CE9A600D205F0 /* UMCamel_TimeAndTimezone.h in Headers */,
 				A62E08A0215CE91900D205F0 /* UMCamel_IMSI.h in Headers */,
+				A6BD35FC215E117E002085BA /* UMCamel_AlertingPattern.h in Headers */,
 				A62E086C215CE89D00D205F0 /* UMCamel_OriginalCalledPartyID.h in Headers */,
 				A62E08B0215CE95400D205F0 /* UMCamel_CallReferenceNumber.h in Headers */,
 				A62E0888215CE8E800D205F0 /* UMCamel_RedirectionInformation.h in Headers */,
@@ -534,6 +682,23 @@
 			productReference = A65781C41CF54A3600211137 /* ulibcamelTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		A6BD35CE215DFB86002085BA /* decode-camel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A6BD35D5215DFB86002085BA /* Build configuration list for PBXNativeTarget "decode-camel" */;
+			buildPhases = (
+				A6BD35CB215DFB86002085BA /* Sources */,
+				A6BD35CC215DFB86002085BA /* Frameworks */,
+				A6BD35CD215DFB86002085BA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "decode-camel";
+			productName = "decode-camel";
+			productReference = A6BD35CF215DFB86002085BA /* decode-camel */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -549,6 +714,11 @@
 					};
 					A65781C31CF54A3600211137 = {
 						CreatedOnToolsVersion = 7.3.1;
+					};
+					A6BD35CE215DFB86002085BA = {
+						CreatedOnToolsVersion = 10.0;
+						DevelopmentTeam = 2GSNWPNR77;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -566,6 +736,7 @@
 			targets = (
 				A65781B91CF54A3600211137 /* ulibcamel */,
 				A65781C31CF54A3600211137 /* ulibcamelTests */,
+				A6BD35CE215DFB86002085BA /* decode-camel */,
 			);
 		};
 /* End PBXProject section */
@@ -575,6 +746,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A6BD3623215E213B002085BA /* UMCamel_CalledPartyNumber.asn1 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -605,10 +777,14 @@
 				A62E0899215CE90900D205F0 /* UMCamel_CUG_Index.m in Sources */,
 				A62E08C1215CE9AD00D205F0 /* UMCamel_InitialDPArgExtension.m in Sources */,
 				A62E0865215CE88900D205F0 /* UMCamel_IPSSPCapabilities.m in Sources */,
+				A6BD3621215E18B4002085BA /* UMCamelInvoke.m in Sources */,
 				A62E08DE215D094A00D205F0 /* UMCamel_TPShortMessageSpecificInfo.m in Sources */,
+				A6BD360D215E11D5002085BA /* UMCamel_LegID.m in Sources */,
+				A6BD3615215E11F9002085BA /* UMCamel_OCSIApplicable.m in Sources */,
 				A62E081B215CB26B00D205F0 /* UMLayerCamel.m in Sources */,
 				A62E08EE215D098600D205F0 /* UMCamel_MS_Classmark2.m in Sources */,
 				A62E0869215CE89400D205F0 /* UMCamel_LocationNumber.m in Sources */,
+				A6BD3619215E120E002085BA /* UMCamel_NAOliInfo.m in Sources */,
 				A62E085D215CE85100D205F0 /* UMCamel_CallingPartysCategory.m in Sources */,
 				A62E0871215CE8AC00D205F0 /* UMCamel_ExtensionsArray.m in Sources */,
 				A62E088D215CE8F100D205F0 /* UMCamel_Cause.m in Sources */,
@@ -620,18 +796,26 @@
 				A62E08D6215D092200D205F0 /* UMCamel_EventTypeSMS.m in Sources */,
 				A62E0891215CE8FA00D205F0 /* UMCamel_ServiceInteractionIndicatorsTwo.m in Sources */,
 				A62E0859215CE84400D205F0 /* UMCamel_CallingPartyNumber.m in Sources */,
+				A6BD35FD215E117E002085BA /* UMCamel_AlertingPattern.m in Sources */,
 				A62E0861215CE85C00D205F0 /* UMCamel_CGEncountered.m in Sources */,
 				A62E0851215CE82D00D205F0 /* UMCamel_ServiceKey.m in Sources */,
+				A6BD3611215E11E9002085BA /* UMCamel_SuppressionOfAnnouncement.m in Sources */,
+				A6BD3609215E11C0002085BA /* UMCamel_ChargeNumber.m in Sources */,
 				A62E08D2215D090700D205F0 /* UMCamel_SMS_AddressString.m in Sources */,
+				A6BD361D215E18AA002085BA /* UMCamelObject.m in Sources */,
 				A62E08A1215CE91900D205F0 /* UMCamel_IMSI.m in Sources */,
 				A62E086D215CE89D00D205F0 /* UMCamel_OriginalCalledPartyID.m in Sources */,
 				A62E08BD215CE9A600D205F0 /* UMCamel_TimeAndTimezone.m in Sources */,
 				A62E08C9215CF8AA00D205F0 /* UMCamelOperation.m in Sources */,
 				A62E089D215CE91100D205F0 /* UMCamel_CUG_Interlock.m in Sources */,
+				A6BD3629215E24C3002085BA /* UMCamel_EtsiNumber.m in Sources */,
 				A62E08A9215CE92800D205F0 /* UMCamel_LocationInformation.m in Sources */,
+				A6BD35F1215E0EE9002085BA /* UMCamel_ConnectArg.m in Sources */,
+				A6BD3605215E11B0002085BA /* UMCamel_GenericNumbers.m in Sources */,
 				A62E08EA215D097900D205F0 /* UMCamel_TPValidityPeriod.m in Sources */,
 				A62E08E2215D095C00D205F0 /* UMCamel_TPProtocolIdentifier.m in Sources */,
 				A62E08DA215D093800D205F0 /* UMCamel_LocationInformationGPRS.m in Sources */,
+				A6BD35F9215E1123002085BA /* UMCamel_DestinationRoutingAddress.m in Sources */,
 				A62E08B5215CE99700D205F0 /* UMCamel_ISDN_AddressString.m in Sources */,
 				A62E083C215CD9C900D205F0 /* UMCamelDialog.m in Sources */,
 				A62E08F6215D09C100D205F0 /* UMCamel_IMEI.m in Sources */,
@@ -646,6 +830,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65781CA1CF54A3600211137 /* ulibcamelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A6BD35CB215DFB86002085BA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6BD35E2215DFD2E002085BA /* AppDelegate.m in Sources */,
+				A6BD35D2215DFB86002085BA /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -694,7 +887,6 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
-				DSTROOT = /;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -711,7 +903,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -756,7 +947,6 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
-				DSTROOT = /;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -767,7 +957,6 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -783,6 +972,7 @@
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = "";
+				DSTROOT = /;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -805,6 +995,7 @@
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = "";
+				DSTROOT = /;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -851,6 +1042,54 @@
 			};
 			name = Release;
 		};
+		A6BD35D3215DFB86002085BA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2GSNWPNR77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		A6BD35D4215DFB86002085BA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = 2GSNWPNR77;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -877,6 +1116,15 @@
 			buildConfigurations = (
 				A65781D21CF54A3600211137 /* Debug */,
 				A65781D31CF54A3600211137 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A6BD35D5215DFB86002085BA /* Build configuration list for PBXNativeTarget "decode-camel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A6BD35D3215DFB86002085BA /* Debug */,
+				A6BD35D4215DFB86002085BA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
