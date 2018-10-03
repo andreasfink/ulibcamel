@@ -146,6 +146,7 @@
     }
     NSString *currentFile =NULL;
     NSUInteger n = [_inputData count];
+    NSMutableArray *out = [[NSMutableArray alloc]init];
     for(NSUInteger i=0;i<n;i++)
     {
         NSData *d = _inputData[i];
@@ -161,9 +162,10 @@
         
         asn1 = [UMLayerCamel decodeAsn1:asn1];
         UMSynchronizedSortedDictionary *o = (UMSynchronizedSortedDictionary *)[asn1 objectValue];
-        NSString *json = [o jsonString];
-        fprintf(f,"%s\n",json.UTF8String);
+        [out addObject:o];
     }
+    NSString *json = [out jsonString];
+    fprintf(f,"%s\n",json.UTF8String);
 }
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification

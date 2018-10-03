@@ -4,15 +4,10 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>decode-camel.xcscheme</key>
+		<key>decode-camel.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>1</integer>
-		</dict>
-		<key>ulibcamel.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>0</integer>
 		</dict>
 		<key>ulibcamel.xcscheme_^#shared#^_</key>
 		<dict>
@@ -23,6 +18,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>A624F40E2150D62F0075788B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A65781B91CF54A3600211137</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A65781C31CF54A3600211137</key>
 		<dict>
 			<key>primary</key>
 			<true/>

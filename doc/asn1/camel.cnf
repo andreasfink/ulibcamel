@@ -1,7 +1,6 @@
 # camel.cnf
 # camel conformation file
 # Anders Broman 2007
-# $Id$
 
 #.IMPORT ../gsm_map/gsm_map-exp.cnf
 #.IMPORT ../inap/inap-exp.cnf
@@ -35,7 +34,7 @@ TariffSwitchInterval
 Priority
 #.END
 
-#.PDU_NEW
+#.PDU
 ERROR.&ParameterType
 OPERATION.&ArgumentType
 OPERATION.&ResultType
@@ -46,7 +45,9 @@ OPERATION.&ResultType
 CAP-GPRS-ReferenceNumber	B "0.4.0.0.1.1.5.2" "id-CAP-GPRS-ReferenceNumber"
 CAP-U-ABORT-REASON			B "0.4.0.0.1.1.2.2" "id-CAP-U-ABORT-Reason"
 
-#.NO_EMIT
+#.NO_EMIT ONLY_VALS
+CAMEL-AChBillingChargingCharacteristicsV2
+ROS
 
 #.TYPE_RENAME
 ReturnResult/result/result		ResultArgument
@@ -224,7 +225,7 @@ if((camel_ver == 2)||(camel_ver == 1)){
 #.FN_BODY ExtensionField/value
   /*XXX handle local form here */
   if(camel_obj_id){
-    offset=call_ber_oid_callback(camel_obj_id, tvb, offset, actx->pinfo, tree);
+    offset=call_ber_oid_callback(camel_obj_id, tvb, offset, actx->pinfo, tree, NULL);
   }
   is_ExtensionField = FALSE;
 
@@ -239,7 +240,7 @@ if((camel_ver == 2)||(camel_ver == 1)){
 	return offset;
 
 subtree = proto_item_add_subtree(actx->created_item, ett_camel_callingpartynumber);
-dissect_isup_calling_party_number_parameter(parameter_tvb, subtree, NULL);
+dissect_isup_calling_party_number_parameter(parameter_tvb, actx->pinfo, subtree, NULL);
 #.END
 
 #----------------------------------------------------------------------------------------
@@ -253,7 +254,7 @@ dissect_isup_calling_party_number_parameter(parameter_tvb, subtree, NULL);
 	return offset;
 
  subtree = proto_item_add_subtree(actx->created_item, ett_camel_calledpartybcdnumber);
- dissect_isup_called_party_number_parameter(parameter_tvb, subtree, NULL);
+ dissect_isup_called_party_number_parameter(parameter_tvb, actx->pinfo, subtree, NULL);
 #.END
 
 #----------------------------------------------------------------------------------------
@@ -267,7 +268,7 @@ dissect_isup_calling_party_number_parameter(parameter_tvb, subtree, NULL);
         return offset;
 
 subtree = proto_item_add_subtree(actx->created_item, ett_camel_locationnumber);
-dissect_isup_location_number_parameter(parameter_tvb, subtree, NULL);
+dissect_isup_location_number_parameter(parameter_tvb, actx->pinfo, subtree, NULL);
 #.END
 
 #----------------------------------------------------------------------------------------
@@ -279,7 +280,7 @@ dissect_isup_location_number_parameter(parameter_tvb, subtree, NULL);
  if (!parameter_tvb)
         return offset;
 
-dissect_isup_generic_number_parameter(parameter_tvb, tree, NULL);
+dissect_isup_generic_number_parameter(parameter_tvb, actx->pinfo, tree, NULL);
 #.END
 
 #----------------------------------------------------------------------------------------
@@ -295,7 +296,7 @@ proto_tree *subtree;
 	return offset;
  subtree = proto_item_add_subtree(actx->created_item, ett_camel_cause);
 
- dissect_q931_cause_ie(parameter_tvb, 0, tvb_length_remaining(parameter_tvb,0), subtree, hf_camel_cause_indicator, &Cause_value, isup_parameter_type_value);
+ dissect_q931_cause_ie(parameter_tvb, 0, tvb_reported_length_remaining(parameter_tvb,0), subtree, hf_camel_cause_indicator, &Cause_value, isup_parameter_type_value);
 #.END
 
 #----------------------------------------------------------------------------------------
@@ -311,7 +312,7 @@ proto_tree *subtree;
 	return offset;
  subtree = proto_item_add_subtree(actx->created_item, ett_camel_RPcause);
 
- dissect_RP_cause_ie(parameter_tvb, 0, tvb_length_remaining(parameter_tvb,0), subtree, hf_camel_RP_Cause, &Cause_value);
+ dissect_RP_cause_ie(parameter_tvb, 0, tvb_reported_length_remaining(parameter_tvb,0), subtree, hf_camel_RP_Cause, &Cause_value);
 #.END
 
 #----------------------------------------------------------------------------------------
@@ -420,19 +421,21 @@ proto_tree *subtree;
  if (!parameter_tvb)
 	return offset;
 
- dissect_q931_bearer_capability_ie(parameter_tvb, 0, tvb_length_remaining(parameter_tvb,0), tree);
+ dissect_q931_bearer_capability_ie(parameter_tvb, 0, tvb_reported_length_remaining(parameter_tvb,0), tree);
 #.END
 
 #----------------------------------------------------------------------------------------
 #.FN_BODY OriginalCalledPartyID VAL_PTR = &parameter_tvb
 
  tvbuff_t	*parameter_tvb;
+ proto_tree	*subtree;
 
 %(DEFAULT_BODY)s
 
  if (!parameter_tvb)
 	return offset;
- dissect_isup_original_called_number_parameter(parameter_tvb, tree, NULL);
+ subtree = proto_item_add_subtree(actx->created_item, ett_camel_originalcalledpartyid);
+ dissect_isup_original_called_number_parameter(parameter_tvb, actx->pinfo, subtree, NULL);
 #.END
 
 #----------------------------------------------------------------------------------------
@@ -443,12 +446,14 @@ proto_tree *subtree;
 #.FN_BODY RedirectingPartyID
 
  tvbuff_t	*parameter_tvb;
+ proto_tree	*subtree;
 
 %(DEFAULT_BODY)s
 
  if (!parameter_tvb)
 	return offset;
- dissect_isup_redirecting_number_parameter(parameter_tvb, tree, NULL);
+ subtree = proto_item_add_subtree(actx->created_item, ett_camel_redirectingpartyid);
+ dissect_isup_redirecting_number_parameter(parameter_tvb, actx->pinfo, subtree, NULL);
 #.END
 
 #----------------------------------------------------------------------------------------
@@ -465,7 +470,7 @@ proto_tree *subtree;
   if (!parameter_tvb)
     return offset;
   subtree = proto_item_add_subtree(actx->created_item, ett_camel_AccessPointName);
-  de_sm_apn(parameter_tvb, subtree, actx->pinfo, 0, tvb_length(parameter_tvb), NULL, 0);
+  de_sm_apn(parameter_tvb, subtree, actx->pinfo, 0, tvb_reported_length(parameter_tvb), NULL, 0);
 #.END
 
 #----------------------------------------------------------------------------------------
@@ -521,10 +526,10 @@ proto_tree *subtree;
  case 1: /* IETF */
 	switch(PDPTypeNumber){
 	case 0x21: /* IPv4 */
-		proto_tree_add_item(subtree, hf_camel_PDPAddress_IPv4, parameter_tvb, 0, tvb_length(parameter_tvb), ENC_BIG_ENDIAN);
+		proto_tree_add_item(subtree, hf_camel_PDPAddress_IPv4, parameter_tvb, 0, tvb_reported_length(parameter_tvb), ENC_BIG_ENDIAN);
 		break;
 	case 0x57: /* IPv6 */
-		proto_tree_add_item(subtree, hf_camel_PDPAddress_IPv6, parameter_tvb, 0, tvb_length(parameter_tvb), ENC_NA);
+		proto_tree_add_item(subtree, hf_camel_PDPAddress_IPv6, parameter_tvb, 0, tvb_reported_length(parameter_tvb), ENC_NA);
 		break;
 	default:
 		break;
@@ -536,7 +541,7 @@ proto_tree *subtree;
 #.END
 
 #----------------------------------------------------------------------------------------
-#.FN_BODY LocationInformationGPRS/cellGlobalIdOrServiceAreaIdOrLAI 
+#.FN_BODY LocationInformationGPRS/cellGlobalIdOrServiceAreaIdOrLAI
 	proto_tree *subtree;
 	int start_offset;
 
@@ -549,7 +554,7 @@ proto_tree *subtree;
 	dissect_gsm_map_CellGlobalIdOrServiceAreaIdFixedLength(TRUE, tvb, start_offset, actx, subtree, hf_camel_cellGlobalIdOrServiceAreaIdFixedLength);
  }else{
 	dissect_gsm_map_LAIFixedLength(TRUE, tvb, start_offset, actx, subtree, hf_camel_locationAreaId);
- }			
+ }
 #.END
 
 #----------------------------------------------------------------------------------------
@@ -568,7 +573,7 @@ proto_tree *subtree;
 
 #.FN_BODY FCIBillingChargingCharacteristics VAL_PTR = &parameter_tvb
  tvbuff_t	*parameter_tvb;
- proto_tree *subtree; 
+ proto_tree *subtree;
 
 %(DEFAULT_BODY)s
  if (!parameter_tvb)
@@ -577,8 +582,8 @@ proto_tree *subtree;
  dissect_camel_CAMEL_FCIBillingChargingCharacteristics(FALSE, parameter_tvb, 0, actx, subtree, hf_camel_CAMEL_FCIBillingChargingCharacteristics);
 
 #.FN_BODY FCIGPRSBillingChargingCharacteristics VAL_PTR = &parameter_tvb
- tvbuff_t	*parameter_tvb; 
- proto_tree *subtree; 
+ tvbuff_t	*parameter_tvb;
+ proto_tree *subtree;
 
 %(DEFAULT_BODY)s
  if (!parameter_tvb)
@@ -588,17 +593,17 @@ proto_tree *subtree;
 
 #.FN_BODY FCISMSBillingChargingCharacteristics VAL_PTR = &parameter_tvb
  tvbuff_t	*parameter_tvb;
- proto_tree *subtree; 
+ proto_tree *subtree;
 
 %(DEFAULT_BODY)s
  if (!parameter_tvb)
-	return offset; 
+	return offset;
  subtree = proto_item_add_subtree(actx->created_item, ett_camel_CAMEL_FCISMSBillingChargingCharacteristics);
  dissect_camel_CAMEL_FCISMSBillingChargingCharacteristics(FALSE, parameter_tvb, 0, actx, subtree, hf_camel_CAMEL_FCISMSBillingChargingCharacteristics);
 
 #.FN_BODY SCIBillingChargingCharacteristics VAL_PTR = &parameter_tvb
  tvbuff_t	*parameter_tvb;
- proto_tree *subtree; 
+ proto_tree *subtree;
 
 %(DEFAULT_BODY)s
  if (!parameter_tvb)
@@ -608,17 +613,17 @@ proto_tree *subtree;
 
 #.FN_BODY SCIGPRSBillingChargingCharacteristics VAL_PTR = &parameter_tvb
  tvbuff_t	*parameter_tvb;
- proto_tree *subtree; 
+ proto_tree *subtree;
 
 %(DEFAULT_BODY)s
  if (!parameter_tvb)
-	return offset; 
+	return offset;
  subtree = proto_item_add_subtree(actx->created_item, ett_camel_CAMEL_SCIGPRSBillingChargingCharacteristics);
  dissect_camel_CAMEL_SCIGPRSBillingChargingCharacteristics(FALSE, parameter_tvb, 0, actx, subtree, hf_camel_CAMEL_SCIGPRSBillingChargingCharacteristics);
 
 #.FN_BODY CallResult VAL_PTR = &parameter_tvb
- tvbuff_t	*parameter_tvb; 
- proto_tree *subtree; 
+ tvbuff_t	*parameter_tvb;
+ proto_tree *subtree;
 
 %(DEFAULT_BODY)s
  if (!parameter_tvb)
@@ -628,7 +633,7 @@ proto_tree *subtree;
 
 # V3 and V4 incompatibillity bug #1719
 #.FN_BODY CAMEL-AChBillingChargingCharacteristics/timeDurationCharging/audibleIndicator
-  if (tvb_length_remaining(tvb,offset) < 2)
+  if (tvb_reported_length_remaining(tvb,offset) < 2)
 	offset = dissect_camel_BOOLEAN(TRUE, tvb, offset, actx , tree, hf_camel_audibleIndicatorTone);
   else
 %(DEFAULT_BODY)s
@@ -642,24 +647,111 @@ proto_tree *subtree;
  * identification' and 'number digit' fields defined in 3GPP TS 24.008 [9];
  * it does not carry the 'called party BCD number IEI' or 'length of called
  * party BCD number contents'.
- * In the context of the DestinationSubscriberNumber field in ConnectSMSArg or 
- * InitialDPSMSArg, a CalledPartyBCDNumber may also contain an alphanumeric 
- * character string. In this case, type-of-number '101'B is used, in accordance 
- * with 3GPP TS 23.040 [6]. The address is coded in accordance with the 
- * GSM 7-bit default alphabet definition and the SMS packing rules 
+ * In the context of the DestinationSubscriberNumber field in ConnectSMSArg or
+ * InitialDPSMSArg, a CalledPartyBCDNumber may also contain an alphanumeric
+ * character string. In this case, type-of-number '101'B is used, in accordance
+ * with 3GPP TS 23.040 [6]. The address is coded in accordance with the
+ * GSM 7-bit default alphabet definition and the SMS packing rules
  * as specified in 3GPP TS 23.038 [15] in this case.
  */
- tvbuff_t	*parameter_tvb; 
- proto_tree *subtree; 
+ tvbuff_t	*parameter_tvb;
+ proto_tree *subtree;
 
 %(DEFAULT_BODY)s
 
  if (!parameter_tvb)
 	return offset;
  subtree = proto_item_add_subtree(actx->created_item, ett_camel_calledpartybcdnumber);
- de_cld_party_bcd_num(parameter_tvb, subtree, actx->pinfo, 0, tvb_length(parameter_tvb), NULL, 0);
+ de_cld_party_bcd_num(parameter_tvb, subtree, actx->pinfo, 0, tvb_reported_length(parameter_tvb), NULL, 0);
 
 #.END
+
+#.FN_BODY Digits VAL_PTR = &parameter_tvb
+/*
+* Digits {PARAMETERS-BOUND : bound} ::= OCTET STRING (SIZE(
+*	bound.&minDigitsLength .. bound.&maxDigitsLength))
+*-- Indicates the address signalling digits.
+*-- Refer to ETSI EN 300 356 1 [23] Generic Number & Generic Digits parameters for encoding.
+*-- The coding of the subfields 'NumberQualifier' in Generic Number and 'TypeOfDigits' in
+*-- Generic Digits are irrelevant to the CAP;
+*-- the ASN.1 tags are sufficient to identify the parameter.
+*-- The ISUP format does not allow to exclude these subfields,
+*-- therefore the value is network operator specific.
+*--
+*-- The following parameters shall use Generic Number:
+*--  - AdditionalCallingPartyNumber for InitialDP
+*--  - AssistingSSPIPRoutingAddress for EstablishTemporaryConnection
+*--  - CorrelationID for AssistRequestInstructions
+*--  - CalledAddressValue for all occurrences, CallingAddressValue for all occurrences.
+*--
+*-- The following parameters shall use Generic Digits:
+*--  - CorrelationID in EstablishTemporaryConnection
+*--  - number in VariablePart
+*--  - digitsResponse in ReceivedInformationArg
+*--	- midCallEvents in oMidCallSpecificInfo and tMidCallSpecificInfo
+*--
+*-- In the digitsResponse and midCallevents, the digits may also include the '*', '#',
+*-- a, b, c and d digits by using the IA5 character encoding scheme. If the BCD even or
+*-- BCD odd encoding scheme is used, then the following encoding shall be applied for the
+*-- non-decimal characters: 1011 (*), 1100 (#).
+*--
+*-- AssistingSSPIPRoutingAddress in EstablishTemporaryConnection and CorrelationID in
+*-- AssistRequestInstructions may contain a Hex B digit as address signal. Refer to
+*-- Annex A.6 for the usage of the Hex B digit.
+*--
+*-- Note that when CorrelationID is transported in Generic Digits, then the digits shall
+*-- always be BCD encoded.
+*/
+ tvbuff_t	*parameter_tvb;
+ proto_tree *subtree;
+ gint ett = -1;
+ gboolean digits = FALSE;
+
+  offset = dissect_ber_octet_string(implicit_tag, actx, tree, tvb, offset, hf_index,
+                                       &parameter_tvb);
+
+  if (!parameter_tvb)
+	return offset;
+
+  if (hf_index == hf_camel_calledAddressValue) {
+	ett = ett_camel_calledAddressValue;
+  } else if (hf_index == hf_camel_callingAddressValue) {
+	ett = ett_camel_callingAddressValue;
+  } else if (hf_index == hf_camel_additionalCallingPartyNumber) {
+	ett = ett_camel_additionalcallingpartynumber;
+  } else if (hf_index == hf_camel_assistingSSPIPRoutingAddress) {
+	ett = ett_camel_assistingSSPIPRoutingAddress;
+  } else if (hf_index == hf_camel_correlationID) {
+	ett = ett_camel_correlationID;
+	digits = (opcode == opcode_establishTemporaryConnection) ? TRUE : FALSE;
+  } else if (hf_index == hf_camel_dTMFDigitsCompleted) {
+	ett = ett_camel_dTMFDigitsCompleted;
+	digits = TRUE;
+  } else if (hf_index == hf_camel_dTMFDigitsTimeOut) {
+	ett = ett_camel_dTMFDigitsTimeOut;
+	digits = TRUE;
+  } else if (hf_index == hf_camel_number) {
+	ett = ett_camel_number;
+	digits = TRUE;
+  } else if (hf_index == hf_camel_digitsResponse) {
+	ett = ett_camel_digitsResponse;
+	digits = TRUE;
+  }
+
+  subtree = proto_item_add_subtree(actx->created_item, ett);
+  if (digits) {
+	dissect_isup_generic_digits_parameter(parameter_tvb, subtree, NULL);
+  } else {
+	dissect_isup_generic_number_parameter(parameter_tvb, actx->pinfo, subtree, NULL);
+  }
+
+# I don't know how to "access" the EstablishTemporaryConnectionArg-PDU which would have been cleaner.
+#.FN_BODY EstablishTemporaryConnectionArg
+
+  if(camel_ver==2){
+    return dissect_camel_EstablishTemporaryConnectionArgV2(implicit_tag, tvb, offset, actx, tree, hf_index);
+  }
+%(DEFAULT_BODY)s
 
 #.TYPE_ATTR
 PDPTypeOrganization TYPE = FT_UINT8  DISPLAY = BASE_DEC  BITMASK = 0x0f STRINGS = VALS(gsm_map_PDP_Type_Organisation_vals)

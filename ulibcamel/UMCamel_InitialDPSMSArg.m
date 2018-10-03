@@ -49,7 +49,7 @@
 {
     int p=0;
     UMASN1Object *o = [self getObjectAtPosition:p++];
-    
+ 
 
     GET_CONTEXT_SPECIFIC(0,_serviceKey,UMCamel_ServiceKey,o,p);
     GET_CONTEXT_SPECIFIC(1,_destinationSubscriberNumber,UMCamel_CalledPartyBCDNumber,o,p);
@@ -82,7 +82,7 @@
 
 - (NSString *) objectName
 {
-    return @"InitialDPArg";
+    return @"InitialDPSMSArg";
 }
 
 - (id) objectValue
