@@ -10,6 +10,7 @@
 #import "UMCamel_ASN1_macros.h"
 #import "UMCamelOperationCode.h"
 #import "UMCamel_InitialDPArg.h"
+#import "UMCamel_AssistRequestInstructionsArg.h"
 
 @implementation UMCamelInvoke
 
@@ -43,9 +44,11 @@
             break;
         case UMCamelOperationCode_assistRequestInstructions:
             _opCodeName=@"AssistRequestInstructions";
-            //_params = [[UMCamel_AssistRequestInstructionsArg alloc]initWithASN1Object:_params context:NULL];
+            _params = [[UMCamel_AssistRequestInstructionsArg alloc]initWithASN1Object:_params context:NULL];
             break;
         case UMCamelOperationCode_establishTemporaryConnection:
+            _params = [[UMCamel_AssistRequestInstructionsArg alloc]initWithASN1Object:_params context:NULL];
+
             _opCodeName=@"EstablishTemporaryConnection";
             break;
         case UMCamelOperationCode_disconnectForwardConnection:
