@@ -33,5 +33,5 @@ SEQUENCE
     timeAndTimezone                 [57] TimeAndTimezone                OPTIONAL,
     gsm-ForwardingPending           [58] NULL                           OPTIONAL,
     initialDPArgExtension           [59] InitialDPArgExtension          OPTIONAL,
-...
+    ...
 }

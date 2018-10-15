@@ -14,5 +14,6 @@
     int64_t   _invokeId;
     int64_t   _opCode;
     UMASN1Sequence  *_params;
+    NSString *_opCodeName;
 }
 @end
