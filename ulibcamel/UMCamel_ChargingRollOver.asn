@@ -1,0 +1,5 @@
+ChargingRollOver ::= CHOICE {
+    transferredVolumeRollOver [0] TransferredVolumeRollOver,
+    elapsedTimeRollOver [1] ElapsedTimeRollOver
+}
+

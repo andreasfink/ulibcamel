@@ -1,0 +1,11 @@
+-- AssistRequestInstructionsArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+AssistRequestInstructionsArg ::=
+
+ SEQUENCE
+{
+    correlationID     [0] CorrelationID,
+    iPSSPCapabilities [2] IPSSPCapabilities,
+    extensions        [3] ExtensionsArray OPTIONAL,
+	...
+}

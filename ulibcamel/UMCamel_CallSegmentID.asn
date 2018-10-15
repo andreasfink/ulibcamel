@@ -1,0 +1,1 @@
+CallSegmentID  ::= INTEGER (1..cAPSpecificBoundsSetnumOfCSs)

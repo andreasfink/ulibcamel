@@ -282,6 +282,22 @@
 		A65781C91CF54A3600211137 /* ulibcamelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ulibcamelTests.m; sourceTree = "<group>"; };
 		A65781CB1CF54A3600211137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A65781D41CF54CF700211137 /* ulib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulib.framework; path = /Library/Frameworks/ulib.framework; sourceTree = "<absolute>"; };
+		A66A424621748B1D0083526C /* Makefile.osx.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.osx.in; sourceTree = "<group>"; };
+		A66A424721748B1D0083526C /* Makefile.linux.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.linux.in; sourceTree = "<group>"; };
+		A66A424A21749FD00083526C /* UMCamel_AChBillingChargingCharacteristics.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AChBillingChargingCharacteristics.asn; sourceTree = "<group>"; };
+		A66A424B21749FD00083526C /* UMCamel_AOCGprs.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AOCGprs.asn; sourceTree = "<group>"; };
+		A66A424C21749FD00083526C /* UMCamel_AOCSubsequent.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AOCSubsequent.asn; sourceTree = "<group>"; };
+		A66A424D21749FD10083526C /* UMCamel_AChChargingAddress.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AChChargingAddress.asn; sourceTree = "<group>"; };
+		A66A424E21749FD10083526C /* UMCamel_AlertingPattern.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AlertingPattern.asn; sourceTree = "<group>"; };
+		A66A424F21749FD10083526C /* UMCamel_AOCBeforeAnswer.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AOCBeforeAnswer.asn; sourceTree = "<group>"; };
+		A66A425021749FD10083526C /* UMCamel_CallInformationRequestArg.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_CallInformationRequestArg.asn; sourceTree = "<group>"; };
+		A66A425121749FD10083526C /* UMCamel_AssistRequestInstructionsArg.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AssistRequestInstructionsArg.asn; sourceTree = "<group>"; };
+		A66A425221749FD10083526C /* UMCamel_AccessPointName.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AccessPointName.asn; sourceTree = "<group>"; };
+		A66A425321749FD10083526C /* UMCamel_AdditionalCallingPartyNumber.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AdditionalCallingPartyNumber.asn; sourceTree = "<group>"; };
+		A66A42542174A0070083526C /* UMCamel_AppendFreeFormatData.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AppendFreeFormatData.asn; sourceTree = "<group>"; };
+		A66A42552174A0300083526C /* UMCamel_AssistingSSPIPRoutingAddress.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AssistingSSPIPRoutingAddress.asn; sourceTree = "<group>"; };
+		A66A42562174A0300083526C /* UMCamel_ApplicationTimer.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_ApplicationTimer.asn; sourceTree = "<group>"; };
+		A66A42572174A05A0083526C /* UMCamel_AudibleIndicator.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AudibleIndicator.asn; sourceTree = "<group>"; };
 		A6BD35CF215DFB86002085BA /* decode-camel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "decode-camel"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BD35D1215DFB86002085BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6BD35D8215DFBC1002085BA /* ulibasn1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibasn1.framework; path = ../../../../../../Library/Frameworks/ulibasn1.framework; sourceTree = "<group>"; };
@@ -370,6 +386,20 @@
 				A62E0847215CE46600D205F0 /* UMCamel_InitialDPArg.m */,
 				A62E08CE215D064700D205F0 /* UMCamel_InitialDPSMSArg.asn1 */,
 				A62E08CA215D062D00D205F0 /* UMCamel_InitialDPSMSArg.h */,
+				A66A42562174A0300083526C /* UMCamel_ApplicationTimer.asn */,
+				A66A42572174A05A0083526C /* UMCamel_AudibleIndicator.asn */,
+				A66A42552174A0300083526C /* UMCamel_AssistingSSPIPRoutingAddress.asn */,
+				A66A425221749FD10083526C /* UMCamel_AccessPointName.asn */,
+				A66A42542174A0070083526C /* UMCamel_AppendFreeFormatData.asn */,
+				A66A424A21749FD00083526C /* UMCamel_AChBillingChargingCharacteristics.asn */,
+				A66A424D21749FD10083526C /* UMCamel_AChChargingAddress.asn */,
+				A66A425321749FD10083526C /* UMCamel_AdditionalCallingPartyNumber.asn */,
+				A66A424E21749FD10083526C /* UMCamel_AlertingPattern.asn */,
+				A66A424F21749FD10083526C /* UMCamel_AOCBeforeAnswer.asn */,
+				A66A424B21749FD00083526C /* UMCamel_AOCGprs.asn */,
+				A66A424C21749FD00083526C /* UMCamel_AOCSubsequent.asn */,
+				A66A425121749FD10083526C /* UMCamel_AssistRequestInstructionsArg.asn */,
+				A66A425021749FD10083526C /* UMCamel_CallInformationRequestArg.asn */,
 				A6BD35F2215E0EF6002085BA /* UMCamel_ConnectArg.asn1 */,
 				A6BD35EE215E0EE9002085BA /* UMCamel_ConnectArg.h */,
 				A6BD35EF215E0EE9002085BA /* UMCamel_ConnectArg.m */,
@@ -484,6 +514,8 @@
 			isa = PBXGroup;
 			children = (
 				A62E081C215CB29200D205F0 /* VERSION */,
+				A66A424721748B1D0083526C /* Makefile.linux.in */,
+				A66A424621748B1D0083526C /* Makefile.osx.in */,
 				A62E081E215CB2A900D205F0 /* doc */,
 				A65781BC1CF54A3600211137 /* ulibcamel */,
 				A65781D91CF54D4300211137 /* Libraries */,

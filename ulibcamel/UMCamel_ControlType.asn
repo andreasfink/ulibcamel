@@ -1,0 +1,7 @@
+-- ControlType notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+ControlType ::= ENUMERATED
+{
+    sCPOverloaded (0),
+    manuallyInitiated (1)
+}

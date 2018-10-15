@@ -1,0 +1,11 @@
+-- BCSMEvent notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+BCSMEvent ::= SEQUENCE
+{
+    eventTypeBCSM		[0]  EventTypeBCSM,
+    monitorMode			[1]  MonitorMode,
+    legID6				[2]  LegID              OPTIONAL,
+    dpSpecificCriteria  [30] DpSpecificCriteria OPTIONAL,
+	automaticRearm		[50] NULL				OPTIONAL,
+	...
+}

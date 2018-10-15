@@ -1,0 +1,5 @@
+BearerCap ::= OCTET STRING (SIZE (2..cAPSpecificBoundSetmaxBearerCapabilityLength ))
+
+-- Indicates the type of bearer capability connection to the user. For bearerCap, the ISUP User
+-- Service Information, ETSI EN 300 356-1 [23]
+-- encoding shall be used.

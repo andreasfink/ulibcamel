@@ -1,0 +1,8 @@
+-- CAMEL-SCIBillingChargingCharacteristics notes: not recursive, exported,
+-- locally refd 0 times, import refd 0 times
+CAMEL-SCIBillingChargingCharacteristics ::=  CHOICE
+{
+	aOCBeforeAnswer						[0] AOCBeforeAnswer,
+	aOCAfterAnswer						[1] AOCSubsequent,
+	aOC-extension						[2]	CAMEL-SCIBillingChargingCharacteristicsAlt
+}

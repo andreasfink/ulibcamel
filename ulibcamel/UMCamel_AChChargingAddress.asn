@@ -1,0 +1,4 @@
+AChChargingAddress ::= CHOICE {
+	legID				[2] LegID,
+	srfConnection		[50] CallSegmentID
+	}

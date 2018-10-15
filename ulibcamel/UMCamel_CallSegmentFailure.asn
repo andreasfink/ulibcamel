@@ -1,0 +1,5 @@
+CallSegmentFailure ::= SEQUENCE {
+	callSegmentID						[0] CallSegmentID					OPTIONAL,
+	cause								[2]	Cause							OPTIONAL,
+	...
+	}

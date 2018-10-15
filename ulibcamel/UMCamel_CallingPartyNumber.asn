@@ -1,0 +1,7 @@
+-- CallingPartyNumber notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+CallingPartyNumber ::=
+
+
+	OCTET STRING (SIZE (cAPSpecificBoundSetminCallingPartyNumberLength..cAPSpecificBoundSetmaxCallingPartyNumberLength ))
+-- Indicates the Calling Party Number. Refer to ETSI EN 300 356-1 [23] for encoding.

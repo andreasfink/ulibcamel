@@ -1,0 +1,14 @@
+-- CAI-Gsm0224 notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+CAI-Gsm0224 ::= SEQUENCE
+{
+    e1 [0] INTEGER (0..8191) OPTIONAL,
+    e2 [1] INTEGER (0..8191) OPTIONAL,
+    e3 [2] INTEGER (0..8191) OPTIONAL,
+    e4 [3] INTEGER (0..8191) OPTIONAL,
+    e5 [4] INTEGER (0..8191) OPTIONAL,
+    e6 [5] INTEGER (0..8191) OPTIONAL,
+    e7 [6] INTEGER (0..8191) OPTIONAL
+}
+-- Indicates Charge Advice Information to the Mobile Station. For information regarding
+-- parameter usage, refer to 3GPP TS 22.024 [2].

@@ -1,0 +1,11 @@
+-- CCAMEL-FCISMSBillingChargingCharacteristics notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+CAMEL-FCISMSBillingChargingCharacteristics ::=  CHOICE
+{
+    fCIBCCCAMELsequence3 [0] SEQUENCE
+    {
+        freeFormatData       [0] FreeFormatData,
+        appendFreeFormatData [1] AppendFreeFormatData DEFAULT overwrite
+    }
+}
+

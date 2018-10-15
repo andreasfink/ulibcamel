@@ -1,0 +1,4 @@
+AudibleIndicator ::= CHOICE {
+	istone								BOOLEAN,
+	burstList							[1] BurstList
+}

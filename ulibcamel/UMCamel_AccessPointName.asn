@@ -1,0 +1,9 @@
+-- AccessPointName notes: not recursive, exported,
+-- locally refd 5 times, import refd 0 times
+
+AccessPointName ::= OCTET STRING (SIZE (cAPSpecificBoundSetminAccessPointNameLength .. cAPSpecificBoundSetmaxAccessPointNameLength ))
+
+-- Indicates the AccessPointName, refer to 3GPP TS 24.008 [9] for the encoding.
+-- It shall be coded as in the value part defined in 3GPP TS 24.008,
+-- i.e. the 3GPP TS 24.008 IEI and 3GPP TS 24.008 octet length indicator
+-- shall not be included.

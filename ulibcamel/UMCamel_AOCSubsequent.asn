@@ -1,0 +1,7 @@
+-- AOCGprs notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+AOCGprs ::= SEQUENCE
+{
+    aOCInitial    [0] CAI-Gsm0224,
+    aOCSubsequent [1] AOCSubsequent OPTIONAL
+}

@@ -1,0 +1,11 @@
+-- CAMEL-FCIBillingChargingCharacteristics notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+CAMEL-FCIBillingChargingCharacteristics ::=  CHOICE
+{
+    fCIBCCCAMELsequence1 [0] SEQUENCE
+    {
+        freeFormatData       [0] FreeFormatData,
+        partyToCharge4        [1] SendingSideID        DEFAULT '01'H,
+        appendFreeFormatData [2] AppendFreeFormatData DEFAULT overwrite
+    }
+}

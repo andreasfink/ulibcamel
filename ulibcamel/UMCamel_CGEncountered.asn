@@ -1,0 +1,8 @@
+-- CGEncountered notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+CGEncountered ::= ENUMERATED
+{
+    noCGencountered (0),
+        manualCGencountered (1),
+        scpOverload (2)
+}

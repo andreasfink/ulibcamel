@@ -1,0 +1,9 @@
+-- CAMEL-SCIGPRSBillingChargingCharacteristics notes: not recursive, exported,
+-- locally refd 0 times, import refd 0 times
+CamelSCIGPRSBillingChargingCharacteristics ::=
+
+ SEQUENCE
+{
+    aOCGPRS [0] AOCGprs,
+    pDPID   [1] PDPId   OPTIONAL
+}

@@ -1,0 +1,9 @@
+-- ConnectedNumberTreatmentInd notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+ConnectedNumberTreatmentInd ::= ENUMERATED
+{
+	noINImpact							(0),
+	presentationRestricted				(1),
+	presentCalledINNumber				(2),
+	presentCallINNumberRestricted		(3)
+}

@@ -1,0 +1,3 @@
+-- ApplicationTimer notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+ApplicationTimer ::= INTEGER (0..2047)

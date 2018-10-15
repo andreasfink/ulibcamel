@@ -1,0 +1,6 @@
+-- AlertingPattern notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+AlertingPattern ::= OCTET STRING (SIZE(3))
+-- Indicates a specific pattern that is used to alert a subscriber
+-- (e.g. distinctive ringing, tones, etc.).
+-- The encoding of the last octet of this parameter is as defined in 3GPP TS 29.002 [11].

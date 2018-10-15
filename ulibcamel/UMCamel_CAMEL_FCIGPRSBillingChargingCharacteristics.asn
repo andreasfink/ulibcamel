@@ -1,0 +1,14 @@
+-- CAMEL-FCIGPRSBillingChargingCharacteristics notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+CAMEL-FCIGPRSBillingChargingCharacteristics ::=
+
+SEQUENCE
+{
+    fCIBCCCAMELsequence2 [0]  SEQUENCE
+    {
+        freeFormatData       [0] FreeFormatData,
+        pDPID                [1] PDPId OPTIONAL,
+        appendFreeFormatData [2] AppendFreeFormatData DEFAULT overwrite
+    }
+}
+

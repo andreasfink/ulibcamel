@@ -1,0 +1,9 @@
+TimeDurationChargingResult ::= SEQUENCE {
+  partyToCharge			[0] ReceivingSideID,
+  timeInformation		[1] TimeInformation,
+  legActive			[2] BOOLEAN OPTIONAL,
+  callLegReleasedAtTcpExpiry	[3] NULL		OPTIONAL,
+  extensions			[4] ExtensionsArray	OPTIONAL,
+  aChChargingAddress		[5] AChChargingAddress  OPTIONAL,
+  ...
+}

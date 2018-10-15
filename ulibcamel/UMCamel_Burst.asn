@@ -1,0 +1,10 @@
+
+Burst ::= SEQUENCE {
+	numberOfBursts						[0]	INTEGER (1..3)		DEFAULT 1,
+	burstInterval						[1]	INTEGER	(1..1200)	DEFAULT 2,
+	numberOfTonesInBurst				[2] INTEGER (1..3)		DEFAULT 3,
+	toneDuration						[3]	INTEGER	(1..20)		DEFAULT 2,
+	toneInterval						[4]	INTEGER	(1..20)		DEFAULT 2,
+	...
+	}
+-- burstInterval, toneDurartion and toneInterval are measured in 100 millisecond units

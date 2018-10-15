@@ -1,0 +1,5 @@
+CallSegmentToCancel  ::= SEQUENCE {
+	callInvokeID							[0]	InvokeID						OPTIONAL,
+	callSegmentID						[1]	CallSegmentID 					OPTIONAL,
+	...
+	}

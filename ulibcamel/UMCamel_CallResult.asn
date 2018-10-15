@@ -1,0 +1,7 @@
+-- CallResult notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+CallResult ::=  CAMEL-CallResult
+
+--OCTET STRING (SIZE (cAPSpecificBoundSetminCallResultLength..cAPSpecificBoundSetmaxCallResultLength))
+-- shall be the result of the BER-encoded value of type
+-- CAMEL-CallResult

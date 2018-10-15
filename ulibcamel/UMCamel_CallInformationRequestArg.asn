@@ -1,0 +1,11 @@
+-- CallInformationRequestArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+CallInformationRequestArg ::=
+
+ SEQUENCE
+{
+    requestedInformationTypeList [0] RequestedInformationTypeList,
+    extensions                   [2] ExtensionsArray OPTIONAL,
+    legID3                        [3] SendingSideID OPTIONAL,
+	...
+}

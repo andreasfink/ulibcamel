@@ -1,0 +1,7 @@
+-- CompoundCriteria notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+CompoundCriteria ::= SEQUENCE
+{
+    basicGapCriteria [0] BasicGapCriteria,
+    scfID            [1] ScfID              OPTIONAL
+}

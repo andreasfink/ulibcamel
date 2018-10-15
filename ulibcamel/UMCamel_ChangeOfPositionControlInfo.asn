@@ -1,0 +1,1 @@
+ChangeOfPositionControlInfo ::= SEQUENCE SIZE(1..cAPSpecificBoundsSetnumOfChangeOfPositionControlInf) OF ChangeOfLocation

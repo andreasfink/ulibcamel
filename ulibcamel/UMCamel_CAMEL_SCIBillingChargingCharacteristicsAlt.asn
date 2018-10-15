@@ -1,0 +1,4 @@
+CAMEL-SCIBillingChargingCharacteristicsAlt ::= SEQUENCE {
+	...
+	}
+--	This datatype is for extension in future releases.

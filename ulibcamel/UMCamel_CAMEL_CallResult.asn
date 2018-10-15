@@ -1,0 +1,20 @@
+-- CAMEL-CallResult notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+--CAMEL-CallResult ::=  CHOICE
+--{
+--	timeDurationChargingResult			[0] SEQUENCE {
+--		partyToCharge						[0] ReceivingSideID,
+--		timeInformation						[1] TimeInformation,
+--		legActive							[2] BOOLEAN DEFAULT TRUE,
+--		callLegReleasedAtTcpExpiry			[3] NULL								OPTIONAL,
+--		extensions							[4] ExtensionsArray							OPTIONAL,
+--		aChChargingAddress					[5] AChChargingAddress,
+--		...
+--		}
+--	}
+
+CAMEL-CallResult ::=  CHOICE
+{
+  timeDurationChargingResult [0] TimeDurationChargingResult,
+  void [99] NULL
+}

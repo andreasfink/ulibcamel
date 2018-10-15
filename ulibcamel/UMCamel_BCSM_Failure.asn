@@ -1,0 +1,6 @@
+-- Indicates the BCSM Event information for monitoring.
+BCSM-Failure  ::= SEQUENCE {
+	legID								[0]	LegID									OPTIONAL,
+	cause								[2]	Cause									OPTIONAL,
+	...
+	}
