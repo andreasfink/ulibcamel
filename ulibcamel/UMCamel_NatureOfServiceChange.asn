@@ -1,0 +1,4 @@
+NatureOfServiceChange ::= ENUMERATED {
+  userInitiated						(0),
+  networkInitiated					(1)
+}

@@ -1,0 +1,5 @@
+-- ScfID notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+ScfID ::=
+
+OCTET STRING (SIZE (cAPSpecificBoundSetminScfIDLength..cAPSpecificBoundSetmaxScfIDLength ))

@@ -1,0 +1,20 @@
+-- InitialDPArgExtension notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+-- Updated from ETSI TS 129 078 V6.4.0 (2004-3GPP TS 29.078 version 6.4.0 Release 6 1 12)
+InitialDPArgExtension  ::= SEQUENCE {
+	gmscAddress							[0] ISDN-AddressString						OPTIONAL,
+	forwardingDestinationNumber			[1] CalledPartyNumber						OPTIONAL,
+	ms-Classmark2						[2] MS-Classmark2							OPTIONAL,
+	iMEI								[3] IMEI									OPTIONAL,
+	supportedCamelPhases				[4] SupportedCamelPhases					OPTIONAL,
+	offeredCamel4Functionalities		[5] OfferedCamel4Functionalities			OPTIONAL,
+	bearerCapability2					[6] BearerCapability						OPTIONAL,
+	ext-basicServiceCode2				[7] Ext-BasicServiceCode					OPTIONAL,
+	highLayerCompatibility2				[8] HighLayerCompatibility					OPTIONAL,
+	lowLayerCompatibility				[9] LowLayerCompatibility					OPTIONAL,
+	lowLayerCompatibility2				[10] LowLayerCompatibility					OPTIONAL,
+	...,
+	enhancedDialledServicesAllowed		[11] NULL									OPTIONAL,
+        uu-Data						[12] UU-Data								OPTIONAL,
+        collectInformationAllowed			[13] NULL								OPTIONAL
+}

@@ -1,0 +1,10 @@
+-- ApplyChargingArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+ApplyChargingArg ::= SEQUENCE
+{
+    aChBillingChargingCharacteristics	[0] AChBillingChargingCharacteristics,
+    partyToCharge1			            [2] SendingSideID DEFAULT '01'H,
+    extensions							[3] ExtensionsArray OPTIONAL,
+	aChChargingAddress					[50] AChChargingAddress,
+	...
+}

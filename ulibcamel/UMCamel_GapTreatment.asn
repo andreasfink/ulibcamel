@@ -1,0 +1,7 @@
+-- GapTreatment notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+GapTreatment ::= CHOICE
+{
+    informationToSend	[0] InformationToSend,
+    releaseCause		[1] Cause
+}

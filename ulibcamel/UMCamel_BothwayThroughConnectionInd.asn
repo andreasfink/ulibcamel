@@ -1,0 +1,7 @@
+-- BothwayThroughConnectionInd notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+BothwayThroughConnectionInd ::= ENUMERATED
+{
+    bothwayPathRequired (0),
+        bothwayPathNotRequired (1)
+}

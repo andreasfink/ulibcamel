@@ -1,0 +1,10 @@
+-- SubscriberState notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+SubscriberState ::=
+CHOICE
+{
+    assumedIdle [0] NULL,
+    camelBusy [1] NULL,
+    netDetNotReachable NotReachableReason,
+    notProvidedFromVLR [2] NULL
+}

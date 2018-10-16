@@ -1,0 +1,2 @@
+PDPTypeNumber ::= OCTET STRING (SIZE (1))
+

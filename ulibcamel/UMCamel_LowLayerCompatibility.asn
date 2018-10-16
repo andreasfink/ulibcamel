@@ -1,0 +1,7 @@
+LowLayerCompatibility ::= 
+OCTET STRING (SIZE (cAPSpecificBoundSetminLowLayerCompatibilityLength .. cAPSpecificBoundSetmaxLowLayerCompatibilityLength ))
+-- indicates the LowLayerCompatibility for the calling party.
+-- Refer to 3GPP TS 24.008 [9] for encoding.
+-- It shall be coded as in the value part defined in 3GPP TS 24.008.
+-- i.e. the 3GPP TS 24.008 IEI and 3GPP TS 24.008 octet length indicator
+-- shall not be included.

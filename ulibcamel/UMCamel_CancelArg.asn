@@ -1,0 +1,11 @@
+-- CancelArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+CancelArg ::=
+
+CHOICE
+{
+	callInvokeID							[0] InvokeID,
+	allRequests							[1] NULL,
+	callSegmentToCancel					[2]	CallSegmentToCancel
+
+}

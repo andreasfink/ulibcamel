@@ -1,0 +1,7 @@
+-- GPRS-QoS notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+GPRS-QoS ::= CHOICE
+{
+    short-QoS-format [0] QoS-Subscribed,
+    long-QoS-format [1] Ext-QoS-Subscribed
+}

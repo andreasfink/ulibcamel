@@ -1,0 +1,4 @@
+-- ReleaseCallArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+-- ReleaseCallArg ::= OCTET STRING (SIZE (minCauseLength..32))
+ReleaseCallArg ::= Q850Cause

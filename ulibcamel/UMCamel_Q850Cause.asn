@@ -1,0 +1,1 @@
+Q850Cause ::=OCTET STRING (SIZE (cAPSpecificBoundSetminCauseLength..cAPSpecificBoundSetminCauseLength))

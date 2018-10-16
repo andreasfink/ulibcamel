@@ -1,0 +1,5 @@
+-- GenericNumbers notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+GenericNumbers ::=
+
+SET SIZE (1..cAPSpecificBoundSetnumOfGenericNumbers) OF GenericNumber

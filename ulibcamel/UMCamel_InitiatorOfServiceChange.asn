@@ -1,0 +1,5 @@
+InitiatorOfServiceChange ::= ENUMERATED
+{
+  a-side    (0),
+  b-side    (1)
+}

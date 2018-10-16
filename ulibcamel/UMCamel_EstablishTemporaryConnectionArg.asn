@@ -1,0 +1,19 @@
+-- EstablishTemporaryConnectionArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+EstablishTemporaryConnectionArg ::=
+
+ SEQUENCE
+{
+    assistingSSPIPRoutingAddress    [0]  AssistingSSPIPRoutingAddress,
+    correlationID                   [1]  CorrelationID                  OPTIONAL,
+    scfID                           [3]  ScfID                          OPTIONAL,
+    extensions                      [4]  ExtensionsArray                OPTIONAL,
+    carrier                         [5]  Carrier                        OPTIONAL,
+    serviceInteractionIndicatorsTwo [6]  ServiceInteractionIndicatorsTwo OPTIONAL,
+    callSegmentID	            [7]	 CallSegmentID 			OPTIONAL,
+    naOliInfo                       [50] NAOliInfo                      OPTIONAL,
+	chargeNumber						[51] ChargeNumber				OPTIONAL,
+	...,
+	originalCalledPartyID				[52] OriginalCalledPartyID		OPTIONAL,
+	callingPartyNumber					[53] CallingPartyNumber			OPTIONAL
+}

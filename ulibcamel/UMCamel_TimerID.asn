@@ -1,0 +1,6 @@
+-- TimerID notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+TimerID ::= ENUMERATED
+{
+    tssf (0)
+}

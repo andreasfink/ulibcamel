@@ -1,0 +1,4 @@
+CAPGPRSReferenceNumber ::=  SEQUENCE {
+	destinationReference	[0] EXPLICIT Integer4			OPTIONAL,
+	originationReference	[1] EXPLICIT Integer4			OPTIONAL
+	}

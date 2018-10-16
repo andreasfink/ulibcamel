@@ -1,0 +1,7 @@
+ElapsedTimeRollOver ::= CHOICE {
+    rOTimeGPRSIfNoTariffSwitch [0] INTEGER (0..255),
+    rOTimeGPRSIfTariffSwitch   [1] SEQUENCE {
+        rOTimeGPRSSinceLastTariffSwitch [0] INTEGER (0..255) OPTIONAL,
+        rOTimeGPRSTariffSwitchInterval  [1] INTEGER (0..255) OPTIONAL
+    }
+}

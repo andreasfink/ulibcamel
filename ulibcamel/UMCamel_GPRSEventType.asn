@@ -1,0 +1,12 @@
+-- GPRSEventType notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+GPRSEventType ::= ENUMERATED
+{
+	attach								(1),
+	attachChangeOfPosition				(2),
+	detached							(3),
+	pdp-ContextEstablishment			(11),
+	pdp-ContextEstablishmentAcknowledgement (12),
+	disconnect							(13),
+	pdp-ContextChangeOfPosition			(14)
+}

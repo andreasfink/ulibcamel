@@ -1,0 +1,1 @@
+MetDPCriteriaList ::= SEQUENCE SIZE(1..cAPSpecificBoundsSetnumOfChangeOfPositionControlInf) OF MetDPCriterion 

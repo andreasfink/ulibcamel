@@ -1,0 +1,9 @@
+-- ContinueGPRSArg notes: not recursive, exported,
+-- locally refd 0 times, import refd 0 times
+ContinueGPRSArg ::=
+
+ SEQUENCE
+{
+     pDPID [0] PDPId OPTIONAL,
+     ...
+}

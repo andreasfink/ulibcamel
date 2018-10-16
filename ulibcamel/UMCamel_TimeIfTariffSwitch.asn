@@ -1,0 +1,7 @@
+-- TimeIfTariffSwitch notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+TimeIfTariffSwitch ::= SEQUENCE
+{
+    timeSinceTariffSwitch	[0] INTEGER (0..864000),
+    tttariffSwitchInterval  [1] INTEGER (1..864000) OPTIONAL
+}

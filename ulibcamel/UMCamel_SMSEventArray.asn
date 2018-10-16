@@ -1,0 +1,2 @@
+SMSEventArray ::= 
+		  SEQUENCE SIZE (1..cAPSpecificBoundSetnumOfSMSEvents) OF SMSEvent

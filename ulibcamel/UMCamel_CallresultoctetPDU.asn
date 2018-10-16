@@ -1,0 +1,1 @@
+CallresultoctetPDU ::= OCTET STRING (SIZE (cAPSpecificBoundSetminCallResultLength..cAPSpecificBoundSetmaxCallResultLength))

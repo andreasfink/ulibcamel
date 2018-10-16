@@ -1,0 +1,15 @@
+-- ApplyChargingReportArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+
+--ApplyChargingReportArg ::= SEQUENCE {
+--		callresultOctet CallresultoctetPDU
+--		}
+--	(
+--	CONTAINING CamelCallResult
+--	ENCODED BY enc-BER
+--	)
+	 
+-- CallResult type
+ApplyChargingReportArg ::= SEQUENCE {
+		callresultOctet CAMEL-CallResult
+		}

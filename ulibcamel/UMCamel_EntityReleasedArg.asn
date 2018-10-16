@@ -1,0 +1,4 @@
+EntityReleasedArg ::= CHOICE {
+	callSegmentFailure					[0]	CallSegmentFailure,
+	bCSM-Failure						[1]	BCSM-Failure
+	}

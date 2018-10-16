@@ -1,0 +1,10 @@
+-- RequestReportBCSMEventArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+RequestReportBCSMEventArg ::=
+
+ SEQUENCE
+{
+    bcsmEvents [0] BCSMEventArray,
+    extensions [2] ExtensionsArray OPTIONAL,
+	...
+}

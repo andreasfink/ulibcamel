@@ -1,0 +1,7 @@
+-- RedirectingPartyID notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+RedirectingPartyID ::=
+
+OCTET STRING (SIZE (cAPSpecificBoundSetminRedirectingPartyIDLength ..cAPSpecificBoundSetmaxRedirectingPartyIDLength ))
+-- Indicates redirecting number.
+-- Refer to ETSI EN 300 356-1 [23] Redirecting number for encoding.

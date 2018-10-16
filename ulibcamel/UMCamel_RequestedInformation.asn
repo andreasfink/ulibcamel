@@ -1,0 +1,7 @@
+-- RequestedInformation notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+RequestedInformation ::=   SEQUENCE
+{
+    requestedInformationType  [0] RequestedInformationType,
+    requestedInformationValue [1] RequestedInformationValue
+}

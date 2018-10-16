@@ -1,0 +1,7 @@
+-- SpecializedResourceReportArg notes: not recursive, exported,
+-- locally refd 0 times, import refd 0 times
+-- SpecializedResourceReportArg ::=  NULL
+SpecializedResourceReportArg ::= CHOICE {
+  allAnnouncementsComplete			[50] NULL,
+  firstAnnouncementStarted			[51] NULL
+}

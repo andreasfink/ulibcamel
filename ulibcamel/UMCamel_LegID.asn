@@ -1,0 +1,7 @@
+-- LegID notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+LegID ::= CHOICE
+{
+    sendingSideID [0] LegType,
+    receivingSideID [1] LegType
+}

@@ -1,0 +1,12 @@
+-- ConnectSMSArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+ConnectSMSArg ::=
+
+ SEQUENCE
+{
+    callingPartysNumber         [0] SMS-AddressString   OPTIONAL,
+    destinationSubscriberNumber [1] CalledPartyBCDNumber OPTIONAL,
+    sMSCAddress                 [2] ISDN-AddressString   OPTIONAL,
+    extensions                  [10] ExtensionsArray     OPTIONAL,
+    ...
+}

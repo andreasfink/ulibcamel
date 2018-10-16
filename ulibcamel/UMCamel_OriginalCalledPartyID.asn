@@ -1,0 +1,6 @@
+-- OriginalCalledPartyID notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+OriginalCalledPartyID ::=
+
+OCTET STRING (SIZE (cAPSpecificBoundSetminOriginalCalledPartyIDLength ..cAPSpecificBoundSetmaxOriginalCalledPartyIDLength ))
+

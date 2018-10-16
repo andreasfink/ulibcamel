@@ -1,0 +1,6 @@
+-- PCS-Extensions notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+PCS-Extensions ::=   SEQUENCE
+{
+    foo INTEGER (0) OPTIONAL
+}

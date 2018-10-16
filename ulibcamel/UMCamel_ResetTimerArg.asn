@@ -1,0 +1,13 @@
+-- ResetTimerArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+ResetTimerArg ::=
+
+ SEQUENCE
+{
+    timerID								[0] TimerID DEFAULT tssf,
+    timervalue							[1] TimerValue,
+	extensions							[2] ExtensionsArray								OPTIONAL,
+	callSegmentID						[3]	CallSegmentID							OPTIONAL,
+	...
+}
+

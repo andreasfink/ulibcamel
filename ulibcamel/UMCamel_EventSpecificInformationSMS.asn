@@ -1,0 +1,22 @@
+-- EventSpecificInformationSMS notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+EventSpecificInformationSMS ::= CHOICE
+{
+    o-smsFailureSpecificInfo [0]   SEQUENCE
+    {
+        smsfailureCause [0] MO-SMSCause OPTIONAL
+    },
+    o-smsSubmittedSpecificInfo [1]   SEQUENCE
+    {
+		-- no specific info defined-
+        foo INTEGER(0) OPTIONAL
+    },
+	t-smsFailureSpecificInfo			[2] SEQUENCE {
+		failureMTSMSCause				[0] MT-SMSCause							OPTIONAL,
+		...
+		},
+	t-smsDeliverySpecificInfo			[3] SEQUENCE {
+		-- no specific info defined-
+		...
+		}
+}

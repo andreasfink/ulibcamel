@@ -1,0 +1,7 @@
+-- Tone notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+Tone ::=   SEQUENCE
+{
+    toneID		[0] Integer4,
+    duration3	[1] Integer4 OPTIONAL
+}

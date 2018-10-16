@@ -1,0 +1,9 @@
+-- RequestedInformationType notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+RequestedInformationType ::= ENUMERATED
+{
+	callAttemptElapsedTime				(0),
+	callStopTime						(1),
+	callConnectedElapsedTime			(2),
+	releaseCause						(30)
+}

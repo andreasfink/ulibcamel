@@ -1,0 +1,12 @@
+-- EventReportGPRSArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+EventReportGPRSArg ::=
+
+ SEQUENCE
+{
+    gPRSEventType                [0] GPRSEventType,
+    miscGPRSInfo                 [1] MiscCallInfo                 OPTIONAL,
+    gPRSEventSpecificInformation [2] GPRSEventSpecificInformation OPTIONAL,
+    pDPID                        [3] PDPId                        OPTIONAL,
+    ...
+}

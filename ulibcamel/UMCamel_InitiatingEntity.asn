@@ -1,0 +1,9 @@
+-- InitiatingEntity notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+InitiatingEntity ::= ENUMERATED
+{
+	mobileStation						(0),
+	sgsn								(1),
+	hlr									(2),
+	ggsn								(3)
+}

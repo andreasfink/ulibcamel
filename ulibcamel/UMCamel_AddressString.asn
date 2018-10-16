@@ -1,0 +1,6 @@
+-- AddressString notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+AddressString ::=
+    
+    
+    OCTET STRING (SIZE(1..maxAddressLength))

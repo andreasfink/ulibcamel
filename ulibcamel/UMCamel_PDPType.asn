@@ -1,0 +1,9 @@
+-- PDPType notes: not recursive, exported,
+-- locally refd 5 times, import refd 0 times
+-- Equivalent to EndUserAddress
+PDPType ::= SEQUENCE
+{
+    pDPTypeOrganization		[0] PDPTypeOrganization,
+    pDPTypeNumber			[1] PDPTypeNumber,
+    pDPAddress				[2] PDPAddress OPTIONAL
+}

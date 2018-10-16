@@ -1,0 +1,8 @@
+-- GapIndicators notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+GapIndicators ::=   SEQUENCE
+{
+    duration1		[0] Duration,
+    gapInterval		[1] Interval,
+	...
+}

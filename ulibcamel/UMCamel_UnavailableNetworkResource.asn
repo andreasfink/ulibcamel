@@ -1,0 +1,8 @@
+UnavailableNetworkResource ::= ENUMERATED {
+  unavailableResources				(0),
+  componentFailure					(1),
+  basicCallProcessingException		(2),
+  resourceStatusFailure				(3),
+  endUserFailure						(4)
+}
+-- Indicates the network resource that failed.

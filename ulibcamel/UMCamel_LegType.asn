@@ -1,0 +1,3 @@
+-- LegType notes: not recursive, exported,
+-- locally refd 6 times, import refd 0 times
+LegType ::= OCTET STRING (SIZE(1))

@@ -1,0 +1,6 @@
+-- TPDataCodingScheme notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+TPDataCodingScheme ::=
+
+OCTET STRING (SIZE (1))
+-- TP Data Coding Scheme according to 3GPP TS 23.040 [6]

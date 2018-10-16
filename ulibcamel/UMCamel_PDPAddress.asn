@@ -1,0 +1,6 @@
+PDPAddress ::= OCTET STRING (SIZE (cAPSpecificBoundSetminPDPAddressLength..cAPSpecificBoundSetmaxPDPAddressLength))
+-- Indicates the PDPType, refer to 3GPP TS 29.060 for the encoding.
+-- The pDPTypeOrganization shall use the least significant 4 bits of the octet encoded.
+-- The sender of this parameter shall set the most significant 4 bit of the octet to 0.
+-- The receiver of this parameter shall ignore the most significant 4 bits of this octet.
+-- TS 29.060 "The PDP Type Organisation and PDP Type Number are encoded as in the End User Address information element."

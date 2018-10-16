@@ -1,0 +1,4 @@
+-- SupportedExtensionsid notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+SupportedExtensionsid ::= Code
+-- Creation d'un nouveau type : NomObjetClasse-NomChampsClasse --

@@ -1,0 +1,15 @@
+MetDPCriterion ::= CHOICE {
+	enteringCellGlobalId				[0] CellGlobalIdOrServiceAreaIdFixedLength,
+	leavingCellGlobalId					[1] CellGlobalIdOrServiceAreaIdFixedLength,
+	enteringServiceAreaId				[2] CellGlobalIdOrServiceAreaIdFixedLength,
+	leavingServiceAreaId				[3] CellGlobalIdOrServiceAreaIdFixedLength,
+	enteringLocationAreaId				[4] LAIFixedLength,
+	leavingLocationAreaId				[5] LAIFixedLength,
+	inter-SystemHandOverToUMTS			[6] NULL,
+	inter-SystemHandOverToGSM			[7] NULL,
+	inter-PLMNHandOver					[8] NULL,
+	inter-MSCHandOver					[9] NULL,
+	metDPCriterionAlt					[10] MetDPCriterionAlt
+}
+-- The enteringCellGlobalId and leavingCellGlobalId shall contain a Cell Global Identification. 
+-- The enteringServiceAreaId and leavingServiceAreaId shall contain a Service Area Identification.

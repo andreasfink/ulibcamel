@@ -1,0 +1,3 @@
+TPShortMessageSpecificInfo ::= OCTET STRING (SIZE (1))
+-- contains the 1st octect of the applicable TPDU or the SMS-COMMAND TPDU as specified in
+-- 3GPP TS 23.040 [6].

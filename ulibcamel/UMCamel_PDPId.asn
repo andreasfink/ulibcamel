@@ -1,0 +1,5 @@
+-- PDPId notes: not recursive, exported,
+-- locally refd 11 times, import refd 0 times
+PDPId ::=
+
+OCTET STRING (SIZE (1))

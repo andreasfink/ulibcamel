@@ -1,0 +1,9 @@
+-- RequestedInformationValue notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+RequestedInformationValue ::= CHOICE
+{
+	callAttemptElapsedTimeValue			[0] INTEGER (0..255),
+	callStopTimeValue					[1] DateAndTime,
+	callConnectedElapsedTimeValue		[2] Integer4,
+	releaseCauseValue					[30] Cause
+}

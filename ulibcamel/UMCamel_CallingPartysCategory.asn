@@ -1,0 +1,3 @@
+-- CallingPartysCategory notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+CallingPartysCategory ::= OCTET STRING (SIZE (1))

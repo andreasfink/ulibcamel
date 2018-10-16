@@ -1,0 +1,7 @@
+DpSpecificCriteriaAlt ::= SEQUENCE {
+	...,
+        changeOfPositionControlInfo			[0]	ChangeOfPositionControlInfo,
+        numberOfDigits                                  [1]     NumberOfDigits                  OPTIONAL,
+        interDigitTimeout                               [2]     INTEGER (1..127)                 OPTIONAL
+	}
+-- interDigitTimeout  duration in seconds.

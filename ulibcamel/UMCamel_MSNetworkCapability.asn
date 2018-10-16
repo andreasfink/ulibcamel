@@ -1,0 +1,9 @@
+-- MSNetworkCapability notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+MSNetworkCapability ::=
+
+OCTET STRING (SIZE (1..8))
+-- MS Network Capability describes the GPRS terminal capabilites related to the network, i.e. SMS
+-- point to point service over packet data channels. For encoding refer to 3GPP TS 24.008 [12].
+-- It shall contain the value part defined in 3GPP TS 24.008 only. I.e. the 3GPP TS 24.008 IEI
+-- and 3GPP TS 24.008 octet length indicator shall not be included.

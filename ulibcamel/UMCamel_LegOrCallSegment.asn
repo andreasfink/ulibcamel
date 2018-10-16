@@ -1,0 +1,4 @@
+LegOrCallSegment ::= CHOICE {
+	callSegmentID						[0] CallSegmentID,
+	legID								[1] LegID
+	}

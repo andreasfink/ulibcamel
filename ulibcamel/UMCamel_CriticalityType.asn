@@ -1,0 +1,7 @@
+-- CriticalityType notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+CriticalityType ::= ENUMERATED
+{
+    ignore (0),
+        abort (1)
+}

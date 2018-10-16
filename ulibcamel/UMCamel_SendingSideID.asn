@@ -1,0 +1,6 @@
+-- SendingSideID notes: not recursive, exported,
+-- locally refd 4 times, import refd 0 times
+SendingSideID ::= CHOICE
+{
+    sendingSideID [0] LegType
+}

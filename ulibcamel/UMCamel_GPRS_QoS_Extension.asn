@@ -1,0 +1,4 @@
+GPRS-QoS-Extension ::= SEQUENCE {
+	supplement-to-long-QoS-format		[0] Ext2-QoS-Subscribed,
+	...
+	}

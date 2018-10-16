@@ -1,0 +1,7 @@
+-- GPRSMSClass notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+GPRSMSClass ::= SEQUENCE
+ {
+    mSNetworkCapability     [0] MSNetworkCapability,
+    mSRadioAccessCapability [1] MSRadioAccessCapability OPTIONAL
+ }

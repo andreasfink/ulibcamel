@@ -1,0 +1,10 @@
+-- EntityReleasedGPRSArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+EntityReleasedGPRSArg ::=
+
+ SEQUENCE
+{
+    gPRSCause [0] GPRSCause,
+    pDPID     [1] PDPId      OPTIONAL,
+    ...
+}

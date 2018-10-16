@@ -1,0 +1,11 @@
+-- SendChargingInformationArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+SendChargingInformationArg ::=
+
+ SEQUENCE
+{
+    sCIBillingChargingCharacteristics [0] SCIBillingChargingCharacteristics,
+    partyToCharge2                     [1] SendingSideID,
+    extensions                        [2] ExtensionsArray OPTIONAL,
+	...
+}

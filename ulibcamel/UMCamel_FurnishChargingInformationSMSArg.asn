@@ -1,0 +1,7 @@
+-- FurnishChargingInformationSMSArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+FurnishChargingInformationSMSArg ::=
+
+
+OCTET STRING (SIZE (5..225))
+-- FCISMSBillingChargingCharacteristics type.

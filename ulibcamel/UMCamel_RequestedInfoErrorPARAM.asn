@@ -1,0 +1,5 @@
+RequestedInfoErrorPARAM ::= ENUMERATED 
+{
+  unknownRequestedInfo		(1),
+  requestedInfoNotAvailable	(2)
+}

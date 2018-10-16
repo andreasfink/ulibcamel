@@ -1,0 +1,4 @@
+GenericNumber ::=
+    
+    
+    OCTET STRING (SIZE (cAPSpecificBoundSetminGenericNumberLength..cAPSpecificBoundSetmaxGenericNumberLength))

@@ -1,0 +1,10 @@
+-- InbandInfo notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+InbandInfo ::=   SEQUENCE
+{
+	messageID							[0] MessageID,
+	numberOfRepetitions					[1] INTEGER (1..127)						OPTIONAL,
+	duration2							[2] INTEGER (0..32767)						OPTIONAL,
+	interval							[3] INTEGER (0..32767)						OPTIONAL,
+	...
+}

@@ -1,0 +1,4 @@
+-- TPProtocolIdentifier notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+TPProtocolIdentifier ::= OCTET STRING (SIZE (1))
+-- indicates the protocol used above the SM-Transfer Layer as specified in 3GPP TS 23.040 [6].

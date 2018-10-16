@@ -1,0 +1,3 @@
+-- Cause notes: not recursive, exported,
+-- locally refd 10 times, import refd 0 times
+Cause ::= OCTET STRING (SIZE (cAPSpecificBoundSetminCauseLength..cAPSpecificBoundSetmaxCauseLength))

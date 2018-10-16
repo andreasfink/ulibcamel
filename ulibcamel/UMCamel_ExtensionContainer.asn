@@ -1,0 +1,7 @@
+-- ExtensionContainer notes: not recursive, exported,
+-- locally refd 0 times, import refd 0 times
+ExtensionContainer ::=   SEQUENCE
+{
+    privateExtensionList [0] PrivateExtensionList OPTIONAL,
+    pcs-Extensions [1] PCS-Extensions OPTIONAL
+}

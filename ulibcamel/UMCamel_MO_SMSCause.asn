@@ -1,0 +1,9 @@
+-- MO-SMSCause notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+MO-SMSCause ::= ENUMERATED {
+	systemFailure						(0),
+	unexpectedDataValue					(1),
+	facilityNotSupported				(2),
+	sM-DeliveryFailure					(3),
+ 	releaseFromRadioInterface			(4)
+	}

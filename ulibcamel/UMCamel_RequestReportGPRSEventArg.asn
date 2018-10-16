@@ -1,0 +1,10 @@
+-- RequestReportGPRSEventArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+RequestReportGPRSEventArg ::=
+
+ SEQUENCE
+{
+    gPRSEvent [0] GPRSEventArray,
+    pDPID     [1] PDPId     OPTIONAL,
+    ...
+}

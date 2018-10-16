@@ -1,0 +1,5 @@
+-- PrivateExtensionList notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+PrivateExtensionList ::=
+
+SEQUENCE SIZE (1..maxNumOfPrivateExtensions) OF PrivateExtension

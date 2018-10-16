@@ -1,0 +1,16 @@
+DpSpecificInfoAlt ::= SEQUENCE {
+	...,
+	oServiceChangeSpecificInfo			[0] SEQUENCE {
+		ext-basicServiceCode				[0] Ext-BasicServiceCode				OPTIONAL,
+	  ...,
+	  initiatorOfServiceChange                        [1] InitiatorOfServiceChange                           OPTIONAL,
+	  natureOfServiceChange                           [2] NatureOfServiceChange                               OPTIONAL
+		},
+	tServiceChangeSpecificInfo			[1] SEQUENCE {
+		ext-basicServiceCode				[0] Ext-BasicServiceCode				OPTIONAL,
+	  ...,
+	  initiatorOfServiceChange                        [1] InitiatorOfServiceChange                           OPTIONAL,
+	  natureOfServiceChange                           [2] NatureOfServiceChange                               OPTIONAL
+		}
+	}
+--	This datatype is for extension in future releases.

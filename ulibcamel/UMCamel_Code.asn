@@ -1,0 +1,7 @@
+-- Code notes: not recursive, exported,
+-- locally refd 63 times, import refd 0 times
+Code ::= CHOICE
+{
+    local INTEGER,
+    global OBJECT IDENTIFIER
+}

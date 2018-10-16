@@ -1,0 +1,5 @@
+-- RedirectionInformation notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+RedirectionInformation ::=
+       
+        OCTET STRING (SIZE (2))

@@ -1,0 +1,10 @@
+-- ReleaseGPRSArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+ReleaseGPRSArg ::=
+
+ SEQUENCE
+{
+    gprsCause [0] GPRSCause,
+    pDPID     [1] PDPId     OPTIONAL,
+    ...
+}

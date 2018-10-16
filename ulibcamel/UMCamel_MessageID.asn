@@ -1,0 +1,24 @@
+-- MessageID notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+MessageID ::= CHOICE
+{
+    elementaryMessageID  [0] Integer4,
+    text                 [1] SEQUENCE
+    {
+        messageContent   [0]
+                             
+                             IA5String (SIZE (cAPSpecificBoundSetminMessageContentLength..cAPSpecificBoundSetmaxMessageContentLength)),
+        attributes       [1]
+                             
+                             OCTET STRING (SIZE (cAPSpecificBoundSetminAttributesLength..cAPSpecificBoundSetmaxAttributesLength)) OPTIONAL
+    },
+    elementaryMessageIDs [29]
+                             
+                             SEQUENCE SIZE (1..cAPSpecificBoundSetnumOfMessageIDs) OF Integer4,
+    variableMessage      [30] SEQUENCE
+    {
+        elementaryMessageID [0] Integer4,
+        variableParts       [1] VariablePartsArray
+    }
+}
+-- Use of the text parameter is network operator/equipment vendor specific.

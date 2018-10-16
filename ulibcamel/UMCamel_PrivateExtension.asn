@@ -1,0 +1,7 @@
+-- PrivateExtension notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+PrivateExtension ::= SEQUENCE
+{
+    extId  ExtensionSetextensionId
+    -- FIXME: add to decode this: extType ExtensionSetExtensionType OPTIONAL
+}

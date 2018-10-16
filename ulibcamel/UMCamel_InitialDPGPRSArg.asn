@@ -1,0 +1,26 @@
+-- InitialDPGPRSArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+InitialDPGPRSArg ::=
+
+ SEQUENCE
+{
+    serviceKey              [0]  ServiceKey,
+    gPRSEventType           [1]  GPRSEventType,
+    mSISDN                  [2]  ISDN-AddressString,
+    iMSI                    [3]  IMSI,
+    timeAndTimeZone         [4]  TimeAndTimezone,
+    gPRSMSClass             [5]  GPRSMSClass             OPTIONAL,
+    pDPType                 [6]  PDPType                 OPTIONAL,
+    qualityOfService        [7]  QualityOfService        OPTIONAL,
+    accessPointName         [8]  AccessPointName         OPTIONAL,
+    routeingAreaIdentity    [9]  RAIdentity              OPTIONAL,
+    chargingID              [10] GPRSChargingID          OPTIONAL,
+    sGSNCapabilities        [11] SGSNCapabilities        OPTIONAL,
+    locationInformationGPRS [12] LocationInformationGPRS OPTIONAL,
+    pDPInitiationType       [13] PDPInitiationType       OPTIONAL,
+    extensions              [14] ExtensionsArray         OPTIONAL,
+    ...,
+    gGSNAddress             [15] GSN-Address             OPTIONAL,
+    secondaryPDPContext     [16] NULL                    OPTIONAL,
+    iMEI	            [17] IMEI   		 OPTIONAL
+}

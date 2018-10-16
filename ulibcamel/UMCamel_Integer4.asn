@@ -1,0 +1,3 @@
+-- Integer4 notes: not recursive, exported,
+-- locally refd 8 times, import refd 0 times
+Integer4 ::= INTEGER (0..2147483647)

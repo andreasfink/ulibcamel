@@ -1,0 +1,15 @@
+-- EventTypeSMS notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+EventTypeSMS ::= ENUMERATED
+{
+	sms-CollectedInfo					(1),
+	o-smsFailure						(2),
+	o-smsSubmission						(3),
+	sms-DeliveryRequested				(11),
+	t-smsFailure						(12),
+	t-smsDelivery						(13)
+}
+-- Values sms-CollectedInfo and sms-DeliveryRequested may be used for TDPs only.
+-- Replace by ExtensionsArray
+--Extensions ::=  SEQUENCE SIZE (1..cAPSpecificBoundSetnumOfExtensions) OF ExtensionField
+--

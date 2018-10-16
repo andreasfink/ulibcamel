@@ -1,0 +1,18 @@
+-- LocationInformationGPRS notes: not recursive, exported,
+-- locally refd 6 times, import refd 0 times
+LocationInformationGPRS ::=   SEQUENCE
+{
+    cellGlobalIdOrServiceAreaIdOrLAI [0] CellGlobalIdOrServiceAreaIdOrLAI OPTIONAL,
+    routeingAreaIdentity             [1] RAIdentity                       OPTIONAL,
+    geographicalInformation          [2] GeographicalInformation          OPTIONAL,
+    sgsn-Number                      [3] ISDN-AddressString               OPTIONAL,
+    selectedLSAIdentity              [4] LSAIdentity                      OPTIONAL,
+    extensionContainer               [5] ExtensionContainer               OPTIONAL,
+	...,
+    saiPresent                       [6] NULL                             OPTIONAL
+}
+-- cellGlobalIdOrServiceAreaIdOrLAI shall contain the value part of the
+-- CellGlobalIdOrServiceAreaIdFixedLength type or the LAIFixedLength type (i.e. excluding tags
+-- and lengths) as defined in 3GPP TS 29.002 [13].
+-- sai-Present indicates that the cellGlobalIdOrServiceAreaIdOrLAI parameter contains
+-- a Service Area Identity.

@@ -1,0 +1,3 @@
+-- ExtensionSetExtensionType notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+-- FIXME: add to decode this: ExtensionSetExtensionType ::= ANY

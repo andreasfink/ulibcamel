@@ -1,0 +1,5 @@
+InformationToSend ::= CHOICE
+{
+    inbandInfo	[0] InbandInfo,
+    tone		[1] Tone
+}

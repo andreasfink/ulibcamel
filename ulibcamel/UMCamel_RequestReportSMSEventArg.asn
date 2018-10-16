@@ -1,0 +1,10 @@
+-- RequestReportSMSEventArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+RequestReportSMSEventArg ::=
+
+ SEQUENCE
+{
+    sMSEvents  [0]  SMSEventArray,
+    extensions [10] ExtensionsArray OPTIONAL,
+    ...
+}

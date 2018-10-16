@@ -1,0 +1,11 @@
+-- ConnectGPRSArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+ConnectGPRSArg ::=
+
+ SEQUENCE
+{
+    accessPointName [0] AccessPointName,
+    pdpID           [1] PDPId           OPTIONAL,
+    ...
+}
+

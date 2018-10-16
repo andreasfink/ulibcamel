@@ -1,0 +1,14 @@
+-- PlayAnnouncementArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+PlayAnnouncementArg ::=
+
+ SEQUENCE
+{
+    informationToSend           [0] InformationToSend,
+    disconnectFromIPForbidden   [1] BOOLEAN         DEFAULT TRUE,
+    requestAnnouncementComplete [2] BOOLEAN         DEFAULT TRUE,
+    extensions                  [3] ExtensionsArray OPTIONAL,
+    callSegmentID		[5] CallSegmentID   OPTIONAL,
+    requestAnnouncementStartedNotification	[51] BOOLEAN DEFAULT FALSE,
+    ...
+}

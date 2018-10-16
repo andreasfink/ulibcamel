@@ -1,0 +1,9 @@
+-- CancelGPRSArg notes: not recursive, exported,
+-- locally refd 0 times, import refd 0 times
+CancelGPRSArg ::=
+
+ SEQUENCE
+{
+     pDPID [0] PDPId OPTIONAL,
+     ...
+}

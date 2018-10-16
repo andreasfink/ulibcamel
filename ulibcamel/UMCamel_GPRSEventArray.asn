@@ -1,0 +1,2 @@
+GPRSEventArray ::= 
+		   SEQUENCE SIZE (1..cAPSpecificBoundSetnumOfGPRSEvents) OF GPRSEvent

@@ -1,0 +1,25 @@
+CellGlobalIdOrServiceAreaIdOrLAI ::= OCTET STRING (SIZE (5..7))
+
+-- The 3GPP TS 29.078 standard, about cellGlobalIdOrServiceAreaIdOrLAI:
+--   "CellGlobalIdOrServiceAreaIdOrLAI and LSAIdentity are coded in accordance with
+--   3GPP TS 29.002 [13].
+--   sai-Present indicates that the cellGlobalIdOrServiceAreaIdOrLAI parameter contains
+--   a Service Area Identity."
+
+-- GPP TS 29.078 version 6.4.0 Release 6 has it as:
+-- CellGlobalIdOrServiceAreaIdFixedLength type or the LAIFixedLength type (i.e. excluding tags
+-- and lengths) as defined in 3GPP TS 29.002 [13].
+-- sai-Present indicates that the cellGlobalIdOrServiceAreaIdOrLAI parameter contains
+-- a Service Area Identity.
+
+-- 3GPP TS 29.002 [13] gives the folowing coding for CellGlobalIdOrServiceAreaIdOrLAI:
+--    CellGlobalIdOrServiceAreaIdOrLAI ::= CHOICE {
+--        cellGlobalIdOrServiceAreaIdFixedLength   [0] CellGlobalIdOrServiceAreaIdFixedLength,
+--        laiFixedLength	                       [1] LAIFixedLength
+--    }
+--
+--    CellGlobalIdOrServiceAreaIdFixedLength ::=
+--    implement size < 8 --
+--    OCTET STRING (SIZE (7))
+-- This coding would disrupt the backward compatibillity, so the cellGlobalIdOrServiceAreaIdOrLAI
+-- parameter is set as an OCTET STRING, as it was in previous implementations.

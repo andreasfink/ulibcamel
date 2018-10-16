@@ -1,0 +1,6 @@
+DisconnectLegArg ::= SEQUENCE {
+	legToBeReleased						[0]	LegID,
+	releaseCause						[1]	Cause 							OPTIONAL,
+	extensions							[2]	ExtensionsArray 						OPTIONAL,
+	...
+	}

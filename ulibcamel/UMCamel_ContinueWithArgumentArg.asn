@@ -1,0 +1,22 @@
+-- ContinueWithArgumentArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+ContinueWithArgumentArg ::=
+
+ SEQUENCE
+{
+    alertingPattern                 [1]  AlertingPattern                OPTIONAL,
+    extensions                      [6]  ExtensionsArray                OPTIONAL,
+    serviceInteractionIndicatorsTwo [7] ServiceInteractionIndicatorsTwo OPTIONAL,
+    callingPartysCategory           [12] CallingPartysCategory          OPTIONAL,
+    genericNumbers                  [16] GenericNumbers                 OPTIONAL,
+    cug-Interlock                   [17] CUG-Interlock                  OPTIONAL,
+    cug-OutgoingAccess              [18] NULL                           OPTIONAL,
+    chargeNumber                    [50] ChargeNumber                   OPTIONAL,
+    carrier                         [52] Carrier                        OPTIONAL,
+    suppressionOfAnnouncement       [55] SuppressionOfAnnouncement      OPTIONAL,
+	naOliInfo							[56] NAOliInfo								OPTIONAL,
+	bor-InterrogationRequested			[57] NULL									OPTIONAL,
+	suppress-O-CSI						[58] NULL									OPTIONAL,
+	continueWithArgumentArgExtension	[59] ContinueWithArgumentArgExtension  OPTIONAL,
+	...
+}

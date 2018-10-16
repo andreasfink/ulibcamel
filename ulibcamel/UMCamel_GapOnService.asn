@@ -1,0 +1,7 @@
+-- GapOnService notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+GapOnService ::=   SEQUENCE
+{
+    serviceKey [0] ServiceKey,
+	...
+}

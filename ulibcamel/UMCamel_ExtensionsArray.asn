@@ -1,0 +1,1 @@
+ExtensionsArray ::= SEQUENCE SIZE (1..cAPSpecificBoundSetnumOfExtensions) OF ExtensionField

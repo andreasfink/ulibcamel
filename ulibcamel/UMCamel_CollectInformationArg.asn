@@ -1,0 +1,4 @@
+CollectInformationArg ::= SEQUENCE {
+  extensions	[0] ExtensionsArray OPTIONAL,
+  ...
+  }

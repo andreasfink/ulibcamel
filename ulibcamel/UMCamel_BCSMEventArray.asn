@@ -1,0 +1,2 @@
+BCSMEventArray ::= 
+		   SEQUENCE SIZE (1..cAPSpecificBoundSetnumOfBCSMEvents) OF BCSMEvent

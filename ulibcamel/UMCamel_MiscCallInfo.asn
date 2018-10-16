@@ -1,0 +1,10 @@
+-- MiscCallInfo notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+MiscCallInfo ::= SEQUENCE
+{
+    messageType [0] ENUMERATED
+    {
+        request      (0),
+        notification (1)
+    }
+}

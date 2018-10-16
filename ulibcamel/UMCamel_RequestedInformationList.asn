@@ -1,0 +1,5 @@
+-- RequestedInformationList notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+RequestedInformationList ::=
+
+SEQUENCE SIZE (1..numOfInfoItems) OF RequestedInformation

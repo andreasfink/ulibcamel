@@ -1,0 +1,9 @@
+-- NotReachableReason notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+NotReachableReason ::= ENUMERATED
+{
+    msPurged (0),
+        imsiDetached (1),
+        restrictedArea (2),
+        notRegistred (3)
+}

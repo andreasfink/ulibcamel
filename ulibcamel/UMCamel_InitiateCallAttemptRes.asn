@@ -1,0 +1,6 @@
+InitiateCallAttemptRes ::= SEQUENCE {
+	supportedCamelPhases				[0] SupportedCamelPhases					OPTIONAL,
+	offeredCamel4Functionalities		[1] OfferedCamel4Functionalities			OPTIONAL,
+	extensions							[2]	ExtensionsArray								OPTIONAL,
+	...
+	}

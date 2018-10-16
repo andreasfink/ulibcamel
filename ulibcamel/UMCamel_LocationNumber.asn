@@ -1,0 +1,7 @@
+-- LocationNumber notes: not recursive, exported,
+-- locally refd 4 times, import refd 0 times
+LocationNumber ::=
+	  
+	  OCTET STRING (SIZE (cAPSpecificBoundSetminLocationNumberLength ..cAPSpecificBoundSetmaxLocationNumberLength ))
+-- Indicates the Location Number for the calling party.
+-- Refer to ETSI EN 300 356-1 [23] for encoding.

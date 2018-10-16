@@ -1,0 +1,12 @@
+-- MonitorMode notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+MonitorMode ::= ENUMERATED
+{
+    interrupted         (0),
+    notifyAndContinue   (1),
+    transparent         (2)
+}
+-- Indicates the event is relayed and/or processed by the SSP.
+-- Transparent means that the gsmSSF or gprsSSF does not notify the gsmSCF of the event.
+-- For the use of this parameter refer to the procedure descriptions in clause 11.
+-- For the RequestNotificationCharging operation, 'interrupted' shall not be used in MonitorMode.

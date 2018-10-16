@@ -1,0 +1,13 @@
+-- ApplyChargingReportGPRSArg notes: not recursive, exported,
+-- locally refd 0 times, import refd 0 times
+ApplyChargingReportGPRSArg ::=
+
+ SEQUENCE
+{
+    chargingResult   [0] ChargingResult,
+    qualityOfService [1] QualityOfService OPTIONAL,
+    active           [2] BOOLEAN          DEFAULT TRUE,
+    pDPID            [3] PDPId            OPTIONAL,
+    ...,
+    chargingRollOver [4] ChargingRollOver OPTIONAL
+}

@@ -1,0 +1,6 @@
+PlayToneArg ::= SEQUENCE {
+	legOrCallSegment					[0] LegOrCallSegment,
+	bursts								[1] Burst,
+	extensions							[2] ExtensionsArray								OPTIONAL,
+	...
+	}

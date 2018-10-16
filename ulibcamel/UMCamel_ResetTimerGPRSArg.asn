@@ -1,0 +1,10 @@
+-- ResetTimerGPRSArg notes: not recursive, exported,
+-- locally refd 0 times, import refd 0 times
+ResetTimerGPRSArg ::=
+
+ SEQUENCE
+{
+    timerID    [0] TimerID DEFAULT tssf,
+    timervalue [1] TimerValue,
+    ...
+}

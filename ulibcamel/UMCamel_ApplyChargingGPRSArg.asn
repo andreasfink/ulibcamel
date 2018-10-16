@@ -1,0 +1,9 @@
+-- ApplyChargingGPRSArg notes: not recursive, exported,
+-- locally refd 0 times, import refd 0 times
+ApplyChargingGPRSArg ::= SEQUENCE
+{
+    chargingCharacteristics [0] ChargingCharacteristics,
+    tariffSwitchInterval    [1] INTEGER (1..86400)      OPTIONAL,
+    pDPID                   [2] PDPId                   OPTIONAL,
+    ...
+}

@@ -1,0 +1,11 @@
+InitiateCallAttemptArg ::= SEQUENCE {
+	destinationRoutingAddress			[0]	DestinationRoutingAddress,
+	extensions							[4]	ExtensionsArray								OPTIONAL,
+	legToBeCreated						[5]	LegID									OPTIONAL,
+	newCallSegment						[6]	CallSegmentID							OPTIONAL,
+	callingPartyNumber					[30] CallingPartyNumber						OPTIONAL,
+	callReferenceNumber					[51] CallReferenceNumber					OPTIONAL,
+	gsmSCFAddress						[52] ISDN-AddressString						OPTIONAL,
+	suppress-T-CSI						[53] NULL									OPTIONAL,
+	...
+	}

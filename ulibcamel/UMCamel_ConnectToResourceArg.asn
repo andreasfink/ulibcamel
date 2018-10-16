@@ -1,0 +1,17 @@
+-- ConnectToResourceArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+ConnectToResourceArg ::=
+
+ SEQUENCE
+{
+    resourceAddress CHOICE
+    {
+        ipRoutingAddress				[0] IPRoutingAddress,
+        none							[3] NULL
+    },
+    extensions							[4] ExtensionsArray							OPTIONAL,
+	serviceInteractionIndicatorsTwo		[7] ServiceInteractionIndicatorsTwo			OPTIONAL,
+	callSegmentID						[50] CallSegmentID							OPTIONAL,
+	...
+}
+

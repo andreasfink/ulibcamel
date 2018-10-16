@@ -1,0 +1,6 @@
+-- OCSIApplicable notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+OCSIApplicable ::= NULL
+--  Indicates that the Originating CAMEL Subscription Information, if present, shall be
+--  applied on the outgoing call leg created with a Connect operation. For the use of this
+--  parameter see 3GPP TS 23.078 [7].

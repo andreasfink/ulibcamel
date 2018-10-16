@@ -1,0 +1,5 @@
+SupportedCamelPhases ::= BIT STRING {
+  phase1  (0 ), 
+  phase2  (1 ),
+  phase3  (2 ),
+  phase4  (3 )}

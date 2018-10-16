@@ -1,0 +1,13 @@
+-- CallGapArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+CallGapArg ::=
+
+ SEQUENCE
+{
+    gapCriteria   [0] GapCriteria,
+    gapIndicators [1] GapIndicators,
+    controlType   [2] ControlType     OPTIONAL,
+    gapTreatment  [3] GapTreatment    OPTIONAL,
+    extensions    [4] ExtensionsArray OPTIONAL,
+	...
+}

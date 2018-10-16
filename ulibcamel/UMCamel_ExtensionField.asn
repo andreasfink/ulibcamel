@@ -1,0 +1,9 @@
+-- ExtensionField notes: not recursive, exported,
+-- locally refd 24 times, import refd 0 times
+ExtensionField ::=   SEQUENCE
+{
+    type        SupportedExtensionsid,
+    criticality CriticalityType      DEFAULT ignore,
+    value [1]   SupportedExtensionsExtensionType,
+    ...
+}

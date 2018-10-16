@@ -1,0 +1,8 @@
+-- FCISMSBillingChargingCharacteristics notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+
+--FCISMSBillingChargingCharacteristics ::= OCTET STRING (SIZE (cAPSpecificBoundSetminFCIBillingChargingLength ..cAPSpecificBoundSetmaxFCIBillingChargingLength ))
+--	(CONSTRAINED BY { shall be the result of the BER-encoded value of type 
+--	CAMEL-FCISMSBillingChargingCharacteristics {bound}})
+
+FCISMSBillingChargingCharacteristics ::= CAMEL-FCISMSBillingChargingCharacteristics

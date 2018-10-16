@@ -1,0 +1,3 @@
+-- ISDN-AddressString notes: not recursive, exported,
+-- locally refd 9 times, import refd 0 times
+ISDN-AddressString ::= OCTET STRING (SIZE(1..maxISDN-AddressLength))

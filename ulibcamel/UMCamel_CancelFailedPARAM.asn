@@ -1,0 +1,14 @@
+--cancelFailed ERROR 			
+--	PARAMETER 	
+CancelFailedPARAM ::= SEQUENCE 
+{
+  cancelproblem					[0] ENUMERATED 
+    {
+      unknownOperation		(0),
+      tooLate			(1),
+      operationNotCancellable	(2)
+    },
+  operation			[1] InvokeID
+
+}
+-- The operation failed to be canceled.

@@ -1,0 +1,7 @@
+-- GPRSEvent notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+GPRSEvent ::= SEQUENCE
+{
+    gPRSEventType [0] GPRSEventType,
+    monitorMode   [1] MonitorMode
+}

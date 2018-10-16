@@ -1,0 +1,14 @@
+-- PromptAndCollectUserInformationArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+PromptAndCollectUserInformationArg ::=
+
+ SEQUENCE
+{
+    collectedInfo             [0] CollectedInfo,
+    disconnectFromIPForbidden [1] BOOLEAN           DEFAULT TRUE,
+    informationToSend         [2] InformationToSend OPTIONAL,
+    extensions                [3] ExtensionsArray   OPTIONAL,
+    callSegmentID		[5] CallSegmentID   OPTIONAL,
+    requestAnnouncementStartedNotification	[51] BOOLEAN DEFAULT FALSE,
+    ...
+}

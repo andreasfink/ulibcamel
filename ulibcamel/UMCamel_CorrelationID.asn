@@ -1,0 +1,4 @@
+-- CorrelationID notes: not recursive, exported,
+-- locally refd 3 times, import refd 0 times
+CorrelationID ::= Digits
+-- used by gsmSCF for correlation with a previous operation.

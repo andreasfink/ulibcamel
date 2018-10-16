@@ -1,0 +1,14 @@
+-- EventReportBCSMArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+EventReportBCSMArg ::=
+
+ SEQUENCE
+{
+    eventTypeBCSM                [0] EventTypeBCSM,
+    eventSpecificInformationBCSM [2] EventSpecificInformationBCSM OPTIONAL,
+    legID4                        [3] ReceivingSideID            OPTIONAL,
+    miscCallInfo                 [4] MiscCallInfo               OPTIONAL,
+    extensions                   [5] ExtensionsArray            OPTIONAL,
+	...
+}
+

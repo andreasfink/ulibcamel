@@ -1,0 +1,2 @@
+NumberOfDigits ::= INTEGER (1..255)
+--	Indicates the number of digits to be collected.

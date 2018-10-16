@@ -1,0 +1,3 @@
+-- FCIBillingChargingCharacteristics notes: not recursive, exported,
+-- locally refd 2 times, import refd 0 times
+FCIBillingChargingCharacteristics ::= CAMEL-FCIBillingChargingCharacteristics

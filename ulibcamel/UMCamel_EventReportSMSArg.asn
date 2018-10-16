@@ -1,0 +1,13 @@
+-- EventReportSMSArg notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+EventReportSMSArg ::=
+
+ SEQUENCE
+{
+    eventTypeSMS                [0] EventTypeSMS,
+    eventSpecificInformationSMS [1] EventSpecificInformationSMS OPTIONAL,
+    miscCallInfo                [2] MiscCallInfo                OPTIONAL,
+    extensions                  [10] ExtensionsArray            OPTIONAL,
+    ...
+}
+

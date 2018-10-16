@@ -1,0 +1,11 @@
+-- MSRadioAccessCapability notes: not recursive, exported,
+-- locally refd 1 times, import refd 0 times
+MSRadioAccessCapability ::=
+
+OCTET STRING (SIZE (1..50))
+-- MS Radio Access Capability describes the terminal capabilites relevant for the radio network,
+-- which may affect the way the network handles the mobile.
+-- For encoding refer to 3GPP TS 24.008 [12].
+-- It shall contain the value part defined in 3GPP TS 24.008 only. I.e. the 3GPP TS 24.008 IEI
+-- and 3GPP TS 24.008 octet length indicator shall not be included.
+

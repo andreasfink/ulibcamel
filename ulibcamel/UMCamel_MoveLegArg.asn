@@ -1,0 +1,5 @@
+MoveLegArg ::= SEQUENCE{
+	legIDToMove							[0]	LegID,
+	extensions							[2]	ExtensionsArray								OPTIONAL,
+	...
+	}
