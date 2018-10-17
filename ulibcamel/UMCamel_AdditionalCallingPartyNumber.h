@@ -7,11 +7,9 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
+#import "UMCamel_Digits.h"
 
-NS_ASSUME_NONNULL_BEGIN
-
-@interface UMCamel_AdditionalCallingPartyNumber : UMASN1Object
+@interface UMCamel_AdditionalCallingPartyNumber : UMCamel_Digits
 
 @end
 
-NS_ASSUME_NONNULL_END

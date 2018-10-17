@@ -8,10 +8,8 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-NS_ASSUME_NONNULL_BEGIN
+#import "UMCamel_ISDN_AddressString.h"
 
-@interface UMCamel_CalledPartyBCDNumber : UMASN1Object
+@interface UMCamel_CalledPartyBCDNumber : UMCamel_ISDN_AddressString
 
 @end
-
-NS_ASSUME_NONNULL_END

@@ -1,5 +1,5 @@
 //
-//  UMCamel_BearerCapability.h
+//  UMCamel_AudibleIndicator.h
 //  ulibcamel
 //
 //  Created by Andreas Fink on 17.10.18.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UMCamel_BearerCapability : UMASN1Choice
+@interface UMCamel_AudibleIndicator : UMASN1Choice
 
 @end
 

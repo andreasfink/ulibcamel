@@ -8,10 +8,8 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-NS_ASSUME_NONNULL_BEGIN
 
-@interface UMCamel_AlertingPattern : UMASN1Sequence
+@interface UMCamel_AlertingPattern : UMASN1OctetString
 
 @end
 
-NS_ASSUME_NONNULL_END

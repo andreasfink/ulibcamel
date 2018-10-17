@@ -1,13 +1,13 @@
 //
-//  UMCamel_BearerCapability.m
+//  UMCamel_AccessPointName.m
 //  ulibcamel
 //
 //  Created by Andreas Fink on 17.10.18.
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_BearerCapability.h"
+#import "UMCamel_AccessPointName.h"
 
-@implementation UMCamel_BearerCapability
+@implementation UMCamel_AccessPointName
 
 @end

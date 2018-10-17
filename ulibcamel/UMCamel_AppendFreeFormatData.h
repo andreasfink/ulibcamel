@@ -1,5 +1,5 @@
 //
-//  UMCamel_BearerCapability.h
+//  UMCamel_AppendFreeFormatData.h
 //  ulibcamel
 //
 //  Created by Andreas Fink on 17.10.18.
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UMCamel_BearerCapability : UMASN1Choice
+@interface UMCamel_AppendFreeFormatData : UMASN1Enumerated
 
 @end
 
