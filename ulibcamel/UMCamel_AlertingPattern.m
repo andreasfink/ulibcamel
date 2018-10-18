@@ -10,4 +10,9 @@
 
 @implementation UMCamel_AlertingPattern
 
+- (NSString *) objectName
+{
+    return @"AlertingPattern";
+}
+
 @end

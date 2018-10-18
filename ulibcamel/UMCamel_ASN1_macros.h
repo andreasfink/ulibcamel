@@ -23,17 +23,33 @@
         null.asn1_tag.tagClass = UMASN1Class_ContextSpecific; \
         [_asn1_list addObject:null]; \
     }
-
-#define ASN1_ADD_INTEGER(i) \
-    { \
-        UMASN1Integer *in = [[UMASN1Integer alloc]initWithValue:i]; \
-        [_asn1_list addObject:in]; \
-    }
-
-#define ASN1_ADD_SEQUENCE(OBJ) \
+#define CONTEXT_SPECIFIC_SUB_ADD(SEQ,TAG,OBJ) \
     if(OBJ) \
     { \
-        [_asn1_list addObject:OBJ]; \
+        OBJ.asn1_tag.tagNumber = TAG; \
+        OBJ.asn1_tag.tagClass = UMASN1Class_ContextSpecific; \
+        [SEQ addObject:OBJ]; \
+    }
+
+
+#define CONTEXT_SPECIFIC_SUB_ADD_NULL(SEQ,TAG,OBJ) \
+    if(OBJ) \
+    { \
+        UMASN1Null *null = [[UMASN1Null alloc]init];\
+        null.asn1_tag.tagNumber = TAG; \
+        null.asn1_tag.tagClass = UMASN1Class_ContextSpecific; \
+        [SEQ.asn1_list addObject:null]; \
+    }
+#define ASN1_ADD_INTEGER(LIST,i) \
+    { \
+        UMASN1Integer *in = [[UMASN1Integer alloc]initWithValue:i]; \
+        [LIST addObject:in]; \
+    }
+
+#define ASN1_ADD_SEQUENCE(LIST,OBJ) \
+    if(OBJ) \
+    { \
+        [LIST addObject:OBJ]; \
     }
 
 #define GET_CONTEXT_SPECIFIC(TAG,OBJ,TYPE,o,p) \
@@ -42,6 +58,7 @@
         OBJ = [[TYPE alloc]initWithASN1Object:o context:context]; \
         o = [self getObjectAtPosition:p++]; \
     }
+
 
 #define GET_CONTEXT_SPECIFIC_NOGRAB(TAG,OBJ,TYPE,o,p) \
     if((o) && (o.asn1_tag.tagNumber == TAG) && (o.asn1_tag.tagClass == UMASN1Class_ContextSpecific)) \

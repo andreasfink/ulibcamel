@@ -62,6 +62,8 @@
 		A62E08ED215D098600D205F0 /* UMCamel_MS_Classmark2.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E08EB215D098600D205F0 /* UMCamel_MS_Classmark2.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A62E08F1215D099500D205F0 /* UMCamel_GPRSMSClass.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E08EF215D099500D205F0 /* UMCamel_GPRSMSClass.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A62E08F5215D09C100D205F0 /* UMCamel_IMEI.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E08F3215D09C100D205F0 /* UMCamel_IMEI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6411ACC2178573200436DE9 /* UMCamel_ACTimeDurationCharging.h in Headers */ = {isa = PBXBuildFile; fileRef = A6411ACA2178573200436DE9 /* UMCamel_ACTimeDurationCharging.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6411ACD2178573200436DE9 /* UMCamel_ACTimeDurationCharging.m in Sources */ = {isa = PBXBuildFile; fileRef = A6411ACB2178573200436DE9 /* UMCamel_ACTimeDurationCharging.m */; };
 		A65781BE1CF54A3600211137 /* ulibcamel.h in Headers */ = {isa = PBXBuildFile; fileRef = A65781BD1CF54A3600211137 /* ulibcamel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A65781C51CF54A3600211137 /* ulibcamel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65781BA1CF54A3600211137 /* ulibcamel.framework */; };
 		A65781CA1CF54A3600211137 /* ulibcamelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A65781C91CF54A3600211137 /* ulibcamelTests.m */; };
@@ -301,6 +303,9 @@
 		A62E08F0215D099500D205F0 /* UMCamel_GPRSMSClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_GPRSMSClass.m; sourceTree = "<group>"; };
 		A62E08F3215D09C100D205F0 /* UMCamel_IMEI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_IMEI.h; sourceTree = "<group>"; };
 		A62E08F4215D09C100D205F0 /* UMCamel_IMEI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_IMEI.m; sourceTree = "<group>"; };
+		A6411ACA2178573200436DE9 /* UMCamel_ACTimeDurationCharging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_ACTimeDurationCharging.h; sourceTree = "<group>"; };
+		A6411ACB2178573200436DE9 /* UMCamel_ACTimeDurationCharging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_ACTimeDurationCharging.m; sourceTree = "<group>"; };
+		A6411ACE2178577800436DE9 /* UMCamel_AChTimeDurationCharging.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AChTimeDurationCharging.asn; sourceTree = "<group>"; };
 		A65781BA1CF54A3600211137 /* ulibcamel.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ulibcamel.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65781BD1CF54A3600211137 /* ulibcamel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ulibcamel.h; sourceTree = "<group>"; };
 		A65781BF1CF54A3600211137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -565,6 +570,9 @@
 				A6BDA1F82176F193002009FE /* UMCamel_AccessPointName.h */,
 				A6BDA1F92176F193002009FE /* UMCamel_AccessPointName.m */,
 				A66A424A21749FD00083526C /* UMCamel_AChBillingChargingCharacteristics.asn */,
+				A6411ACE2178577800436DE9 /* UMCamel_AChTimeDurationCharging.asn */,
+				A6411ACA2178573200436DE9 /* UMCamel_ACTimeDurationCharging.h */,
+				A6411ACB2178573200436DE9 /* UMCamel_ACTimeDurationCharging.m */,
 				A6BDA1FC2176F1AC002009FE /* UMCamel_AChBillingChargingCharacteristics.h */,
 				A6BDA1FD2176F1AC002009FE /* UMCamel_AChBillingChargingCharacteristics.m */,
 				A66A424D21749FD10083526C /* UMCamel_AChChargingAddress.asn */,
@@ -1010,6 +1018,7 @@
 				A6932D7621652BFB003A477B /* UMCamel_AdditionalCallingPartyNumber.h in Headers */,
 				A62E0854215CE83800D205F0 /* UMCamel_CalledPartyNumber.h in Headers */,
 				A62E085C215CE85100D205F0 /* UMCamel_CallingPartysCategory.h in Headers */,
+				A6411ACC2178573200436DE9 /* UMCamel_ACTimeDurationCharging.h in Headers */,
 				A62E08F1215D099500D205F0 /* UMCamel_GPRSMSClass.h in Headers */,
 				A62E08BC215CE9A600D205F0 /* UMCamel_TimeAndTimezone.h in Headers */,
 				A62E08A0215CE91900D205F0 /* UMCamel_IMSI.h in Headers */,
@@ -1171,6 +1180,7 @@
 				A6932D9121652C32003A477B /* UMCamel_InitialDPArg.m in Sources */,
 				A6BDA21B2176F2F8002009FE /* UMCamel_AudibleIndicator.m in Sources */,
 				A6932D9921652C32003A477B /* UMCamel_MS_Classmark2.m in Sources */,
+				A6411ACD2178573200436DE9 /* UMCamel_ACTimeDurationCharging.m in Sources */,
 				A6932DA921652C32003A477B /* UMCamelInvoke.m in Sources */,
 				A62E081B215CB26B00D205F0 /* UMLayerCamel.m in Sources */,
 				A6932DA721652C32003A477B /* UMCamel_TPShortMessageSpecificInfo.m in Sources */,

@@ -10,4 +10,12 @@
 
 @implementation UMCamel_AdditionalCallingPartyNumber
 
+
+- (NSString *) objectName
+{
+    return @"AdditionalCallingPartyNumber";
+}
+
 @end
+
+

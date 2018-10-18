@@ -7,11 +7,17 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
+#import "UMCamel_LegID.h"
+#import "UMCamel_CallSegmentID.h"
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface UMCamel_AChChargingAddress : UMASN1Choice
+{
+    UMCamel_LegID           *_legID;
+    UMCamel_CallSegmentID   *_srfConnection;
+}
+@property(readwrite,strong,atomic)      UMCamel_LegID           *legID;
+@property(readwrite,strong,atomic)      UMCamel_CallSegmentID   *srfConnection;
 
 @end
 
-NS_ASSUME_NONNULL_END

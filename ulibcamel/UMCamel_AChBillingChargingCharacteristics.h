@@ -7,11 +7,13 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-
-NS_ASSUME_NONNULL_BEGIN
+#import "UMCamel_ExtensionsArray.h"
+#import "UMCamel_ACTimeDurationCharging.h"
 
 @interface UMCamel_AChBillingChargingCharacteristics : UMASN1Choice
+{
+    UMCamel_ACTimeDurationCharging *_actimeDurationCharging;
+}
+@property(readwrite,strong,atomic)      UMCamel_ACTimeDurationCharging *actimeDurationCharging;
 
 @end
-
-NS_ASSUME_NONNULL_END
