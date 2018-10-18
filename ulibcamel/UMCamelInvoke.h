@@ -11,9 +11,15 @@
 
 @interface UMCamelInvoke : UMASN1Sequence
 {
-    int64_t   _invokeId;
-    int64_t   _opCode;
-    UMASN1Sequence  *_params;
-    NSString *_opCodeName;
+    UMASN1Integer  *_invokeId;
+    UMASN1Integer  *_opCode;
+    UMASN1Object   *_params;
+    NSString 	   *_opCodeName;
 }
+
+@property(readwrite,atomic,strong)	UMASN1Integer  *invokeId;
+@property(readwrite,atomic,strong)	UMASN1Integer  *opCode;
+@property(readwrite,atomic,strong)	UMASN1Object   *params;
+@property(readwrite,atomic,strong)	NSString 	   *opCodeName;
+
 @end

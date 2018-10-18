@@ -2,6 +2,6 @@
 -- locally refd 3 times, import refd 0 times
 AOCSubsequent ::= SEQUENCE
 {
-cAI-GSM0224          [0] CAI-Gsm0224,
-tariffSwitchInterval [1] INTEGER (1..86400) OPTIONAL
+	cAI-GSM0224          [0] CAI-Gsm0224,
+	tariffSwitchInterval [1] INTEGER (1..86400) OPTIONAL
 }

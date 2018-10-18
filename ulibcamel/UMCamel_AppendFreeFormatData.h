@@ -8,10 +8,16 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-NS_ASSUME_NONNULL_BEGIN
+typedef enum UMCamel_AppendFreeFormatData_enum
+{
+	UMCamel_AppendFreeFormatData_overwrite = 0,
+	UMCamel_AppendFreeFormatData_append = 1,
+} UMCamel_AppendFreeFormatData_enum;
 
 @interface UMCamel_AppendFreeFormatData : UMASN1Enumerated
-
+{
+	
+}
 @end
 
-NS_ASSUME_NONNULL_END
+

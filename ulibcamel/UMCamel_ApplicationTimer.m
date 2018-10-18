@@ -10,4 +10,9 @@
 
 @implementation UMCamel_ApplicationTimer
 
+- (NSString *) objectName
+{
+	return @"ApplicationTimer";
+}
+
 @end

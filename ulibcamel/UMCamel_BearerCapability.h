@@ -7,11 +7,13 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
+#import "UMCamel_BearerCap.h"
 
-NS_ASSUME_NONNULL_BEGIN
 
 @interface UMCamel_BearerCapability : UMASN1Choice
+{
+	UMCamel_BearerCap *_bearerCap;
+}
+@property(readwrite,strong,atomic)      UMCamel_BearerCap *bearerCap;
 
 @end
-
-NS_ASSUME_NONNULL_END

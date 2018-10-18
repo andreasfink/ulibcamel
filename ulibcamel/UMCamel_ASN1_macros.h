@@ -42,8 +42,7 @@
     }
 #define ASN1_ADD_INTEGER(LIST,i) \
     { \
-        UMASN1Integer *in = [[UMASN1Integer alloc]initWithValue:i]; \
-        [LIST addObject:in]; \
+        [LIST addObject:i]; \
     }
 
 #define ASN1_ADD_SEQUENCE(LIST,OBJ) \
@@ -77,8 +76,7 @@
 #define ASN1_GET_INTEGER(i,o,p) \
     if((o) && (o.asn1_tag.tagNumber == UMASN1Primitive_integer) && (o.asn1_tag.tagClass == UMASN1Class_Universal)) \
     { \
-        UMASN1Integer *io = [[UMASN1Integer alloc]initWithASN1Object:o context:context]; \
-        i = io.value; \
+        i = [[UMASN1Integer alloc]initWithASN1Object:o context:context]; \
         o = [self getObjectAtPosition:p++]; \
     }
 

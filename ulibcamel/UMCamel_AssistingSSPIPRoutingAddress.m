@@ -10,4 +10,9 @@
 
 @implementation UMCamel_AssistingSSPIPRoutingAddress
 
+- (NSString *) objectName
+{
+	return @"AssistingSSPIPRoutingAddress";
+}
+
 @end
