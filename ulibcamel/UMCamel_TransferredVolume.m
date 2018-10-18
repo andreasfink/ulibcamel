@@ -1,15 +1,13 @@
 //
-//  UMCamel_Digits.h
+//  UMCamel_TransferredVolume.m
 //  ulibcamel
 //
 //  Created by Andreas Fink on 18.10.18.
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import <ulibasn1/ulibasn1.h>
-#import "UMCamel_EtsiNumber.h"
+#import "UMCamel_TransferredVolume.h"
 
-@interface UMCamel_Digits : UMCamel_EtsiNumber
+@implementation UMCamel_TransferredVolume
 
 @end
-

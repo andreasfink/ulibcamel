@@ -296,11 +296,20 @@
 		A6D02A452178C383007760F7 /* UMCamel_EntityReleasedGPRSArg.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D02A432178C383007760F7 /* UMCamel_EntityReleasedGPRSArg.m */; };
 		A6D02A482178C396007760F7 /* UMCamel_ErrorTreatment.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D02A462178C396007760F7 /* UMCamel_ErrorTreatment.h */; };
 		A6D02A492178C396007760F7 /* UMCamel_ErrorTreatment.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D02A472178C396007760F7 /* UMCamel_ErrorTreatment.m */; };
+		A6D02A4C2178C548007760F7 /* UMCamel_UnavailableNetworkResource.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D02A4A2178C548007760F7 /* UMCamel_UnavailableNetworkResource.h */; };
+		A6D02A4D2178C548007760F7 /* UMCamel_UnavailableNetworkResource.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D02A4B2178C548007760F7 /* UMCamel_UnavailableNetworkResource.m */; };
+		A6D02A502178C55C007760F7 /* UMCamel_TransferredVolumeRollOver.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D02A4E2178C55C007760F7 /* UMCamel_TransferredVolumeRollOver.h */; };
+		A6D02A512178C55C007760F7 /* UMCamel_TransferredVolumeRollOver.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D02A4F2178C55C007760F7 /* UMCamel_TransferredVolumeRollOver.m */; };
+		A6D02A542178C56B007760F7 /* UMCamel_TransferredVolume.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D02A522178C56B007760F7 /* UMCamel_TransferredVolume.h */; };
+		A6D02A552178C56B007760F7 /* UMCamel_TransferredVolume.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D02A532178C56B007760F7 /* UMCamel_TransferredVolume.m */; };
+		A6D02A582178C5B6007760F7 /* UMCamel_VariablePart.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D02A562178C5B6007760F7 /* UMCamel_VariablePart.h */; };
+		A6D02A592178C5B6007760F7 /* UMCamel_VariablePart.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D02A572178C5B6007760F7 /* UMCamel_VariablePart.m */; };
+		A6D02A5C2178C5C6007760F7 /* UMCamel_VariablePartsArray.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D02A5A2178C5C6007760F7 /* UMCamel_VariablePartsArray.h */; };
+		A6D02A5D2178C5C6007760F7 /* UMCamel_VariablePartsArray.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D02A5B2178C5C6007760F7 /* UMCamel_VariablePartsArray.m */; };
 		A6F6D59E21652D31007BF702 /* UMCamel_InitialDPSMSArg.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F6D59D21652D31007BF702 /* UMCamel_InitialDPSMSArg.m */; };
 		A6F6D5A1216531F2007BF702 /* UMCamel_AssistRequestInstructionsArg.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F6D59F216531F2007BF702 /* UMCamel_AssistRequestInstructionsArg.h */; };
 		A6F6D5A2216531F2007BF702 /* UMCamel_AssistRequestInstructionsArg.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F6D5A0216531F2007BF702 /* UMCamel_AssistRequestInstructionsArg.m */; };
 		A6F6D5A6216532E8007BF702 /* UMCamel_CorrelationID.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F6D5A4216532E8007BF702 /* UMCamel_CorrelationID.h */; };
-		A6F6D5A7216532E8007BF702 /* UMCamel_CorrelationID.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F6D5A5216532E8007BF702 /* UMCamel_CorrelationID.m */; };
 		A6F6D5AA216534CD007BF702 /* UMCamel_EstablishTemporaryConnectionArg.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F6D5A8216534CD007BF702 /* UMCamel_EstablishTemporaryConnectionArg.h */; };
 		A6F6D5AB216534CD007BF702 /* UMCamel_EstablishTemporaryConnectionArg.m in Sources */ = {isa = PBXBuildFile; fileRef = A6F6D5A9216534CD007BF702 /* UMCamel_EstablishTemporaryConnectionArg.m */; };
 		A6F6D5AF21653672007BF702 /* UMCamel_AssistingSSPIPRoutingAddress.h in Headers */ = {isa = PBXBuildFile; fileRef = A6F6D5AD21653672007BF702 /* UMCamel_AssistingSSPIPRoutingAddress.h */; };
@@ -413,7 +422,6 @@
 		A62E08C6215CF8AA00D205F0 /* UMCamelOperation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamelOperation.h; sourceTree = "<group>"; };
 		A62E08C7215CF8AA00D205F0 /* UMCamelOperation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamelOperation.m; sourceTree = "<group>"; };
 		A62E08CA215D062D00D205F0 /* UMCamel_InitialDPSMSArg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_InitialDPSMSArg.h; sourceTree = "<group>"; };
-		A62E08CE215D064700D205F0 /* UMCamel_InitialDPSMSArg.asn1 */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_InitialDPSMSArg.asn1; sourceTree = "<group>"; };
 		A62E08CF215D090700D205F0 /* UMCamel_SMS_AddressString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_SMS_AddressString.h; sourceTree = "<group>"; };
 		A62E08D0215D090700D205F0 /* UMCamel_SMS_AddressString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_SMS_AddressString.m; sourceTree = "<group>"; };
 		A62E08D3215D092200D205F0 /* UMCamel_EventTypeSMS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_EventTypeSMS.h; sourceTree = "<group>"; };
@@ -785,6 +793,18 @@
 		A6D02A432178C383007760F7 /* UMCamel_EntityReleasedGPRSArg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_EntityReleasedGPRSArg.m; sourceTree = "<group>"; };
 		A6D02A462178C396007760F7 /* UMCamel_ErrorTreatment.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_ErrorTreatment.h; sourceTree = "<group>"; };
 		A6D02A472178C396007760F7 /* UMCamel_ErrorTreatment.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_ErrorTreatment.m; sourceTree = "<group>"; };
+		A6D02A4A2178C548007760F7 /* UMCamel_UnavailableNetworkResource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_UnavailableNetworkResource.h; sourceTree = "<group>"; };
+		A6D02A4B2178C548007760F7 /* UMCamel_UnavailableNetworkResource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_UnavailableNetworkResource.m; sourceTree = "<group>"; };
+		A6D02A4E2178C55C007760F7 /* UMCamel_TransferredVolumeRollOver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_TransferredVolumeRollOver.h; sourceTree = "<group>"; };
+		A6D02A4F2178C55C007760F7 /* UMCamel_TransferredVolumeRollOver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_TransferredVolumeRollOver.m; sourceTree = "<group>"; };
+		A6D02A522178C56B007760F7 /* UMCamel_TransferredVolume.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_TransferredVolume.h; sourceTree = "<group>"; };
+		A6D02A532178C56B007760F7 /* UMCamel_TransferredVolume.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_TransferredVolume.m; sourceTree = "<group>"; };
+		A6D02A562178C5B6007760F7 /* UMCamel_VariablePart.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_VariablePart.h; sourceTree = "<group>"; };
+		A6D02A572178C5B6007760F7 /* UMCamel_VariablePart.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_VariablePart.m; sourceTree = "<group>"; };
+		A6D02A5A2178C5C6007760F7 /* UMCamel_VariablePartsArray.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_VariablePartsArray.h; sourceTree = "<group>"; };
+		A6D02A5B2178C5C6007760F7 /* UMCamel_VariablePartsArray.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_VariablePartsArray.m; sourceTree = "<group>"; };
+		A6D02A5E2178C670007760F7 /* UMCamel_EtsiNumber.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_EtsiNumber.asn; sourceTree = "<group>"; };
+		A6D02A5F2178D275007760F7 /* UMCamel_CorrelationID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMCamel_CorrelationID.m; sourceTree = "<group>"; };
 		A6F6D59D21652D31007BF702 /* UMCamel_InitialDPSMSArg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UMCamel_InitialDPSMSArg.m; sourceTree = "<group>"; };
 		A6F6D59F216531F2007BF702 /* UMCamel_AssistRequestInstructionsArg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_AssistRequestInstructionsArg.h; sourceTree = "<group>"; };
 		A6F6D5A0216531F2007BF702 /* UMCamel_AssistRequestInstructionsArg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_AssistRequestInstructionsArg.m; sourceTree = "<group>"; };
@@ -977,7 +997,7 @@
 				A6D029EB2178C1E0007760F7 /* UMCamel_ControlType.m */,
 				A6D029C92178C172007760F7 /* UMCamel_CorrelationID.asn */,
 				A6F6D5A4216532E8007BF702 /* UMCamel_CorrelationID.h */,
-				A6F6D5A5216532E8007BF702 /* UMCamel_CorrelationID.m */,
+				A6D02A5F2178D275007760F7 /* UMCamel_CorrelationID.m */,
 				A6D029F82178C281007760F7 /* UMCamel_CUG_Index.asn */,
 				A62E0896215CE90900D205F0 /* UMCamel_CUG_Index.h */,
 				A62E0897215CE90900D205F0 /* UMCamel_CUG_Index.m */,
@@ -987,9 +1007,9 @@
 				A6D029FB2178C291007760F7 /* UMCamel_DateAndTime.asn */,
 				A6D029FD2178C2A8007760F7 /* UMCamel_DateAndTime.h */,
 				A6D029FE2178C2A8007760F7 /* UMCamel_DateAndTime.m */,
+				A6D02A012178C2C8007760F7 /* UMCamel_DestinationRoutingAddress.asn */,
 				A6BD35F6215E1123002085BA /* UMCamel_DestinationRoutingAddress.h */,
 				A6BD35F7215E1123002085BA /* UMCamel_DestinationRoutingAddress.m */,
-				A6D02A012178C2C8007760F7 /* UMCamel_DestinationRoutingAddress.asn */,
 				A6D0292E2178A3BC007760F7 /* UMCamel_Digits.asn */,
 				A6D0292A2178A3B0007760F7 /* UMCamel_Digits.h */,
 				A6D0292B2178A3B0007760F7 /* UMCamel_Digits.m */,
@@ -1032,6 +1052,7 @@
 				A6BDA1822176F11E002009FE /* UMCamel_EstablishTemporaryConnectionArg.asn */,
 				A6F6D5A8216534CD007BF702 /* UMCamel_EstablishTemporaryConnectionArg.h */,
 				A6F6D5A9216534CD007BF702 /* UMCamel_EstablishTemporaryConnectionArg.m */,
+				A6D02A5E2178C670007760F7 /* UMCamel_EtsiNumber.asn */,
 				A6BD3626215E24C3002085BA /* UMCamel_EtsiNumber.h */,
 				A6BD3627215E24C3002085BA /* UMCamel_EtsiNumber.m */,
 				A62E087E215CE8D500D205F0 /* UMCamel_EventTypeBCSM.h */,
@@ -1060,7 +1081,6 @@
 				A62E08BF215CE9AD00D205F0 /* UMCamel_InitialDPArgExtension.m */,
 				A6BDA1BD2176F15B002009FE /* UMCamel_InitialDPGPRSArg.asn */,
 				A6BDA1C92176F15C002009FE /* UMCamel_InitialDPSMSArg.asn */,
-				A62E08CE215D064700D205F0 /* UMCamel_InitialDPSMSArg.asn1 */,
 				A62E08CA215D062D00D205F0 /* UMCamel_InitialDPSMSArg.h */,
 				A6F6D59D21652D31007BF702 /* UMCamel_InitialDPSMSArg.m */,
 				A6BDA1972176F156002009FE /* UMCamel_InitiateCallAttemptArg.asn */,
@@ -1270,10 +1290,20 @@
 				A62E08E7215D097900D205F0 /* UMCamel_TPValidityPeriod.h */,
 				A62E08E8215D097900D205F0 /* UMCamel_TPValidityPeriod.m */,
 				A6BDA1AD2176F159002009FE /* UMCamel_TransferredVolume.asn */,
+				A6D02A522178C56B007760F7 /* UMCamel_TransferredVolume.h */,
+				A6D02A532178C56B007760F7 /* UMCamel_TransferredVolume.m */,
 				A6BDA1AB2176F158002009FE /* UMCamel_TransferredVolumeRollOver.asn */,
+				A6D02A4E2178C55C007760F7 /* UMCamel_TransferredVolumeRollOver.h */,
+				A6D02A4F2178C55C007760F7 /* UMCamel_TransferredVolumeRollOver.m */,
 				A6BDA1F32176F161002009FE /* UMCamel_UnavailableNetworkResource.asn */,
+				A6D02A4A2178C548007760F7 /* UMCamel_UnavailableNetworkResource.h */,
+				A6D02A4B2178C548007760F7 /* UMCamel_UnavailableNetworkResource.m */,
 				A6BDA1B12176F159002009FE /* UMCamel_VariablePart.asn */,
+				A6D02A562178C5B6007760F7 /* UMCamel_VariablePart.h */,
+				A6D02A572178C5B6007760F7 /* UMCamel_VariablePart.m */,
 				A6BDA1F02176F160002009FE /* UMCamel_VariablePartsArray.asn */,
+				A6D02A5A2178C5C6007760F7 /* UMCamel_VariablePartsArray.h */,
+				A6D02A5B2178C5C6007760F7 /* UMCamel_VariablePartsArray.m */,
 				A6BD361E215E18B4002085BA /* UMCamelInvoke.h */,
 				A6BD361F215E18B4002085BA /* UMCamelInvoke.m */,
 				A6BD361A215E18AA002085BA /* UMCamelObject.h */,
@@ -1365,6 +1395,7 @@
 		A6932D7521652B1F003A477B /* Recovered References */ = {
 			isa = PBXGroup;
 			children = (
+				A6F6D5A5216532E8007BF702 /* UMCamel_CorrelationID.m */,
 			);
 			name = "Recovered References";
 			sourceTree = "<group>";
@@ -1446,6 +1477,7 @@
 				A6BDA2122176F296002009FE /* UMCamel_AppendFreeFormatData.h in Headers */,
 				A6D029542178BE4B007760F7 /* UMCamel_RequestedInformationValue.h in Headers */,
 				A6D029EC2178C1E0007760F7 /* UMCamel_ControlType.h in Headers */,
+				A6D02A502178C55C007760F7 /* UMCamel_TransferredVolumeRollOver.h in Headers */,
 				A6D029A42178BFE2007760F7 /* UMCamel_SupportedExtensionsid.h in Headers */,
 				A62E08D9215D093800D205F0 /* UMCamel_LocationInformationGPRS.h in Headers */,
 				A62E08A4215CE92100D205F0 /* UMCamel_SubscriberState.h in Headers */,
@@ -1471,8 +1503,10 @@
 				A6BDA2062176F211002009FE /* UMCamel_AOCBeforeAnswer.h in Headers */,
 				A6BDA2022176F1BD002009FE /* UMCamel_AChChargingAddress.h in Headers */,
 				A6D029A82178C005007760F7 /* UMCamel_SystemFailurePARAM.h in Headers */,
+				A6D02A5C2178C5C6007760F7 /* UMCamel_VariablePartsArray.h in Headers */,
 				A6D0297C2178BEC3007760F7 /* UMCamel_SendChargingInformationArg.h in Headers */,
 				A6D029BB2178C131007760F7 /* UMCamel_CollectInformationArg.h in Headers */,
+				A6D02A542178C56B007760F7 /* UMCamel_TransferredVolume.h in Headers */,
 				A6D029942178BFA4007760F7 /* UMCamel_SpecializedResourceReportArg.h in Headers */,
 				A62E08AC215CE92F00D205F0 /* UMCamel_Ext_BasicServiceCode.h in Headers */,
 				A62E081A215CB26B00D205F0 /* UMLayerCamel.h in Headers */,
@@ -1509,9 +1543,11 @@
 				A6BD35FC215E117E002085BA /* UMCamel_AlertingPattern.h in Headers */,
 				A6F6D5B72165368C007BF702 /* UMCamel_CallSegmentID.h in Headers */,
 				A6BDA21A2176F2F8002009FE /* UMCamel_AudibleIndicator.h in Headers */,
+				A6D02A582178C5B6007760F7 /* UMCamel_VariablePart.h in Headers */,
 				A62E086C215CE89D00D205F0 /* UMCamel_OriginalCalledPartyID.h in Headers */,
 				A62E08B0215CE95400D205F0 /* UMCamel_CallReferenceNumber.h in Headers */,
 				A6D029502178BE36007760F7 /* UMCamel_RequestedInformationTypeList.h in Headers */,
+				A6D02A4C2178C548007760F7 /* UMCamel_UnavailableNetworkResource.h in Headers */,
 				A6D029882178BF49007760F7 /* UMCamel_SGSNCapabilities.h in Headers */,
 				A6D029642178BE7E007760F7 /* UMCamel_ResetTimerArg.h in Headers */,
 				A6D029D42178C192007760F7 /* UMCamel_ConnectGPRSArg.h in Headers */,
@@ -1674,6 +1710,7 @@
 				A6932D8F21652C32003A477B /* UMCamel_IMEI.m in Sources */,
 				A6D029752178BEAE007760F7 /* UMCamel_SCIBillingChargingCharacteristics.m in Sources */,
 				A6D02A412178C374007760F7 /* UMCamel_EntityReleasedArg.m in Sources */,
+				A6D02A552178C56B007760F7 /* UMCamel_TransferredVolume.m in Sources */,
 				A6D02A152178C2F3007760F7 /* UMCamel_DisconnectLegArg.m in Sources */,
 				A6F6D5A2216531F2007BF702 /* UMCamel_AssistRequestInstructionsArg.m in Sources */,
 				A6D029B82178C124007760F7 /* UMCamel_CompoundCriteria.m in Sources */,
@@ -1691,6 +1728,7 @@
 				A6D02A212178C313007760F7 /* UMCamel_DpSpecificInfoAlt.m in Sources */,
 				A6F6D5B42165367F007BF702 /* UMCamel_ScfID.m in Sources */,
 				A6932D8321652C32003A477B /* UMCamel_ConnectArg.m in Sources */,
+				A6D02A5D2178C5C6007760F7 /* UMCamel_VariablePartsArray.m in Sources */,
 				A6932DA621652C32003A477B /* UMCamel_TPProtocolIdentifier.m in Sources */,
 				A6D029272178A2FF007760F7 /* UMCamel_CAI_Gsm0224.m in Sources */,
 				A6932D8421652C32003A477B /* UMCamel_CUG_Index.m in Sources */,
@@ -1711,6 +1749,7 @@
 				A6932DA721652C32003A477B /* UMCamel_TPShortMessageSpecificInfo.m in Sources */,
 				A6932D7A21652C32003A477B /* UMCamel_CalledPartyBCDNumber.m in Sources */,
 				A6932D8121652C32003A477B /* UMCamel_CGEncountered.m in Sources */,
+				A6D02A512178C55C007760F7 /* UMCamel_TransferredVolumeRollOver.m in Sources */,
 				A6932D9021652C32003A477B /* UMCamel_IMSI.m in Sources */,
 				A6D0292D2178A3B0007760F7 /* UMCamel_Digits.m in Sources */,
 				A6D029592178BE5D007760F7 /* UMCamel_RequestReportBCSMEventArg.m in Sources */,
@@ -1739,12 +1778,13 @@
 				A6932D9221652C32003A477B /* UMCamel_InitialDPArgExtension.m in Sources */,
 				A6932D9721652C32003A477B /* UMCamel_LocationInformationGPRS.m in Sources */,
 				A6932D8021652C32003A477B /* UMCamel_Cause.m in Sources */,
+				A6D02A4D2178C548007760F7 /* UMCamel_UnavailableNetworkResource.m in Sources */,
 				A6D029952178BFA4007760F7 /* UMCamel_SpecializedResourceReportArg.m in Sources */,
 				A6D029ED2178C1E0007760F7 /* UMCamel_ControlType.m in Sources */,
 				A6932D9621652C32003A477B /* UMCamel_LocationInformation.m in Sources */,
 				A6D0293D2178B5E8007760F7 /* UMCamel_BearerCap.m in Sources */,
+				A6D02A592178C5B6007760F7 /* UMCamel_VariablePart.m in Sources */,
 				A6BDA20F2176F285002009FE /* UMCamel_AOCSubsequent.m in Sources */,
-				A6F6D5A7216532E8007BF702 /* UMCamel_CorrelationID.m in Sources */,
 				A6F6D5AB216534CD007BF702 /* UMCamel_EstablishTemporaryConnectionArg.m in Sources */,
 				A6BDA1FF2176F1AC002009FE /* UMCamel_AChBillingChargingCharacteristics.m in Sources */,
 				A6932D8221652C32003A477B /* UMCamel_ChargeNumber.m in Sources */,

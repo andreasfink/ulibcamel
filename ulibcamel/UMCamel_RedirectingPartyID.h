@@ -8,10 +8,9 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-NS_ASSUME_NONNULL_BEGIN
+#import "UMCamel_EtsiNumber.h"
 
-@interface UMCamel_RedirectingPartyID : UMASN1Object
+@interface UMCamel_RedirectingPartyID : UMCamel_EtsiNumber
 
 @end
 
-NS_ASSUME_NONNULL_END

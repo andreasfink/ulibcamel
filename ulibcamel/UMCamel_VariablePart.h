@@ -1,5 +1,5 @@
 //
-//  UMCamel_Digits.h
+//  UMCamel_VariablePart.h
 //  ulibcamel
 //
 //  Created by Andreas Fink on 18.10.18.
@@ -7,9 +7,11 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_EtsiNumber.h"
 
-@interface UMCamel_Digits : UMCamel_EtsiNumber
+NS_ASSUME_NONNULL_BEGIN
+
+@interface UMCamel_VariablePart : UMASN1Choice
 
 @end
 
+NS_ASSUME_NONNULL_END
