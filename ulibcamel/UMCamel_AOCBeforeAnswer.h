@@ -8,10 +8,16 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-NS_ASSUME_NONNULL_BEGIN
+#import "UMCamel_CAI_Gsm0224.h"
+#import "UMCamel_AOCSubsequent.h"
 
 @interface UMCamel_AOCBeforeAnswer : UMASN1Sequence
+{
+	UMCamel_CAI_Gsm0224 	*_al;
+	UMCamel_AOCSubsequent 	*_aOCSubsequent;
+}
+
+@property(readwrite,strong,atomic)	UMCamel_CAI_Gsm0224 *al;
+@property(readwrite,strong,atomic)	UMCamel_AOCSubsequent *aOCSubsequent;
 
 @end
-
-NS_ASSUME_NONNULL_END

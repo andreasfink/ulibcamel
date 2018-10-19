@@ -22,9 +22,9 @@
     _asn1_tag.tagClass = UMASN1Class_ContextSpecific;
     _asn1_list = [[NSMutableArray alloc]init];
 
-    ASN1_ADD_INTEGER(_invokeId);
-    ASN1_ADD_INTEGER(_opCode);
-    ASN1_ADD_SEQUENCE(_params);
+    ASN1_ADD_INTEGER(_asn1_list,_invokeId);
+    ASN1_ADD_INTEGER(_asn1_list,_opCode);
+    ASN1_ADD_INTEGER(_asn1_list,_params);
 }
 
 - (UMCamelInvoke *) processAfterDecodeWithContext:(id)context
@@ -34,9 +34,9 @@
 
     ASN1_GET_INTEGER(_invokeId,o,p);
     ASN1_GET_INTEGER(_opCode,o,p);
-    ASN1_GET_SEQUENCE(_params,o,p);
-    
-    switch(_opCode)
+	_params = o;
+
+    switch(_opCode.value)
     {
         case UMCamelOperationCode_initialDP:
             _opCodeName=@"InitialDP";
@@ -221,8 +221,8 @@
 {
     UMSynchronizedSortedDictionary *dict = [[UMSynchronizedSortedDictionary alloc]init];
 
-    dict[@"invokeId"] = @(_invokeId);
-    dict[@"opCode"] = @(_opCode);
+	DICT_ADD(dict,_invokeId,@"invokeId");
+	DICT_ADD(dict,_opCode,@"opCode");
     if(_opCodeName)
     {
         dict[@"opCodeDescription"] = _opCodeName;

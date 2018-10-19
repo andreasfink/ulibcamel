@@ -11,16 +11,7 @@
 
 @implementation UMCamel_AChBillingChargingCharacteristics
 
-/*
-actimeDurationCharging [0]   SEQUENCE
-{
-    maxCallPeriodDuration     [0] INTEGER (1..864000),
-    releaseIfdurationExceeded [1] BOOLEAN               DEFAULT FALSE,
-    tariffSwitchInterval      [2] INTEGER (1..86400)    OPTIONAL,
-    actone                      [3] BOOLEAN               DEFAULT FALSE,
-    extensions                [4] ExtensionsArray       OPTIONAL
-}
-*/
+
 - (void) processBeforeEncode
 {
     [super processBeforeEncode];

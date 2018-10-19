@@ -7,11 +7,15 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-
-NS_ASSUME_NONNULL_BEGIN
+#import "UMCamel_BurstList.h"
 
 @interface UMCamel_AudibleIndicator : UMASN1Choice
+{
+	UMASN1Boolean		*_istone;
+	UMCamel_BurstList	*_burstList;
+}
+
+@property(readwrite,strong,atomic)	UMASN1Boolean		*istone;
+@property(readwrite,strong,atomic)	UMCamel_BurstList	*burstList;
 
 @end
-
-NS_ASSUME_NONNULL_END

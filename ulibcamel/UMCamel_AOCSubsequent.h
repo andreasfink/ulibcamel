@@ -7,11 +7,17 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-
-NS_ASSUME_NONNULL_BEGIN
+#import "UMCamel_CAI_Gsm0224.h"
 
 @interface UMCamel_AOCSubsequent : UMASN1Sequence
+{
+	UMCamel_CAI_Gsm0224		*_cAI_GSM0224;
+	UMASN1Integer			*_tariffSwitchInterval;
+}
+
+@property(readwrite,strong,atomic)      UMCamel_CAI_Gsm0224		*cAI_GSM0224;
+@property(readwrite,strong,atomic)      UMASN1Integer			*tariffSwitchInterval;
 
 @end
 
-NS_ASSUME_NONNULL_END
+

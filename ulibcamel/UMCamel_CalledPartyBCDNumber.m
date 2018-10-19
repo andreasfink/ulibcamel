@@ -10,4 +10,9 @@
 
 @implementation UMCamel_CalledPartyBCDNumber
 
+- (NSString *) objectName
+{
+	return @"CalledPartyBCDNumber";
+}
+
 @end
