@@ -585,6 +585,10 @@ PACKAGE_URL=''
 
 ac_subst_vars='LTLIBOBJS
 LIBOBJS
+SHARED_LIBRARY_EXTENSION
+REVISION
+MINORVER
+MAJORVER
 CONFIGURATION
 INSTALL_DATA
 INSTALL_SCRIPT
@@ -1831,6 +1835,9 @@ PROJECT_NAME="ulibcamel"
 AUTHOR="Andreas Fink <andreas@fink.org>"
 CONFIG_DEFINE="ULIBCAMEL_CONFIG"
 VERSION=`head -n 1 VERSION`
+MAJORVER=`echo $VERSION | cut -f1 -d.`
+MINORVER=`echo $VERSION | cut -f2 -d.`
+REVISION=`echo $VERSION | cut -f3 -d.`
 CONFIG_HEADER=ulibcamel_config.h
 DEPENDENT_PKGCONFIGS="ulib ulibasn1 ulibtcap"
 FRAMEWORKS="-framework ulib"
@@ -3120,6 +3127,11 @@ fi
   nl='
 '
   echo "${nl}${T_MD}Generating output files ...${T_ME}"
+
+
+
+
+
 
 
 

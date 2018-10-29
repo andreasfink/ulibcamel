@@ -13,6 +13,9 @@ PROJECT_NAME="ulibcamel"
 AUTHOR="Andreas Fink <andreas@fink.org>"
 CONFIG_DEFINE="ULIBCAMEL_CONFIG"
 VERSION=`head -n 1 VERSION`
+MAJORVER=`echo $VERSION | cut -f1 -d.`
+MINORVER=`echo $VERSION | cut -f2 -d.`
+REVISION=`echo $VERSION | cut -f3 -d.`
 CONFIG_HEADER=ulibcamel_config.h
 DEPENDENT_PKGCONFIGS="ulib ulibasn1 ulibtcap"
 FRAMEWORKS="-framework ulib"
@@ -160,6 +163,11 @@ AC_CONFIG_SECTION([Generating output files])
 dnl Final Output
 AC_SUBST(CONFIGURATION)
 AC_SUBST(PROJECT_NAME)
+AC_SUBST(VERSION)
+AC_SUBST(MAJORVER)
+AC_SUBST(MINORVER)
+AC_SUBST(REVISION)
+AC_SUBST(SHARED_LIBRARY_EXTENSION)
 AC_CONFIG_SECTION([Generating output files]) 
 AC_CONFIG_FILES([Makefile.osx])
 AC_CONFIG_FILES([Makefile.linux])
