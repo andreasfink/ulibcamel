@@ -14,7 +14,7 @@ AUTHOR="Andreas Fink <andreas@fink.org>"
 CONFIG_DEFINE="ULIBCAMEL_CONFIG"
 VERSION=`head -n 1 VERSION`
 CONFIG_HEADER=ulibcamel_config.h
-DEPENDENT_PKGCONFIGS="ulib"
+DEPENDENT_PKGCONFIGS="ulib ulibasn1 ulibtcap"
 FRAMEWORKS="-framework ulib"
 PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
 export PKG_CONFIG_PATH
