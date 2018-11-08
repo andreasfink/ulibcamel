@@ -1,0 +1,57 @@
+SDT-SYSTEM-3.0
+[DRIVES]
+[SOURCE-TARGET-DIRECTORY]
+AbsolutePath=False
+SourceDirectory=frompc
+[DIAGRAMS]
+0 11 INAP /home/ellsberg/SDL/FROMFRANS/frompc/inap.sun 0 0 inap
+1 13 IN_HalfCall /home/ellsberg/SDL/FROMFRANS/frompc/in_halfc.sbt 0 0 in_halfcall
+2 2 CUSF %unconnected% 0 0 cusf
+2 2 SCF_InterfaceManager %unconnected% 0 0 interfacemanager
+2 2 SRF %unconnected% 0 0 srf
+2 2 SSF /home/ellsberg/SDL/FROMFRANS/frompc/ssf.sbk 0 0 ssf_ccf
+3 2 AssitingSSF %unconnected% 0 0 assitingssf
+3 2 HandedOffSSF %unconnected% 0 0 handedoffssf
+3 2 SSF_CCF %unconnected% 0 0 ssf_ccf
+3 2 SSFManager %unconnected% 0 0 ssfmanager
+2 2 SSME %unconnected% 0 0 ssme
+0 1 INAP /home/ellsberg/SDL/FROMFRANS/frompc/inap.ssy 0 0 inap
+1 2 TCAP_Adaptor %unconnected% 0 0 tcap_adaptor
+[DOCUMENTS]
+[VIEWOPTIONS]
+ShowLongMenus=True
+Scale=99
+ShowToolBar=True
+ShowStatusBar=True
+ShowTypeName=True
+ShowVirtuality=False
+ShowFileNames=True
+ShowDirectories=True
+ShowInstances=False
+ShowDashed=False
+ShowLinks=False
+ShowSeparators=False
+[ANALYSEROPTIONS]
+SemanticControl=True
+OutputControl=False
+UsageControl=False
+ReferenceControl=False
+ErrorLimit=35
+XRef=False
+ExpandPR=True
+[MAKEOPTIONS]
+GenerateCode=False
+Capitalization=LowerCase
+Kernel=SCTDEBCLCOM
+[PRINTOPTIONS]
+PrintToFile=False
+PrinterFile=
+PrinterCommand=lpr -h -r -Pbe1cb01
+MarginUpper=420
+MarginLower=250
+MarginLeft=120
+MarginRight=120
+DestinationFormat=PSFile
+FirstPageNo=1
+PrintFrom=0
+PrintTo=0

@@ -468,6 +468,20 @@
 		A66A42552174A0300083526C /* UMCamel_AssistingSSPIPRoutingAddress.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AssistingSSPIPRoutingAddress.asn; sourceTree = "<group>"; };
 		A66A42562174A0300083526C /* UMCamel_ApplicationTimer.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_ApplicationTimer.asn; sourceTree = "<group>"; };
 		A66A42572174A05A0083526C /* UMCamel_AudibleIndicator.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AudibleIndicator.asn; sourceTree = "<group>"; };
+		A692B92921941849009072BC /* q1228~5e.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "q1228~5e.pdf"; sourceTree = "<group>"; };
+		A692B92A21941849009072BC /* q1228~4e.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "q1228~4e.pdf"; sourceTree = "<group>"; };
+		A692B92B21941849009072BC /* q1228~3e.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "q1228~3e.pdf"; sourceTree = "<group>"; };
+		A692B92C21941849009072BC /* q1228~2e.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "q1228~2e.pdf"; sourceTree = "<group>"; };
+		A692B92E21941849009072BC /* CS2_SCF.PDF */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CS2_SCF.PDF; sourceTree = "<group>"; };
+		A692B92F21941849009072BC /* Cs2_assisting.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = Cs2_assisting.pdf; sourceTree = "<group>"; };
+		A692B93021941849009072BC /* CS2_SRF.PDF */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CS2_SRF.PDF; sourceTree = "<group>"; };
+		A692B93121941849009072BC /* CS2_CUSF.PDF */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CS2_CUSF.PDF; sourceTree = "<group>"; };
+		A692B93221941849009072BC /* q1228~1e.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "q1228~1e.pdf"; sourceTree = "<group>"; };
+		A692B93421941849009072BC /* CS1_INAP.PDF */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CS1_INAP.PDF; sourceTree = "<group>"; };
+		A692B93521941849009072BC /* CS2_INAP.PDF */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = CS2_INAP.PDF; sourceTree = "<group>"; };
+		A692B93721941849009072BC /* Inap.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Inap.zip; sourceTree = "<group>"; };
+		A692B93821941849009072BC /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		A692B93921941852009072BC /* en_30114001v010304p.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = en_30114001v010304p.pdf; sourceTree = "<group>"; };
 		A6BD35CF215DFB86002085BA /* decode-camel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "decode-camel"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BD35D1215DFB86002085BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6BD35D8215DFBC1002085BA /* ulibasn1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibasn1.framework; path = ../../../../../../Library/Frameworks/ulibasn1.framework; sourceTree = "<group>"; };
@@ -859,6 +873,8 @@
 		A62E081E215CB2A900D205F0 /* doc */ = {
 			isa = PBXGroup;
 			children = (
+				A692B93921941852009072BC /* en_30114001v010304p.pdf */,
+				A692B92721941849009072BC /* Q1228 */,
 				A62E081F215CB2A900D205F0 /* ts_129078v031600p.pdf */,
 				A62E0820215CB2A900D205F0 /* ts_129078v120000p.pdf */,
 				A62E0821215CB2A900D205F0 /* ts_129078v040900p.pdf */,
@@ -1390,6 +1406,58 @@
 			);
 			name = Libraries;
 			path = ulibcamel;
+			sourceTree = "<group>";
+		};
+		A692B92721941849009072BC /* Q1228 */ = {
+			isa = PBXGroup;
+			children = (
+				A692B92821941849009072BC /* Q1228pdfe */,
+			);
+			path = Q1228;
+			sourceTree = "<group>";
+		};
+		A692B92821941849009072BC /* Q1228pdfe */ = {
+			isa = PBXGroup;
+			children = (
+				A692B92921941849009072BC /* q1228~5e.pdf */,
+				A692B92A21941849009072BC /* q1228~4e.pdf */,
+				A692B92B21941849009072BC /* q1228~3e.pdf */,
+				A692B92C21941849009072BC /* q1228~2e.pdf */,
+				A692B92D21941849009072BC /* Disk3_3 */,
+				A692B93221941849009072BC /* q1228~1e.pdf */,
+				A692B93321941849009072BC /* Disk2_3 */,
+				A692B93621941849009072BC /* Disk1_3 */,
+			);
+			path = Q1228pdfe;
+			sourceTree = "<group>";
+		};
+		A692B92D21941849009072BC /* Disk3_3 */ = {
+			isa = PBXGroup;
+			children = (
+				A692B92E21941849009072BC /* CS2_SCF.PDF */,
+				A692B92F21941849009072BC /* Cs2_assisting.pdf */,
+				A692B93021941849009072BC /* CS2_SRF.PDF */,
+				A692B93121941849009072BC /* CS2_CUSF.PDF */,
+			);
+			path = Disk3_3;
+			sourceTree = "<group>";
+		};
+		A692B93321941849009072BC /* Disk2_3 */ = {
+			isa = PBXGroup;
+			children = (
+				A692B93421941849009072BC /* CS1_INAP.PDF */,
+				A692B93521941849009072BC /* CS2_INAP.PDF */,
+			);
+			path = Disk2_3;
+			sourceTree = "<group>";
+		};
+		A692B93621941849009072BC /* Disk1_3 */ = {
+			isa = PBXGroup;
+			children = (
+				A692B93721941849009072BC /* Inap.zip */,
+				A692B93821941849009072BC /* readme.txt */,
+			);
+			path = Disk1_3;
 			sourceTree = "<group>";
 		};
 		A6932D7521652B1F003A477B /* Recovered References */ = {

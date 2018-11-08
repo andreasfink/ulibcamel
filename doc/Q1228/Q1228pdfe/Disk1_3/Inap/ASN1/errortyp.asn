@@ -1,0 +1,47 @@
+INCS2ErrorTypes {ccitt recommendation q 1228 modules(0) in-cs2-errortypes (1) version1(0)}
+DEFINITIONS IMPLICIT TAGS ::=
+BEGIN
+IMPORTS
+
+	InvokeID,
+	UnavailableNetworkResource
+FROM INCS2datatypes
+;
+
+-- TYPE DEFINITION FOR    IN CS2    ERRORS FOLLOWS
+
+CancelFailed ::=	SEQUENCE {
+			problem	[0] ENUMERATED {
+				unknownOperation(0),
+				tooLate(1),
+				operationNotCancellable(2)
+				},
+			operation	[1] InvokeID
+			}
+
+-- The parameter was not as expected (e.g. missing or out of range).
+
+RequestedInfoError  ::= ENUMERATED {
+			unknownRequestedInfo(1),
+			requestedInfoNotAvailable(2)
+			-- other values FFS
+			}
+
+-- The requested information cannot be found.
+
+SystemFailure ::= UnavailableNetworkResource	
+
+-- The operation could not be completed due to a system failure
+
+TaskRefused::= 	ENUMERATED {
+			generic(0),
+			unobtainable (1),
+			congestion(2)
+			--other values FFS
+			}
+-- An entity normally capable of the task requested cannot or chooses not
+-- to perform the task at this 
+-- time.  This includes error situations like congestion and unobtainable
+-- address as used in e.g. the connect operation.)
+
+END

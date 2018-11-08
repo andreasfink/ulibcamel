@@ -1,0 +1,229 @@
+INCS2Internals
+
+DEFINITIONS IMPLICIT TAGS ::=
+BEGIN
+IMPORTS
+        CalledPartyNumber,
+        CallingPartyNumber,
+        CallingPartysCategory,
+        Cause,
+        DestinationRoutingAddress,
+        Digits,
+        DTLegType,
+        EventTypeBCSM,
+        ForwardCallIndicators,
+        DTLegID,
+        MonitorMode,
+        ServiceKey,
+        USIServiceIndicator,
+        USIInformation
+FROM INCS2datatypes;
+
+-- DEFINITION OF SIGNALLING CONTROL PRIMITIVES
+
+CallFlag ::= ENUMERATED { -- Note: Used on the signals between BCSMs.
+  senderRef,
+  receiverRef
+}
+
+CallRef ::= INTEGER
+
+InfoDirection ::= ENUMERATED {
+  utsi,
+  stui
+}
+
+AddressEndType ::= SEQUENCE {
+  callRef CallRef,
+  digits  Digits OPTIONAL
+}
+
+CallProgressType ::= SEQUENCE {
+  callRef CallRef,
+  cause   Cause
+}
+
+FailureType ::= SEQUENCE {
+  callRef  CallRef,
+  cause    Cause
+}
+
+NetworkSRType ::= SEQUENCE { -- Note: Used for IN CS-2
+  callRef CallRef
+}
+
+ReleaseType ::= SEQUENCE {
+  callRef  CallRef,
+  cause    Cause
+}
+
+ServiceFeatureType ::= SEQUENCE {
+  callRef    CallRef
+}
+
+SetupCRType ::= SEQUENCE {
+  callRef          CallRef,
+  connectedNumber  CalledPartyNumber OPTIONAL
+}
+
+SetupIRType ::= SEQUENCE {
+  callRef                    CallRef,
+  calledPartyNumber          CalledPartyNumber,
+  callingPartyNumber         CallingPartyNumber     OPTIONAL,
+  callingPartysCategory      CallingPartysCategory  OPTIONAL,
+  locationNumber             OCTET STRING           OPTIONAL,
+  originalCalledNumber       OriginalCalledPartyID  OPTIONAL,
+  userTeleserviceInformation OCTET STRING           OPTIONAL,
+  genericNumber              GenericNumbers         OPTIONAL,
+  forwardCallIndicators      ForwardCallIndicators  OPTIONAL,
+  redirectingNumber          RedirectingPartyID     OPTIONAL,
+  redirectingInformation     RedirectionInformation OPTIONAL,
+  uSIServiceIndicator        USIServiceIndicator    OPTIONAL,
+  uSIInformation             USIInformation         OPTIONAL
+}
+
+SubsequentAddressType ::= SEQUENCE {
+  callRef CallRef,
+  digits  Digits
+}
+
+UserDataType ::= SEQUENCE {
+  callRef             CallRef,
+  uSIServiceIndicator USIServiceIndicator,
+  uSIInformation      USIInformation,
+  infoDirection       InfoDirection
+}
+
+
+
+-- DEFINITION OF THE INFORMATIVE MANAGEMENT OPERATION ARGUMENTS
+
+MGT_SetTriggerTableArg ::= SEQUENCE OF SEQUENCE {
+  legID         DTLegType,
+  serviceKey    ServiceKey,
+  eventTypeBCSM EventTypeBCSM,
+  monitorMode   MonitorMode
+}
+
+
+
+-- DEFINITION OF TYPES USED INTERNALLY IN THE SDL SPECIFICATION
+
+BCSMStateType ::= ENUMERATED {
+    nullState,                 -- Normal case
+    waitOrigAttemptAuthorized, -- Used with ICA
+    analyseInformation,        -- Used with Connect
+    waitMidCall,               -- Note: Used for IN CS-2 CPH
+    selectRoute                -- Used with SelectRoute
+}
+
+PartyType ::= ENUMERATED {
+  localParty,
+  remoteParty,
+  surrogateParty
+}
+
+DPArg ::= SEQUENCE {
+  legID                      DTLegType,
+  bcsmEvent                  EventTypeBCSM,
+  party                      PartyType               OPTIONAL,
+  cgPN                       CallingPartyNumber      OPTIONAL,
+  cdPN                       CalledPartyNumber       OPTIONAL,
+  callingPartysCategory      CallingPartysCategory   OPTIONAL,
+  locationNumber             OCTET STRING            OPTIONAL,
+  originalCalledNumber       OriginalCalledPartyID   OPTIONAL,
+  userTeleserviceInformation OCTET STRING            OPTIONAL,
+  genericNumber              GenericNumbers          OPTIONAL,
+  forwardCallIndicators      ForwardCallIndicators   OPTIONAL,
+  redirectingNumber          RedirectingPartyID      OPTIONAL,
+  redirectingInformation     RedirectionInformation  OPTIONAL,
+  uSIServiceIndicator        USIServiceIndicator     OPTIONAL,
+  uSIInformation             USIInformation          OPTIONAL,
+  digits                     Digits                  OPTIONAL,
+  cause                      Cause                   OPTIONAL  
+}
+
+DPUTSIArg ::= SEQUENCE {
+  legID               DTLegType,
+  uSIServiceIndicator USIServiceIndicator,
+  uSIInformation      USIInformation,
+  party               PartyType
+}
+
+DPFacilityArg ::= SEQUENCE {
+  legID               DTLegType,
+  party               PartyType
+}
+
+
+OBCSMPars ::= SEQUENCE {
+  startState   BCSMStateType,
+  legID        DTLegType,
+  cgPN         CallingPartyNumber OPTIONAL,
+  routingInfo  CHOICE {
+    cdPN            CalledPartyNumber,
+    routingAddress  DestinationRoutingAddress
+  },
+  routeList                  RouteList              OPTIONAL,
+  callingPartysCategory      CallingPartysCategory  OPTIONAL,
+  locationNumber             OCTET STRING           OPTIONAL,
+  originalCalledNumber       OriginalCalledPartyID  OPTIONAL,
+  userTeleserviceInformation OCTET STRING           OPTIONAL,
+  genericNumber              GenericNumbers         OPTIONAL,
+  forwardCallIndicators      ForwardCallIndicators  OPTIONAL,
+  redirectingNumber          RedirectingPartyID     OPTIONAL,
+  redirectingInformation     RedirectionInformation OPTIONAL,
+  uSIServiceIndicator        USIServiceIndicator    OPTIONAL,
+  uSIInformation             USIInformation         OPTIONAL
+}
+
+PointInCall ::= ENUMERATED {
+  analyseInformation,
+  authoriseOriginationAttempt,
+  collectInformation,
+  collectNDigits,
+  oActive,
+  oAlerting,
+  oException,
+  oNull,
+  selectRoute,
+  sendCall,
+  authoriseTerminationAttempt,
+  presentCall,
+  selectFacility,
+  tActive,
+  tAlerting,
+  tNull,
+  releaseCall,         -- Used with the ReleaseCall operation
+
+  disconnectLeg,       -- Note: IN CS-2 PIC 
+  sendSTUI,            -- Note: IN CS-2 PIC 
+  sendUTSI,            -- Note: IN CS-2 PIC 
+  authorizeTermination -- Note: IN CS-2 PIC 
+}
+
+PICArg ::= SEQUENCE {
+  legID            DTLegType,
+  pic              PointInCall,
+  routingInfo CHOICE {
+    cdPN           CalledPartyNumber,
+    routingAddress DestinationRoutingAddress
+  },
+  routeList                  RouteList               OPTIONAL,
+  callingPartysCategory      CallingPartysCategory   OPTIONAL,
+  locationNumber             OCTET STRING            OPTIONAL,
+  originalCalledNumber       OriginalCalledPartyID   OPTIONAL,
+  userTeleserviceInformation OCTET STRING            OPTIONAL,
+  genericNumber              GenericNumbers          OPTIONAL,
+  forwardCallIndicators      ForwardCallIndicators   OPTIONAL,
+  redirectingNumber          RedirectingPartyID      OPTIONAL,
+  redirectingInformation     RedirectionInformation  OPTIONAL,
+  uSIServiceIndicator        USIServiceIndicator     OPTIONAL,
+  uSIInformation             USIInformation          OPTIONAL,
+  infoDirection              InfoDirection           OPTIONAL,
+  party                      PartyType               OPTIONAL,
+  facilityGroup              FacilityGroup           OPTIONAL,
+  cause                      Cause                   OPTIONAL
+}
+
+END

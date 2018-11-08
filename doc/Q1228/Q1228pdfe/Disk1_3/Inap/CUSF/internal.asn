@@ -1,0 +1,110 @@
+INCS2Internals
+
+Definitions IMPLICIT TAGS ::=
+BEGIN
+
+IMPORTS
+  CalledPartyNumber,
+  CallingPartyNumber,
+  Cause,
+  Component,
+  Digits,
+  MonitorMode,
+  ServiceKey,
+  USIServiceIndicator,
+  USIInformation
+  
+
+AssRef ::= INTEGER  
+
+AssReleaseTy,
+FROM INCS2datatypes;
+
+
+--DEFINITION OF SIGNALLING CONTROL PRIMITIVES
+
+TransactionId ::= INTEGER
+
+CUSFID::= INTEGER(1..numOfCUSFs)
+
+numOfCUSFs INTEGER ::=20
+
+InfoDirection::=ENUMERATED {
+  utsi,
+  stui
+}
+
+AssReleaseType ::= SEQUENCE {
+  assRef AssRef,
+  cause Cause
+}
+
+AssSetupIRType ::= SEQUENCE {
+  assRef       AssRef,
+  calledPartyNumber CalledPartyNumber OPTIONAL,
+  callingPartyNumber CallingPartyNumber OPTIONAL,
+  uSIServiceIndicator USIServiceIndicator OPTIONAL,
+  uSIInformation UISInformation OPTIONAL
+}
+
+AssUserDataType ::= SEQUENCE{
+  assRef   AssRef,
+  uSIServiceIndicator USIServiceIndicator,
+  uSIInformation USIInformation,
+  infoDirection InfoDirection
+}
+
+
+AssComponentType ::= SEQUENCE{
+
+
+PartyType ::= ENUMERATED{
+localParty,
+remotsurrogateParty
+}
+
+DPArg ::= SEQUENCE {
+legID DTLbcusmEvent EventTypeBC
+}y  PartyType OPTIONAL,
+cdPN  CalledPartyNumber OPTIONAL,
+cgPN CallingPartyNumber OPTIONAL,
+uSIServiceIndicator USIServiceIndicator OPTIONAL,
+uSIInformation USIInformation OPTIONAL,
+cause Cause OPTIONAL,
+
+componentType ComponentType OPTIONAL,
+
+}
+
+  
+BCorrelationIDPars ::= SCorrelationIdNCE {
+legID
+ DTLegTycdPN  Call rtyNumberOPTIONAL,
+cgPN CallingPartyNumber OPTIONAL,
+uSIServiceIndicator USIServiceIndicato,r OPTIONAL,
+uSIInformation USIInformation OPTIONAL
+}
+
+PointInAssociation ::= ENUMERATED {
+
+initiateAssociation,
+associationR
+elease,
+sendComponent,
+sendSTUI,
+sendUTSI
+}
+
+PIAArg ::= SEQUENCE {
+legID DTLegType,
+pia   PointInAssociation,
+
+  
+END
+
+
+
+
+}
+
+

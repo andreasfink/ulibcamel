@@ -1,0 +1,48 @@
+INCS2datatypes {ccitt recommendation q 1228 modules(0) in-cs2-datatypes (15) version1(0)}
+
+DEFINITIONS IMPLICIT TAGS ::= 
+BEGIN
+IMPORTS
+
+invokeIDType
+FROM TCAPMessages tc-Messages
+
+ BCUSMevent ::= SEQUENCE {
+eventTypeBCUSM [0] EventTytpeBCUSM,
+monitorMode[1] MonitorMode
+}
+
+EventTypeBCUSM  ::= ENUMERATED {
+componentReceived(127),
+associationReleaseRequested(126)
+}
+
+MonitorMode ::= ENUMERATED {
+interrupted(0),
+notifyAndContinue(1),
+transparent(2)
+}
+
+CalledPartyNumber  OCTET STRING (SIZE
+(minCalledPartyNumberLength..
+maxCalledPartyNumberLength
+}
+
+	
+CallUnrelatedDpSpecificCommonParameters ::= SEQUENCE {
+serviceAddressInformation [0] ServiceAddressInformation,
+callingPartyNumber [1] CallingPartyNumber,
+
+	Cause ,
+	Component,
+	ComponentType,
+	ComponentCorrelationID,
+	Duration,
+	ExtensionField ,
+	Message,
+OperationCode  ::= CHOICE {
+globalCode OBJECT IDENTIFIER,
+local INTEGER
+}
+
+END

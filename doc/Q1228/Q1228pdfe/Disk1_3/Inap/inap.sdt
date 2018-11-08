@@ -1,0 +1,387 @@
+SDT-SYSTEM-3.4
+[DRIVES]
+[SOURCE-TARGET-DIRECTORY]
+SourceDirectory=C:\tau34\Q1228\Inap\
+TargetDirectory=C:\tau34\Q1228\Inap\Target\
+[LINKS]
+Endpoints=""
+File=\home\ellsberg\SDL\Inap\inap.sli
+[DIAGRAMS]
+0 33 readme TCAP\readme.txt 0 432000 - ""
+0 23 "ASN.1 Files" %unconnected% 0 432000 0 ""
+0 34 INCS2datatypes ASN1\incs2-dt.asn 0 884536352 INCS2datatypes "" "5 136"
+0 34 INCS2SSFSCFopsargs ASN1\ssf-scf.asn 0 884686425 INCS2SSFSCFopsargs "" "5 136"
+0 34 INCS2BundleArg ASN1\incs2b.asn 0 432000 incs2bundlearg "" "5 136"
+0 34 INCS2Internals ASN1\cs2i.asn 0 885218013 cs2internals "" "5 136"
+0 23 "IN CS-1 Specification" %unconnected% 0 432000 0 ""
+0 11 CS1_INAP CS1\cs1_inap.sun 0 884881948 cs1 ""
+1 12 CS1_INAP CS1\cs1_inap.sst 0 884881948 core_inap ""
+2 1002 SSF_CCF_A "SSF_CCF" "" 0
+2 1002 SSF_CCF_B "SSF_CCF" "" 0
+2 1002 TCAP_Adapter "TCAP_Simulator" "" 0
+2 113 SSF_CCF CS1\ssf1.sbt 0 884882002 callconfiguration ""
+3 1005 CS "CallSegment" "(0)" 0
+3 1005 CSA "CallSegmentAssociation" "(0)" 0
+3 1005 IH "InterfaceHandler" "(1,1)" 0
+3 1005 O_BCSM "OriginatingBCSM" "(0)" 0
+3 1005 SSF "SSF_FSM" "(0)" 0
+3 1005 SSME "SSME_FSM" "(1,1)" 0
+3 1005 T_BCSM "TerminatingBCSM" "(0)" 0
+3 115 InterfaceHandler CS1\ih.spt 0 884881964 ih ""
+4 6 AllocateCSAId CS1\alldid.spd 2 884881944 allocatedialogueid ""
+4 6 AddCSAId CS1\adddid.spd 0 884881942 adddialogueid ""
+4 6 GetCSAIdfromCSA CS1\getdid.spd 0 884881962 getdialogueid ""
+4 6 GetCSAfromCSAId CS1\getcvd.spd 0 884881960 getcsaptr ""
+4 6 GetCSAfromSigConId CS1\getcvu.spd 0 884881960 getcsaptrfromuni ""
+4 6 SetSigConAssoc CS1\setsca.spd 0 884882000 setsigconassoc ""
+4 6 SetRemoteAssoc CS1\setrema.spd 0 884882000 setremoteassoc ""
+4 6 GetCSAfromRemoteId CS1\getlcsa.spd 0 884881962 getcsafromremoteid ""
+4 6 IsCSA CS1\iscsa.spd 0 884881966 iscsa ""
+3 115 CallSegmentAssociation CS1\csa.spt 0 884881950 callsegmentassociation ""
+4 6 AddCS CS1\addcs.spd 0 884881942 addcs ""
+4 6 SetLegLocation CS1\setlegl.spd 0 884881998 setleglocation ""
+4 6 GetCSPtr CS1\getcsptr.spd 0 884881960 getcsptr ""
+4 6 GetLegLocation CS1\getlegl.spd 0 884881962 getleglocation ""
+4 6 ExistCS CS1\existcs.spd 0 884881958 existcs ""
+4 6 SetLegAssoc CS1\setlassc.spd 0 884881998 setlegassoc1 ""
+4 6 IsCS CS1\iscs.spd 0 884881966 iscs ""
+4 6 GetLegIdfromRemoteLegId CS1\getlegrc.spd 0 884881962 getlegidfromremotelegid1 ""
+4 6 ExistLeg CS1\existleg.spd 0 884881958 existleg ""
+3 115 CallSegment CS1\cv1.spt 0 884881950 connectionview ""
+4 6 AddLeg CS1\addleg.spd 0 884881942 addleg ""
+4 6 RemoveLeg CS1\remleg.spd 0 884881998 removeleg ""
+4 6 SetLegStatus CS1\setlstat.spd 0 884882000 setlegstatus ""
+4 6 ReleaseAllLegs CS1\releasea.spd 0 884881998 releasealllegs ""
+4 6 GetLegStatus CS1\getlstat.spd 0 884881964 getlegstatus ""
+4 6 SetLegAssoc CS1\setlass.spd 0 884881998 setlegassoc ""
+4 6 SetLegPtr CS1\setlptr.spd 0 884882000 setlegptr ""
+4 6 GetLegIdfromRemoteLegId CS1\getlegr.spd 0 884881962 getlegidfromremotelegid ""
+4 6 GetLegPtr CS1\getlptr.spd 0 884881964 getlegptr ""
+4 6 IsBCSM CS1\isbcsm.spd 0 884881966 isbcsm ""
+4 6 GetPassiveLegId CS1\getpl.spd 0 884881964 sendtoleg ""
+4 6 MapConnectToBCSM CS1\mpcobcsm.spd 0 884881968 mapconnecttobcsm ""
+4 6 MapSIToBCSM CS1\mpsibcsm.spd 0 884881970 mapcstobcsm ""
+3 115 SSF_FSM CS1\ssf_fsm.spt 0 884882002 ssf_fsm ""
+4 106 InitialiseDPTable CS1\initevl.spd 0 884881966 initialisedptable ""
+4 6 ExistLeg CS1\exleg.spd 0 884881960 existleg1 ""
+4 6 AnyDPArmed CS1\anyevarm.spd 0 884881944 anydparmed ""
+4 6 IsDPArmed CS1\evarm.spd 0 884881958 isdparmed ""
+4 6 DisarmDPs CS1\disarm.spd 0 884881950 disarmdps ""
+4 6 DPArmed CS1\dparmed.spd 0 884881958 dparmed ""
+4 6 CallInformationReportPending CS1\callinfo.spd 0 884881946 callinformationreportpending ""
+4 6 ApplyChargingReportPending CS1\applycha.spd 0 884881944 applychargingreportpending ""
+4 6 ArmTDPs CS1\armtdps.spd 0 884881944 armtdps ""
+4 6 MatchingServiceFilteringCriteria CS1\msfc.spd 0 884881970 matchingservicefilteringcriteria ""
+4 6 CheckACG CS1\cacg.spd 0 884881946 checkacg ""
+4 6 CallFiltered CS1\cf.spd 0 884881948 callfiltered ""
+4 6 ProcessApplyCharging CS1\process6.spd 0 884881988 processapplycharging ""
+4 6 ProcessContinue CS1\proces12.spd 0 884881984 processcontinue ""
+4 6 ProcessRequestReportBCSMEvent CS1\prreqrep.spd 0 884881996 processrequestreportbcsmevent ""
+4 6 ProcessAnalyseInformation CS2\procai.spd 0 884882036 processanalyseinformation ""
+4 6 ProcessCallInformationRequest CS1\process7.spd 0 884881988 processcallinformationrequest ""
+4 6 ProcessDisconnectForwardConnection CS1\processd.spd 0 884881990 processdisconnectforwardconnection ""
+4 6 ProcessSendChargingInformation CS1\procsci.spd 0 884881996 processsendcharginginformation ""
+4 6 ProcessSelectRoute CS2\procsr.spd 0 884882042 processselectroute ""
+4 6 ProcessCancel CS1\process8.spd 0 884881988 processcancel ""
+4 6 ProcessEstablishTemporaryConnection CS1\processe.spd 0 884881990 processestablishtemporaryconnection ""
+4 6 ProcessEventReportBCSM CS1\prevrep.spd 0 884881980 processeventreportbcsm ""
+4 6 ProcessSelectFacility CS2\procsf.spd 0 884882042 processselectfacility ""
+4 6 ProcessCollectInformation CS1\process9.spd 0 884881988 processcollectinformation ""
+4 6 ProcessFurnishChargingInformation CS1\proces13.spd 0 884881984 processfurnishcharginginformation ""
+4 6 ProcessForwardConnectionReleased CS1\processf.spd 0 884881990 processforwardconnectionreleased ""
+4 6 ProcessConnect CS1\proces10.spd 0 884881982 processconnect ""
+4 6 ProcessInitiateCallAttempt CS1\processi.spd 0 884881990 processinitiatecallattempt ""
+4 6 ProcessInitialDP CS1\pridp.spd 0 884881980 processinitialdp ""
+4 6 ProcessConnectToResource CS1\proces11.spd 0 884881984 processconnecttoresource ""
+4 6 ProcessRequestNotificationChargingEvent CS1\proces16.spd 0 884881984 processrequestnotificationchargingevent ""
+4 106 ProcessDPSpecific CS1\ProcDPS.spd 0 884881942 processdpspecific ""
+4 6 ConnnectAnalysis CS1\ERROR\conpa.spd 0 884882004 connnectanalysis ""
+3 115 OriginatingBCSM CS1\ocs1.spt 0 884881970 originatingbcsm ""
+4 6 PIC_O_Null CS1\pic_o_nu.spd 0 884881974 pic_o_null ""
+4 6 PIC_Analyse_Information CS1\pic_anal.spd 0 884881972 pic_analyse_information ""
+4 106 PIC_Send_Call CS1\pic_send.spd 0 884881976 pic_send_call ""
+4 106 PIC_O_Active CS1\pic_o_ac.spd 0 884881974 pic_o_active ""
+4 6 PIC_Authorise_Origination_Attempt CS1\pic_auth.spd 0 884881972 pic_authorise_origination_attempt ""
+4 6 PIC_Select_Route CS1\pic_sele.spd 0 884881976 pic_select_route ""
+4 106 PIC_O_Alerting CS1\pic_o_al.spd 0 884881974 pic_o_alerting ""
+4 6 PIC_O_Abandon CS1\pic_o_ab.spd 0 884881974 pic_o_abandon ""
+4 6 PIC_Collect_Information CS1\pic_coll.spd 0 884881972 pic_collect_information ""
+4 6 PIC_Authorise_Call_Setup CS1\pic_aut1.spd 0 884881972 pic_authorise_call_setup ""
+4 6 PIC_O_Answer CS1\pic_o_an.spd 0 884881974 pic_o_answer ""
+4 6 PIC_OException CS1\pic_oexc.spd 0 884881976 pic_oexception ""
+4 6 PIC_Collect_NDigits CS1\pic_col1.spd 0 884881972 pic_collect_ndigits ""
+4 106 DP_origAttemptAuthorised CS1\dp_origa.spd 0 884881954 dp_origattemptautorised ""
+4 106 DP_Route_Select_Failure CS1\dp_route.spd 0 884881954 dp_route_select_failure ""
+4 106 DP_oCalledPartyBusy CS1\dp_ocall.spd 0 884881952 dp_ocalledpartybusy ""
+4 106 DP_oDisconnect CS1\dpdiscon.spd 0 884881958 dpdisconnect ""
+4 106 DP_Collected_Info CS1\dp_colle.spd 0 884881952 dp_collected_info ""
+4 106 DP_oAnswer CS1\dp_o_ans.spd 0 884881952 dp_o_answer ""
+4 106 DP_oMidCall CS1\dp_omidc.spd 0 884881954 dp_omidcall ""
+4 106 DP_Analysed_Information CS1\dp_analy.spd 0 884881950 dp_analysed_information ""
+4 106 DP_oNoAnswer CS1\dp_onoan.spd 0 884881954 dp_onoanswer ""
+4 106 DP_oAbandon CS1\dp_oaban.spd 0 884881952 dp_oabandon ""
+4 6 MapToSIRArg CS1\maptosir.spd 0 884881968 maptosirarg ""
+4 6 MapToDP CS1\maptodp.spd 0 884881968 maptodp ""
+4 6 MapFromPIC CS1\mapfpic.spd 0 884881966 mapfrompic ""
+3 115 TerminatingBCSM CS1\tcs1.spt 0 884882002 terminatingbcsm ""
+4 6 PIC_T_Null CS1\pic_t_nu.spd 0 884881978 pic_t_null ""
+4 6 PIC_Select_Facility CS1\pic_sel1.spd 0 884881976 pic_select_facility ""
+4 106 PIC_tActive CS1\pic_tact.spd 0 884881978 pic_tactive ""
+4 6 PIC_Authorize_Termination_Attempt CS1\pic_aut2.spd 0 884881972 pic_authorize_termination_attempt ""
+4 106 PIC_Present_Call CS1\pic_pres.spd 0 884881976 pic_present_call ""
+4 6 PIC_TException CS1\pic_texc.spd 0 884881978 pic_texception ""
+4 106 PIC_tAlerting CS1\pic_tale.spd 0 884881978 pic_talerting ""
+4 106 DP_termAttemptAuthorized CS1\dp_terma.spd 0 884881956 dp_termattemptauthorized ""
+4 106 DP_tNoAnswer CS1\dp_tnoan.spd 0 884881956 dp_tnoanswer ""
+4 106 DP_tDisconnect CS1\dp_disco.spd 0 884881952 dp_disconnect ""
+4 106 DP_tBusy CS1\dp_tbusy.spd 0 884881956 dp_tbusy ""
+4 106 DP_tMidCall CS1\dp_tmidc.spd 0 884881956 dp_tmidcall ""
+4 106 DP_tAnswer CS1\dp_tansw.spd 0 884881956 dp_tanswer ""
+4 106 DP_tAbandon CS1\dp_taban.spd 0 884881954 dp_tabandon ""
+3 115 SSME_FSM CS1\ssme_fsm.spt 0 884882002 ssme_fsm ""
+4 6 ProcessActivateServiceFiltering CS1\procasf.spd 0 884881980 processactivateservicefiltering ""
+4 6 ProcessCallGap CS1\proccg.spd 0 884881980 processcallgap ""
+4 106 InitialiseTDPTable CS1\inittdps.spd 0 884881966 initialisetdptable ""
+4 6 Mgt_SetTriggerTable CS1\mgt_stt.spd 0 884881968 mgt_settriggertable ""
+4 6 ArmTDPs CS1\armstati.spd 0 884881944 armstaticdps ""
+4 6 MatchingServiceFilteringCriteria CS1\matching.spd 0 884881968 matchingservicefilteringcriteria1 ""
+4 106 CheckACG CS1\checkacg.spd 0 884881948 checkacg1 ""
+4 6 CallFiltered CS1\callfilt.spd 0 884881946 callfiltered1 ""
+2 113 TCAP_Simulator TCAP\tcaps.sbt 0 884882090 tcap_simulator ""
+3 1005 TCAP_D "TCAP_Dialog" "(0)" 0
+3 1005 TCAP_IH "TCAP_InterfaceHandler" "(1,1)" 0
+3 115 TCAP_InterfaceHandler TCAP\tcapi.spt 0 884882090 tcap_interfacehandler ""
+4 19 newDialog TCAP\newd.sop 0 884882088 newdialog ""
+4 19 initDialogs TCAP\initd.sop 0 884882088 initdialogs ""
+4 19 getDialogID TCAP\getd.sop 0 884882088 getdialogid ""
+4 19 nextFreeDialogID TCAP\nextfd.sop 0 884882088 nextfreedialogid ""
+3 115 TCAP_Dialog TCAP\tcapd.spt 0 884882090 tcap_dialog ""
+4 19 newTCmessage TCAP\newtcm.sop 0 884882088 newtcmessage ""
+0 23 "IN CS-2 Specification" %unconnected% 0 432000 0 ""
+0 11 CS2_INAP CS2\cs2.sun 0 884882010 cs2_inap ""
+1 12 CS2_INAP CS2\cs2_inap.sst 0 884882010 cs2_inap1 ""
+2 1002 SSF_CCF_A "" "" 1
+2 1002 SSF_CCF_B "" "" 1
+2 1002 TCAP_Adapter "" "" 1
+2 213 SSF_CCF CS2\ccf_ssf.sbt 0 884882010 ccf_ssf ""
+3 1005 CS "" "" 1
+3 1005 CSA "" "" 1
+3 1005 IH "" "" 1
+3 1005 O_BCSM "" "" 1
+3 1005 SSF "" "" 1
+3 1005 SSME "" "" 1
+3 1005 T_BCSM "" "" 1
+3 215 InterfaceHandler CS2\interfac.spt 0 884882028 interfacehandler ""
+4 6 ProcessMoveCallSegments CS2\processm.spd 2 884882040 processmovecallsegments ""
+3 215 CallSegmentAssociation CS2\csa2.spt 0 884882012 callsegmentassociation1 ""
+4 6 NoOfSegments CS2\noofsegm.spd 0 884882030 noofsegments ""
+4 6 ExportLeg CS2\exportl1.spd 0 884882024 exportleg1 ""
+4 6 ExportCS CS2\exportcs.spd 0 884882024 exportcs ""
+4 6 ImportLeg CS2\importl1.spd 0 884882026 importleg1 ""
+4 6 ImportCS CS2\importcs.spd 0 884882026 importcs ""
+4 6 RemoveLeg CS2\removele.spd 0 884882044 removeleg1 ""
+4 6 RemoveCS CS2\removecs.spd 0 884882044 removecs ""
+4 6 MoveLegs CS2\movelegs.spd 0 884882030 movelegs ""
+4 6 ExportControllingLeg CS2\expcl.spd 0 884882024 exportcontrollingleg ""
+4 6 ProcessRRBE CS2\processr.spd 0 884882040 processrrbe ""
+4 6 DisconnectControllingLeg CS2\dlc.spd 0 884882012 disconnectleg ""
+4 6 ProcessQueuedRRBE CS2\processq.spd 0 884882040 processqueuedrrbe ""
+4 6 ReleaseCall CS2\release1.spd 0 884882042 releasecall ""
+3 215 CallSegment CS2\cv2.spt 1 884882012 connectionview11 ""
+4 6 ImportLeg CS2\importle.spd 0 884882026 importleg ""
+4 6 BroadcastToLegs CS2\broadcas.spd 0 884882008 broadcasttolegs ""
+4 6 ExportLeg CS2\exportle.spd 0 884882024 exportleg ""
+4 6 NoOfLegs CS2\nooflegs.spd 0 884882030 nooflegs1 ""
+4 6 DPFiltering CS2\dpfil.spd 0 884882022 dpfiltering1 ""
+4 6 MapSFToBCSM CS2\msftbcsm.spd 0 884882030 MapSFToBCSM ""
+4 6 DPFilteringUTSI CS2\dpfilter.spd 0 884882022 dpfilteringutsi ""
+4 6 MapAIToBCSM CS2\maitbcsm.spd 0 884882028 MapAIToBCSM ""
+4 6 MapSRToBCSM CS2\msrtbcsm.spd 0 884882030 MapSRToBCSM ""
+3 215 SSF_FSM CS2\ssf_fsm2.spt 0 884882044 ssf_fsm1 ""
+4 6 ExportEventRecord CS2\expevl.spd 0 884882024 exporteventrecord ""
+4 6 ProcessContinueWithArgument CS2\pcwa.spd 0 884882032 processcontinuewithargument ""
+4 6 ProcessRequestReportUTSI CS2\process3.spd 0 884882038 processrequesteventreportutsi ""
+4 6 ImportEventRecord CS2\impevl.spd 0 884882026 importeventrecord ""
+4 6 ProcessDisconnectLeg CS2\processd.spd 0 884882040 processdisconnectleg ""
+4 6 ProcessSendSTUI CS2\process4.spd 0 884882038 processsendstui ""
+4 6 ProcessReportUTSI CS2\process5.spd 0 884882038 processreportutsi ""
+4 206 ProcessDPSpecific CS2\ProcDPS.spd 0 884882008 processdpspecific1 ""
+4 6 IsUTSIArmed CS2\isutsiar.spd 0 884882028 isutsiarmed ""
+4 6 ProcessReportFacility CS2\prf.spd 0 884882036 ProcessReportFacility ""
+4 6 ProcessRequestReportFacilityEvent CS2\prrfe.spd 0 884882042 ProcessRequestReportFacilityEvent ""
+4 6 IsFacilityArmed CS2\isfa.spd 0 884882028 IsFacilityArmed ""
+4 6 ProcessSendFacility CS2\psf.spd 0 884882042 ProcessSendFacility ""
+4 206 InitialiseDPTable CS2\initiali.spd 0 884882026 initialisedptable11 ""
+3 215 SSME_FSM CS2\ssmefsm.spt 0 884882044 ssme ""
+4 6 ProcessManageTriggerData CS2\procmtd.spd 0 884882042 processmanagetriggerdata ""
+4 206 CheckACG CS2\checkac1.spd 0 884882010 checkacg11 ""
+4 206 InitialiseTDPTable CS2\inittdp2.spd 0 884882026 initialisetdptable1 ""
+3 215 OriginatingBCSM CS2\ocs2.spt 0 884882032 originatingbcsm1 ""
+4 206 PIC_O_Active CS2\pic_o_ac.spd 0 884882032 pic_o_active1 ""
+4 206 PIC_Send_Call CS2\pic_send.spd 0 884882034 pic_send_call1 ""
+4 6 PIC_O_Suspended CS2\pic_o_su.spd 0 884882034 pic_o_suspended ""
+4 6 PIC_O_Retention CS2\pic_o_re.spd 0 884882034 pic_o_retention ""
+4 206 PIC_O_Alerting CS2\pic_o_al.spd 0 884882034 pic_o_alerting1 ""
+4 6 PIC_Disconnect CS2\pic_disc.spd 0 884882032 pic_disconnect ""
+4 206 DP_origAttemptAuthorised CS2\dp_origa.spd 0 884882018 dp_origattemptauthorised ""
+4 206 DP_oAnswer CS2\dp_oansw.spd 0 884882014 dp_oanswer ""
+4 206 DP_oAbandon CS2\dp_oaban.spd 0 884882014 dp_oabandon1 ""
+4 6 DP_oSuspended CS2\dp_osusp.spd 0 884882018 dp_osuspended ""
+4 206 DP_Collected_Info CS2\dp_colle.spd 0 884882014 dp_collected_info1 ""
+4 206 DP_oNoAnswer CS2\dp_onoan.spd 0 884882016 dp_onoanswer1 ""
+4 206 DP_oDisconnect CS2\dp_disco.spd 0 884882014 dp_disconnect1 ""
+4 206 DP_Analysed_Information CS2\dp_analy.spd 0 884882012 dp_analysed_information1 ""
+4 206 DP_oCalledPartyBusy CS2\dp_ocall.spd 0 884882016 dp_ocalledpartybusy1 ""
+4 6 DP_oReanswer CS2\dp_orean.spd 0 884882016 dp_oreanswer ""
+4 206 DP_Route_Select_Failure CS2\dp_rout1.spd 0 884882018 dp_route_select_failure1 ""
+4 206 DP_oMidCall CS2\dp_omid1.spd 0 884882016 dp_omidcall1 ""
+4 6 DP_origAttempt CS2\dp_orig1.spd 0 884882016 dp_origattempt ""
+4 6 DP_oTermSeized CS2\dp_oterm.spd 0 884882018 dp_otermseized ""
+3 215 TerminatingBCSM CS2\tcs2.spt 0 884882046 terminatingbcsm1 ""
+4 206 PIC_Present_Call CS2\pic_pres.spd 0 884882034 pic_present_call1 ""
+4 6 PIC_Disconnect CS2\pic_dis2.spd 0 884882032 pic_disconnect1 ""
+4 206 PIC_tAlerting CS2\pic_tale.spd 0 884882036 pic_talerting1 ""
+4 6 PIC_T_Suspended CS2\picts.spd 0 884882036 pic_tsuspended ""
+4 206 PIC_tActive CS2\picta.spd 0 884882036 pic_tactive1 ""
+4 206 DP_termAttemptAuthorized CS2\dp_terma.spd 0 884882020 dp_termattempt_authorized ""
+4 206 DP_tMidCall CS2\dp_tmidc.spd 0 884882020 dp_tmidcall1 ""
+4 6 DP_termAttempt CS2\dpta.spd 0 884882022 dp_termattempt ""
+4 6 DP_tReanswer CS2\dptr.spd 0 884882022 dp_treanswer ""
+4 206 DP_tBusy CS2\dp_tbusy.spd 0 884882020 dp_tbusy1 ""
+4 206 DP_tAbandon CS2\dp_taban.spd 0 884882018 dp_tabandon1 ""
+4 6 DP_Facility_Selected_and_Available CS2\dpfsaa.spd 0 884882022 dp_facility_selected_and_available ""
+4 206 DP_tAnswer CS2\dp_tansw.spd 0 884882020 dp_tanswer1 ""
+4 206 DP_tDisconnect CS2\dp_disc1.spd 0 884882014 dp_disconnect2 ""
+4 6 DP_tSuspended CS2\dpts.spd 0 884882024 dp_tsuspended ""
+4 206 DP_tNoAnswer CS2\dp_tnoan.spd 0 884882020 dp_tnoanswer1 ""
+4 6 DP_tCall_Accepted CS2\dp_tcall.spd 0 884882020 dp_tcall_accepted ""
+2 213 TCAP_Simulator CS2\tcap.sbt 0 884882046 tcap_simulator1 ""
+3 1005 TCAP_D "" "" 1
+3 1005 TCAP_IH "" "" 1
+3 215 TCAP_InterfaceHandler CS2\tcapih.spt 0 884882046 tcap_interfacehandler1 ""
+3 215 TCAP_Dialog CS2\tcapdia.spt 0 884882046 tcap_dialog1 ""
+0 11 CS2_SRF SRF\geinapty.sun 0 884882066 CS2_SRF ""
+1 12 CS2_SRF SRF\gen_srf.sst 0 884882066 GENERIC_SRF ""
+2 1002 SRFunction "SRF" "" 0
+2 113 SRF SRF\srf.sbt 0 884882070 SRF ""
+3 1005 SRM "SRFManager" "(1,1)" 0
+3 1005 SRSM "SRFStateModel" "(1,...)" 0
+3 15 SRFManager SRF\srm.spt 0 884882072 SRFManager ""
+4 6 DetermineIndex SRF\detindex.spd 2 884882066 DetermineIndex ""
+4 6 GetPtrFromIndex SRF\getptrin.spd 0 884882068 GetPtrFromIndex ""
+4 6 GetIndexFromPtr SRF\getinptr.spd 0 884882068 GetIndexFromPtr ""
+3 15 SRFStateModel SRF\srsm.spt 0 884882072 SRFStateModel ""
+4 6 SSF_EstablishConnection SRF\estconss.spd 0 884882066 SSF_EstablishConnection ""
+4 6 ProcessPlayAnnouncement SRF\procpa.spd 0 884882070 ProcessPlayAnnouncement ""
+4 6 ProcessEraseMessage %unconnected% 0 432000 ProcessEraseMessage ""
+4 6 ProcessPromptAndCollectUserInformation SRF\procpacu.spd 0 884882070 ProcessPromptAndCollectUserInformation ""
+4 6 ProcessPromptAndReceiveMessage %unconnected% 0 432000 ProcessPromptAndReceiveMessage ""
+4 6 ProcessScriptClose %unconnected% 0 432000 ProcessScriptClose ""
+4 6 ProcessScriptInformation %unconnected% 0 432000 ProcessScriptInformation ""
+4 6 ProcessScriptRun %unconnected% 0 432000 ProcessScriptRun ""
+4 6 ProcessCancel %unconnected% 0 432000 ProcessCancel ""
+0 11 CS2_Assisting Assisting\cs2a.sun 0 884881940 CS2_Assisting ""
+1 12 AssistHandOffSSF TCAP\AssistHandOffSSF.sst 0 885227532 AssistHandOffSSF ""
+2 113 AssistHandOffSSF Assisting\ahossf.sbt 8 884881938 AssistHandOffSSF1 ""
+3 1005 AHSSF "AssistHandOffSSF" "(0)" 0
+3 1005 IH "InterfaceHandler" "(1,1)" 0
+3 115 InterfaceHandler %unconnected% 0 432000 InterfaceHandler ""
+3 115 AssistHandOffSSF Assisting\ahossf.spt 0 884881938 AssistHandOffSSF2 ""
+4 6 ProcessInapInstruction %unconnected% 0 432000 ProcessInapInstruction ""
+0 11 CS2_CUSF CUSF\generife.sun 0 884882056 CS2_CUSF ""
+1 12 CS2_CUSF CUSF\generife.sst 0 884882054 CS2_CUSF1 ""
+2 1002 CUSF_A "CUSF" "" 0
+2 1002 TCAP "TCAP_Adapter" "" 0
+2 113 CUSF CUSF\fe.sbt 0 884882054 CUSF ""
+3 1005 BCUSM_A "BCUSM" "(1,...)" 0
+3 1005 CUSF "CUSF_FSM" "(1,...)" 0
+3 1005 CUSFM "CUSFManager" "" 0
+3 115 CUSFManager CUSF\manager.spt 0 884882058 CUSFManager ""
+4 6 AllocateIndex CUSF\alindex.spd 2 884882050 AllocateIndex ""
+4 6 AddIndex CUSF\addindex.spd 0 884882050 AddIndex ""
+4 6 GetIndexfromInstance CUSF\geixfrin.spd 0 884882054 GetIndexfromInstance ""
+4 6 GetInstancefromIndex CUSF\geinfrix.spd 0 884882054 GetInstancefromIndex ""
+4 6 GetIndexfromSigConId CUSF\geinfrsc.spd 0 884882054 GetIndexfromSigConId ""
+4 6 SetSigConAssoc CUSF\sesicoas.spd 0 884882058 SetSigConAssoc ""
+4 6 IsInstance %unconnected% 0 432000 IsInstance ""
+3 115 CUSF_FSM CUSF\cusf_fsm.spt 0 884882052 CUSF_FSM ""
+4 6 ProcessActivateReceivedAndAuthorised %unconnected% 0 432000 ProcessActivateReceivedAndAuthorised ""
+4 6 ProcessAssociationReleaseRequested %unconnected% 0 432000 ProcessAssociationReleaseRequested ""
+4 6 ProcessComponentReceived %unconnected% 0 432000 ProcessComponentReceived ""
+4 6 ProcessInitiateAssociation %unconnected% 0 432000 ProcessInitiateAssociation ""
+4 6 ProcessReleaseAssociation %unconnected% 0 432000 ProcessReleaseAssociation ""
+4 6 ProcessRequestReportBCUSMEvent %unconnected% 0 432000 ProcessRequestReportBCUSMEvent ""
+4 6 InitialiseDPTable_A CUSF\inevlist.spd 0 884882056 InitialiseDPTable_A ""
+4 6 ArmStaticDPs_A CUSF\armstadp.spd 0 884882050 ArmStaticDPs_A ""
+4 6 AnyDPArmed_A CUSF\anevarmd.spd 0 884882050 AnyDPArmed_A ""
+4 6 IsDPArmed_A CUSF\isevarmd.spd 0 884882056 IsDPArmed_A ""
+4 6 DisarmDPs_A CUSF\disarmdp.spd 0 884882052 DisarmDPs_A ""
+4 6 DPArmed_A CUSF\dparmed_.spd 0 884882052 DPArmed_A ""
+4 6 GetDPIndex_A CUSF\getevind.spd 0 884882056 GetDPIndex_A ""
+3 115 BCUSM CUSF\bcusm.spt 0 884882050 BCUSM ""
+4 6 MapFromPIA %unconnected% 0 432000 MapFromPIA ""
+4 6 MapToDP %unconnected% 0 432000 MapToDP ""
+2 13 TCAP_Adapter %unconnected% 0 432000 TCAP_Adapter ""
+0 23 "System Instantiations" %unconnected% 0 432000 0 ""
+0 1 CS1_INAP CS1\cs1.ssy 0 884881948 cs11 ""
+0 1 CS2_INAP CS2\cs2_inap.ssy 0 884882010 cs2_inap2 ""
+0 23 "CS-1 Examples" %unconnected% 0 432000 0 ""
+0 16 CI_Overview EXAMPLES\ciov.msc 0 432000 - ""
+0 16 CI_Detailed EXAMPLES\cid.msc 0 432000 - ""
+0 16 CO_Overview EXAMPLES\coov.msc 0 432000 - ""
+0 16 CO_Detailed EXAMPLES\cod.msc 0 432000 - ""
+0 23 "CPH Examples" %unconnected% 0 432000 0 ""
+0 16 3Pty_Overview EXAMPLES\3ptyov.msc 0 432000 - ""
+0 16 3Pty_Detailed EXAMPLES\3ptyd.msc 0 432000 - ""
+0 16 CF_Overview EXAMPLES\cfov.msc 0 432000 - ""
+0 16 CF_Detailed EXAMPLES\cfd.msc 0 432000 - ""
+0 23 "CS-1 Test Purposes" %unconnected% 0 432000 0 ""
+[VIEWOPTIONS]
+Scale=118
+ShowDirectories=True
+ShowLinks=False
+ShowLongMenus=True
+ShowSeparators=False
+ShowTypeName=True
+[ANALYSEROPTIONS]
+ErrorLimit=250
+ExpandPR=True
+Filter=False
+ImplicitTypeConvControl=False
+InstanceFile=False
+OptionalParamControl=False
+OutputControl=False
+ReferenceControl=False
+SemanticControl=True
+TrailingParamControl=False
+UsageControl=False
+XRef=False
+[H2SDLOPTIONS]
+AllWarnings=False
+Preprocessor=""
+PreprocessorOptions=""
+TranslateEnum=True
+UseFullPath=True
+UsePreprocessorOptions=False
+[MAKEOPTIONS]
+Capitalization=LowerCase
+CCompilerDriver=False
+GenerateCode=False
+Kernel=SCTDEBCLCOM
+MakefileMode=UserDefined
+UserKernel=\home\grabowsk\Autolink
+UserMakefile=\PEX\JAN\COREINAP\Target\SDTMake.m
+UserTemplate=\home\ellsberg\SDL\CoreINAP
+[PRINTOPTIONS]
+DestinationFormat=PSFile
+FirstPageNo=1
+HeaderFile=\home\ellsberg\SDL\CoreINAP\INAP_Header
+MarginLeft=100
+MarginLower=250
+MarginRight=100
+MarginUpper=420
+PrinterCommand=lpr -h -r -Pbe1cb01
+PrinterFile=..\ImprWtoc\cs2_srf.ps
+PrintFrom=0
+PrintTo=0
+PrintToFile=True
