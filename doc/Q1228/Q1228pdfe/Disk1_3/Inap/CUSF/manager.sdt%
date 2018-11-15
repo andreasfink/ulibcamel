@@ -1,0 +1,84 @@
+SDT-SYSTEM-3.1
+[DRIVES]
+[SOURCE-TARGET-DIRECTORY]
+AbsolutePath=True
+SourceDirectory=/home/ellsberg/SDL/FROMFRANS/manager/
+TargetDirectory=/home/ellsberg/SDL/FROMFRANS/manager/
+[DIAGRAMS]
+-1 23 "Analysis Model" %unconnected% 0
+-1 23 "ASN1 Modules" %unconnected% 0
+0 34 INCS2datatypes /home/ellsberg/SDL/FROMFRANS/manager/dattypes.asn 0 0 incs2datatypes ""
+0 34 INCS2BundleArg /home/ellsberg/SDL/FROMFRANS/manager/bunarg.asn 0 0 incs2bundlearg ""
+0 34 IN-CS2-SCF-CUSF-ops-args /home/ellsberg/SDL/FROMFRANS/manager/cusfscfo.asn 0 0 incs2cusfscfopsargs ""
+0 34 INCS2Internals /home/ellsberg/SDL/FROMFRANS/manager/internal.asn 0 0 incs2internals "" "4"
+-1 23 "Used Files" %unconnected% 0
+0 11 CS2_CUSF /home/ellsberg/SDL/FROMFRANS/manager/generife.sun 0 777600 cs2_cusf ""
+1 12 CS2_CUSF /home/ellsberg/SDL/FROMFRANS/manager/generife.sst 0 0 manager ""
+2 113 CUSF /home/ellsberg/SDL/FROMFRANS/manager/fe.sbt 0 0 fe ""
+3 115 CUSFManager /home/ellsberg/SDL/FROMFRANS/manager/manager.spt 0 0 manager1 ""
+4 6 AllocateIndex /home/ellsberg/SDL/FROMFRANS/manager/alindex.spd 0 0 allocateindex ""
+4 6 AddIndex /home/ellsberg/SDL/FROMFRANS/manager/addindex.spd 0 0 addindex ""
+4 6 GetIndexfromInstance /home/ellsberg/SDL/FROMFRANS/manager/geixfrin.spd 0 0 getindexfrominstance ""
+4 6 GetInstancefromIndex /home/ellsberg/SDL/FROMFRANS/manager/geinfrix.spd 0 0 getinstancefromindex ""
+4 6 GetIndexfromSigConId /home/ellsberg/SDL/FROMFRANS/manager/geinfrsc.spd 0 0 getindexfromsigconid ""
+4 6 SetSigConAssoc /home/ellsberg/SDL/FROMFRANS/manager/sesicoas.spd 0 0 setsigconassoc ""
+4 6 IsInstance %unconnected% 0 0 isinstance ""
+3 115 CUSF_FSM /home/ellsberg/SDL/FROMFRANS/manager/cusf_fsm.spt 8 0 statemodel ""
+4 6 ProcessActivateReceivedAndAuthorised %unconnected% 0 0 processactivatereceivedandauthorised ""
+4 6 ProcessAssociationReleaseRequested %unconnected% 0 0 processassociationreleaserequested ""
+4 6 ProcessComponentReceived %unconnected% 0 0 processcomponentreceived ""
+4 6 ProcessInitiateAssociation %unconnected% 0 0 processinitiateassociation ""
+4 6 ProcessReleaseAssociation %unconnected% 0 0 processreleaseassociation ""
+4 6 ProcessRequestReportBCUSMEvent %unconnected% 0 0 processrequestreportbcusmevent ""
+4 6 InitialiseDPTable_A /home/ellsberg/SDL/FROMFRANS/manager/inevlist.spd 0 0 initialisedptable_a ""
+4 6 ArmStaticDPs_A /home/ellsberg/SDL/FROMFRANS/manager/armstadp.spd 0 0 armstaticdps_a ""
+4 6 AnyDPArmed_A /home/ellsberg/SDL/FROMFRANS/manager/anevarmd.spd 0 0 anydparmed_a ""
+4 6 IsDPArmed_A /home/ellsberg/SDL/FROMFRANS/manager/isevarmd.spd 0 0 isdparmed_a ""
+4 6 DisarmDPs_A /home/ellsberg/SDL/FROMFRANS/manager/disarmdp.spd 0 0 disarmdps_a ""
+4 6 DPArmed_A /home/ellsberg/SDL/FROMFRANS/manager/dparmed_.spd 0 0 dparmed_a ""
+4 6 GetDPIndex_A /home/ellsberg/SDL/FROMFRANS/manager/getevind.spd 0 0 getdpindex_a ""
+3 115 BCUSM /home/ellsberg/SDL/FROMFRANS/manager/bcusm.spt 0 0 0 ""
+4 6 MapFromPIA %unconnected% 0 0 mapfrompia ""
+4 6 MapToDP %unconnected% 0 0 maptodp ""
+2 13 TCAP_Adapter /home/ellsberg/SDL/FROMFRANS/manager/TCAP.sbt 0 0 tcap_adapter ""
+3 115 TCAP_InterfaceHandler %unconnected% 0 0 tcap_interfacehandler ""
+3 115 TCAP_Dialog /home/ellsberg/SDL/FROMFRANS/manager/TCAPD.spt 0 0 tcap_dialog ""
+4 19 newTCmessage %unconnected% 0 0 newtcmessage ""
+-1 23 "TTCN Test Specification" %unconnected% 0
+[VIEWOPTIONS]
+Scale=99
+ShowDirectories=True
+ShowLinks=False
+ShowLongMenus=True
+ShowSeparators=False
+ShowStatusBar=True
+ShowToolBar=True
+ShowTypeName=True
+[ANALYSEROPTIONS]
+ErrorLimit=35
+ExpandPR=True
+Filter=False
+OutputControl=False
+ReferenceControl=False
+SemanticControl=True
+UsageControl=False
+XRef=False
+[MAKEOPTIONS]
+Capitalization=AsDefined
+Kernel=SCTADEBCLCOM
+StandardKernel=False
+UserKernel=/home/users/haerensf/ITUTCS2/autolink
+[PRINTOPTIONS]
+DestinationFormat=PSFile
+FirstPageNo=1
+FooterFile=/home/users/haerensf/BISUP/footer
+HeaderFile=/home/ellsberg/SDL/CoreINAP/INAP_Header
+MarginLeft=100
+MarginLower=250
+MarginRight=100
+MarginUpper=420
+PrinterCommand=lpr -h -r -Pbe1cb01
+PrinterFile=
+PrintFrom=0
+PrintTo=0
+PrintToFile=False

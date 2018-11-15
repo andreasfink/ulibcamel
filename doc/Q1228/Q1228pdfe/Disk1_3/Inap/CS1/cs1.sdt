@@ -1,0 +1,15 @@
+2 113 SL sl.sbt 0 0 sl
+3 15 SL_ReRoute sl_reroute.spt 0 0 sl_reroute
+4 6 BuildConnect buildconnect.spd 0 0 buildconnect
+4 6 BuildRequestReportBCSMEvent buildrequestreportbcsmevent.spd 0 0 buildrequestreportbcsmevent
+3 15 SL_Selector sl_sel.spt 0 0 sl_selector
+4 6 GetIHfromSL getihfromsl.spd 0 0 getihfromsl
+4 6 GetSLfromIH getslfromih.spd 0 0 getslfromih
+4 6 IsIH isih1.spd 0 0 isih
+3 15 SL_SimpleTranslation sl_simpletranslation3.spt 0 0 sl_simpletranslation
+4 6 BuildConnect buildconnect1.spd 0 0 buildconnect1
+3 15 SL_WakeUpCall sl_wakeupcall.spt 0 0 sl_wakeupcall
+4 6 BuildConnect buildconnect2.spd 0 0 buildconnect2
+4 6 BuildContinue buildcontinue.spd 0 0 buildcontinue
+4 6 BuildInitiateCallAttempt buildinitiatecallattempt.spd 0 0 buildinitiatecallattempt
+4 6 BuildRequestReportBCSMEvent buildrequestreportbcsmevent1.spd 0 0 buildrequestreportbcsmevent1

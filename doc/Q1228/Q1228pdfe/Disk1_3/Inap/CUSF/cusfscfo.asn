@@ -1,0 +1,297 @@
+IN-CS2-SCF-CUSF-ops-args {ccitt recommendation q 1228 modules(0) in-cs2-scf-cusf-ops-args (15) version1(0)}
+
+DEFINITIONS IMPLICIT TAGS ::= 
+BEGIN
+IMPORTS
+
+
+	BCUSMEvent,
+	CalledPartyNumber,
+	CallUnrelatedDpSpecificCommonParameters ,
+	Cause ,
+	Component,
+	ComponentType,
+	ComponentCorrelationID,
+	Duration,
+	ExtensionField ,
+	Message,
+	OperationCode
+FROM INCS2datatypes --datatypes
+	
+activityTest
+-- Direction: SCF -> CUSF, Timer: Tat  
+-- This operation is used to check for the continued existence of a relationship between the SCF 
+-- and CUSF. If the relationship is still in existence, then the CUSF will respond. If no reply is 
+-- received, then the SCF will assume that the CUSF has failed in some way and will take the 
+-- appropriate action.
+reportUTSI
+-- Direction: CUSF -> SCF, Timer: Tru  
+-- This operation is issued by the CUSF in the context of the USI feature. It is used to report the receipt
+-- of a User to Service Information (UTSI) information element to the SCF.
+
+requestReportUTSI
+-- Direction: SCF -> CUSF, Timer: Trrcu  
+-- This operation is used by the SCF in the context of the USI feature to request the CUSF to monitor
+-- a User to Service Information (UTSI) information element, which is received from a user.
+
+resetTimer
+-- Direction: SCF -> CUSF, Timer: Trt  
+-- This operation is used to request the CUSF to refresh the application timer TCUSF. 
+	
+sendSTUI
+-- Direction: SCF -> CUSF, Timer: Tss  
+-- This operation is issued by the SCF in the context of the USI feature. It is used to request the CUSF
+-- to send a User to Service Information (UTSI) information element to the indicated user.
+
+
+FROM INCS2SSFSCFopsargs
+ -- {ccitt recommendation q 1228 modules(0) in-cs2-ssf-scf-ops-args (5)  version1(0)}
+
+	
+
+;
+-- Direction: SCF -> CUSF, Timer: Tat  
+-- This operation is used to check for the continued existence of a relationship between the SCF 
+-- and CUSF. If the relationship is still in existence, then the CUSF will respond. If no reply is 
+-- received, then the SCF will assume that the CUSF has failed in some way and will take the 
+-- appropriate action.
+
+
+--activationReceivedAndAuthorized  
+-- Direction: CUSF->SCF, Timer: Tara
+--	This operation is used to indicate the desire from an end user to establish an association between the end user 
+--	and a network (e.g., Q.932 REGISTER message), and the authority/ability to establish the association is 
+--	verified (BCUSM DP - Activation Received And Authorized). As the association request can have a request to 
+--	invoke an operation between the user and the network, this operation optionally indicates the component of 
+--	the operation to the SCF.
+
+ActivationReceivedAndAuthorizedArg  ::= SEQUENCE{
+	callUnrelatedDpSpecificCommonParameters [0] CallUnrelatedDpSpecificCommonParameters ,
+	componentType	[1] ComponentType	OPTIONAL,
+	componentCorrelationID	[3] ComponentCorrelationID	OPTIONAL,
+	extensions	[4] SEQUENCE SIZE(1..numOfExtensions) OF
+			     ExtensionField  	OPTIONAL,
+	component	[5] Component	OPTIONAL
+	}
+
+-- associationReleaseRequested 
+-- Direction: CUSF -> SCF, Timer: Tarr
+-- This operation is issued by the CUSF for reporting the TDP/EDP event to the SCF that a
+-- request of association release 
+-- with optionally an operation invocation request or an response/error has been received, and criteria for the 
+-- Association Released Requested DP were met. 
+AssociationReleaseRequestedArg  ::= SEQUENCE {
+	callUnrelatedDpSpecificCommonParameters  [0] CallUnrelatedDpSpecificCommonParameters ,
+	componentType	[1] ComponentType	OPTIONAL,
+	componentCorrelationID	[3] ComponentCorrelationID	OPTIONAL,
+	extensions	[4] SEQUENCE SIZE(1..numOfExtensions) 
+			     OF ExtensionField  	OPTIONAL,
+	component	[5] Component	OPTIONAL
+	
+	}
+-- componentReceived   
+-- Direction: CUSF -> SCF, Timer: Tcre 
+-- This operation is used to indicate the reception of invocation of an operation or return result / return error / reject from
+-- an end user to the network.  This event is the previously requested EDP with RequestReportBCUSMEvent
+-- operation for all cases or the TDP if the new invocation meets the criteria for the ComponentReceived DP.
+-- The received result may be correlated with previously delivered invocation/result to the user with
+-- the RequestReportBNCSMEvent and SendComponent operation.
+-- Note that the multiple points of control is not allowed for the bearer un-unrelated interaction, and TDP is allowed
+-- if there is no control relationship between the SCF and the CUSF.  This is the same as the SCF-SSF case.
+
+ComponentReceivedArg  ::= SEQUENCE {
+	callUnrelatedDpSpecificCommonParameters  [0] CallUnrelatedDpSpecificCommonParameters ,
+	componentType	[1] ComponentType	OPTIONAL,
+	componentCorrelationID	[3] ComponentCorrelationID	OPTIONAL,
+	extensions	[4] SEQUENCE SIZE(1..numOfExtensions) 
+			     OF ExtensionField  	OPTIONAL,
+	component	[5] Component	OPTIONAL
+	
+	}
+-- initiateAssociation  
+-- Direction: SCF->CUSF, Timer: Tia
+-- This operation is used for allowing the SCF to initiate a call unrelated association with the user.
+-- The subsequent operations can be sent in the same TCAP message in the following order :
+-- 	- the RequestReportBCUSMEvent operation if an answer from the CUSF is expected
+-- 	- the SendComponent operation 
+
+InitiateAssociationArg  ::= SEQUENCE {
+	calledPartyNumber	[0]	CalledPartyNumber ,
+	extensions	[1]	SEQUENCE SIZE(1..numOfExtensions)	OF
+			ExtensionField 	OPTIONAL
+	
+	}
+
+-- releaseAssociation   
+--  Direction: SCF->CUSF, Timer: Trel
+--  This operation is used to indicate to the CUSF to release the existing association between the user and the 
+--  network, during the BCUSM suspended at a DP.
+ReleaseAssociationArg  ::= Cause 
+
+-- requestReportBCUSMEvent  
+-- Direction: SCF -> CUSF, Timer: Trrbce
+-- This operation is used to request the CUSF to report the reception of invocation of an operation or return 
+-- result / reject from the end user to the SCF.  The requesting event can be ether the result, return error / reject
+-- from the end user as the response for the SCF specified invocation / result with the SendComponent operation
+-- or the independent invocation / result error from the end user.
+
+
+RequestReportBCUSMEventArg  ::= SEQUENCE{
+  bcusmEvents                   [0] SEQUENCE SIZE(1..numOfBCUSMEvents) OF BCUSMEvent,
+  componentTypes             [1] SEQUENCE SIZE(1..3) OF ComponentType DEFAULT {any},
+  componentCorrelationID  [2] ComponentCorrelationID	OPTIONAL,
+  monitorDuration               [3] Duration	OPTIONAL,
+  extensions                       [4] SEQUENCE SIZE(1..numOfExtensions) 
+			     OF ExtensionField 	OPTIONAL
+}
+
+-- sendComponent   
+--	Direction: SCF -> CUSF, Timer: Tsdc
+--	This operation is used to send a component to the user during the BCUSM suspended at a DP.
+SendComponentArg  ::= SEQUENCE{
+	componentType	[0] ComponentType,
+	componentCorrelationID	[2] ComponentCorrelationID	OPTIONAL,
+	message	[3] Message	DEFAULT   rELeaseCOMPlete,
+	monitorDuration	[4] Duration	OPTIONAL,
+	extensions	[5] SEQUENCE SIZE(1..numOfExtensions)	OF
+			      ExtensionField   	OPTIONAL,
+	component	[6] Component	OPTIONAL
+	
+	}
+
+
+-- connectAssociation 
+-- Direction: SCF->CUSF, Timer: Tcoa
+-- This operation is used to request the CUSF to proceed with processing. Additional information
+-- which shall be used in further connection establishment is provided by the SCF.
+ConnectAssociationArg ::= SEQUENCE {
+	address	[0]	CalledPartyNumber ,
+	forwardGVNS	[1] ForwardGVNS 	OPTIONAL,
+	extensions	[2]	SEQUENCE SIZE(1..numOfExtensions)	OF
+			ExtensionField  	OPTIONAL
+	
+	}
+
+-- continueAssociation 
+-- Direction: SCF->CUSF, Timer: Tcona
+-- This operation is used to request the CUSF to proceed with processing. Additional information
+-- which is not related to further connection establishment may be  provided by the SCF.
+
+ContinueAssociationArg ::= SEQUENCE {
+	extensions	[0]	SEQUENCE SIZE(1..numOfExtensions)	OF
+			ExtensionField  	OPTIONAL
+	
+	}
+-- eventReportBCUSM 
+-- Direction: CUSF -> SCF, Timer: Terbce
+-- This operation is used to notify the SCF of a call unrelated event previously requested by the SCF
+-- in a RequestReportBCUSMEvent operation.
+
+EventReportBCUSMArg ::= SEQUENCE{
+	eventTypeBCUSM	[0] EventTypeBCUSM	OPTIONAL,
+	eventSpecificInformationBCUSM [1] EventSpecificInformationBCUSM    OPTIONAL,
+	miscCallInfo	[2] MiscCallInfo	DEFAULT
+			     {messageType request},
+	extensions	[3]	SEQUENCE SIZE(1..numOfExtensions)	OF
+			ExtensionField  	OPTIONAL
+	
+	}
+
+
+	EventSpecificInformationBCUSM ::=  CHOICE{
+		componentReceivedSpecificInfo	[0] SEQUENCE{
+			componentReceivedInfo	[0]  OCTET STRING
+			(SIZE(minCompReceivedInfoLen
+			          ..maxCompReceivedInfoLen)	OPTIONAL
+			
+			},
+		associationReleaseRequestedSpecificInfo [1] SEQUENCE{
+			associationReleaseInfo	[0]  OCTET STRING
+			(SIZE(minAssReleaseInfoLen
+			          ..maxAssReleaseInfoLen)		OPTIONAL,
+			releaseCause		[1]  Cause 	OPTIONAL
+			
+			}
+	}
+
+-- initialAssociationDP 
+
+-- Direction: CUSF->SCF, Timer: Tiadp
+-- This operation is used after detection of a TDP to initiate a call unrelated association with the SCF.
+
+InitialAssociationDPArg 	::= SEQUENCE{
+	serviceKey	[0] ServiceKey,
+	cUApplicationInd	[1] CUApplicationInd	OPTIONAL,
+	miscCallInfo	[2] MiscCallInfo	OPTIONAL,
+	eventTypeBCUSM	[3] EventTypeBCUSM	OPTIONAL,
+	calledPartyNumber	[4] CalledPartyNumber  	OPTIONAL,
+	callingPartyNumber	[5] CallingPartyNumber  	OPTIONAL,
+	callingPartySubaddress	[6] CallingPartySubaddress   	OPTIONAL,
+	highLayerCompatibility	[7] HighLayerCompatibility	OPTIONAL,
+	bearerCapability	[8] BearerCapability  	OPTIONAL,
+	forwardGVNS	[9] ForwardGVNS 	OPTIONAL,
+	uSIServiceIndicator	[10] USIServiceIndicator  	OPTIONAL,
+	uSIInformation	[11] USIInformation  	OPTIONAL,
+	extensions	[12] SEQUENCE SIZE(1..numOfExtensions) OF
+			ExtensionField    	OPTIONAL
+	
+	}
+
+
+CUApplicationInd  ::=  CHOICE{
+	localValue	[0] INTEGER	,
+	global	[1] OBJECT IDENTIFIER
+            }
+	
+	usIServiceIndicator  ::=  CHOICE{
+	localValue	[0] INTEGER	,
+	global	[1] OBJECT IDENTIFIER	
+	
+	}
+
+
+-- initiateAssociation 
+-- Direction: SCF->CUSF, Timer: Tia
+-- This operation is used for allowing the SCF to initiate a call unrelated association with the user.
+-- The subsequent operations can be sent in the same TCAP message in the following order:
+-- 	- the RequestReportBCUSMEvent operation if any answer from the CUSF is expected
+-- 	- the SendComponent operation
+
+InitiateAssociationArg ::= SEQUENCE {
+	calledPartyNumber	[0]	CalledPartyNumber  ,
+	extensions	[1]	SEQUENCE SIZE(1..numOfExtensions)	OF
+			ExtensionField  	OPTIONAL,
+	uSIServiceIndicator	[2] USIServiceIndicator  	OPTIONAL,
+	uSIInformation	[3] USIInformation  	OPTIONAL
+	
+	}
+
+-- releaseAssociation 
+--  Direction: SCF->CUSF, Timer: Trel
+--  This operation is used to indicate to the CUSF to release the existing association between the
+--   user and the network, during the BCUSM suspended at a DP.
+ReleaseAssociationArg ::= Cause  
+-- requestReportBCUSMEvent 
+-- Direction: SCF -> CUSF, Timer: Trrbce
+-- This operation is used to request the CUSF to monitor a BCUSM DP. 
+-- In case a specific componentType is provided, this operation is used to request the CUSF to report the
+-- reception of invocation of an operation or return
+-- result/reject from the end user to the SCF. The requesting event can be either the result; return error/reject
+-- from the end user as the response for the SCF specified invocation/result with the SendComponent
+-- operation or independent invocation/result error from the end user.
+
+
+RequestReportBCUSMEventArg ::= SEQUENCE{
+	bcusmEvents	[0] SEQUENCE SIZE(1.. numOfBCUSMEvents) OF
+			     BCUSMEvent  ,
+	componentType	[1] SEQUENCE SIZE(1..3) OF ComponentType DEFAULT {any},
+	componentCorrelationID	[2] componentCorrelationID	OPTIONAL,
+	monitorDuration	[3] Duration	OPTIONAL,
+	extensions 	[4] SEQUENCE SIZE(1.. numOfExtensions) 
+			     OF ExtensionField  	OPTIONAL,
+	cUDPCriteria	[5] CUApplicationInd	OPTIONAL
+	
+	}
+
+
+END

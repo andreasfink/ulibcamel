@@ -1,0 +1,34 @@
+INCS2BundleArg
+DEFINITIONS IMPLICIT TAGS ::=
+BEGIN
+IMPORTS
+
+ReportUTSIArg,
+RequestReportUTSIArg,
+ResetTimerArg,
+SendSTUIArg,
+ActivationReceivedAndAuthorisedArg,
+AssociationReleaseRequestedArg,
+ComponentReceivedArg,
+InitiateAssociationArg,
+ReleaseAssociationArg,
+RequestReportBCUSMEventArg,
+SendComponentArg,
+ConnectAssociationArg,
+C,
+ventRe
+portBCUSMArg
+,
+InitialAssociationDPArg,
+InitiateAssociaitiog
+
+FROM INCS2SCFCUSFopsargs
+
+ArgType ::= CHOICE
+{ rRArg ¡        rRUArg  rTArg sSArg aRaAAArg aRR Arg c RvArg IiAArg rAArg rrb eRBCUArg sC  Arg CcONA Arg CcONTAArg eRB
+   CUArg iADPArg iAArg 
+}
+
+END  ,
+       
+                
