@@ -11,6 +11,6 @@
 
 @protocol UMCamelUserProtocol <NSObject>
 
-- (UMCamelUserIdentifier *)getNewUserIdentifier;
+- (UMCamelUserIdentifier *)getNewCamelUserIdentifier;
 @end
 

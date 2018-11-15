@@ -142,7 +142,6 @@
 		A6BD361C215E18AA002085BA /* UMCamelObject.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD361A215E18AA002085BA /* UMCamelObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6BD3620215E18B4002085BA /* UMCamelInvoke.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD361E215E18B4002085BA /* UMCamelInvoke.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6BD3628215E24C3002085BA /* UMCamel_EtsiNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD3626215E24C3002085BA /* UMCamel_EtsiNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A6BDA1832176F11E002009FE /* UMCamel_EstablishTemporaryConnectionArg.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6BDA1822176F11E002009FE /* UMCamel_EstablishTemporaryConnectionArg.asn */; };
 		A6BDA1FA2176F193002009FE /* UMCamel_AccessPointName.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BDA1F82176F193002009FE /* UMCamel_AccessPointName.h */; };
 		A6BDA1FB2176F193002009FE /* UMCamel_AccessPointName.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BDA1F92176F193002009FE /* UMCamel_AccessPointName.m */; };
 		A6BDA1FE2176F1AC002009FE /* UMCamel_AChBillingChargingCharacteristics.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BDA1FC2176F1AC002009FE /* UMCamel_AChBillingChargingCharacteristics.h */; };
@@ -256,16 +255,8 @@
 		A6D029EC2178C1E0007760F7 /* UMCamel_ControlType.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D029EA2178C1E0007760F7 /* UMCamel_ControlType.h */; };
 		A6D029ED2178C1E0007760F7 /* UMCamel_ControlType.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D029EB2178C1E0007760F7 /* UMCamel_ControlType.m */; };
 		A6D029F02178C201007760F7 /* UMCamel_CorrelationID.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D029EE2178C200007760F7 /* UMCamel_CorrelationID.m */; };
-		A6D029FA2178C288007760F7 /* UMCamel_CUG_Interlock.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D029F92178C288007760F7 /* UMCamel_CUG_Interlock.asn */; };
-		A6D029FC2178C291007760F7 /* UMCamel_DateAndTime.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D029FB2178C291007760F7 /* UMCamel_DateAndTime.asn */; };
 		A6D029FF2178C2A8007760F7 /* UMCamel_DateAndTime.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D029FD2178C2A8007760F7 /* UMCamel_DateAndTime.h */; };
 		A6D02A002178C2A8007760F7 /* UMCamel_DateAndTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D029FE2178C2A8007760F7 /* UMCamel_DateAndTime.m */; };
-		A6D02A082178C2DA007760F7 /* UMCamel_DpSpecificCriteria.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A022178C2D8007760F7 /* UMCamel_DpSpecificCriteria.asn */; };
-		A6D02A092178C2DA007760F7 /* UMCamel_DpSpecificInfoAlt.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A032178C2D9007760F7 /* UMCamel_DpSpecificInfoAlt.asn */; };
-		A6D02A0A2178C2DA007760F7 /* UMCamel_DisconnectLegArg.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A042178C2D9007760F7 /* UMCamel_DisconnectLegArg.asn */; };
-		A6D02A0B2178C2DA007760F7 /* UMCamel_DisconnectForwardConnectionWithArgumentArg.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A052178C2D9007760F7 /* UMCamel_DisconnectForwardConnectionWithArgumentArg.asn */; };
-		A6D02A0C2178C2DA007760F7 /* UMCamel_DpSpecificCriteriaAlt.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A062178C2D9007760F7 /* UMCamel_DpSpecificCriteriaAlt.asn */; };
-		A6D02A0D2178C2DA007760F7 /* UMCamel_Duration.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A072178C2D9007760F7 /* UMCamel_Duration.asn */; };
 		A6D02A102178C2E8007760F7 /* UMCamel_DisconnectForwardConnectionWithArgumentArg.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D02A0E2178C2E8007760F7 /* UMCamel_DisconnectForwardConnectionWithArgumentArg.h */; };
 		A6D02A112178C2E8007760F7 /* UMCamel_DisconnectForwardConnectionWithArgumentArg.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D02A0F2178C2E8007760F7 /* UMCamel_DisconnectForwardConnectionWithArgumentArg.m */; };
 		A6D02A142178C2F3007760F7 /* UMCamel_DisconnectLegArg.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D02A122178C2F3007760F7 /* UMCamel_DisconnectLegArg.h */; };
@@ -278,12 +269,6 @@
 		A6D02A212178C313007760F7 /* UMCamel_DpSpecificInfoAlt.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D02A1F2178C313007760F7 /* UMCamel_DpSpecificInfoAlt.m */; };
 		A6D02A242178C324007760F7 /* UMCamel_Duration.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D02A222178C324007760F7 /* UMCamel_Duration.h */; };
 		A6D02A252178C324007760F7 /* UMCamel_Duration.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D02A232178C324007760F7 /* UMCamel_Duration.m */; };
-		A6D02A2C2178C343007760F7 /* UMCamel_ElapsedTimeRollOver.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A262178C341007760F7 /* UMCamel_ElapsedTimeRollOver.asn */; };
-		A6D02A2D2178C343007760F7 /* UMCamel_EndUserAddress.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A272178C341007760F7 /* UMCamel_EndUserAddress.asn */; };
-		A6D02A2E2178C343007760F7 /* UMCamel_ElapsedTime.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A282178C342007760F7 /* UMCamel_ElapsedTime.asn */; };
-		A6D02A2F2178C343007760F7 /* UMCamel_EntityReleasedArg.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A292178C342007760F7 /* UMCamel_EntityReleasedArg.asn */; };
-		A6D02A302178C343007760F7 /* UMCamel_EntityReleasedGPRSArg.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A2A2178C342007760F7 /* UMCamel_EntityReleasedGPRSArg.asn */; };
-		A6D02A312178C343007760F7 /* UMCamel_ErrorTreatment.asn in Resources */ = {isa = PBXBuildFile; fileRef = A6D02A2B2178C342007760F7 /* UMCamel_ErrorTreatment.asn */; };
 		A6D02A342178C350007760F7 /* UMCamel_ElapsedTime.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D02A322178C34F007760F7 /* UMCamel_ElapsedTime.h */; };
 		A6D02A352178C350007760F7 /* UMCamel_ElapsedTime.m in Sources */ = {isa = PBXBuildFile; fileRef = A6D02A332178C350007760F7 /* UMCamel_ElapsedTime.m */; };
 		A6D02A382178C359007760F7 /* UMCamel_ElapsedTimeRollOver.h in Headers */ = {isa = PBXBuildFile; fileRef = A6D02A362178C359007760F7 /* UMCamel_ElapsedTimeRollOver.h */; };
@@ -1669,21 +1654,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6D02A2C2178C343007760F7 /* UMCamel_ElapsedTimeRollOver.asn in Resources */,
-				A6D02A2F2178C343007760F7 /* UMCamel_EntityReleasedArg.asn in Resources */,
-				A6D02A2D2178C343007760F7 /* UMCamel_EndUserAddress.asn in Resources */,
-				A6D029FC2178C291007760F7 /* UMCamel_DateAndTime.asn in Resources */,
-				A6D02A312178C343007760F7 /* UMCamel_ErrorTreatment.asn in Resources */,
-				A6D02A2E2178C343007760F7 /* UMCamel_ElapsedTime.asn in Resources */,
-				A6D02A092178C2DA007760F7 /* UMCamel_DpSpecificInfoAlt.asn in Resources */,
-				A6D02A0B2178C2DA007760F7 /* UMCamel_DisconnectForwardConnectionWithArgumentArg.asn in Resources */,
-				A6BDA1832176F11E002009FE /* UMCamel_EstablishTemporaryConnectionArg.asn in Resources */,
-				A6D02A082178C2DA007760F7 /* UMCamel_DpSpecificCriteria.asn in Resources */,
-				A6D029FA2178C288007760F7 /* UMCamel_CUG_Interlock.asn in Resources */,
-				A6D02A0C2178C2DA007760F7 /* UMCamel_DpSpecificCriteriaAlt.asn in Resources */,
-				A6D02A0A2178C2DA007760F7 /* UMCamel_DisconnectLegArg.asn in Resources */,
-				A6D02A302178C343007760F7 /* UMCamel_EntityReleasedGPRSArg.asn in Resources */,
-				A6D02A0D2178C2DA007760F7 /* UMCamel_Duration.asn in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
