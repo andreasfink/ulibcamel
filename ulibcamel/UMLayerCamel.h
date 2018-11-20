@@ -32,5 +32,6 @@
 - (UMCamelDialogIdentifier *)getNewUserDialogId;
 
 +(UMASN1Object *)decodeAsn1:(UMASN1Object *)input;
+- (NSString *)status;
 
 @end

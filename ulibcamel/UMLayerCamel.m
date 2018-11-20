@@ -503,4 +503,9 @@
     return [[UMCamelObject alloc]initWithASN1Object:asn1 context:NULL];
 }
 
+- (NSString *)status
+{
+    return @"not-implemented";
+}
+
 @end
