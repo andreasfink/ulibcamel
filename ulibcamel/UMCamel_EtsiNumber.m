@@ -15,32 +15,6 @@ static int digit_to_nibble(int digit);
 static unsigned char nibble2hex(unsigned char b);
 static int is_all_digits(const char *text, NSUInteger startpos, NSUInteger len);
 
-static int is_all_digits(const char *text, NSUInteger startpos, NSUInteger len)
-{
-    NSUInteger i=0;
-    for(i=startpos;i<len;i++)
-    {
-        switch(text[i])
-        {
-            case    '0':
-            case    '1':
-            case    '2':
-            case    '3':
-            case    '4':
-            case    '5':
-            case    '6':
-            case    '7':
-            case    '8':
-            case    '9':
-            case    '*':
-            case    '#':
-                break;
-            default:
-                return 0;
-        }
-    }
-    return 1;
-}
 static inline int digit_to_nibble(int digit)
 {
     switch(digit)
@@ -73,17 +47,6 @@ static inline int digit_to_nibble(int digit)
     return -1;
 }
 
-static inline unsigned char    nibble2hex(unsigned char b)
-{
-    if(b < 0x0A)
-    {
-        return '0'+ b;
-    }
-    else
-    {
-        return 'A'+ b - 0x0A;
-    }
-}
 
 static inline unsigned char    nibble2digit(unsigned char b)
 {
