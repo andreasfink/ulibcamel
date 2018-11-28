@@ -242,7 +242,7 @@
     if(self.logLevel <= UMLOG_DEBUG)
     {
         NSString *s = [NSString stringWithFormat:@"GSMMAP-Dialog: tcapUAbortIndicationdialogPortion: %@ (%@)",xdialoguePortion,[xdialoguePortion className]];
-        [logFeed debugText:s];
+        [self.logFeed debugText:s];
     }
     [self touch];
     self.dialogIsClosed = YES;

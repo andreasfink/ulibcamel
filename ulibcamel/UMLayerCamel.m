@@ -71,7 +71,7 @@
     
     if(logLevel <= UMLOG_DEBUG)
     {
-        [logFeed debugText:[NSString stringWithFormat:@"tcapBeginIndication creates a new dialogId: %@\n",dialog.userDialogId]];
+        [self.logFeed debugText:[NSString stringWithFormat:@"tcapBeginIndication creates a new dialogId: %@\n",dialog.userDialogId]];
     }
 
     /* FIXME: open indication */
@@ -153,7 +153,7 @@
     }
     if(dialog==NULL)
     {
-        [logFeed minorErrorText:[NSString stringWithFormat:@"tcapContinueIndication: DialogNotFound %@ for transaction [local %@ remote %@]",dialogId,xlocalTransactionId,xremoteTransactionId]];
+        [self.logFeed minorErrorText:[NSString stringWithFormat:@"tcapContinueIndication: DialogNotFound %@ for transaction [local %@ remote %@]",dialogId,xlocalTransactionId,xremoteTransactionId]];
         return;
     }
     else
@@ -169,7 +169,7 @@
                            dialog.tcapLocalTransactionId,
                            dialog.tcapRemoteTransactionId,
                            dialog.userIdentifier];
-            [logFeed debugText:s];
+            [self.logFeed debugText:s];
         }
         if(dialog.tcapLocalTransactionId == NULL)
         {
@@ -233,7 +233,7 @@
     UMCamelDialog *dialog = [self dialogById:dialogId];
     if(dialog==NULL)
     {
-        [logFeed minorErrorText:[NSString stringWithFormat:@"tcapEndIndication: DialogNotFound %@ for transaction [local %@ remote %@]",dialogId,localTransactionId,remoteTransactionId]];
+        [self.logFeed minorErrorText:[NSString stringWithFormat:@"tcapEndIndication: DialogNotFound %@ for transaction [local %@ remote %@]",dialogId,localTransactionId,remoteTransactionId]];
         return;
     }
     else
@@ -249,7 +249,7 @@
                            dialog.tcapLocalTransactionId,
                            dialog.tcapRemoteTransactionId,
                            dialog.userIdentifier];
-            [logFeed debugText:s];
+            [self.logFeed debugText:s];
         }
         if(dialog.tcapLocalTransactionId == NULL)
         {
@@ -270,7 +270,7 @@
         }
         @catch(NSException *ex)
         {
-            [logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
+            [self.logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
         }
         @try
         {
@@ -278,7 +278,7 @@
         }
         @catch(NSException *ex)
         {
-            [logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
+            [self.logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
         }
     }
 }
@@ -319,12 +319,12 @@
     
     if(logLevel <=UMLOG_DEBUG)
     {
-        [logFeed debugText:[NSString stringWithFormat:@"tcapPAbortIndication for dialog %@",dialogId]];
+        [self.logFeed debugText:[NSString stringWithFormat:@"tcapPAbortIndication for dialog %@",dialogId]];
     }
     UMCamelDialog *dialog = [self dialogById:dialogId];
     if(dialog==NULL)
     {
-        [logFeed minorErrorText:[NSString stringWithFormat:@"tcapPAbortIndication: Dialog %@ not found for transaction [local %@ remote %@]",dialogId,localTransactionId,remoteTransactionId]];
+        [self.logFeed minorErrorText:[NSString stringWithFormat:@"tcapPAbortIndication: Dialog %@ not found for transaction [local %@ remote %@]",dialogId,localTransactionId,remoteTransactionId]];
         return;
     }
     
@@ -344,7 +344,7 @@
     }
     @catch(NSException *ex)
     {
-        [logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
+        [self.logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
     }
 }
 
@@ -363,12 +363,12 @@
     
     if(logLevel <= UMLOG_DEBUG)
     {
-        [logFeed debugText:@"tcapUAbortIndication received"];
+        [self.logFeed debugText:@"tcapUAbortIndication received"];
     }
     UMCamelDialog *dialog = [self dialogById:dialogId];
     if(dialog==NULL)
     {
-        [logFeed minorErrorText:[NSString stringWithFormat:@"tcapUAbortIndication: Dialog %@ not found for transaction [local %@ remote %@]",tcapUserId,localTransactionId,remoteTransactionId]];
+        [self.logFeed minorErrorText:[NSString stringWithFormat:@"tcapUAbortIndication: Dialog %@ not found for transaction [local %@ remote %@]",tcapUserId,localTransactionId,remoteTransactionId]];
         return;
     }
     
@@ -384,7 +384,7 @@
     }
     @catch(NSException *ex)
     {
-        [logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
+        [self.logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
     }
     @try
     {
@@ -392,7 +392,7 @@
     }
     @catch(NSException *ex)
     {
-        [logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
+        [self.logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
     }
 }
 
@@ -411,7 +411,7 @@
     
     if(logLevel <= UMLOG_DEBUG)
     {
-        [logFeed debugText:@"tcapUnidirectionalIndication received"];
+        [self.logFeed debugText:@"tcapUnidirectionalIndication received"];
     }
     
     @try
@@ -426,7 +426,7 @@
     }
     @catch(NSException *ex)
     {
-        [logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
+        [self.logFeed majorErrorText:[NSString stringWithFormat:@"Exception: %@",ex]];
     }
 }
 
