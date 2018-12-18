@@ -69,7 +69,7 @@
     
     UMCamelDialog* dialog = [self getNewDialogForUser:_user withId:dialogId];
     
-    if(logLevel <= UMLOG_DEBUG)
+    if(self.logLevel <= UMLOG_DEBUG)
     {
         [self.logFeed debugText:[NSString stringWithFormat:@"tcapBeginIndication creates a new dialogId: %@\n",dialog.userDialogId]];
     }
@@ -158,7 +158,7 @@
     }
     else
     {
-        if(logLevel <= UMLOG_DEBUG)
+        if(self.logLevel <= UMLOG_DEBUG)
         {
             NSString *s = [NSString stringWithFormat:@"tcapContinueIndication\n"
                            @"    dialogId: %@\n"
@@ -238,7 +238,7 @@
     }
     else
     {
-        if(logLevel <= UMLOG_DEBUG)
+        if(self.logLevel <= UMLOG_DEBUG)
         {
             NSString *s = [NSString stringWithFormat:@"tcapEndIndication\n"
                            @"    dialogId: %@\n"
@@ -317,7 +317,7 @@
 {
     UMCamelDialogIdentifier *dialogId =   [[UMCamelDialogIdentifier alloc] initWithTcapUserDialogIdentifier:tcapUserId];
     
-    if(logLevel <=UMLOG_DEBUG)
+    if(self.logLevel <=UMLOG_DEBUG)
     {
         [self.logFeed debugText:[NSString stringWithFormat:@"tcapPAbortIndication for dialog %@",dialogId]];
     }
@@ -361,7 +361,7 @@
 {
     UMCamelDialogIdentifier *dialogId =   [[UMCamelDialogIdentifier alloc] initWithTcapUserDialogIdentifier:tcapUserId];
     
-    if(logLevel <= UMLOG_DEBUG)
+    if(self.logLevel <= UMLOG_DEBUG)
     {
         [self.logFeed debugText:@"tcapUAbortIndication received"];
     }
@@ -409,7 +409,7 @@
 {
     //UMCamelDialogIdentifier *dialogId =   [[UMCamelDialogIdentifier alloc] initWithTcapUserDialogIdentifier:tcapUserId];
     
-    if(logLevel <= UMLOG_DEBUG)
+    if(self.logLevel <= UMLOG_DEBUG)
     {
         [self.logFeed debugText:@"tcapUnidirectionalIndication received"];
     }
