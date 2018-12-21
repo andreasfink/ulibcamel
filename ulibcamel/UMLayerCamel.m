@@ -98,7 +98,7 @@
     */
     if(components.count==0)
     {
-        UMTCAP_asn1_Associate_result *r = [[UMTCAP_asn1_Associate_result alloc]initWithValue:0];
+       // UMTCAP_asn1_Associate_result *r = [[UMTCAP_asn1_Associate_result alloc]initWithValue:0];
         UMTCAP_asn1_Associate_source_diagnostic *d = [[UMTCAP_asn1_Associate_source_diagnostic alloc]init];
         d.dialogue_service_user =[[UMASN1Integer alloc]initWithValue:0];
         /*[dialog MAP_Delimiter_Req:options
@@ -295,9 +295,9 @@
                       reason:(SCCP_ReturnCause)reason
                      options:(NSDictionary *)options
 {
-    UMCamelDialogIdentifier *dialogId =   [[UMCamelDialogIdentifier alloc] initWithTcapUserDialogIdentifier:tcapUserId];
+    //UMCamelDialogIdentifier *dialogId =   [[UMCamelDialogIdentifier alloc] initWithTcapUserDialogIdentifier:tcapUserId];
     
-    UMCamelDialog *dialog = [self dialogById:dialogId];
+    //UMCamelDialog *dialog = [self dialogById:dialogId]; 
     /*
     [dialog MAP_Notice_Ind:options
          tcapTransactionId:localTransactionId

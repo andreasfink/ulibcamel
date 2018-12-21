@@ -12,8 +12,6 @@
 
 
 static int digit_to_nibble(int digit);
-static unsigned char nibble2hex(unsigned char b);
-static int is_all_digits(const char *text, NSUInteger startpos, NSUInteger len);
 
 static inline int digit_to_nibble(int digit)
 {
