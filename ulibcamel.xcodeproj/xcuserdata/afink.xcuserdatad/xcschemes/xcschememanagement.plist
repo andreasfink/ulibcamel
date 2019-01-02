@@ -7,12 +7,12 @@
 		<key>decode-camel.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>31</integer>
+			<integer>13</integer>
 		</dict>
 		<key>ulibcamel.xcscheme_^#shared#^_</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>30</integer>
+			<integer>12</integer>
 		</dict>
 	</dict>
 </dict>
