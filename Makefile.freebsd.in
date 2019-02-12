@@ -1,0 +1,70 @@
+# File: Makefile
+# Project "@PROJECT_NAME@"
+# (c) 2002 -2014 Andreas Fink
+# Create: Andreas Fink (andreas@fink.org)
+#
+#
+
+CC=@CC@
+CFLAGS=@CFLAGS@
+LDFLAGS=@LDFLAGS@
+PROJECT_NAME=@PROJECT_NAME@
+MAJORVER=@MAJORVER@
+MINORVER=@MINORVER@
+REVISION=@REVISION@
+
+LIB=lib@PROJECT_NAME@.so
+SLIB=lib@PROJECT_NAME@.a
+PKGCONFIGFILE=@PROJECT_NAME@.pc
+
+MFILES = $(wildcard @PROJECT_NAME@/*.m) $(wildcard @PROJECT_NAME@/*/*.m)
+HFILES =  $(wildcard @PROJECT_NAME@/*.h) $(wildcard @PROJECT_NAME@/*/*.h)
+MOFILES  = $(MFILES:.m=.m.o)
+OFILES = $(MOFILES)
+STATIC_LIBS=
+
+INCLUDEDIRS=-I @PROJECT_NAME@
+
+all: ${LIB} ${SLIB}
+
+${LIB}: ${OFILES}
+	${CC} -shared -o ${LIB}  ${LDFLAGS} ${OFILES} ${LIBS} ${STATIC_LIBS}
+
+${SLIB}: ${OFILES}
+	ar rcs ${SLIB} ${OFILES}
+	ranlib ${SLIB}
+
+build/decode-camel: decode-camel/main.m.o decode-camel/AppDelegate.m.o lib@PROJECT_NAME@.so
+	mkdir -p build
+	${CC} -o build/decode-camel  ${LDFLAGS} decode-camel/main.m.o decode-camel/AppDelegate.m.o -L. -l@PROJECT_NAME@
+
+
+install: ${LIB} ${SLIB} build/decode-camel
+	-mkdir -p ${DESTDIR}/usr/local/include/@PROJECT_NAME@
+	-mkdir -p ${DESTDIR}/usr/local/lib/pkgconfig
+	-mkdir -p ${DESTDIR}/usr/local/bin
+	rm -f "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}.${REVISION}"
+	rm -f "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}"
+	rm -f "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}"
+	rm -f "${DESTDIR}/usr/local/lib/${LIB}"
+	install -b -g wheel -o root -m 644 "${LIB}" "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}.${REVISION}"
+	install -b -g wheel -o root -m 644 "${SLIB}" "${DESTDIR}/usr/local/lib/${SLIB}"
+	install -b -g wheel -o root -m 644 ${PKGCONFIGFILE} ${DESTDIR}/usr/local/lib/pkgconfig/
+	install -b -g wheel -o root -m 755 build/decode-camel ${DESTDIR}/usr/local/bin/decode-camel
+	ln -s "${LIB}.${MAJORVER}.${MINORVER}.${REVISION}" "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}"
+	ln -s "${LIB}.${MAJORVER}.${MINORVER}"             "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}"
+	ln -s "${LIB}.${MAJORVER}"                         "${DESTDIR}/usr/local/lib/${LIB}"
+
+	cp $(HFILES) ${DESTDIR}/usr/local/include/@PROJECT_NAME@
+	ldconfig
+
+clean:
+	rm -f $(LIB) $(OFILES) build/*
+
+.SUFFIXES: .m.o .o .m .c
+
+%.m.o:	%.m
+	${CC} -c ${CFLAGS} -x objective-c -fobjc-arc $<  ${INCLUDEDIRS} -o $@
+
+
+
