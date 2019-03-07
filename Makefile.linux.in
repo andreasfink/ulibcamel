@@ -36,7 +36,7 @@ ${SLIB}: ${OFILES}
 
 build/decode-camel: decode-camel/main.m.o decode-camel/AppDelegate.m.o lib@PROJECT_NAME@.so
 	mkdir -p build
-	${CC} -o build/decode-camel  ${LDFLAGS} decode-camel/main.m.o decode-camel/AppDelegate.m.o -L. -l@PROJECT_NAME@
+	${CC} -o build/decode-camel  -L. -l@PROJECT_NAME@ ${LDFLAGS} decode-camel/main.m.o decode-camel/AppDelegate.m.o 
 
 
 install: ${LIB} ${SLIB} build/decode-camel
@@ -60,6 +60,7 @@ install: ${LIB} ${SLIB} build/decode-camel
 
 clean:
 	rm -f $(LIB) $(OFILES) build/*
+	rm decode-camel/*.m.o
 
 .SUFFIXES: .m.o .o .m .c
 
