@@ -6,7 +6,7 @@
 #
 
 CC=@CC@
-CFLAGS=@CFLAGS@ -D_POSIX_SOURCE
+CFLAGS=@CFLAGS@
 LDFLAGS=@LDFLAGS@
 PROJECT_NAME=@PROJECT_NAME@
 MAJORVER=@MAJORVER@
@@ -36,7 +36,7 @@ ${SLIB}: ${OFILES}
 
 build/decode-camel: decode-camel/main.m.o decode-camel/AppDelegate.m.o lib@PROJECT_NAME@.so
 	mkdir -p build
-	${CC} -o build/decode-camel  -L. -l@PROJECT_NAME@ ${LDFLAGS} decode-camel/main.m.o decode-camel/AppDelegate.m.o 
+	${CC} -o build/decode-camel  ${LDFLAGS} decode-camel/main.m.o decode-camel/AppDelegate.m.o -L. -l@PROJECT_NAME@
 
 
 install: ${LIB} ${SLIB} build/decode-camel
@@ -47,10 +47,10 @@ install: ${LIB} ${SLIB} build/decode-camel
 	rm -f "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}"
 	rm -f "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}"
 	rm -f "${DESTDIR}/usr/local/lib/${LIB}"
-	install -b -g root -o root -m 644 "${LIB}" "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}.${REVISION}"
-	install -b -g root -o root -m 644 "${SLIB}" "${DESTDIR}/usr/local/lib/${SLIB}"
-	install -b -g root -o root -m 644 ${PKGCONFIGFILE} ${DESTDIR}/usr/local/lib/pkgconfig/
-	install -b -g root -o root -m 755 build/decode-camel ${DESTDIR}/usr/local/bin/decode-camel
+	install -b -g wheel -o root -m 644 "${LIB}" "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}.${REVISION}"
+	install -b -g wheel -o root -m 644 "${SLIB}" "${DESTDIR}/usr/local/lib/${SLIB}"
+	install -b -g wheel -o root -m 644 ${PKGCONFIGFILE} ${DESTDIR}/usr/local/lib/pkgconfig/
+	install -b -g wheel -o root -m 755 build/decode-camel ${DESTDIR}/usr/local/bin/decode-camel
 	ln -s "${LIB}.${MAJORVER}.${MINORVER}.${REVISION}" "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}"
 	ln -s "${LIB}.${MAJORVER}.${MINORVER}"             "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}"
 	ln -s "${LIB}.${MAJORVER}"                         "${DESTDIR}/usr/local/lib/${LIB}"
@@ -60,7 +60,6 @@ install: ${LIB} ${SLIB} build/decode-camel
 
 clean:
 	rm -f $(LIB) $(OFILES) build/*
-	rm decode-camel/*.m.o
 
 .SUFFIXES: .m.o .o .m .c
 

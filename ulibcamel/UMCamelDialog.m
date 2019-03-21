@@ -14,6 +14,10 @@
 #pragma mark -
 #pragma mark Initialisation
 
+-(NSString *)layerName
+{
+		return @"UMCamelDialog";
+}
 
 - (NSTimeInterval)timeoutInSeconds
 {
