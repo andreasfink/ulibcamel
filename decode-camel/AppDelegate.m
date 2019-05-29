@@ -82,6 +82,7 @@
                                                                  argc:argc
                                                                  argv:argv];
     [_commandLine handleStandardArguments];
+
     NSDictionary *params = _commandLine.params;
     NSMutableArray *inputData = [[NSMutableArray alloc]init];
     NSMutableArray *inputFilename = [[NSMutableArray alloc]init];
