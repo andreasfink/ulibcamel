@@ -8,10 +8,10 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-NS_ASSUME_NONNULL_BEGIN
+
 
 @interface UMCamel_ControlType : UMASN1Enumerated
 
 @end
 
-NS_ASSUME_NONNULL_END
+
