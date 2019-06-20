@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A624F4172150E1F50075788B /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65781D41CF54CF700211137 /* ulib.framework */; };
-		A62E0817215CAC2500D205F0 /* ulibtcap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62E0816215CAC2500D205F0 /* ulibtcap.framework */; };
 		A62E081A215CB26B00D205F0 /* UMLayerCamel.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E0818215CB26B00D205F0 /* UMLayerCamel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A62E081B215CB26B00D205F0 /* UMLayerCamel.m in Sources */ = {isa = PBXBuildFile; fileRef = A62E0819215CB26B00D205F0 /* UMLayerCamel.m */; };
 		A62E0827215CCAB800D205F0 /* UMCamelOperationCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E0825215CCAB800D205F0 /* UMCamelOperationCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -67,7 +65,15 @@
 		A65781BE1CF54A3600211137 /* ulibcamel.h in Headers */ = {isa = PBXBuildFile; fileRef = A65781BD1CF54A3600211137 /* ulibcamel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A65781C51CF54A3600211137 /* ulibcamel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65781BA1CF54A3600211137 /* ulibcamel.framework */; };
 		A65781CA1CF54A3600211137 /* ulibcamelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A65781C91CF54A3600211137 /* ulibcamelTests.m */; };
-		A65781D51CF54CF700211137 /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65781D41CF54CF700211137 /* ulib.framework */; };
+		A67989EA22BB6D280019806C /* ulibasn1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E722BB6D280019806C /* ulibasn1.framework */; };
+		A67989EB22BB6D280019806C /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E822BB6D280019806C /* ulib.framework */; };
+		A67989EC22BB6D280019806C /* ulibtcap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E922BB6D280019806C /* ulibtcap.framework */; };
+		A67989ED22BB6D330019806C /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E822BB6D280019806C /* ulib.framework */; };
+		A67989EE22BB6D330019806C /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E822BB6D280019806C /* ulib.framework */; };
+		A67989EF22BB6D360019806C /* ulibasn1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E722BB6D280019806C /* ulibasn1.framework */; };
+		A67989F022BB6D370019806C /* ulibasn1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E722BB6D280019806C /* ulibasn1.framework */; };
+		A67989F122BB6D3A0019806C /* ulibtcap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E922BB6D280019806C /* ulibtcap.framework */; };
+		A67989F222BB6D3A0019806C /* ulibtcap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E922BB6D280019806C /* ulibtcap.framework */; };
 		A6932D7621652BFB003A477B /* UMCamel_AdditionalCallingPartyNumber.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E0876215CE8C200D205F0 /* UMCamel_AdditionalCallingPartyNumber.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6932D7721652C32003A477B /* UMCamel_AdditionalCallingPartyNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = A62E0877215CE8C200D205F0 /* UMCamel_AdditionalCallingPartyNumber.m */; };
 		A6932D7821652C32003A477B /* UMCamel_AlertingPattern.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD35FB215E117E002085BA /* UMCamel_AlertingPattern.m */; };
@@ -121,12 +127,6 @@
 		A6932DA921652C32003A477B /* UMCamelInvoke.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD361F215E18B4002085BA /* UMCamelInvoke.m */; };
 		A6932DAA21652C32003A477B /* UMCamelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD361B215E18AA002085BA /* UMCamelObject.m */; };
 		A6BD35D2215DFB86002085BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD35D1215DFB86002085BA /* main.m */; };
-		A6BD35D6215DFBA5002085BA /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65781D41CF54CF700211137 /* ulib.framework */; };
-		A6BD35D7215DFBB1002085BA /* ulibtcap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62E0816215CAC2500D205F0 /* ulibtcap.framework */; };
-		A6BD35D9215DFBC1002085BA /* ulibasn1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BD35D8215DFBC1002085BA /* ulibasn1.framework */; };
-		A6BD35DA215DFBC1002085BA /* ulibasn1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BD35D8215DFBC1002085BA /* ulibasn1.framework */; };
-		A6BD35DB215DFBC1002085BA /* ulibasn1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6BD35D8215DFBC1002085BA /* ulibasn1.framework */; };
-		A6BD35DC215DFBC3002085BA /* ulibtcap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A62E0816215CAC2500D205F0 /* ulibtcap.framework */; };
 		A6BD35E2215DFD2E002085BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD35DE215DFD2E002085BA /* AppDelegate.m */; };
 		A6BD35E5215E001C002085BA /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD35E3215E001C002085BA /* version.h */; };
 		A6BD35E9215E0874002085BA /* ulibcamel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65781BA1CF54A3600211137 /* ulibcamel.framework */; };
@@ -328,7 +328,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		A62E0816215CAC2500D205F0 /* ulibtcap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibtcap.framework; path = /Library/Frameworks/ulibtcap.framework; sourceTree = "<absolute>"; };
 		A62E0818215CB26B00D205F0 /* UMLayerCamel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMLayerCamel.h; sourceTree = "<group>"; };
 		A62E0819215CB26B00D205F0 /* UMLayerCamel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMLayerCamel.m; sourceTree = "<group>"; };
 		A62E081C215CB29200D205F0 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
@@ -436,7 +435,6 @@
 		A65781C41CF54A3600211137 /* ulibcamelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ulibcamelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65781C91CF54A3600211137 /* ulibcamelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ulibcamelTests.m; sourceTree = "<group>"; };
 		A65781CB1CF54A3600211137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A65781D41CF54CF700211137 /* ulib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulib.framework; path = /Library/Frameworks/ulib.framework; sourceTree = "<absolute>"; };
 		A66A424621748B1D0083526C /* Makefile.osx.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.osx.in; sourceTree = "<group>"; };
 		A66A424721748B1D0083526C /* Makefile.linux.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.linux.in; sourceTree = "<group>"; };
 		A66A424A21749FD00083526C /* UMCamel_AChBillingChargingCharacteristics.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AChBillingChargingCharacteristics.asn; sourceTree = "<group>"; };
@@ -453,6 +451,9 @@
 		A66A42552174A0300083526C /* UMCamel_AssistingSSPIPRoutingAddress.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AssistingSSPIPRoutingAddress.asn; sourceTree = "<group>"; };
 		A66A42562174A0300083526C /* UMCamel_ApplicationTimer.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_ApplicationTimer.asn; sourceTree = "<group>"; };
 		A66A42572174A05A0083526C /* UMCamel_AudibleIndicator.asn */ = {isa = PBXFileReference; lastKnownFileType = text; path = UMCamel_AudibleIndicator.asn; sourceTree = "<group>"; };
+		A67989E722BB6D280019806C /* ulibasn1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibasn1.framework; path = "/Library/Application Support/FinkTelecomServices/frameworks/ulibasn1.framework"; sourceTree = "<absolute>"; };
+		A67989E822BB6D280019806C /* ulib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulib.framework; path = "/Library/Application Support/FinkTelecomServices/frameworks/ulib.framework"; sourceTree = "<absolute>"; };
+		A67989E922BB6D280019806C /* ulibtcap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibtcap.framework; path = "/Library/Application Support/FinkTelecomServices/frameworks/ulibtcap.framework"; sourceTree = "<absolute>"; };
 		A692B92921941849009072BC /* q1228~5e.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "q1228~5e.pdf"; sourceTree = "<group>"; };
 		A692B92A21941849009072BC /* q1228~4e.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "q1228~4e.pdf"; sourceTree = "<group>"; };
 		A692B92B21941849009072BC /* q1228~3e.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "q1228~3e.pdf"; sourceTree = "<group>"; };
@@ -469,7 +470,6 @@
 		A692B93921941852009072BC /* en_30114001v010304p.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = en_30114001v010304p.pdf; sourceTree = "<group>"; };
 		A6BD35CF215DFB86002085BA /* decode-camel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "decode-camel"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BD35D1215DFB86002085BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A6BD35D8215DFBC1002085BA /* ulibasn1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibasn1.framework; path = ../../../../../../Library/Frameworks/ulibasn1.framework; sourceTree = "<group>"; };
 		A6BD35DD215DFD2E002085BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		A6BD35DE215DFD2E002085BA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A6BD35E3215E001C002085BA /* version.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = version.h; sourceTree = "<group>"; };
@@ -824,9 +824,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A62E0817215CAC2500D205F0 /* ulibtcap.framework in Frameworks */,
-				A65781D51CF54CF700211137 /* ulib.framework in Frameworks */,
-				A6BD35D9215DFBC1002085BA /* ulibasn1.framework in Frameworks */,
+				A67989EC22BB6D280019806C /* ulibtcap.framework in Frameworks */,
+				A67989EB22BB6D280019806C /* ulib.framework in Frameworks */,
+				A67989EA22BB6D280019806C /* ulibasn1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -834,10 +834,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A624F4172150E1F50075788B /* ulib.framework in Frameworks */,
+				A67989ED22BB6D330019806C /* ulib.framework in Frameworks */,
 				A65781C51CF54A3600211137 /* ulibcamel.framework in Frameworks */,
-				A6BD35DC215DFBC3002085BA /* ulibtcap.framework in Frameworks */,
-				A6BD35DA215DFBC1002085BA /* ulibasn1.framework in Frameworks */,
+				A67989F122BB6D3A0019806C /* ulibtcap.framework in Frameworks */,
+				A67989EF22BB6D360019806C /* ulibasn1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -845,10 +845,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A6BD35D7215DFBB1002085BA /* ulibtcap.framework in Frameworks */,
+				A67989EE22BB6D330019806C /* ulib.framework in Frameworks */,
 				A6BD35E9215E0874002085BA /* ulibcamel.framework in Frameworks */,
-				A6BD35D6215DFBA5002085BA /* ulib.framework in Frameworks */,
-				A6BD35DB215DFBC1002085BA /* ulibasn1.framework in Frameworks */,
+				A67989F222BB6D3A0019806C /* ulibtcap.framework in Frameworks */,
+				A67989F022BB6D370019806C /* ulibasn1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1377,9 +1377,9 @@
 		A65781D61CF54CFE00211137 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A6BD35D8215DFBC1002085BA /* ulibasn1.framework */,
-				A62E0816215CAC2500D205F0 /* ulibtcap.framework */,
-				A65781D41CF54CF700211137 /* ulib.framework */,
+				A67989E822BB6D280019806C /* ulib.framework */,
+				A67989E722BB6D280019806C /* ulibasn1.framework */,
+				A67989E922BB6D280019806C /* ulibtcap.framework */,
 			);
 			name = Frameworks;
 			path = ulibcamel;
@@ -1945,6 +1945,7 @@
 				DEPLOYMENT_POSTPROCESSING = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"/Library/Application Support/FinkTelecomServices/frameworks\"";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -1959,6 +1960,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "/Library/Application Support/FinkTelecomServices/frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -2006,6 +2008,7 @@
 				DEPLOYMENT_POSTPROCESSING = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = "\"/Library/Application Support/FinkTelecomServices/frameworks\"";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2014,6 +2017,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "/Library/Application Support/FinkTelecomServices/frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
@@ -2036,6 +2040,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ulibcamel/Info.plist;
@@ -2059,6 +2066,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ulibcamel/Info.plist;
@@ -2076,6 +2086,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 				);
 				INFOPLIST_FILE = ulibcamelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -2091,6 +2104,9 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 				);
 				INFOPLIST_FILE = ulibcamelTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
@@ -2114,8 +2130,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INSTALL_PATH = /opt/ulibss7/bin;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -2139,8 +2159,12 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INSTALL_PATH = /opt/ulibss7/bin;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
