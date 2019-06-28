@@ -1665,6 +1665,7 @@
 				A6BD35CB215DFB86002085BA /* Sources */,
 				A6BD35CC215DFB86002085BA /* Frameworks */,
 				A6BD35CD215DFB86002085BA /* CopyFiles */,
+				A67E7A9022C61C1D00B34DA3 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -1734,6 +1735,26 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A67E7A9022C61C1D00B34DA3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\n\nEXE=decode-camel\nmkdir -p /usr/local/bin\nif [ -f \"/usr/local/bin/$EXE\" ]\nthen\n    rm -f \"/usr/local/bin/$EXE\"\nfi\nif [ -L \"/usr/local/bin/$EXE\" ]\nthen\n    rm -f \"/usr/local/bin/$EXE\"\nfi\nln -s /Library/Application\\ Support/FinkTelecomServices/bin/$EXE /usr/local/bin/$EXE\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A65781B51CF54A3600211137 /* Sources */ = {
