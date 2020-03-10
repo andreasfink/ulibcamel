@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import <ulibasn1/ulibasn1.h>
+#import <ulibtcap/ulibtcap.h>
 
 @class UMCamelInvoke;
 
@@ -14,5 +14,12 @@
 {
     UMCamelInvoke *_invoke;
 }
+
+- (UMASN1Object *)decodeASN1:(UMASN1Object *)params
+               operationCode:(int64_t)opcode
+               operationType:(UMTCAP_InternalOperation)operation
+               operationName:(NSString *__autoreleasing *)xoperationName
+                     context:(id)context;
+
 @end
 

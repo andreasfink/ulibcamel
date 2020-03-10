@@ -24,13 +24,34 @@
 
 - (UMASN1Object *)decodeASN1:(UMASN1Object *)params
                operationCode:(int64_t)opcode
-               operationType:(UMTCAP_InternalOperation)operation
+               operationType:(UMTCAP_InternalOperation)operationType
                operationName:(NSString *__autoreleasing *)xoperationName
                      context:(id)context
 {
-    return NULL;
+    UMASN1Object *o;
+    if(params)
+    {
+        UMCamelObject *asn1 = [[UMCamelObject alloc]initWithASN1Object:params context:context];
+        NSString *name = NULL;
+        o = [asn1 decodeASN1:params
+               operationCode:opcode
+               operationType:operationType
+               operationName:&name
+                     context:context];
+    }
+    else
+    {
+        UMCamelObject *asn1 = [[UMCamelObject alloc]init];
+        NSString *name = NULL;
+        o = [asn1 decodeASN1:params
+               operationCode:opcode
+               operationType:operationType
+               operationName:&name
+                     context:context];
+        o = NULL;
+    }
+    return o;
 }
-
 - (NSString *)decodeError:(int)err
 {
     return @"error";
@@ -506,6 +527,24 @@
 - (NSString *)status
 {
     return @"not-implemented";
+}
+
+
+- (void) setConfig:(NSDictionary *)cfg applicationContext:(id<UMLayerCamelApplicationContextProtocol>)appContext
+{
+    [self readLayerConfig:cfg];
+    if (cfg[@"address"])
+    {
+        _address =  [cfg[@"address"] stringValue];
+    }
+    if (cfg[@"timeout"])
+    {
+        _timeout = [cfg[@"timeout"] doubleValue];
+    }
+    else
+    {
+        _timeout = 70;
+    }
 }
 
 @end

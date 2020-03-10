@@ -46,5 +46,15 @@
     return dict;
 }
 
+
+- (UMASN1Object *)decodeASN1:(UMASN1Object *)params
+               operationCode:(int64_t)opcode
+               operationType:(UMTCAP_InternalOperation)operation
+               operationName:(NSString *__autoreleasing *)xoperationName
+                     context:(id)context
+{
+    return params;
+}
+
 @end
 
