@@ -8,7 +8,7 @@
 
 #import <ulibtcap/ulibtcap.h>
 
-#import "UMCamel_asn1.h"
+#import "UMCamelObject.h"
 #import "UMCamelOperationCode.h"
 #import "UMCamelOperation.h"
 #import "UMCamelErrorCode.h"
