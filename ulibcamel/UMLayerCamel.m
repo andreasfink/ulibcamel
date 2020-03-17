@@ -122,7 +122,13 @@
        // UMTCAP_asn1_Associate_result *r = [[UMTCAP_asn1_Associate_result alloc]initWithValue:0];
         UMTCAP_asn1_Associate_source_diagnostic *d = [[UMTCAP_asn1_Associate_source_diagnostic alloc]init];
         d.dialogue_service_user =[[UMASN1Integer alloc]initWithValue:0];
-        /*[dialog MAP_Delimiter_Req:options
+        /*
+            SccpAddress *remote = NULL;
+            if(_keepOriginalSccpAddressForTcapContinue)
+            {
+                remote = _initialRemoteAddress;
+            }
+            [dialog MAP_Delimiter_Req:options
                            result:r
                        diagnostic:d];*/
     }
