@@ -40,5 +40,5 @@
 - (void) setConfig:(NSDictionary *)cfg applicationContext:(id<UMLayerCamelApplicationContextProtocol>)appContext;
 + (UMASN1Object *)decodeAsn1:(UMASN1Object *)input;
 - (NSString *)status;
-
+- (void)startUp;
 @end
