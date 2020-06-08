@@ -44,7 +44,7 @@
     {
         _sMSCAddress.asn1_tag.tagNumber = 2;
         _sMSCAddress.asn1_tag.tagClass =UMASN1Class_ContextSpecific;
-        [_asn1_list addObject:_destinationSubscriberNumber];
+        [_asn1_list addObject:_sMSCAddress];
     }
 }
 
