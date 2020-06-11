@@ -41,13 +41,6 @@
     }
     else
     {
-        UMCamelObject *asn1 = [[UMCamelObject alloc]init];
-        NSString *name = NULL;
-        o = [asn1 decodeASN1:params
-               operationCode:opcode
-               operationType:operationType
-               operationName:&name
-                     context:context];
         o = NULL;
     }
     return o;
