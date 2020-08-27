@@ -124,6 +124,13 @@
 }
 
 
+
+- (void)setOptions:(NSDictionary *)dict
+{
+    
+}
+
+
 /* --------------------------------------------------------------------------- */
 /*  TCAP HANDLING */
 /* --------------------------------------------------------------------------- */
@@ -387,5 +394,243 @@
     [s appendFormat:@"    tcapContinueSeen: %@\n",@(_tcapContinueSeen)];
     [filehandler writeData: [s dataUsingEncoding:NSUTF8StringEncoding]];
 }
+
+
+
+
+
+
+#pragma mark -
+#pragma mark Dialog Handling
+
+-(void) CAMEL_Open_Req_forUser:(id<UMCamelUserProtocol>)user
+                        tcap:(UMLayerTCAP *)xtcap
+                         map:(UMLayerCamel *)xcamel
+                     variant:(UMTCAP_Variant)xvariant
+              callingAddress:(SccpAddress *)src
+               calledAddress:(SccpAddress *)dst
+          applicationContext:(UMTCAP_asn1_objectIdentifier *)appContext
+                    userInfo:(UMTCAP_asn1_userInformation *)xuserInfo
+              userIdentifier:(UMCamelUserIdentifier *)userIdentifier
+                     options:(NSDictionary *)xoptions
+{
+    
+}
+
+- (void) CAMEL_Open_Ind_forUser:(id<UMCamelUserProtocol>)user
+                         tcap:(UMLayerTCAP *)xtcap
+                          map:(UMLayerCamel *)xcamel
+                      variant:(UMTCAP_Variant)xvariant
+               callingAddress:(SccpAddress *)src
+                calledAddress:(SccpAddress *)dst
+              dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
+                transactionId:(NSString *)localTransactionId
+          remoteTransactionId:(NSString *)remotelTransactionId
+                      options:(NSDictionary *)xoptions
+{
+    
+}
+
+- (void)CAMEL_Delimiter_Req:(NSDictionary *)xoptions
+           callingAddress:(SccpAddress *)src
+            calledAddress:(SccpAddress *)dst
+                   result:(UMTCAP_asn1_Associate_result *)result
+               diagnostic:(UMTCAP_asn1_Associate_source_diagnostic *)result_source_diagnostic
+                 userInfo:(UMTCAP_asn1_userInformation *)xuserInfo
+{
+    
+}
+
+-(void)CAMEL_Close_Req:(NSDictionary *)xoptions
+       callingAddress:(SccpAddress *)src
+        calledAddress:(SccpAddress *)dst
+               result:(UMTCAP_asn1_Associate_result *)result
+           diagnostic:(UMTCAP_asn1_Associate_source_diagnostic *)result_source_diagnostic
+             userInfo:(UMTCAP_asn1_userInformation *)userInfo
+{
+    
+}
+
+
+- (void)CAMEL_Error_Req:(UMASN1Object *)param
+       callingAddress:(SccpAddress *)src
+        calledAddress:(SccpAddress *)dst
+      dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
+            operation:(int64_t)operation
+              options:(NSDictionary *)options
+{
+    
+}
+
+- (void)CAMEL_Reject_Req:(UMASN1Object *)param
+        callingAddress:(SccpAddress *)src
+         calledAddress:(SccpAddress *)dst
+       dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
+              invokeId:(int64_t)invokeId
+               problem:(UMASN1Object *)problem
+               options:(NSDictionary *)options
+{
+    
+}
+
+-(void) CAMEL_U_Abort_Ind:(NSDictionary *)options
+         callingAddress:(SccpAddress *)src
+          calledAddress:(SccpAddress *)dst
+        dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
+          transactionId:(NSString *)localTransactionId
+    remoteTransactionId:(NSString *)remoteTransactionId
+{
+    
+}
+
+-(void) CAMEL_P_Abort_Ind:(NSDictionary *)options
+           callingAddress:(SccpAddress *)src
+            calledAddress:(SccpAddress *)dst
+          dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
+            transactionId:(NSString *)localTransactionId
+      remoteTransactionId:(NSString *)remoteTransactionId
+{
+    
+}
+
+
+-(void) CAMEL_U_Abort_Req:(NSDictionary *)xoptions
+           callingAddress:(SccpAddress *)src
+            calledAddress:(SccpAddress *)dst
+                    cause:(int64_t)cause
+                   result:(UMTCAP_asn1_Associate_result *)result
+               diagnostic:(UMTCAP_asn1_Associate_source_diagnostic *)result_source_diagnostic
+                 userInfo:(UMTCAP_asn1_userInformation *)userInfo
+{
+    
+}
+#pragma mark -
+#pragma mark Component Handling
+
+- (void) CAMEL_Invoke_Req:(UMASN1Object *)param
+                 invokeId:(int64_t)invokeId  /* if not used: AUTO_ASSIGN_INVOKE_ID */
+                 linkedId:(int64_t)linkedId  /* if not used: TCAP_UNDEFINED_LINKED_ID */
+                   opCode:(UMCamelOperation *)opcode
+                     last:(BOOL)last
+                  options:(NSDictionary *)options
+{
+    
+}
+
+
+
+
+- (void)CAMEL_Invoke_Ind:(UMASN1Object *)params
+                  opCode:(UMCamelOperation *)opcode
+                invokeId:(int64_t)invokeId
+                linkedId:(int64_t)linkedId
+                    last:(BOOL)last
+                 options:(NSDictionary *)options
+{
+    switch(opcode.operation)
+    {
+        case UMCamelOperationCode_initialDP:
+        case UMCamelOperationCode_assistRequestInstructions:
+        case UMCamelOperationCode_establishTemporaryConnection:
+        case UMCamelOperationCode_disconnectForwardConnection:
+        case UMCamelOperationCode_connectToResource:
+        case UMCamelOperationCode_connect:
+        case UMCamelOperationCode_releaseCall:
+        case UMCamelOperationCode_requestReportBCSMEvent:
+        case UMCamelOperationCode_eventReportBCSM:
+        case UMCamelOperationCode_collectInformation:
+        case UMCamelOperationCode_continue:
+        case UMCamelOperationCode_initiateCallAttempt:
+        case UMCamelOperationCode_resetTimer:
+        case UMCamelOperationCode_furnishChargingInformation:
+        case UMCamelOperationCode_applyCharging:
+        case UMCamelOperationCode_applyChargingReport:
+        case UMCamelOperationCode_callGap:
+        case UMCamelOperationCode_callInformationReport:
+        case UMCamelOperationCode_callInformationRequest:
+        case UMCamelOperationCode_sendChargingInformation:
+        case UMCamelOperationCode_playAnnouncement:
+        case UMCamelOperationCode_promptAndCollectUserInformation:
+        case UMCamelOperationCode_specializedResourceReport:
+        case UMCamelOperationCode_cancel:
+        case UMCamelOperationCode_activityTest:
+        case UMCamelOperationCode_continueWithArgument1:
+        case UMCamelOperationCode_initialDPSMS:
+        case UMCamelOperationCode_furnishChargingInformationSMS:
+        case UMCamelOperationCode_connectSMS:
+        case UMCamelOperationCode_requestReportSMSEvent:
+        case UMCamelOperationCode_eventReportSMS:
+        case UMCamelOperationCode_continueSMS:
+        case UMCamelOperationCode_releaseSMS:
+        case UMCamelOperationCode_resetTimerSMS:
+        case UMCamelOperationCode_activityTestGPRS:
+        case UMCamelOperationCode_applyChargingGPRS:
+        case UMCamelOperationCode_applyChargingReportGPRS:
+        case UMCamelOperationCode_cancelGPRS:
+        case UMCamelOperationCode_connectGPRS:
+        case UMCamelOperationCode_continueGPRS:
+        case UMCamelOperationCode_entityReleasedGPRS:
+        case UMCamelOperationCode_furnishChargingInformationGPRS:
+        case UMCamelOperationCode_initialDPGPRS:
+        case UMCamelOperationCode_releaseGPRS:
+        case UMCamelOperationCode_eventReportGPRS:
+        case UMCamelOperationCode_requestReportGPRSEvent:
+        case UMCamelOperationCode_resetTimerGPRS:
+        case UMCamelOperationCode_sendChargingInformationGPRS:
+        case UMCamelOperationCode_dFCWithArgument:
+        case UMCamelOperationCode_continueWithArgument:
+        case UMCamelOperationCode_disconnectLeg:
+        case UMCamelOperationCode_moveLeg:
+        case UMCamelOperationCode_splitLeg:
+        case UMCamelOperationCode_entityReleased:
+        case UMCamelOperationCode_playTone:
+        default:
+            break;
+    }
+}
+
+-(void) CAMEL_Delimiter_Ind:(NSDictionary *)options
+                     dialog:(UMCamelDialogIdentifier *)dialogId
+             callingAddress:(SccpAddress *)src
+              calledAddress:(SccpAddress *)dst
+            dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
+              transactionId:(NSString *)localTransactionId
+        remoteTransactionId:(NSString *)remoteTransactionId
+{
+    
+}
+
+-(void) CAMEL_Continue_Ind:(NSDictionary *)options
+            callingAddress:(SccpAddress *)src
+             calledAddress:(SccpAddress *)dst
+           dialoguePortion:(UMTCAP_asn1_dialoguePortion *)xdialoguePortion
+             transactionId:(NSString *)localTransactionId
+       remoteTransactionId:(NSString *)remoteTransactionId
+{
+    
+}
+
+-(void) CAMEL_Close_Ind:(NSDictionary *)options
+{
+    
+}
+
+-(void) CAMEL_Notice_Ind:(NSDictionary *)options
+       tcapTransactionId:(NSString *)localTransactionId
+                  reason:(SCCP_ReturnCause)returnCause
+{
+    
+}
+
+#pragma mark -
+#pragma mark Helper Methods
+- (void)CAMEL_ProcessComponents:(NSArray *)components
+                        options:(NSDictionary *)xoptions
+                        willEnd:(BOOL)willEnd
+{
+    
+}
+
+
 
 @end

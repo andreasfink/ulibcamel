@@ -99,31 +99,27 @@
     }
     
     /* FIXME component processing */
-/*    [dialog MAP_ProcessComponents:components
+    [dialog CAMEL_ProcessComponents:components
                           options:options
                           willEnd:NO];
-    [dialog MAP_Delimiter_Ind:options
+    [dialog CAMEL_Delimiter_Ind:options
                        dialog:dialogId
                callingAddress:src
                 calledAddress:dst
               dialoguePortion:xdialoguePortion
                 transactionId:localTransactionId
           remoteTransactionId:remoteTransactionId];
-    */
     if(components.count==0)
     {
-       // UMTCAP_asn1_Associate_result *r = [[UMTCAP_asn1_Associate_result alloc]initWithValue:0];
+        UMTCAP_asn1_Associate_result *r = [[UMTCAP_asn1_Associate_result alloc]initWithValue:0];
         UMTCAP_asn1_Associate_source_diagnostic *d = [[UMTCAP_asn1_Associate_source_diagnostic alloc]init];
         d.dialogue_service_user =[[UMASN1Integer alloc]initWithValue:0];
-        /*
-            SccpAddress *remote = NULL;
-            if(_keepOriginalSccpAddressForTcapContinue)
-            {
-                remote = _initialRemoteAddress;
-            }
-            [dialog MAP_Delimiter_Req:options
-                           result:r
-                       diagnostic:d];*/
+        [dialog CAMEL_Delimiter_Req:options
+                     callingAddress:dst
+                      calledAddress:src
+                             result:r
+                         diagnostic:d
+                           userInfo:NULL];
     }
 }
 
@@ -157,18 +153,16 @@
         {
             dialog = [self getNewDialogForUser:_user];
         }
-        /*
-        [dialog MAP_Open_Ind_forUser:_user
-                                tcap:tcapLayer
-                                 map:self
-                             variant:var
-                      callingAddress:src
-                       calledAddress:dst
-                     dialoguePortion:xdialoguePortion
-                       transactionId:xlocalTransactionId
-                 remoteTransactionId:xremoteTransactionId
-                             options:options];
-        */
+        [dialog CAMEL_Open_Ind_forUser:_user
+                                  tcap:tcapLayer
+                                   map:self
+                               variant:var
+                        callingAddress:src
+                         calledAddress:dst
+                       dialoguePortion:xdialoguePortion
+                         transactionId:xlocalTransactionId
+                   remoteTransactionId:xremoteTransactionId
+                               options:options];
         dialogId = dialog.userDialogId;
     }
     if(dialog==NULL)
@@ -214,11 +208,10 @@
             
             dialog.tcapContinueSeen=YES;
         }
-        /*
-        [dialog MAP_ProcessComponents:components
+        [dialog CAMEL_ProcessComponents:components
                               options:options
                               willEnd:NO];
-        [dialog MAP_Delimiter_Ind:options
+        [dialog CAMEL_Delimiter_Ind:options
                            dialog:dialogId
                    callingAddress:src
                     calledAddress:dst
@@ -226,14 +219,12 @@
                     transactionId:xlocalTransactionId
               remoteTransactionId:xremoteTransactionId];
         
-        [dialog MAP_Continue_Ind:options
+        [dialog CAMEL_Continue_Ind:options
                   callingAddress:src
                    calledAddress:dst
                  dialoguePortion:xdialoguePortion
                    transactionId:xlocalTransactionId
              remoteTransactionId:xremoteTransactionId];
-        */
-        
     }
 }
 
@@ -284,9 +275,9 @@
         
         @try
         {
-           /* [dialog MAP_ProcessComponents:components
-                                  options:options
-                                  willEnd:YES];*/
+           [dialog CAMEL_ProcessComponents:components
+                                   options:options
+                                   willEnd:YES];
         }
         @catch(NSException *ex)
         {
@@ -294,7 +285,7 @@
         }
         @try
         {
-           // [dialog MAP_Close_Ind:options];
+           [dialog CAMEL_Close_Ind:options];
         }
         @catch(NSException *ex)
         {
@@ -315,13 +306,11 @@
                       reason:(SCCP_ReturnCause)reason
                      options:(NSDictionary *)options
 {
-    //UMCamelDialogIdentifier *dialogId =   [[UMCamelDialogIdentifier alloc] initWithTcapUserDialogIdentifier:tcapUserId];
-    
-    //UMCamelDialog *dialog = [self dialogById:dialogId]; 
-    /*
-    [dialog MAP_Notice_Ind:options
-         tcapTransactionId:localTransactionId
-                    reason:reason];*/
+    UMCamelDialogIdentifier *dialogId =   [[UMCamelDialogIdentifier alloc] initWithTcapUserDialogIdentifier:tcapUserId];
+    UMCamelDialog *dialog = [self dialogById:dialogId];
+    [dialog CAMEL_Notice_Ind:options
+           tcapTransactionId:localTransactionId
+                      reason:reason];
 }
 
 - (void)tcapPAbortIndication:(UMTCAP_UserDialogIdentifier *)tcapUserId
@@ -352,15 +341,14 @@
     
     @try
     {
-        /*
-        [dialog MAP_P_Abort_Ind:options
-                 callingAddress:src
-                  calledAddress:dst
-                dialoguePortion:xdialoguePortion
-                  transactionId:localTransactionId
-            remoteTransactionId:remoteTransactionId];
+        [dialog CAMEL_P_Abort_Ind:options
+                   callingAddress:src
+                    calledAddress:dst
+                  dialoguePortion:xdialoguePortion
+                    transactionId:localTransactionId
+              remoteTransactionId:remoteTransactionId];
         
-         this is an implicit close */
+        /* this is an implicit close */
     }
     @catch(NSException *ex)
     {
@@ -395,12 +383,12 @@
     dialog.tcapLocalTransactionId = localTransactionId;
     @try
     {
-     /*   [dialog MAP_U_Abort_Ind:options
+        [dialog CAMEL_U_Abort_Ind:options
                  callingAddress:src
                   calledAddress:dst
                 dialoguePortion:xdialoguePortion
                   transactionId:localTransactionId
-            remoteTransactionId:remoteTransactionId];*/
+            remoteTransactionId:remoteTransactionId];
     }
     @catch(NSException *ex)
     {
@@ -408,7 +396,7 @@
     }
     @try
     {
-       // [dialog MAP_Close_Ind:options];
+        [dialog CAMEL_Close_Ind:options];
     }
     @catch(NSException *ex)
     {

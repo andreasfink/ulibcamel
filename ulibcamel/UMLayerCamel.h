@@ -28,6 +28,7 @@
     NSString                    *_address;
     NSTimeInterval              _timeout;
 }
+
 @property(readwrite,strong,atomic)  UMLayerTCAP *tcap;
 @property(readwrite,strong,atomic)  NSString *address;
 @property(readwrite,assign,atomic)  NSTimeInterval dialogTimeout;

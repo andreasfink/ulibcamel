@@ -6,6 +6,12 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
+#define ASN_DIRECT_ADD(OBJ) \
+if(OBJ) \
+{ \
+    [_asn1_list addObject:OBJ]; \
+}
+
 #define CONTEXT_SPECIFIC_ADD(TAG,OBJ) \
     if(OBJ) \
     { \
@@ -50,6 +56,14 @@
     { \
         [LIST addObject:OBJ]; \
     }
+
+
+#define GET_ASN_DIRECT(OBJ,TYPE) \
+if(o) \
+{ \
+    OBJ = [[TYPE alloc]initWithASN1Object:o context:context]; \
+    o = [self getObjectAtPosition:p++]; \
+}
 
 #define GET_CONTEXT_SPECIFIC(TAG,OBJ,TYPE,o,p) \
     if((o) && (o.asn1_tag.tagNumber == TAG) && (o.asn1_tag.tagClass == UMASN1Class_ContextSpecific)) \
