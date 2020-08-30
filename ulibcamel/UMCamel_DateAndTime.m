@@ -10,4 +10,8 @@
 
 @implementation UMCamel_DateAndTime
 
+- (NSString *) objectName
+{
+    return @"DateAndTime";
+}
 @end

@@ -10,4 +10,9 @@
 
 @implementation UMCamel_CUG_Index
 
+- (NSString *) objectName
+{
+    return @"CUG-Index";
+}
+
 @end

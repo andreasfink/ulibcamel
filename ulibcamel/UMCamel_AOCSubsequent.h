@@ -15,8 +15,8 @@
 	UMASN1Integer			*_tariffSwitchInterval;
 }
 
-@property(readwrite,strong,atomic)      UMCamel_CAI_Gsm0224		*cAI_GSM0224;
-@property(readwrite,strong,atomic)      UMASN1Integer			*tariffSwitchInterval;
+@property(readwrite,strong,atomic)  UMCamel_CAI_Gsm0224		*cAI_GSM0224;
+@property(readwrite,strong,atomic)  UMASN1Integer			*tariffSwitchInterval;
 
 @end
 

@@ -10,7 +10,7 @@
 
 
 
-@interface UMCamel_CallSegmentID : UMASN1Object
+@interface UMCamel_CallSegmentID : UMASN1Integer
 
 @end
 

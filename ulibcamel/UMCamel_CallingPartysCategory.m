@@ -10,4 +10,11 @@
 
 @implementation UMCamel_CallingPartysCategory
 
+- (NSString *) objectName
+{
+    return @"CallingPartysCategory";
+}
+
+
+
 @end

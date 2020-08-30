@@ -10,4 +10,10 @@
 
 @implementation UMCamel_Carrier
 
+- (NSString *) objectName
+{
+    return @"Carrier";
+}
+
+
 @end

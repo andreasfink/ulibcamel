@@ -10,7 +10,7 @@
 
 
 
-@interface UMCamel_Carrier : UMASN1Object
+@interface UMCamel_Carrier : UMASN1OctetString
 
 @end
 

@@ -10,7 +10,8 @@
 
 
 
-@interface UMCamel_CallReferenceNumber : UMASN1Object
+@interface UMCamel_CallReferenceNumber : UMASN1OctetString
+
 
 @end
 

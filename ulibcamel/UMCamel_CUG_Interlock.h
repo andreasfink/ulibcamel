@@ -10,7 +10,7 @@
 
 
 
-@interface UMCamel_CUG_Interlock : UMASN1Object
+@interface UMCamel_CUG_Interlock : UMASN1OctetString
 
 @end
 

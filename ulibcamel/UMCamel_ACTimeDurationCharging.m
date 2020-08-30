@@ -45,7 +45,6 @@
     GET_CONTEXT_SPECIFIC(3,_tariffSwitchInterval,UMASN1Integer,o,p);
     GET_CONTEXT_SPECIFIC(4,_actone,UMASN1Boolean,o,p);
     GET_CONTEXT_SPECIFIC(5,_extensions,UMCamel_ExtensionsArray,o,p);
-
     return self;
 }
 
@@ -57,8 +56,6 @@
 - (id) objectValue
 {
     UMSynchronizedSortedDictionary *dict = [[UMSynchronizedSortedDictionary alloc]init];
-
-
     DICT_ADD(dict,_maxCallPeriodDuration,@"maxCallPeriodDuration");
     DICT_ADD(dict,_releaseIfdurationExceeded,@"releaseIfdurationExceeded");
     DICT_ADD(dict,_tariffSwitchInterval,@"tariffSwitchInterval");

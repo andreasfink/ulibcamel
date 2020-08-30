@@ -1,5 +1,5 @@
 DisconnectForwardConnectionWithArgumentArg ::= SEQUENCE {
-	callSegmentID						[1] CallSegmentID					OPTIONAL,
-	extensions							[2] ExtensionsArray 						OPTIONAL,
+	callSegmentID  [1] CallSegmentID   OPTIONAL,
+	extensions     [2] ExtensionsArray OPTIONAL,
 	...
 	}

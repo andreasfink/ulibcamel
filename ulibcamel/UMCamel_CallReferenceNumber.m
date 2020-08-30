@@ -10,4 +10,9 @@
 
 @implementation UMCamel_CallReferenceNumber
 
+- (NSString *) objectName
+{
+    return @"CallReferenceNumber";
+}
+
 @end

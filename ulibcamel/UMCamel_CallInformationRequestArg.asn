@@ -6,6 +6,6 @@ CallInformationRequestArg ::=
 {
     requestedInformationTypeList [0] RequestedInformationTypeList,
     extensions                   [2] ExtensionsArray OPTIONAL,
-    legID3                        [3] SendingSideID OPTIONAL,
+    legID3                       [3] SendingSideID OPTIONAL,
 	...
 }

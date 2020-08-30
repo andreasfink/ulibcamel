@@ -8,7 +8,7 @@
 
 #import "UMCamel_ApplyChargingReportArg.h"
 #import "UMCamel_ASN1_macros.h"
-//#import "UMCamel_CAMEL_CallResult.h"
+#import "UMCamel_CAMEL_CallResult.h"
 
 @implementation UMCamel_ApplyChargingReportArg
 
@@ -24,7 +24,7 @@
 {
     int p=0;
     UMASN1Object *o = [self getObjectAtPosition:p++];
-    //GET_ASN_DIRECT(_callresultOctet,UMCamel_CAMEL_CallResult);
+    GET_ASN_DIRECT(_callresultOctet,UMCamel_CAMEL_CallResult,o,p);
     return self;
 }
 
@@ -36,7 +36,7 @@
 - (id) objectValue
 {
     UMSynchronizedSortedDictionary *dict = [[UMSynchronizedSortedDictionary alloc]init];
-    //DICT_ADD(dict,_callresultOctet,@"callresultOctet");
+    DICT_ADD(dict,_callresultOctet,@"callresultOctet");
     return dict;
 }
 

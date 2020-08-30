@@ -58,8 +58,8 @@ if(OBJ) \
     }
 
 
-#define GET_ASN_DIRECT(OBJ,TYPE) \
-if(o) \
+#define GET_ASN_DIRECT(OBJ,TYPE,o,p) \
+if((o) && (o.asn1_tag.tagNumber == [TYPE classTagNumber])) \
 { \
     OBJ = [[TYPE alloc]initWithASN1Object:o context:context]; \
     o = [self getObjectAtPosition:p++]; \

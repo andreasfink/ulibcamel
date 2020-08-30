@@ -11,5 +11,6 @@
 
 @interface UMCamel_Digits : UMCamel_EtsiNumber
 
+
 @end
 

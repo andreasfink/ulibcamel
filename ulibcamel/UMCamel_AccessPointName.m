@@ -7,7 +7,17 @@
 //
 
 #import "UMCamel_AccessPointName.h"
+#import "UMCamel_ASN1_macros.h"
 
 @implementation UMCamel_AccessPointName
 
+
+
+- (NSString *) objectName
+{
+    return @"AccessPointName";
+}
+
 @end
+
+

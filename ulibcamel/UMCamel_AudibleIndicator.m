@@ -16,11 +16,7 @@
 	[super processBeforeEncode];
 	[_asn1_tag setTagIsConstructed];
 	_asn1_list = [[NSMutableArray alloc]init];
-	
-	if(_istone)
-	{
-		[_asn1_list addObject:_istone];
-	}
+    ASN_DIRECT_ADD(_istone);
 	CONTEXT_SPECIFIC_ADD(1,_burstList);
 }
 
@@ -28,11 +24,7 @@
 {
 	int p=0;
 	UMASN1Object *o = [self getObjectAtPosition:p++];
-	if((o) && (o.asn1_tag.tagNumber == UMASN1Primitive_boolean) && (o.asn1_tag.tagClass == UMASN1Class_Universal))
-	{
-		_istone = [[UMASN1Boolean alloc]initWithASN1Object:o context:context]; \
-		o = [self getObjectAtPosition:p++]; \
-	}
+    GET_ASN_DIRECT(_istone,UMASN1Boolean,o,p);
 	GET_CONTEXT_SPECIFIC(1,_burstList,UMCamel_BurstList,o,p);
 	return self;
 }

@@ -10,4 +10,12 @@
 
 @implementation UMCamel_ControlType
 
+/* FIXME: implement */
+
+
+- (NSString *) objectName
+{
+    return @"ControlType";
+}
+
 @end

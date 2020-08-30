@@ -3,5 +3,5 @@
 CriticalityType ::= ENUMERATED
 {
     ignore (0),
-        abort (1)
+    abort (1)
 }

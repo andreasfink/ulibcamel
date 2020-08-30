@@ -10,4 +10,9 @@
 
 @implementation UMCamel_Cause
 
+- (NSString *) objectName
+{
+    return @"Cause";
+}
+
 @end

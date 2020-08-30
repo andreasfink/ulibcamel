@@ -10,7 +10,8 @@
 
 
 
-@interface UMCamel_Cause : UMASN1Object
+@interface UMCamel_Cause : UMASN1OctetString
+
 
 @end
 

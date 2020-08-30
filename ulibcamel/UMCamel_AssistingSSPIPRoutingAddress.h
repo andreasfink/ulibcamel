@@ -10,6 +10,5 @@
 #import "UMCamel_Digits.h"
 
 @interface UMCamel_AssistingSSPIPRoutingAddress : UMCamel_Digits
-
 @end
 

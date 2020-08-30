@@ -10,7 +10,7 @@
 
 
 
-@interface UMCamel_CallingPartysCategory : UMASN1Object
+@interface UMCamel_CallingPartysCategory : UMASN1OctetString
 
 @end
 

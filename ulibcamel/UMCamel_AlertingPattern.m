@@ -7,6 +7,7 @@
 //
 
 #import "UMCamel_AlertingPattern.h"
+#import "UMCamel_ASN1_macros.h"
 
 @implementation UMCamel_AlertingPattern
 

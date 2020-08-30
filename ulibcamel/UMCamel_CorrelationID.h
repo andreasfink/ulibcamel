@@ -7,8 +7,9 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
+#import "UMCamel_Digits.h"
 
-@interface UMCamel_CorrelationID : UMASN1Object
+@interface UMCamel_CorrelationID : UMCamel_Digits
 
 @end
 

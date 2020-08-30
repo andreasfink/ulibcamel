@@ -7,10 +7,9 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
+#import <ulibgsmmap/ulibgsmmap.h>
 
-
-
-@interface UMCamel_CUG_Index : UMASN1Object
+@interface UMCamel_CUG_Index : UMGSMMAP_CUG_Index
 
 @end
 

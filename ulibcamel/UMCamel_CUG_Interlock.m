@@ -10,4 +10,9 @@
 
 @implementation UMCamel_CUG_Interlock
 
+- (NSString *) objectName
+{
+    return @"CUG-Interlock";
+}
+
 @end

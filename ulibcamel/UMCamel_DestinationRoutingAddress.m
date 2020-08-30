@@ -10,4 +10,10 @@
 
 @implementation UMCamel_DestinationRoutingAddress
 
+
+- (NSString *) objectName
+{
+    return @"DestinationRoutingAddress";
+}
+
 @end

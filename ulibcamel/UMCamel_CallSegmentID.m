@@ -10,4 +10,10 @@
 
 @implementation UMCamel_CallSegmentID
 
+- (NSString *) objectName
+{
+    return @"CallSegmentID";
+}
+
+
 @end

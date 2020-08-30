@@ -10,4 +10,10 @@
 
 @implementation UMCamel_CorrelationID
  
+
+- (NSString *) objectName
+{
+    return @"CorrelationId";
+}
+
 @end
