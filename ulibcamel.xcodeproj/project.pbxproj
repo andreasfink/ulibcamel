@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A61D2E402500CB0100073061 /* UMCamel_TimeDurationChargingResult.h in Headers */ = {isa = PBXBuildFile; fileRef = A61D2E3E2500CB0100073061 /* UMCamel_TimeDurationChargingResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61D2E412500CB0100073061 /* UMCamel_TimeDurationChargingResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D2E3F2500CB0100073061 /* UMCamel_TimeDurationChargingResult.m */; };
+		A61D2E442500CB1100073061 /* UMCamel_TimeIfNoTariffSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = A61D2E422500CB1100073061 /* UMCamel_TimeIfNoTariffSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61D2E452500CB1100073061 /* UMCamel_TimeIfNoTariffSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D2E432500CB1100073061 /* UMCamel_TimeIfNoTariffSwitch.m */; };
+		A61D2E482500CB1D00073061 /* UMCamel_TimeIfTariffSwitch.h in Headers */ = {isa = PBXBuildFile; fileRef = A61D2E462500CB1D00073061 /* UMCamel_TimeIfTariffSwitch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61D2E492500CB1D00073061 /* UMCamel_TimeIfTariffSwitch.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D2E472500CB1D00073061 /* UMCamel_TimeIfTariffSwitch.m */; };
+		A61D2E4C2500CB2D00073061 /* UMCamel_TimeInformation.h in Headers */ = {isa = PBXBuildFile; fileRef = A61D2E4A2500CB2D00073061 /* UMCamel_TimeInformation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61D2E4D2500CB2D00073061 /* UMCamel_TimeInformation.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D2E4B2500CB2D00073061 /* UMCamel_TimeInformation.m */; };
+		A61D2E502500CB3F00073061 /* UMCamel_TimerID.h in Headers */ = {isa = PBXBuildFile; fileRef = A61D2E4E2500CB3F00073061 /* UMCamel_TimerID.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61D2E512500CB3F00073061 /* UMCamel_TimerID.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D2E4F2500CB3F00073061 /* UMCamel_TimerID.m */; };
+		A61D2E542500CB5800073061 /* UMCamel_TimerValue.h in Headers */ = {isa = PBXBuildFile; fileRef = A61D2E522500CB5800073061 /* UMCamel_TimerValue.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61D2E552500CB5800073061 /* UMCamel_TimerValue.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D2E532500CB5800073061 /* UMCamel_TimerValue.m */; };
+		A61D2E582500CBB200073061 /* UMCamel_FreeFormatData.h in Headers */ = {isa = PBXBuildFile; fileRef = A61D2E562500CBB200073061 /* UMCamel_FreeFormatData.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61D2E592500CBB200073061 /* UMCamel_FreeFormatData.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D2E572500CBB200073061 /* UMCamel_FreeFormatData.m */; };
+		A61D2E5C2500CBF200073061 /* UMCamel_Integer4.h in Headers */ = {isa = PBXBuildFile; fileRef = A61D2E5A2500CBF200073061 /* UMCamel_Integer4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A61D2E5D2500CBF200073061 /* UMCamel_Integer4.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D2E5B2500CBF200073061 /* UMCamel_Integer4.m */; };
+		A61D2E5F2500CC5E00073061 /* ulibgsmmap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61D2E5E2500CC5D00073061 /* ulibgsmmap.framework */; };
 		A62E081A215CB26B00D205F0 /* UMLayerCamel.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E0818215CB26B00D205F0 /* UMLayerCamel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A62E081B215CB26B00D205F0 /* UMLayerCamel.m in Sources */ = {isa = PBXBuildFile; fileRef = A62E0819215CB26B00D205F0 /* UMLayerCamel.m */; };
 		A62E0827215CCAB800D205F0 /* UMCamelOperationCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E0825215CCAB800D205F0 /* UMCamelOperationCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -380,6 +397,23 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		A61D2E3E2500CB0100073061 /* UMCamel_TimeDurationChargingResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_TimeDurationChargingResult.h; sourceTree = "<group>"; };
+		A61D2E3F2500CB0100073061 /* UMCamel_TimeDurationChargingResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_TimeDurationChargingResult.m; sourceTree = "<group>"; };
+		A61D2E422500CB1100073061 /* UMCamel_TimeIfNoTariffSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_TimeIfNoTariffSwitch.h; sourceTree = "<group>"; };
+		A61D2E432500CB1100073061 /* UMCamel_TimeIfNoTariffSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_TimeIfNoTariffSwitch.m; sourceTree = "<group>"; };
+		A61D2E462500CB1D00073061 /* UMCamel_TimeIfTariffSwitch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_TimeIfTariffSwitch.h; sourceTree = "<group>"; };
+		A61D2E472500CB1D00073061 /* UMCamel_TimeIfTariffSwitch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_TimeIfTariffSwitch.m; sourceTree = "<group>"; };
+		A61D2E4A2500CB2D00073061 /* UMCamel_TimeInformation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_TimeInformation.h; sourceTree = "<group>"; };
+		A61D2E4B2500CB2D00073061 /* UMCamel_TimeInformation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_TimeInformation.m; sourceTree = "<group>"; };
+		A61D2E4E2500CB3F00073061 /* UMCamel_TimerID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_TimerID.h; sourceTree = "<group>"; };
+		A61D2E4F2500CB3F00073061 /* UMCamel_TimerID.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_TimerID.m; sourceTree = "<group>"; };
+		A61D2E522500CB5800073061 /* UMCamel_TimerValue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_TimerValue.h; sourceTree = "<group>"; };
+		A61D2E532500CB5800073061 /* UMCamel_TimerValue.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_TimerValue.m; sourceTree = "<group>"; };
+		A61D2E562500CBB200073061 /* UMCamel_FreeFormatData.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_FreeFormatData.h; sourceTree = "<group>"; };
+		A61D2E572500CBB200073061 /* UMCamel_FreeFormatData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_FreeFormatData.m; sourceTree = "<group>"; };
+		A61D2E5A2500CBF200073061 /* UMCamel_Integer4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_Integer4.h; sourceTree = "<group>"; };
+		A61D2E5B2500CBF200073061 /* UMCamel_Integer4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_Integer4.m; sourceTree = "<group>"; };
+		A61D2E5E2500CC5D00073061 /* ulibgsmmap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibgsmmap.framework; path = "../../../../../../Library/Application Support/FinkTelecomServices/frameworks/ulibgsmmap.framework"; sourceTree = "<group>"; };
 		A62E0818215CB26B00D205F0 /* UMLayerCamel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMLayerCamel.h; sourceTree = "<group>"; };
 		A62E0819215CB26B00D205F0 /* UMLayerCamel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMLayerCamel.m; sourceTree = "<group>"; };
 		A62E081C215CB29200D205F0 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
@@ -1017,6 +1051,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A67989EC22BB6D280019806C /* ulibtcap.framework in Frameworks */,
+				A61D2E5F2500CC5E00073061 /* ulibgsmmap.framework in Frameworks */,
 				A67989EB22BB6D280019806C /* ulib.framework in Frameworks */,
 				A67989EA22BB6D280019806C /* ulibasn1.framework in Frameworks */,
 			);
@@ -1365,6 +1400,8 @@
 				A652D40724FBC2E8009D5E6A /* UMCamel_FCISMSBillingChargingCharacteristics.asn */,
 				A652D41424FBC2E9009D5E6A /* UMCamel_ForwardServiceInteractionInd.asn */,
 				A652D44B24FBC2EC009D5E6A /* UMCamel_FreeFormatData.asn */,
+				A61D2E562500CBB200073061 /* UMCamel_FreeFormatData.h */,
+				A61D2E572500CBB200073061 /* UMCamel_FreeFormatData.m */,
 				A652D3D924FBC2E5009D5E6A /* UMCamel_FurnishChargingInformationArg.asn */,
 				A652D3AF24FBC2E3009D5E6A /* UMCamel_furnishChargingInformationGPRS.asn */,
 				A652D39324FBC2E1009D5E6A /* UMCamel_FurnishChargingInformationSMSArg.asn */,
@@ -1417,6 +1454,8 @@
 				A652D3E124FBC2E6009D5E6A /* UMCamel_InitiatingEntity.asn */,
 				A652D3B224FBC2E3009D5E6A /* UMCamel_InitiatorOfServiceChange.asn */,
 				A652D46024FBC2EE009D5E6A /* UMCamel_Integer4.asn */,
+				A61D2E5A2500CBF200073061 /* UMCamel_Integer4.h */,
+				A61D2E5B2500CBF200073061 /* UMCamel_Integer4.m */,
 				A652D41924FBC2E9009D5E6A /* UMCamel_Interval.asn */,
 				A652D45224FBC2ED009D5E6A /* UMCamel_InvokeID.asn */,
 				A652D48224FBC2F0009D5E6A /* UMCamel_IPRoutingAddress.asn */,
@@ -1600,11 +1639,23 @@
 				A62E08BA215CE9A600D205F0 /* UMCamel_TimeAndTimezone.h */,
 				A62E08BB215CE9A600D205F0 /* UMCamel_TimeAndTimezone.m */,
 				A652D3D424FBC2E5009D5E6A /* UMCamel_TimeDurationChargingResult.asn */,
+				A61D2E3E2500CB0100073061 /* UMCamel_TimeDurationChargingResult.h */,
+				A61D2E3F2500CB0100073061 /* UMCamel_TimeDurationChargingResult.m */,
 				A652D39624FBC2E1009D5E6A /* UMCamel_TimeIfNoTariffSwitch.asn */,
+				A61D2E422500CB1100073061 /* UMCamel_TimeIfNoTariffSwitch.h */,
+				A61D2E432500CB1100073061 /* UMCamel_TimeIfNoTariffSwitch.m */,
 				A652D47C24FBC2F0009D5E6A /* UMCamel_TimeIfTariffSwitch.asn */,
+				A61D2E462500CB1D00073061 /* UMCamel_TimeIfTariffSwitch.h */,
+				A61D2E472500CB1D00073061 /* UMCamel_TimeIfTariffSwitch.m */,
 				A652D41724FBC2E9009D5E6A /* UMCamel_TimeInformation.asn */,
+				A61D2E4A2500CB2D00073061 /* UMCamel_TimeInformation.h */,
+				A61D2E4B2500CB2D00073061 /* UMCamel_TimeInformation.m */,
 				A652D48124FBC2F0009D5E6A /* UMCamel_TimerID.asn */,
+				A61D2E4E2500CB3F00073061 /* UMCamel_TimerID.h */,
+				A61D2E4F2500CB3F00073061 /* UMCamel_TimerID.m */,
 				A652D43B24FBC2EB009D5E6A /* UMCamel_TimerValue.asn */,
+				A61D2E522500CB5800073061 /* UMCamel_TimerValue.h */,
+				A61D2E532500CB5800073061 /* UMCamel_TimerValue.m */,
 				A652D45B24FBC2ED009D5E6A /* UMCamel_Tone.asn */,
 				A652D43A24FBC2EB009D5E6A /* UMCamel_TPDataCodingScheme.asn */,
 				A62E08E3215D096F00D205F0 /* UMCamel_TPDataCodingScheme.h */,
@@ -1709,6 +1760,7 @@
 		A65781D61CF54CFE00211137 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A61D2E5E2500CC5D00073061 /* ulibgsmmap.framework */,
 				A67989E822BB6D280019806C /* ulib.framework */,
 				A67989E722BB6D280019806C /* ulibasn1.framework */,
 				A67989E922BB6D280019806C /* ulibtcap.framework */,
@@ -1813,6 +1865,7 @@
 				A6D0294C2178BDF7007760F7 /* UMCamel_RequestedInformationType.h in Headers */,
 				A6D02A442178C383007760F7 /* UMCamel_EntityReleasedGPRSArg.h in Headers */,
 				A62E0890215CE8FA00D205F0 /* UMCamel_ServiceInteractionIndicatorsTwo.h in Headers */,
+				A61D2E542500CB5800073061 /* UMCamel_TimerValue.h in Headers */,
 				A6D029742178BEAE007760F7 /* UMCamel_SCIBillingChargingCharacteristics.h in Headers */,
 				A62E088C215CE8F100D205F0 /* UMCamel_Cause.h in Headers */,
 				A6BDA2242176F3D4002009FE /* UMCamel_CallInformationRequestArg.h in Headers */,
@@ -1839,6 +1892,7 @@
 				A6D029402178BDB7007760F7 /* UMCamel_RequestedInfoErrorPARAM.h in Headers */,
 				A62E08D5215D092200D205F0 /* UMCamel_EventTypeSMS.h in Headers */,
 				A6F6D5A1216531F2007BF702 /* UMCamel_AssistRequestInstructionsArg.h in Headers */,
+				A61D2E402500CB0100073061 /* UMCamel_TimeDurationChargingResult.h in Headers */,
 				A652D48D24FBF8CC009D5E6A /* UMCamel_CallSegmentToCancel.h in Headers */,
 				A6BDA1FE2176F1AC002009FE /* UMCamel_AChBillingChargingCharacteristics.h in Headers */,
 				A6D029C32178C151007760F7 /* UMCamel_CollectedDigits.h in Headers */,
@@ -1881,6 +1935,7 @@
 				A6D02A482178C396007760F7 /* UMCamel_ErrorTreatment.h in Headers */,
 				A6D029D02178C182007760F7 /* UMCamel_ConnectedNumberTreatmentInd.h in Headers */,
 				A62E082B215CCDDD00D205F0 /* UMCamelProviderProtocol.h in Headers */,
+				A61D2E582500CBB200073061 /* UMCamel_FreeFormatData.h in Headers */,
 				A6BD360C215E11D5002085BA /* UMCamel_LegID.h in Headers */,
 				A6D029E82178C1D0007760F7 /* UMCamel_ContinueWithArgumentArgExtension.h in Headers */,
 				A6D029902178BF93007760F7 /* UMCamel_SMSEventArray.h in Headers */,
@@ -1905,6 +1960,7 @@
 				A6D029A82178C005007760F7 /* UMCamel_SystemFailurePARAM.h in Headers */,
 				A6D02A5C2178C5C6007760F7 /* UMCamel_VariablePartsArray.h in Headers */,
 				A6D0297C2178BEC3007760F7 /* UMCamel_SendChargingInformationArg.h in Headers */,
+				A61D2E482500CB1D00073061 /* UMCamel_TimeIfTariffSwitch.h in Headers */,
 				A6D029BB2178C131007760F7 /* UMCamel_CollectInformationArg.h in Headers */,
 				A6D02A542178C56B007760F7 /* UMCamel_TransferredVolume.h in Headers */,
 				A6D029942178BFA4007760F7 /* UMCamel_SpecializedResourceReportArg.h in Headers */,
@@ -1923,6 +1979,7 @@
 				A6D0298C2178BF82007760F7 /* UMCamel_SMSEvent.h in Headers */,
 				A62E08CC215D062D00D205F0 /* UMCamel_InitialDPSMSArg.h in Headers */,
 				A6F6D5B32165367F007BF702 /* UMCamel_ScfID.h in Headers */,
+				A61D2E5C2500CBF200073061 /* UMCamel_Integer4.h in Headers */,
 				A62E0884215CE8DD00D205F0 /* UMCamel_RedirectingPartyID.h in Headers */,
 				A6D029332178B4A9007760F7 /* UMCamel_Burst.h in Headers */,
 				A6D029B72178C124007760F7 /* UMCamel_CompoundCriteria.h in Headers */,
@@ -1937,6 +1994,7 @@
 				A6D029782178BEB9007760F7 /* UMCamel_SCIGPRSBillingChargingCharacteristics.h in Headers */,
 				A62E0854215CE83800D205F0 /* UMCamel_CalledPartyNumber.h in Headers */,
 				A62E085C215CE85100D205F0 /* UMCamel_CallingPartysCategory.h in Headers */,
+				A61D2E502500CB3F00073061 /* UMCamel_TimerID.h in Headers */,
 				A6D029602178BE74007760F7 /* UMCamel_RequestReportSMSEventArg.h in Headers */,
 				A6D029802178BEDF007760F7 /* UMCamel_SendChargingInformationGPRSArg.h in Headers */,
 				A6411ACC2178573200436DE9 /* UMCamel_ACTimeDurationCharging.h in Headers */,
@@ -1953,12 +2011,14 @@
 				A652D4C125004D1A009D5E6A /* UMCamel_CellGlobalIdOrServiceAreaIdOrLAI.h in Headers */,
 				A62E08B0215CE95400D205F0 /* UMCamel_CallReferenceNumber.h in Headers */,
 				A6D029502178BE36007760F7 /* UMCamel_RequestedInformationTypeList.h in Headers */,
+				A61D2E442500CB1100073061 /* UMCamel_TimeIfNoTariffSwitch.h in Headers */,
 				A652D49D25004C70009D5E6A /* UMCamel_CAMEL_FCIGPRSBillingChargingCharacteristics.h in Headers */,
 				A6D02A4C2178C548007760F7 /* UMCamel_UnavailableNetworkResource.h in Headers */,
 				A6D029882178BF49007760F7 /* UMCamel_SGSNCapabilities.h in Headers */,
 				A6D029642178BE7E007760F7 /* UMCamel_ResetTimerArg.h in Headers */,
 				A6D029D42178C192007760F7 /* UMCamel_ConnectGPRSArg.h in Headers */,
 				A62E0888215CE8E800D205F0 /* UMCamel_RedirectionInformation.h in Headers */,
+				A61D2E4C2500CB2D00073061 /* UMCamel_TimeInformation.h in Headers */,
 				A652D4A125004C79009D5E6A /* UMCamel_CAMEL_FCISMSBillingChargingCharacteristics.h in Headers */,
 				A652D4AD25004C9A009D5E6A /* UMCamel_CAMEL_SCIBillingChargingCharacteristicsAlt.h in Headers */,
 				A6D0292C2178A3B0007760F7 /* UMCamel_Digits.h in Headers */,
@@ -2040,7 +2100,7 @@
 		A65781B11CF54A3600211137 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1160;
+				LastUpgradeCheck = 1170;
 				ORGANIZATIONNAME = "Andreas Fink (andreas@fink.org)";
 				TargetAttributes = {
 					A65781B91CF54A3600211137 = {
@@ -2128,10 +2188,12 @@
 				A6BDA2132176F296002009FE /* UMCamel_AppendFreeFormatData.m in Sources */,
 				A6D029F02178C201007760F7 /* UMCamel_CorrelationID.m in Sources */,
 				A6932D7E21652C32003A477B /* UMCamel_CallReferenceNumber.m in Sources */,
+				A61D2E5D2500CBF200073061 /* UMCamel_Integer4.m in Sources */,
 				A6932D8F21652C32003A477B /* UMCamel_IMEI.m in Sources */,
 				A6D029752178BEAE007760F7 /* UMCamel_SCIBillingChargingCharacteristics.m in Sources */,
 				A6D02A412178C374007760F7 /* UMCamel_EntityReleasedArg.m in Sources */,
 				A6D02A552178C56B007760F7 /* UMCamel_TransferredVolume.m in Sources */,
+				A61D2E492500CB1D00073061 /* UMCamel_TimeIfTariffSwitch.m in Sources */,
 				A6D02A152178C2F3007760F7 /* UMCamel_DisconnectLegArg.m in Sources */,
 				A6F6D5A2216531F2007BF702 /* UMCamel_AssistRequestInstructionsArg.m in Sources */,
 				A6D029B82178C124007760F7 /* UMCamel_CompoundCriteria.m in Sources */,
@@ -2161,6 +2223,7 @@
 				A6D029272178A2FF007760F7 /* UMCamel_CAI_Gsm0224.m in Sources */,
 				A6932D8421652C32003A477B /* UMCamel_CUG_Index.m in Sources */,
 				A6BDA2252176F3D4002009FE /* UMCamel_CallInformationRequestArg.m in Sources */,
+				A61D2E452500CB1100073061 /* UMCamel_TimeIfNoTariffSwitch.m in Sources */,
 				A6D0294D2178BDF7007760F7 /* UMCamel_RequestedInformationType.m in Sources */,
 				A6D029512178BE36007760F7 /* UMCamel_RequestedInformationTypeList.m in Sources */,
 				A6D029792178BEB9007760F7 /* UMCamel_SCIGPRSBillingChargingCharacteristics.m in Sources */,
@@ -2181,8 +2244,10 @@
 				A6932D9021652C32003A477B /* UMCamel_IMSI.m in Sources */,
 				A6D0292D2178A3B0007760F7 /* UMCamel_Digits.m in Sources */,
 				A6D029592178BE5D007760F7 /* UMCamel_RequestReportBCSMEventArg.m in Sources */,
+				A61D2E512500CB3F00073061 /* UMCamel_TimerID.m in Sources */,
 				A6932D9E21652C32003A477B /* UMCamel_RedirectionInformation.m in Sources */,
 				A6D029652178BE7E007760F7 /* UMCamel_ResetTimerArg.m in Sources */,
+				A61D2E412500CB0100073061 /* UMCamel_TimeDurationChargingResult.m in Sources */,
 				A6F6D5B82165368C007BF702 /* UMCamel_CallSegmentID.m in Sources */,
 				A6D029D12178C182007760F7 /* UMCamel_ConnectedNumberTreatmentInd.m in Sources */,
 				A652D4A625004C80009D5E6A /* UMCamel_CAMEL_SCIBillingChargingCharacteristics.m in Sources */,
@@ -2194,6 +2259,7 @@
 				A62E0830215CCF3900D205F0 /* UMCamelDialogIdentifier.m in Sources */,
 				A652D49224FBFA99009D5E6A /* UMCamel_CAMEL_AChBillingChargingCharacteristics.m in Sources */,
 				A6D029342178B4A9007760F7 /* UMCamel_Burst.m in Sources */,
+				A61D2E552500CB5800073061 /* UMCamel_TimerValue.m in Sources */,
 				A6932D9C21652C32003A477B /* UMCamel_OriginalCalledPartyID.m in Sources */,
 				A6D02A492178C396007760F7 /* UMCamel_ErrorTreatment.m in Sources */,
 				A6F6D5B021653672007BF702 /* UMCamel_AssistingSSPIPRoutingAddress.m in Sources */,
@@ -2242,6 +2308,7 @@
 				A6F6D59E21652D31007BF702 /* UMCamel_InitialDPSMSArg.m in Sources */,
 				A6D0296D2178BE91007760F7 /* UMCamel_ResetTimerSMSArg.m in Sources */,
 				A6D029E12178C1BA007760F7 /* UMCamel_ContinueGPRSArg.m in Sources */,
+				A61D2E592500CBB200073061 /* UMCamel_FreeFormatData.m in Sources */,
 				A6D029A92178C005007760F7 /* UMCamel_SystemFailurePARAM.m in Sources */,
 				A6D029912178BF93007760F7 /* UMCamel_SMSEventArray.m in Sources */,
 				A6932D8821652C32003A477B /* UMCamel_EventTypeBCSM.m in Sources */,
@@ -2282,6 +2349,7 @@
 				A6932DA021652C32003A477B /* UMCamel_ServiceKey.m in Sources */,
 				A6D029992178BFB0007760F7 /* UMCamel_SplitLegArg.m in Sources */,
 				A62E083C215CD9C900D205F0 /* UMCamelDialog.m in Sources */,
+				A61D2E4D2500CB2D00073061 /* UMCamel_TimeInformation.m in Sources */,
 				A6D029552178BE4B007760F7 /* UMCamel_RequestedInformationValue.m in Sources */,
 				A6D029E52178C1C4007760F7 /* UMCamel_ContinueWithArgumentArg.m in Sources */,
 				A6D02A392178C359007760F7 /* UMCamel_ElapsedTimeRollOver.m in Sources */,
@@ -2450,6 +2518,7 @@
 					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ulibcamel/Info.plist;
@@ -2472,6 +2541,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",
 					"$(LOCAL_LIBRARY_DIR)/Application\\ Support/FinkTelecomServices/frameworks",

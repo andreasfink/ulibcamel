@@ -16,8 +16,8 @@
     UMCamel_CallSegmentID   *_callSegmentID;
 }
 
-@property(readwite,strong,atomic)   UMCamel_InvokeID        *callInvokeID;
-@property(readwite,strong,atomic)   UMCamel_CallSegmentID   *callSegmentID;
+@property(readwrite,strong,atomic)   UMCamel_InvokeID        *callInvokeID;
+@property(readwrite,strong,atomic)   UMCamel_CallSegmentID   *callSegmentID;
 
 @end
 
