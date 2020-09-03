@@ -7,5 +7,4 @@ CHOICE
 	callInvokeID							[0] InvokeID,
 	allRequests							[1] NULL,
 	callSegmentToCancel					[2]	CallSegmentToCancel
-
 }

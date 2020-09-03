@@ -8,9 +8,17 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-
+#import "UMCamel_CallSegmentID.h"
+#import "UMCamel_ExtensionsArray.h"
 
 @interface UMCamel_DisconnectForwardConnectionWithArgumentArg : UMASN1Sequence
+{
+    UMCamel_CallSegmentID *_callSegmentID;
+    UMCamel_ExtensionsArray *_extensions;
+}
+
+@property(readwrite,strong,atomic)  UMCamel_CallSegmentID   *callSegmentID;
+@property(readwrite,strong,atomic)  UMCamel_ExtensionsArray *extensions;
 
 @end
 

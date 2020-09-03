@@ -10,4 +10,10 @@
 
 @implementation UMCamel_DisconnectForwardConnectionWithArgumentArg
 
+- (NSString *) objectName
+{
+    return @"DisconnectForwardConnectionWithArgumentArg";
+}
+
+
 @end

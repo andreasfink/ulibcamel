@@ -10,7 +10,13 @@
 
 
 @interface UMCamel_CAMEL_CallResult : UMASN1Choice
+{
+    UMCamel_TimeDurationChargingResult    *_timeDurationChargingResult;
+    BOOL                                   _void99;
+}
 
+@property(readwrite,strong,atomic)  UMCamel_TimeDurationChargingResult *timeDurationChargingResult;
+@property(readwrite,assign,atomic)  BOOL void99;
 @end
 
 

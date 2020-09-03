@@ -12,6 +12,23 @@ if(OBJ) \
     [_asn1_list addObject:OBJ]; \
 }
 
+
+#define COPY_OBJECT_DATA_FROM(src) \
+{ \
+    _asn1_data = src.asn1_data; \
+    _asn1_tag.tagNumber = src.asn1_tag.tagNumber; \
+    _asn1_tag.tagClass = src.asn1_tag.tagClass; \
+}
+
+#define CHOICE_SPECIFIC_ADD(TAG,OBJ) \
+if(OBJ) \
+{ \
+    OBJ.asn1_tag.tagNumber = TAG; \
+    OBJ.asn1_tag.tagClass = UMASN1Class_ContextSpecific; \
+    COPY_OBJECT_DATA_FROM(OBJ); \
+}
+
+
 #define CONTEXT_SPECIFIC_ADD(TAG,OBJ) \
     if(OBJ) \
     { \

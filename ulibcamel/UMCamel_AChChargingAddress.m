@@ -17,16 +17,15 @@
     [super processBeforeEncode];
     [_asn1_tag setTagIsConstructed];
     _asn1_list = [[NSMutableArray alloc]init];
-    CONTEXT_SPECIFIC_ADD(2,_legID);
-    CONTEXT_SPECIFIC_ADD(50,_srfConnection);
+    CHOICE_SPECIFIC_ADD(2,_legID);
+    CHOICE_SPECIFIC_ADD(50,_srfConnection);
 }
 
 
 - (UMCamel_AChChargingAddress *) processAfterDecodeWithContext:(id)context
 {
     int p=0;
-    UMASN1Object *o = [self getObjectAtPosition:p++];
-
+    UMASN1Object *o = self;
     GET_CONTEXT_SPECIFIC(2,_legID,UMCamel_LegID,o,p);
     GET_CONTEXT_SPECIFIC(50,_srfConnection,UMCamel_CallSegmentID,o,p);
     return self;

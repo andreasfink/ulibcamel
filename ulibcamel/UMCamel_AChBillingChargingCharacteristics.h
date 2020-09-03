@@ -14,6 +14,7 @@
 {
     UMCamel_ACTimeDurationCharging *_actimeDurationCharging;
 }
+
 @property(readwrite,strong,atomic)      UMCamel_ACTimeDurationCharging *actimeDurationCharging;
 
 @end
