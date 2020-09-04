@@ -6,7 +6,7 @@
 //  Copyright © 2017 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import <ulibtcap/ulibtcap.h>
+#import <ulibgsmmap/ulibgsmmap.h>
 
 #import "UMCamelObject.h"
 #import "UMCamelOperationCode.h"
