@@ -14,7 +14,6 @@
 #import "UMCamel_AssistRequestInstructionsArg.h"
 #import "UMCamel_CallGapArg.h"
 #import "UMCamel_CallInformationRequestArg.h"
-//#import "UMCamel_CancelArg.h"
 #import "UMCamel_ConnectArg.h"
 #import "UMCamel_ConnectToResourceArg.h"
 #import "UMCamel_ContinueWithArgumentArg.h"
