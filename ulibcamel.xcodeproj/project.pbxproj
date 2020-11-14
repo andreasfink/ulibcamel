@@ -2524,6 +2524,7 @@
 				INFOPLIST_FILE = ulibcamel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.fink.ulibcamel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -2550,6 +2551,7 @@
 				INFOPLIST_FILE = ulibcamel/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 1.14.0;
 				PRODUCT_BUNDLE_IDENTIFIER = me.fink.ulibcamel;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
