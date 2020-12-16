@@ -174,7 +174,6 @@
     // Insert code here to tear down your application
 }
 
-
 - (void)signal_SIGPIPE
 {
     
@@ -192,6 +191,10 @@
 - (void)signal_SIGUSR2
 {
     
+}
+
+- (void)signal_SIGINFO
+{
 }
 
 @end
