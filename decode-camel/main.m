@@ -128,10 +128,12 @@ static void signal_handler(int signum)
     {
         signal_sigusr2++;
     }
+#if defined SIGINFO
     else if (signum == SIGINFO)
     {
         signal_siginfo++;
     }
+#endif
 }
 
 
