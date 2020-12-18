@@ -121,15 +121,6 @@ static void signal_handler(int signum)
     {
         signal_sigusr2++;
     }
-<<<<<<< HEAD
-#if defined SIGINFO
-    else if (signum == SIGINFO)
-    {
-        signal_siginfo++;
-    }
-#endif
-=======
->>>>>>> cf7fe07c287fdc2338f088588e98fcc6525abfc5
 }
 
 
