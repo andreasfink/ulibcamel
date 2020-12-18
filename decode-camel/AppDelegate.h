@@ -35,7 +35,6 @@
 - (void)signal_SIGHUP;
 - (void)signal_SIGUSR1;
 - (void)signal_SIGUSR2;
-- (void)signal_SIGINFO;
 
 @end
 

@@ -193,8 +193,5 @@
     
 }
 
-- (void)signal_SIGINFO
-{
-}
 
 @end
