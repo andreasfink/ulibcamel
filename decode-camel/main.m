@@ -18,7 +18,6 @@ static int  signal_sigpipe = 0;
 static int  signal_sighup = 0;
 static int  signal_sigusr1 = 0;
 static int  signal_sigusr2 = 0;
-static int  signal_siginfo =0 ;
 #ifdef USE_STARTER
 #define MAIN umain
 #else
@@ -92,12 +91,6 @@ void check_signals(void)
         signal_sigusr2--;
         [g_app_delegate signal_SIGUSR2];
     }
-    if(signal_siginfo>0)
-    {
-        signal_siginfo--;
-        [g_app_delegate signal_SIGINFO];
-        
-    }
 }
 
 
@@ -128,12 +121,15 @@ static void signal_handler(int signum)
     {
         signal_sigusr2++;
     }
+<<<<<<< HEAD
 #if defined SIGINFO
     else if (signum == SIGINFO)
     {
         signal_siginfo++;
     }
 #endif
+=======
+>>>>>>> cf7fe07c287fdc2338f088588e98fcc6525abfc5
 }
 
 
