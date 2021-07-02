@@ -22,6 +22,18 @@
 //* INIT:   create _dialogIdLock , _dialogs*/
 //dialogTimeout=120
 
+
+- (UMLayerCamel *)initWithoutExecutionQueue:(NSString *)name
+{
+    self = [super initWithoutExecutionQueue:name];
+    if(self)
+    {
+        //[self genericInitialisation];
+    }
+    return self;
+}
+
+
 - (UMASN1Object *)decodeASN1:(UMASN1Object *)params
                operationCode:(int64_t)opcode
                operationType:(UMTCAP_InternalOperation)operationType
@@ -45,6 +57,7 @@
     }
     return o;
 }
+
 - (NSString *)decodeError:(int)err
 {
     return @"error";

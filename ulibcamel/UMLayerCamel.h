@@ -33,6 +33,7 @@
 @property(readwrite,strong,atomic)  NSString *address;
 @property(readwrite,assign,atomic)  NSTimeInterval dialogTimeout;
 
+- (UMLayerCamel *)initWithoutExecutionQueue:(NSString *)name;
 + (NSString *)decodeError:(int)err;
 - (UMCamelDialog *)getNewDialogForUser:(id<UMCamelUserProtocol>)user
                                 withId:(UMCamelDialogIdentifier *)dialogId;
