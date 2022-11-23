@@ -11,7 +11,7 @@ EventTypeBCSM ::= ENUMERATED
 	oMidCall							(8),
 	oDisconnect							(9),
 	oAbandon							(10),
-	termAttemptAuthorized				(12),
+	termAttemptAuthorised				(12),
 	tBusy								(13),
 	tNoAnswer							(14),
 	tAnswer								(15),
@@ -27,7 +27,7 @@ EventTypeBCSM ::= ENUMERATED
 	tServiceChange						(53)
 }
 -- Indicates the BCSM detection point event.
--- Values collectedInfo, analyzedInformation and termAttemptAuthorized may be used
+-- Values collectedInfo, analyzedInformation and termAttemptAuthorised may be used
 -- for TDPs only.
 -- Exception handling: reception of an unrecognized value shall be treated
 -- like reception of no detection point.
