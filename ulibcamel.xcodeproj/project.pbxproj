@@ -2105,7 +2105,7 @@
 				TargetAttributes = {
 					A65781B91CF54A3600211137 = {
 						CreatedOnToolsVersion = 7.3.1;
-						DevelopmentTeam = 38L827M334;
+						DevelopmentTeam = 2GSNWPNR77;
 						ProvisioningStyle = Automatic;
 					};
 					A65781C31CF54A3600211137 = {
@@ -2522,7 +2522,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = 38L827M334;
+				DEVELOPMENT_TEAM = 2GSNWPNR77;
 				DSTROOT = /;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -2551,7 +2551,7 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = NO;
-				DEVELOPMENT_TEAM = 38L827M334;
+				DEVELOPMENT_TEAM = 2GSNWPNR77;
 				DSTROOT = /;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
