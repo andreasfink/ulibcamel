@@ -8,15 +8,15 @@
 
 #import <ulibgsmmap/ulibgsmmap.h>
 
-#import "UMCamelObject.h"
-#import "UMCamelOperationCode.h"
-#import "UMCamelOperation.h"
-#import "UMCamelErrorCode.h"
-#import "UMCamelProviderProtocol.h"
-#import "UMCamelUserProtocol.h"
-#import "UMLayerCamel.h"
-#import "UMCamelDialogIdentifier.h"
-#import "UMCamelUserIdentifier.h"
-#import "UMCamelDialog.h"
+#import <ulibcamel/UMCamelObject.h>
+#import <ulibcamel/UMCamelOperationCode.h>
+#import <ulibcamel/UMCamelOperation.h>
+#import <ulibcamel/UMCamelErrorCode.h>
+#import <ulibcamel/UMCamelProviderProtocol.h>
+#import <ulibcamel/UMCamelUserProtocol.h>
+#import <ulibcamel/UMLayerCamel.h>
+#import <ulibcamel/UMCamelDialogIdentifier.h>
+#import <ulibcamel/UMCamelUserIdentifier.h>
+#import <ulibcamel/UMCamelDialog.h>
 
 
