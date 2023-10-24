@@ -6,15 +6,15 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMLayerCamel.h"
+#import <ulibcamel/UMLayerCamel.h>
 
-#import "UMCamelDialogIdentifier.h"
-#import "UMCamelUserProtocol.h"
-#import "UMCamelDialog.h"
-#import "UMCamelErrorCode.h"
-#import "UMCamel_InitialDPArg.h"
-#import "UMCamel_ConnectArg.h"
-#import "UMCamelObject.h"
+#import <ulibcamel/UMCamelDialogIdentifier.h>
+#import <ulibcamel/UMCamelUserProtocol.h>
+#import <ulibcamel/UMCamelDialog.h>
+#import <ulibcamel/UMCamelErrorCode.h>
+#import <ulibcamel/UMCamel_InitialDPArg.h>
+#import <ulibcamel/UMCamel_ConnectArg.h>
+#import <ulibcamel/UMCamelObject.h>
 
 @implementation UMLayerCamel
 

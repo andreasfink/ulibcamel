@@ -8,22 +8,22 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-#import "UMCamel_DestinationRoutingAddress.h"
-#import "UMCamel_AlertingPattern.h"
-#import "UMCamel_OriginalCalledPartyID.h"
-#import "UMCamel_ExtensionsArray.h"
-#import "UMCamel_Carrier.h"
-#import "UMCamel_CallingPartysCategory.h"
-#import "UMCamel_RedirectingPartyID.h"
-#import "UMCamel_RedirectionInformation.h"
-#import "UMCamel_GenericNumbers.h"
-#import "UMCamel_ServiceInteractionIndicatorsTwo.h"
-#import "UMCamel_ChargeNumber.h"
-#import "UMCamel_LegID.h"
-#import "UMCamel_CUG_Interlock.h"
-#import "UMCamel_SuppressionOfAnnouncement.h"
-#import "UMCamel_OCSIApplicable.h"
-#import "UMCamel_NAOliInfo.h"
+#import <ulibcamel/UMCamel_DestinationRoutingAddress.h>
+#import <ulibcamel/UMCamel_AlertingPattern.h>
+#import <ulibcamel/UMCamel_OriginalCalledPartyID.h>
+#import <ulibcamel/UMCamel_ExtensionsArray.h>
+#import <ulibcamel/UMCamel_Carrier.h>
+#import <ulibcamel/UMCamel_CallingPartysCategory.h>
+#import <ulibcamel/UMCamel_RedirectingPartyID.h>
+#import <ulibcamel/UMCamel_RedirectionInformation.h>
+#import <ulibcamel/UMCamel_GenericNumbers.h>
+#import <ulibcamel/UMCamel_ServiceInteractionIndicatorsTwo.h>
+#import <ulibcamel/UMCamel_ChargeNumber.h>
+#import <ulibcamel/UMCamel_LegID.h>
+#import <ulibcamel/UMCamel_CUG_Interlock.h>
+#import <ulibcamel/UMCamel_SuppressionOfAnnouncement.h>
+#import <ulibcamel/UMCamel_OCSIApplicable.h>
+#import <ulibcamel/UMCamel_NAOliInfo.h>
 
 @interface UMCamel_ConnectArg : UMASN1Sequence
 {

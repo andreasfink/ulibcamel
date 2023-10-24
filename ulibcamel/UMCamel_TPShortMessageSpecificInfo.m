@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_TPShortMessageSpecificInfo.h"
+#import <ulibcamel/UMCamel_TPShortMessageSpecificInfo.h>
 
 @implementation UMCamel_TPShortMessageSpecificInfo
 

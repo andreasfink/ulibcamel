@@ -17,7 +17,7 @@
  ...
  }
 */
-#import "UMCamel_ConnectSMSArg.h"
+#import <ulibcamel/UMCamel_ConnectSMSArg.h>
 
 @implementation UMCamel_ConnectSMSArg
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_EntityReleasedArg.h"
+#import <ulibcamel/UMCamel_EntityReleasedArg.h>
 
 @implementation UMCamel_EntityReleasedArg
 

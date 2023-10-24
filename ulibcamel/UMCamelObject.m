@@ -6,8 +6,8 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamelObject.h"
-#import "UMCamelInvoke.h"
+#import <ulibcamel/UMCamelObject.h>
+#import <ulibcamel/UMCamelInvoke.h>
 
 @implementation UMCamelObject
 

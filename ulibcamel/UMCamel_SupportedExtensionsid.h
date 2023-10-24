@@ -7,7 +7,7 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_Code.h"
+#import <ulibcamel/UMCamel_Code.h>
 
 @interface UMCamel_SupportedExtensionsid : UMCamel_Code
 

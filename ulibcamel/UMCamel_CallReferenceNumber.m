@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CallReferenceNumber.h"
+#import <ulibcamel/UMCamel_CallReferenceNumber.h>
 
 @implementation UMCamel_CallReferenceNumber
 

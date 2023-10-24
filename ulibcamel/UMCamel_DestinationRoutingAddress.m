@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_DestinationRoutingAddress.h"
+#import <ulibcamel/UMCamel_DestinationRoutingAddress.h>
 
 @implementation UMCamel_DestinationRoutingAddress
 

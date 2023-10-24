@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_SGSNCapabilities.h"
+#import <ulibcamel/UMCamel_SGSNCapabilities.h>
 
 @implementation UMCamel_SGSNCapabilities
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_SCIBillingChargingCharacteristics.h"
+#import <ulibcamel/UMCamel_SCIBillingChargingCharacteristics.h>
 
 @implementation UMCamel_SCIBillingChargingCharacteristics
 

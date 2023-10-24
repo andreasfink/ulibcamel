@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CellGlobalIdOrServiceAreaIdOrLAI.h"
+#import <ulibcamel/UMCamel_CellGlobalIdOrServiceAreaIdOrLAI.h>
 
 @implementation UMCamel_CellGlobalIdOrServiceAreaIdOrLAI
 

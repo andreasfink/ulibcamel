@@ -7,9 +7,9 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_FreeFormatData.h"
-#import "UMCamel_SendingSideID.h"
-#import "UMCamel_AppendFreeFormatData.h"
+#import <ulibcamel/UMCamel_FreeFormatData.h>
+#import <ulibcamel/UMCamel_SendingSideID.h>
+#import <ulibcamel/UMCamel_AppendFreeFormatData.h>
 
 @interface UMCamel_CAMEL_FCIBillingChargingCharacteristics : UMASN1Sequence
 {

@@ -8,7 +8,7 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-#import "UMCamel_ExtensionsArray.h"
+#import <ulibcamel/UMCamel_ExtensionsArray.h>
 
 @interface UMCamel_ACTimeDurationCharging : UMASN1Sequence
 {

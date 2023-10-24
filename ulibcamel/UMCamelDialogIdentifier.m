@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamelDialogIdentifier.h"
+#import <ulibcamel/UMCamelDialogIdentifier.h>
 
 @implementation UMCamelDialogIdentifier
 

@@ -7,7 +7,7 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamelOperationCode.h"
+#import <ulibcamel/UMCamelOperationCode.h>
 @interface UMCamelOperation : UMASN1Object
 {
     UMCamelOperationCode _operation;

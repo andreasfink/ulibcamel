@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_SCIGPRSBillingChargingCharacteristics.h"
+#import <ulibcamel/UMCamel_SCIGPRSBillingChargingCharacteristics.h>
 
 @implementation UMCamel_SCIGPRSBillingChargingCharacteristics
 

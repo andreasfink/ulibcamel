@@ -7,7 +7,7 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_BurstList.h"
+#import <ulibcamel/UMCamel_BurstList.h>
 
 @interface UMCamel_AudibleIndicator : UMASN1Choice
 {

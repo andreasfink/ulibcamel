@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_ServiceKey.h"
+#import <ulibcamel/UMCamel_ServiceKey.h>
 
 @implementation UMCamel_ServiceKey
 

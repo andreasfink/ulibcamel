@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_ApplicationTimer.h"
+#import <ulibcamel/UMCamel_ApplicationTimer.h>
 
 @implementation UMCamel_ApplicationTimer
 

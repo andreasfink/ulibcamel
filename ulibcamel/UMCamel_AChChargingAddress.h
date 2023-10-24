@@ -7,8 +7,8 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_LegID.h"
-#import "UMCamel_CallSegmentID.h"
+#import <ulibcamel/UMCamel_LegID.h>
+#import <ulibcamel/UMCamel_CallSegmentID.h>
 
 
 @interface UMCamel_AChChargingAddress : UMASN1Choice

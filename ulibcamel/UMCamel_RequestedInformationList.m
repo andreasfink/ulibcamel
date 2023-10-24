@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_RequestedInformationList.h"
+#import <ulibcamel/UMCamel_RequestedInformationList.h>
 
 @implementation UMCamel_RequestedInformationList
 

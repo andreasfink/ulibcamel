@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CGEncountered.h"
+#import <ulibcamel/UMCamel_CGEncountered.h>
 
 @implementation UMCamel_CGEncountered
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_VariablePart.h"
+#import <ulibcamel/UMCamel_VariablePart.h>
 
 @implementation UMCamel_VariablePart
 

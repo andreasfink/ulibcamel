@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_GapTreatment.h"
+#import <ulibcamel/UMCamel_GapTreatment.h>
 
 @implementation UMCamel_GapTreatment
 

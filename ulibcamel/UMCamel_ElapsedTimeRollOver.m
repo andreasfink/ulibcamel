@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_ElapsedTimeRollOver.h"
+#import <ulibcamel/UMCamel_ElapsedTimeRollOver.h>
 
 @implementation UMCamel_ElapsedTimeRollOver
 

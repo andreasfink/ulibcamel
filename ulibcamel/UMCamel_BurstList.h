@@ -7,7 +7,7 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_Burst.h"
+#import <ulibcamel/UMCamel_Burst.h>
 
 @interface UMCamel_BurstList : UMASN1Sequence
 {

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_SendingSideID.h"
+#import <ulibcamel/UMCamel_SendingSideID.h>
 
 @implementation UMCamel_SendingSideID
 

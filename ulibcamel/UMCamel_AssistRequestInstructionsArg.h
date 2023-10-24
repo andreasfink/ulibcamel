@@ -8,9 +8,9 @@
 
 #import <ulibtcap/ulibtcap.h>
 
-#import "UMCamel_CorrelationID.h"
-#import "UMCamel_IPSSPCapabilities.h"
-#import "UMCamel_ExtensionsArray.h"
+#import <ulibcamel/UMCamel_CorrelationID.h>
+#import <ulibcamel/UMCamel_IPSSPCapabilities.h>
+#import <ulibcamel/UMCamel_ExtensionsArray.h>
 
 @interface UMCamel_AssistRequestInstructionsArg : UMASN1Sequence
 {

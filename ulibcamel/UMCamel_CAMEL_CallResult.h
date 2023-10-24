@@ -8,7 +8,7 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-#import "UMCamel_TimeDurationChargingResult.h"
+#import <ulibcamel/UMCamel_TimeDurationChargingResult.h>
 
 @interface UMCamel_CAMEL_CallResult : UMASN1Choice
 {

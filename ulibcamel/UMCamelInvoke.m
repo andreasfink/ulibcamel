@@ -6,11 +6,11 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamelInvoke.h"
-#import "UMCamel_ASN1_macros.h"
-#import "UMCamelOperationCode.h"
-#import "UMCamel_InitialDPArg.h"
-#import "UMCamel_AssistRequestInstructionsArg.h"
+#import <ulibcamel/UMCamelInvoke.h>
+#import <ulibcamel/UMCamel_ASN1_macros.h>
+#import <ulibcamel/UMCamelOperationCode.h>
+#import <ulibcamel/UMCamel_InitialDPArg.h>
+#import <ulibcamel/UMCamel_AssistRequestInstructionsArg.h>
 
 @implementation UMCamelInvoke
 

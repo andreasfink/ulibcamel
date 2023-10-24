@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CancelFailedPARAM.h"
+#import <ulibcamel/UMCamel_CancelFailedPARAM.h>
 
 @implementation UMCamel_CancelFailedPARAM
 

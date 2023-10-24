@@ -8,8 +8,8 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-#import "UMCamel_CAI_Gsm0224.h"
-#import "UMCamel_AOCSubsequent.h"
+#import <ulibcamel/UMCamel_CAI_Gsm0224.h>
+#import <ulibcamel/UMCamel_AOCSubsequent.h>
 
 @interface UMCamel_AOCBeforeAnswer : UMASN1Sequence
 {

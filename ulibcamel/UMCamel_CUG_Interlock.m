@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CUG_Interlock.h"
+#import <ulibcamel/UMCamel_CUG_Interlock.h>
 
 @implementation UMCamel_CUG_Interlock
 

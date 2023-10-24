@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_LocationInformation.h"
+#import <ulibcamel/UMCamel_LocationInformation.h>
 
 @implementation UMCamel_LocationInformation
 

@@ -7,10 +7,10 @@
 //
 
 #import <ulibtcap/ulibtcap.h>
-#import "UMCamelProviderProtocol.h"
-#import "UMCamelUserProtocol.h"
-#import "UMCamelDialogIdentifier.h"
-#import "UMCamelOperationCode.h"
+#import <ulibcamel/UMCamelProviderProtocol.h>
+#import <ulibcamel/UMCamelUserProtocol.h>
+#import <ulibcamel/UMCamelDialogIdentifier.h>
+#import <ulibcamel/UMCamelOperationCode.h>
 
 
 @protocol UMLayerCamelApplicationContextProtocol<NSObject>

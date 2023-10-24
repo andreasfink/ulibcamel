@@ -8,8 +8,8 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-#import "UMCamel_CallSegmentID.h"
-#import "UMCamel_Cause.h"
+#import <ulibcamel/UMCamel_CallSegmentID.h>
+#import <ulibcamel/UMCamel_Cause.h>
 
 @interface UMCamel_CallSegmentFailure : UMASN1Sequence
 {

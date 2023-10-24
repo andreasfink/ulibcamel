@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_ConnectedNumberTreatmentInd.h"
+#import <ulibcamel/UMCamel_ConnectedNumberTreatmentInd.h>
 
 @implementation UMCamel_ConnectedNumberTreatmentInd
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_Ext_BasicServiceCode.h"
+#import <ulibcamel/UMCamel_Ext_BasicServiceCode.h>
 
 @implementation UMCamel_Ext_BasicServiceCode
 

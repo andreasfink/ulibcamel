@@ -8,10 +8,10 @@
 
 #import <ulibtcap/ulibtcap.h>
 
-#import "UMCamelUserIdentifier.h"
-#import "UMLayerCamel.h"
-#import "UMCamelOperationCode.h"
-#import "UMCamelOperation.h"
+#import <ulibcamel/UMCamelUserIdentifier.h>
+#import <ulibcamel/UMLayerCamel.h>
+#import <ulibcamel/UMCamelOperationCode.h>
+#import <ulibcamel/UMCamelOperation.h>
 
 @class UMLayerCamel;
 

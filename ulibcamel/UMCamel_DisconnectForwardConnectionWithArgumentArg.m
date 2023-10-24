@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_DisconnectForwardConnectionWithArgumentArg.h"
+#import <ulibcamel/UMCamel_DisconnectForwardConnectionWithArgumentArg.h>
 
 @implementation UMCamel_DisconnectForwardConnectionWithArgumentArg
 

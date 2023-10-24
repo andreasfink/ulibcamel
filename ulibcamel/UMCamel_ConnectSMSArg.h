@@ -7,9 +7,9 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_SMS_AddressString.h"
-#import "UMCamel_CalledPartyBCDNumber.h"
-#import "UMCamel_ISDN_AddressString.h"
+#import <ulibcamel/UMCamel_SMS_AddressString.h>
+#import <ulibcamel/UMCamel_CalledPartyBCDNumber.h>
+#import <ulibcamel/UMCamel_ISDN_AddressString.h>
 
 
 @interface UMCamel_ConnectSMSArg : UMASN1Sequence

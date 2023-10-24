@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_Cause.h"
+#import <ulibcamel/UMCamel_Cause.h>
 
 @implementation UMCamel_Cause
 

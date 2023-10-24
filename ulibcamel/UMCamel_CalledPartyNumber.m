@@ -7,7 +7,7 @@
 //
 
 
-#import "UMCamel_CalledPartyNumber.h"
+#import <ulibcamel/UMCamel_CalledPartyNumber.h>
 
 @implementation UMCamel_CalledPartyNumber
 

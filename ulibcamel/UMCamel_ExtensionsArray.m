@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_ExtensionsArray.h"
+#import <ulibcamel/UMCamel_ExtensionsArray.h>
 
 @implementation UMCamel_ExtensionsArray
 

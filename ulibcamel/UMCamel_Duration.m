@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_Duration.h"
+#import <ulibcamel/UMCamel_Duration.h>
 
 @implementation UMCamel_Duration
 

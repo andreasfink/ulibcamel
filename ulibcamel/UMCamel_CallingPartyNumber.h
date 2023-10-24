@@ -7,7 +7,7 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_EtsiNumber.h"
+#import <ulibcamel/UMCamel_EtsiNumber.h>
 
 
 @interface UMCamel_CallingPartyNumber : UMCamel_EtsiNumber

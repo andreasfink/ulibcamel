@@ -7,8 +7,8 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_ExtensionsArray.h"
-#import "UMCamel_ACTimeDurationCharging.h"
+#import <ulibcamel/UMCamel_ExtensionsArray.h>
+#import <ulibcamel/UMCamel_ACTimeDurationCharging.h>
 
 @interface UMCamel_AChBillingChargingCharacteristics : UMASN1Choice
 {

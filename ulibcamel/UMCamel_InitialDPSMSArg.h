@@ -8,24 +8,24 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-#import "UMCamel_ServiceKey.h"
-#import "UMCamel_CalledPartyBCDNumber.h"
-#import "UMCamel_SMS_AddressString.h"
-#import "UMCamel_EventTypeSMS.h"
-#import "UMCamel_IMSI.h"
-#import "UMCamel_LocationInformation.h"
-#import "UMCamel_LocationInformationGPRS.h"
-#import "UMCamel_ISDN_AddressString.h"
-#import "UMCamel_TimeAndTimezone.h"
-#import "UMCamel_TPShortMessageSpecificInfo.h"
-#import "UMCamel_TPProtocolIdentifier.h"
-#import "UMCamel_TPDataCodingScheme.h"
-#import "UMCamel_TPValidityPeriod.h"
-#import "UMCamel_ExtensionsArray.h"
-#import "UMCamel_CallReferenceNumber.h"
-#import "UMCamel_MS_Classmark2.h"
-#import "UMCamel_GPRSMSClass.h"
-#import "UMCamel_IMEI.h"
+#import <ulibcamel/UMCamel_ServiceKey.h>
+#import <ulibcamel/UMCamel_CalledPartyBCDNumber.h>
+#import <ulibcamel/UMCamel_SMS_AddressString.h>
+#import <ulibcamel/UMCamel_EventTypeSMS.h>
+#import <ulibcamel/UMCamel_IMSI.h>
+#import <ulibcamel/UMCamel_LocationInformation.h>
+#import <ulibcamel/UMCamel_LocationInformationGPRS.h>
+#import <ulibcamel/UMCamel_ISDN_AddressString.h>
+#import <ulibcamel/UMCamel_TimeAndTimezone.h>
+#import <ulibcamel/UMCamel_TPShortMessageSpecificInfo.h>
+#import <ulibcamel/UMCamel_TPProtocolIdentifier.h>
+#import <ulibcamel/UMCamel_TPDataCodingScheme.h>
+#import <ulibcamel/UMCamel_TPValidityPeriod.h>
+#import <ulibcamel/UMCamel_ExtensionsArray.h>
+#import <ulibcamel/UMCamel_CallReferenceNumber.h>
+#import <ulibcamel/UMCamel_MS_Classmark2.h>
+#import <ulibcamel/UMCamel_GPRSMSClass.h>
+#import <ulibcamel/UMCamel_IMEI.h>
 
 @interface UMCamel_InitialDPSMSArg : UMASN1Sequence
 {

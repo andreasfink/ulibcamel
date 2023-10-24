@@ -6,8 +6,8 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CallInformationRequestArg.h"
-#import "UMCamel_ASN1_macros.h"
+#import <ulibcamel/UMCamel_CallInformationRequestArg.h>
+#import <ulibcamel/UMCamel_ASN1_macros.h>
 
 @implementation UMCamel_CallInformationRequestArg
 

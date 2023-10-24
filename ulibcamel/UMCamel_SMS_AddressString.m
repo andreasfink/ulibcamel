@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_SMS_AddressString.h"
+#import <ulibcamel/UMCamel_SMS_AddressString.h>
 
 @implementation UMCamel_SMS_AddressString
 

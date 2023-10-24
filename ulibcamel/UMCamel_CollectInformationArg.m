@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CollectInformationArg.h"
+#import <ulibcamel/UMCamel_CollectInformationArg.h>
 
 @implementation UMCamel_CollectInformationArg
 

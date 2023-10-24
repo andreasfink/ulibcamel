@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_TPValidityPeriod.h"
+#import <ulibcamel/UMCamel_TPValidityPeriod.h>
 
 @implementation UMCamel_TPValidityPeriod
 

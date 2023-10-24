@@ -7,8 +7,8 @@
 //
 
 
-#import "UMCamel_AssistRequestInstructionsArg.h"
-#import "UMCamel_ASN1_macros.h"
+#import <ulibcamel/UMCamel_AssistRequestInstructionsArg.h>
+#import <ulibcamel/UMCamel_ASN1_macros.h>
 
 @implementation UMCamel_AssistRequestInstructionsArg
 

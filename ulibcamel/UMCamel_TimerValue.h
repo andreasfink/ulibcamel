@@ -7,7 +7,7 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_Integer4.h"
+#import <ulibcamel/UMCamel_Integer4.h>
 
 @interface UMCamel_TimerValue : UMCamel_Integer4
 

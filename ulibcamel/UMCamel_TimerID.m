@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_TimerID.h"
+#import <ulibcamel/UMCamel_TimerID.h>
 
 @implementation UMCamel_TimerID
 

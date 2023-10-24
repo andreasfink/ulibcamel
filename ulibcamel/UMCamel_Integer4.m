@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_Integer4.h"
+#import <ulibcamel/UMCamel_Integer4.h>
 
 @implementation UMCamel_Integer4
 

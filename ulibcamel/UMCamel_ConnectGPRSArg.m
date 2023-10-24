@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_ConnectGPRSArg.h"
+#import <ulibcamel/UMCamel_ConnectGPRSArg.h>
 
 @implementation UMCamel_ConnectGPRSArg
 

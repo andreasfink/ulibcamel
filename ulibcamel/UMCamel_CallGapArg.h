@@ -8,11 +8,11 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-#import "UMCamel_GapCriteria.h"
-#import "UMCamel_GapIndicators.h"
-#import "UMCamel_ControlType.h"
-#import "UMCamel_GapTreatment.h"
-#import "UMCamel_ExtensionsArray.h"
+#import <ulibcamel/UMCamel_GapCriteria.h>
+#import <ulibcamel/UMCamel_GapIndicators.h>
+#import <ulibcamel/UMCamel_ControlType.h>
+#import <ulibcamel/UMCamel_GapTreatment.h>
+#import <ulibcamel/UMCamel_ExtensionsArray.h>
 @interface UMCamel_CallGapArg : UMASN1Sequence
 {
     UMCamel_GapCriteria     *_gapCriteria;

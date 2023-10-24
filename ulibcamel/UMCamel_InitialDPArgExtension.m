@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_InitialDPArgExtension.h"
+#import <ulibcamel/UMCamel_InitialDPArgExtension.h>
 
 @implementation UMCamel_InitialDPArgExtension
 

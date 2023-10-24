@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_SubscriberState.h"
+#import <ulibcamel/UMCamel_SubscriberState.h>
 
 @implementation UMCamel_SubscriberState
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_IPSSPCapabilities.h"
+#import <ulibcamel/UMCamel_IPSSPCapabilities.h>
 
 @implementation UMCamel_IPSSPCapabilities
 

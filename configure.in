@@ -1,8 +1,8 @@
-dnl /* ==================================================================== 
+dnl /* ====================================================================
 dnl  * Project "ulibcamel"
 dnl  * (c) 2018 Andreas Fink
-dnl  * ==================================================================== 
-dnl  */ 
+dnl  * ====================================================================
+dnl  */
 dnl initialization
 
 AC_PREREQ([2.69])
@@ -16,7 +16,7 @@ VERSION=`head -n 1 VERSION`
 MAJORVER=`echo $VERSION | cut -f1 -d.`
 MINORVER=`echo $VERSION | cut -f2 -d.`
 REVISION=`echo $VERSION | cut -f3 -d.`
-CONFIG_HEADER=ulibcamel_config.h
+CONFIG_HEADER=${PROJECT_NAME}/ulibcamel_config.h
 DEPENDENT_PKGCONFIGS="ulib ulibasn1 ulibtcap ulibgsmmap"
 FRAMEWORKS="-framework ulib"
 PKG_CONFIG_PATH="/usr/local/lib/pkgconfig"
@@ -67,17 +67,17 @@ then
 	CC=clang
 fi
 if [[ "$CXX" == "" ]]
-then 
+then
 	CXX=clang++
 fi
-	
+
 case "$host" in
-  *apple-darwin*) 
+  *apple-darwin*)
 	ARCH="-arch x86_64"
 	OSX_DEVTOOL_DIR=`xcode-select -p`
 	CFLAGS="$CFLAGS -D_REENTRANT=1 -DDARWIN=1 ${ARCH}"
 	LDFLAGS=-framework CoreFoundation -framework IOKit -framework Security -F/Library/Application\ Support/FinkTelecomServices/frameworks ${FRAMEWORKS}
-	LIBTOOL="libtool -static -o" 
+	LIBTOOL="libtool -static -o"
     ;;
 
   *-linux-*)
@@ -96,7 +96,7 @@ case "$host" in
 	CFLAGS="${CFLAGS} -Wpointer-sign -Wno-newline-eof -Wno-selector -Wno-strict-selector-match -Wundeclared-selector"
 	CFLAGS="${CFLAGS} -Wno-deprecated-implementations -Wprotocol -Wdeprecated-declarations -Wno-sign-conversion "
 	CFLAGS="${CFLAGS} -fobjc-arc"
-	if [[ -x /usr/local/bin/gnustep-config ]] 
+	if [[ -x /usr/local/bin/gnustep-config ]]
 	then
 		GNUSTEP_CONFIG=/usr/local/bin/gnustep-config
 	else
@@ -124,16 +124,16 @@ case "$host" in
 	if [[ -x /usr/local/GNUstep/System/Tools/gnustep-config ]]
 	then
 		GNUSTEP_CONFIG=/usr/local/GNUstep/System/Tools/gnustep-config
-		
+
 	else
-		if [[ -x /usr/local/bin/gnustep-config ]] 
+		if [[ -x /usr/local/bin/gnustep-config ]]
 		then
 			GNUSTEP_CONFIG=/usr/local/bin/gnustep-config
 		else
 			GNUSTEP_CONFIG=/usr/bin/gnustep-config
 		fi
 	fi
-	
+
 	CFLAGS="$CFLAGS `$GNUSTEP_CONFIG --objc-flags`"
 	LDFLAGS="$LDFLAGS `/usr/local/bin/gnustep-config --base-libs --objc-libs`"
 	CFLAGS="$CFLAGS -DHAVE_OPENSSL=1"
@@ -201,7 +201,7 @@ AC_ARG_ENABLE(debug,
 
 dnl Outputing
 dnl -------------------------------------
-AC_CONFIG_SECTION([Generating output files]) 
+AC_CONFIG_SECTION([Generating output files])
 
 dnl Final Output
 AC_SUBST(CONFIGURATION)
@@ -211,7 +211,7 @@ AC_SUBST(MAJORVER)
 AC_SUBST(MINORVER)
 AC_SUBST(REVISION)
 AC_SUBST(SHARED_LIBRARY_EXTENSION)
-AC_CONFIG_SECTION([Generating output files]) 
+AC_CONFIG_SECTION([Generating output files])
 AC_CONFIG_FILES([Makefile.osx])
 AC_CONFIG_FILES([Makefile.linux])
 AC_CONFIG_FILES([Makefile.freebsd])
@@ -231,7 +231,7 @@ else
 fi
 
 case "$host" in
-  *apple-darwin*) 
+  *apple-darwin*)
     cp Makefile.osx Makefile
     ;;
   *-linux-*)

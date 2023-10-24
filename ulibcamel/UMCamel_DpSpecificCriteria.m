@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_DpSpecificCriteria.h"
+#import <ulibcamel/UMCamel_DpSpecificCriteria.h>
 
 @implementation UMCamel_DpSpecificCriteria
 

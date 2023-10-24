@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_MS_Classmark2.h"
+#import <ulibcamel/UMCamel_MS_Classmark2.h>
 
 @implementation UMCamel_MS_Classmark2
 

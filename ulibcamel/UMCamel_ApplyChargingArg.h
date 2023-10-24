@@ -8,10 +8,10 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-#import "UMCamel_AChBillingChargingCharacteristics.h"
-#import "UMCamel_SendingSideID.h"
-#import "UMCamel_ExtensionsArray.h"
-#import "UMCamel_AChChargingAddress.h"
+#import <ulibcamel/UMCamel_AChBillingChargingCharacteristics.h>
+#import <ulibcamel/UMCamel_SendingSideID.h>
+#import <ulibcamel/UMCamel_ExtensionsArray.h>
+#import <ulibcamel/UMCamel_AChChargingAddress.h>
 
 @interface UMCamel_ApplyChargingArg : UMASN1Sequence
 {

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_FreeFormatData.h"
+#import <ulibcamel/UMCamel_FreeFormatData.h>
 
 @implementation UMCamel_FreeFormatData
 

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_TimeIfNoTariffSwitch.h"
+#import <ulibcamel/UMCamel_TimeIfNoTariffSwitch.h>
 
 @implementation UMCamel_TimeIfNoTariffSwitch
 

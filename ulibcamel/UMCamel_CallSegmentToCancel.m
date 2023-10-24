@@ -6,8 +6,8 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CallSegmentToCancel.h"
-#import "UMCamel_ASN1_macros.h"
+#import <ulibcamel/UMCamel_CallSegmentToCancel.h>
+#import <ulibcamel/UMCamel_ASN1_macros.h>
 
 @implementation UMCamel_CallSegmentToCancel
 

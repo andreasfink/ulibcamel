@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_ControlType.h"
+#import <ulibcamel/UMCamel_ControlType.h>
 
 @implementation UMCamel_ControlType
 

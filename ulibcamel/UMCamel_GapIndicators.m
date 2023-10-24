@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_GapIndicators.h"
+#import <ulibcamel/UMCamel_GapIndicators.h>
 
 @implementation UMCamel_GapIndicators
 

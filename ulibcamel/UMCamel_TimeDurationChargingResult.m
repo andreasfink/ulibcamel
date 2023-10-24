@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_TimeDurationChargingResult.h"
+#import <ulibcamel/UMCamel_TimeDurationChargingResult.h>
 
 @implementation UMCamel_TimeDurationChargingResult
 

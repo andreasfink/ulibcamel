@@ -8,8 +8,8 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-#import "UMCamel_CallSegmentID.h"
-#import "UMCamel_ExtensionsArray.h"
+#import <ulibcamel/UMCamel_CallSegmentID.h>
+#import <ulibcamel/UMCamel_ExtensionsArray.h>
 
 @interface UMCamel_DisconnectForwardConnectionWithArgumentArg : UMASN1Sequence
 {

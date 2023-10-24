@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_ChangeOfLocation.h"
+#import <ulibcamel/UMCamel_ChangeOfLocation.h>
 
 @implementation UMCamel_ChangeOfLocation
 

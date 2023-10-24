@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_SendChargingInformationGPRSArg.h"
+#import <ulibcamel/UMCamel_SendChargingInformationGPRSArg.h>
 
 @implementation UMCamel_SendChargingInformationGPRSArg
 

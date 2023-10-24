@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_TPDataCodingScheme.h"
+#import <ulibcamel/UMCamel_TPDataCodingScheme.h>
 
 @implementation UMCamel_TPDataCodingScheme
 

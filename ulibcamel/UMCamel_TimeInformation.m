@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_TimeInformation.h"
+#import <ulibcamel/UMCamel_TimeInformation.h>
 
 @implementation UMCamel_TimeInformation
 

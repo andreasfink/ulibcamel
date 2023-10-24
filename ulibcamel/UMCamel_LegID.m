@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_LegID.h"
+#import <ulibcamel/UMCamel_LegID.h>
 
 @implementation UMCamel_LegID
 

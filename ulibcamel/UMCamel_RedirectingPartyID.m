@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_RedirectingPartyID.h"
+#import <ulibcamel/UMCamel_RedirectingPartyID.h>
 
 @implementation UMCamel_RedirectingPartyID
 

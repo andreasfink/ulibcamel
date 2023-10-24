@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_EventTypeSMS.h"
+#import <ulibcamel/UMCamel_EventTypeSMS.h>
 
 @implementation UMCamel_EventTypeSMS
 

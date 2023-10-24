@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_ISDN_AddressString.h"
+#import <ulibcamel/UMCamel_ISDN_AddressString.h>
 
 @implementation UMCamel_ISDN_AddressString
 

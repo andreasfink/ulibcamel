@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamelUserIdentifier.h"
+#import <ulibcamel/UMCamelUserIdentifier.h>
 
 @implementation UMCamelUserIdentifier
 

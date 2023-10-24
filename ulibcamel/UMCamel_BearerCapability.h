@@ -7,7 +7,7 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_BearerCap.h"
+#import <ulibcamel/UMCamel_BearerCap.h>
 
 
 @interface UMCamel_BearerCapability : UMASN1Choice

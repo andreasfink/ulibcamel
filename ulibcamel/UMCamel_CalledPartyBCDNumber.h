@@ -8,7 +8,7 @@
 
 #import <ulibasn1/ulibasn1.h>
 
-#import "UMCamel_ISDN_AddressString.h"
+#import <ulibcamel/UMCamel_ISDN_AddressString.h>
 
 @interface UMCamel_CalledPartyBCDNumber : UMCamel_ISDN_AddressString
 

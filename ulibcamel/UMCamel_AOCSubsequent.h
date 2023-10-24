@@ -7,7 +7,7 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_CAI_Gsm0224.h"
+#import <ulibcamel/UMCamel_CAI_Gsm0224.h>
 
 @interface UMCamel_AOCSubsequent : UMASN1Sequence
 {

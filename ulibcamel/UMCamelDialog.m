@@ -6,8 +6,8 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamelDialog.h"
-#import "UMLayerCamel.h"
+#import <ulibcamel/UMCamelDialog.h>
+#import <ulibcamel/UMLayerCamel.h>
 
 @implementation UMCamelDialog
 

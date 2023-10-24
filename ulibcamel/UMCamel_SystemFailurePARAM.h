@@ -7,7 +7,7 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_UnavailableNetworkResource.h"
+#import <ulibcamel/UMCamel_UnavailableNetworkResource.h>
 
 @interface UMCamel_SystemFailurePARAM : UMCamel_UnavailableNetworkResource
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CallingPartyNumber.h"
+#import <ulibcamel/UMCamel_CallingPartyNumber.h>
 
 @implementation UMCamel_CallingPartyNumber
 

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_TimerValue.h"
+#import <ulibcamel/UMCamel_TimerValue.h>
 
 @implementation UMCamel_TimerValue
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_DpSpecificInfoAlt.h"
+#import <ulibcamel/UMCamel_DpSpecificInfoAlt.h>
 
 @implementation UMCamel_DpSpecificInfoAlt
 

@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_SplitLegArg.h"
+#import <ulibcamel/UMCamel_SplitLegArg.h>
 
 @implementation UMCamel_SplitLegArg
 

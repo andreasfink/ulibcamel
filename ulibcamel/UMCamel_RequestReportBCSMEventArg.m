@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_RequestReportBCSMEventArg.h"
+#import <ulibcamel/UMCamel_RequestReportBCSMEventArg.h>
 
 @implementation UMCamel_RequestReportBCSMEventArg
 

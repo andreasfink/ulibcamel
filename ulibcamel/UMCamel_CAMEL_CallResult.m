@@ -6,8 +6,8 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CAMEL_CallResult.h"
-#import "UMCamel_ASN1_macros.h"
+#import <ulibcamel/UMCamel_CAMEL_CallResult.h>
+#import <ulibcamel/UMCamel_ASN1_macros.h>
 
 @implementation UMCamel_CAMEL_CallResult
 

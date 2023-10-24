@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_TimeAndTimezone.h"
+#import <ulibcamel/UMCamel_TimeAndTimezone.h>
 
 @implementation UMCamel_TimeAndTimezone
 

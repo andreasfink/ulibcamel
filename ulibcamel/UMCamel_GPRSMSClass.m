@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_GPRSMSClass.h"
+#import <ulibcamel/UMCamel_GPRSMSClass.h>
 
 @implementation UMCamel_GPRSMSClass
 

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_ChangeOfLocationAlt.h"
+#import <ulibcamel/UMCamel_ChangeOfLocationAlt.h>
 
 @implementation UMCamel_ChangeOfLocationAlt
 

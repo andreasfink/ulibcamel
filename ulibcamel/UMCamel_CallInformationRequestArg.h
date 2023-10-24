@@ -7,9 +7,9 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_RequestedInformationTypeList.h"
-#import "UMCamel_ExtensionsArray.h"
-#import "UMCamel_SendingSideID.h"
+#import <ulibcamel/UMCamel_RequestedInformationTypeList.h>
+#import <ulibcamel/UMCamel_ExtensionsArray.h>
+#import <ulibcamel/UMCamel_SendingSideID.h>
 
 @interface UMCamel_CallInformationRequestArg : UMASN1Sequence
 {

@@ -7,8 +7,8 @@
 //
 
 #import <ulibasn1/ulibasn1.h>
-#import "UMCamel_InvokeID.h"
-#import "UMCamel_CallSegmentID.h"
+#import <ulibcamel/UMCamel_InvokeID.h>
+#import <ulibcamel/UMCamel_CallSegmentID.h>
 
 @interface UMCamel_CallSegmentToCancel : UMASN1Sequence
 {

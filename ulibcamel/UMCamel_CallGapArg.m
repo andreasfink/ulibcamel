@@ -6,8 +6,8 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CallGapArg.h"
-#import "UMCamel_ASN1_macros.h"
+#import <ulibcamel/UMCamel_CallGapArg.h>
+#import <ulibcamel/UMCamel_ASN1_macros.h>
 
 @implementation UMCamel_CallGapArg
 

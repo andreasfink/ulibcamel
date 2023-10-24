@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CAMEL_FCIGPRSBillingChargingCharacteristics.h"
+#import <ulibcamel/UMCamel_CAMEL_FCIGPRSBillingChargingCharacteristics.h>
 
 @implementation UMCamel_CAMEL_FCIGPRSBillingChargingCharacteristics
 

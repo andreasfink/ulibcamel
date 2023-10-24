@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CriticalityType.h"
+#import <ulibcamel/UMCamel_CriticalityType.h>
 
 @implementation UMCamel_CriticalityType
 

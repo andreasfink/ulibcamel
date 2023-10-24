@@ -8,17 +8,17 @@
 
 #import <ulibtcap/ulibtcap.h>
 
-#import "UMCamel_AssistingSSPIPRoutingAddress.h"
-#import "UMCamel_CorrelationID.h"
-#import "UMCamel_ScfID.h"
-#import "UMCamel_ExtensionsArray.h"
-#import "UMCamel_Carrier.h"
-#import "UMCamel_ServiceInteractionIndicatorsTwo.h"
-#import "UMCamel_CallSegmentID.h"
-#import "UMCamel_NAOliInfo.h"
-#import "UMCamel_ChargeNumber.h"
-#import "UMCamel_OriginalCalledPartyID.h"
-#import "UMCamel_CallingPartyNumber.h"
+#import <ulibcamel/UMCamel_AssistingSSPIPRoutingAddress.h>
+#import <ulibcamel/UMCamel_CorrelationID.h>
+#import <ulibcamel/UMCamel_ScfID.h>
+#import <ulibcamel/UMCamel_ExtensionsArray.h>
+#import <ulibcamel/UMCamel_Carrier.h>
+#import <ulibcamel/UMCamel_ServiceInteractionIndicatorsTwo.h>
+#import <ulibcamel/UMCamel_CallSegmentID.h>
+#import <ulibcamel/UMCamel_NAOliInfo.h>
+#import <ulibcamel/UMCamel_ChargeNumber.h>
+#import <ulibcamel/UMCamel_OriginalCalledPartyID.h>
+#import <ulibcamel/UMCamel_CallingPartyNumber.h>
 
 @interface UMCamel_EstablishTemporaryConnectionArg : UMASN1Sequence
 {

@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CancelArg.h"
+#import <ulibcamel/UMCamel_CancelArg.h>
 
 @implementation UMCamel_CancelArg
 

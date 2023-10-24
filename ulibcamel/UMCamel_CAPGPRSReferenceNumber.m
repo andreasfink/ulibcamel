@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import "UMCamel_CAPGPRSReferenceNumber.h"
+#import <ulibcamel/UMCamel_CAPGPRSReferenceNumber.h>
 
 @implementation UMCamel_CAPGPRSReferenceNumber
 
