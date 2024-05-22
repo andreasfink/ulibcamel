@@ -3,6 +3,10 @@
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
 *.o
+*.d
+install
+libulibcamel.so
+libulibcamel.a
 Makefile
 Makefile.linux
 Makefile.osx
