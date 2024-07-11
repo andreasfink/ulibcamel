@@ -68,10 +68,10 @@
 
     static int64_t lastDialogId =1;
     int64_t did;
-    [_dialogIdLock lock];
+    UMMUTEX_LOCK(_dialogIdLock);
     lastDialogId = (lastDialogId + 1 ) % 0x7FFFFFFF;
     did = lastDialogId;
-    [_dialogIdLock unlock];
+    UMMUTEX_UNLOCK(_dialogIdLock);
     return [[UMCamelDialogIdentifier alloc]initWithString: [NSString stringWithFormat:@"C%08llX",(long long)did]];
 }
 

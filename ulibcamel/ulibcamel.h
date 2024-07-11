@@ -141,3 +141,9 @@
 #import <ulibcamel/UMCamel_UnavailableNetworkResource.h>
 #import <ulibcamel/UMCamel_VariablePart.h>
 #import <ulibcamel/UMCamel_VariablePartsArray.h>
+#import <ulibcamel/UMCamel_CallSegmentFailure.h>
+#import <ulibcamel/UMCamel_ChangeOfLocationAlt.h>
+#import <ulibcamel/UMCamel_CallSegmentToCancel.h>
+#import <ulibcamel/UMCamel_ChangeOfLocation.h>
+#import <ulibcamel/UMCamel_ChangeOfPositionControlInfo.h>
+#import <ulibcamel/UMCamel_CAMEL_AChBillingChargingCharacteristics.h>
