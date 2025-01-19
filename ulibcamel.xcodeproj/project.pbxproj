@@ -2539,6 +2539,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
+					"\"/Library/Application Support/\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.16.3;
@@ -2575,6 +2576,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/Frameworks",
+					"\"/Library/Application Support/\"",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.16.3;
