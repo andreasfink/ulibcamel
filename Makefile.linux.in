@@ -38,10 +38,15 @@ build/decode-camel: decode-camel/main.m.o decode-camel/AppDelegate.m.o lib@PROJE
 	mkdir -p build
 	${CC} -o build/decode-camel  -L. -l@PROJECT_NAME@ ${LDFLAGS} decode-camel/main.m.o decode-camel/AppDelegate.m.o 
 
+install: install_bin install_dev
 
-install: ${LIB} ${SLIB} build/decode-camel
+install_dev:
 	-mkdir -p ${DESTDIR}/usr/local/include/@PROJECT_NAME@
 	-mkdir -p ${DESTDIR}/usr/local/lib/pkgconfig
+	install -b -g bin -o root -m 644 ${PKGCONFIGFILE} ${DESTDIR}/usr/local/lib/pkgconfig/
+	cp $(HFILES) ${DESTDIR}/usr/local/include/@PROJECT_NAME@
+
+install_bin: ${LIB} ${SLIB} build/decode-camel
 	-mkdir -p ${DESTDIR}/usr/local/bin
 	rm -f "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}.${REVISION}"
 	rm -f "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}"
@@ -49,13 +54,10 @@ install: ${LIB} ${SLIB} build/decode-camel
 	rm -f "${DESTDIR}/usr/local/lib/${LIB}"
 	install -b -g bin -o root -m 644 "${LIB}" "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}.${REVISION}"
 	install -b -g bin -o root -m 644 "${SLIB}" "${DESTDIR}/usr/local/lib/${SLIB}"
-	install -b -g bin -o root -m 644 ${PKGCONFIGFILE} ${DESTDIR}/usr/local/lib/pkgconfig/
 	install -b -g bin -o root -m 755 build/decode-camel ${DESTDIR}/usr/local/bin/decode-camel
 	ln -s "${LIB}.${MAJORVER}.${MINORVER}.${REVISION}" "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}.${MINORVER}"
 	ln -s "${LIB}.${MAJORVER}.${MINORVER}"             "${DESTDIR}/usr/local/lib/${LIB}.${MAJORVER}"
 	ln -s "${LIB}.${MAJORVER}"                         "${DESTDIR}/usr/local/lib/${LIB}"
-
-	cp $(HFILES) ${DESTDIR}/usr/local/include/@PROJECT_NAME@
 	ldconfig
 
 clean:
