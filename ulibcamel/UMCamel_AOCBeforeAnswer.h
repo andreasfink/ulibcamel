@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import <ulibasn1/ulibasn1.h>
+#import <ulibgsmmap/ulibgsmmap.h>
 
 #import <ulibcamel/UMCamel_CAI_Gsm0224.h>
 #import <ulibcamel/UMCamel_AOCSubsequent.h>

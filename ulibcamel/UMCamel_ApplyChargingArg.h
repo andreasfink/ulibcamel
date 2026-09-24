@@ -6,7 +6,7 @@
 //  Copyright © 2020 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import <ulibasn1/ulibasn1.h>
+#import <ulibgsmmap/ulibgsmmap.h>
 
 #import <ulibcamel/UMCamel_AChBillingChargingCharacteristics.h>
 #import <ulibcamel/UMCamel_SendingSideID.h>
