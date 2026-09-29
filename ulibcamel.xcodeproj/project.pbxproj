@@ -23,7 +23,6 @@
 		A61D2E592500CBB200073061 /* UMCamel_FreeFormatData.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D2E572500CBB200073061 /* UMCamel_FreeFormatData.m */; };
 		A61D2E5C2500CBF200073061 /* UMCamel_Integer4.h in Headers */ = {isa = PBXBuildFile; fileRef = A61D2E5A2500CBF200073061 /* UMCamel_Integer4.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A61D2E5D2500CBF200073061 /* UMCamel_Integer4.m in Sources */ = {isa = PBXBuildFile; fileRef = A61D2E5B2500CBF200073061 /* UMCamel_Integer4.m */; };
-		A61D2E5F2500CC5E00073061 /* ulibgsmmap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61D2E5E2500CC5D00073061 /* ulibgsmmap.framework */; };
 		A62E081A215CB26B00D205F0 /* UMLayerCamel.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E0818215CB26B00D205F0 /* UMLayerCamel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A62E081B215CB26B00D205F0 /* UMLayerCamel.m in Sources */ = {isa = PBXBuildFile; fileRef = A62E0819215CB26B00D205F0 /* UMLayerCamel.m */; };
 		A62E0827215CCAB800D205F0 /* UMCamelOperationCode.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E0825215CCAB800D205F0 /* UMCamelOperationCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -79,6 +78,15 @@
 		A62E08F5215D09C100D205F0 /* UMCamel_IMEI.h in Headers */ = {isa = PBXBuildFile; fileRef = A62E08F3215D09C100D205F0 /* UMCamel_IMEI.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6411ACC2178573200436DE9 /* UMCamel_ACTimeDurationCharging.h in Headers */ = {isa = PBXBuildFile; fileRef = A6411ACA2178573200436DE9 /* UMCamel_ACTimeDurationCharging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6411ACD2178573200436DE9 /* UMCamel_ACTimeDurationCharging.m in Sources */ = {isa = PBXBuildFile; fileRef = A6411ACB2178573200436DE9 /* UMCamel_ACTimeDurationCharging.m */; };
+		A643D8113065064000F9798D /* libulib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A643D80F3065061000F9798D /* libulib.a */; };
+		A643D8123065064000F9798D /* libulib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A643D80F3065061000F9798D /* libulib.a */; };
+		A643D8143065064700F9798D /* libulibgsmmap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A643D80E306505FC00F9798D /* libulibgsmmap.a */; };
+		A643D8153065064700F9798D /* libulibgsmmap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A643D80E306505FC00F9798D /* libulibgsmmap.a */; };
+		A643D8173065065C00F9798D /* libulibtcap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A643D8163065065C00F9798D /* libulibtcap.a */; };
+		A643D8183065065C00F9798D /* libulibtcap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A643D8163065065C00F9798D /* libulibtcap.a */; };
+		A643D8193065065C00F9798D /* libulibtcap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A643D8163065065C00F9798D /* libulibtcap.a */; };
+		A643D81A3065067B00F9798D /* libulib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A643D80F3065061000F9798D /* libulib.a */; };
+		A643D81B306506F700F9798D /* libulibgsmmap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A643D80E306505FC00F9798D /* libulibgsmmap.a */; };
 		A652D36E24FBBBEC009D5E6A /* UMCamel_CAMEL_CallResult.h in Headers */ = {isa = PBXBuildFile; fileRef = A652D36C24FBBBEC009D5E6A /* UMCamel_CAMEL_CallResult.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A652D36F24FBBBEC009D5E6A /* UMCamel_CAMEL_CallResult.m in Sources */ = {isa = PBXBuildFile; fileRef = A652D36D24FBBBEC009D5E6A /* UMCamel_CAMEL_CallResult.m */; };
 		A652D48524FBC398009D5E6A /* UMCamel_CriticalityType.h in Headers */ = {isa = PBXBuildFile; fileRef = A652D48324FBC398009D5E6A /* UMCamel_CriticalityType.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -122,10 +130,6 @@
 		A65781BE1CF54A3600211137 /* ulibcamel.h in Headers */ = {isa = PBXBuildFile; fileRef = A65781BD1CF54A3600211137 /* ulibcamel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A65781C51CF54A3600211137 /* ulibcamel.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A65781BA1CF54A3600211137 /* ulibcamel.framework */; };
 		A65781CA1CF54A3600211137 /* ulibcamelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A65781C91CF54A3600211137 /* ulibcamelTests.m */; };
-		A67989EB22BB6D280019806C /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E822BB6D280019806C /* ulib.framework */; };
-		A67989EC22BB6D280019806C /* ulibtcap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E922BB6D280019806C /* ulibtcap.framework */; };
-		A67989EE22BB6D330019806C /* ulib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E822BB6D280019806C /* ulib.framework */; };
-		A67989F222BB6D3A0019806C /* ulibtcap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A67989E922BB6D280019806C /* ulibtcap.framework */; };
 		A67B536024F18CD700C66670 /* UMCamel_ApplyChargingArg.h in Headers */ = {isa = PBXBuildFile; fileRef = A67B535E24F18CD700C66670 /* UMCamel_ApplyChargingArg.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A67B536124F18CD700C66670 /* UMCamel_ApplyChargingArg.m in Sources */ = {isa = PBXBuildFile; fileRef = A67B535F24F18CD700C66670 /* UMCamel_ApplyChargingArg.m */; };
 		A67B536624F1912900C66670 /* UMCamel_ApplyChargingReportArg.h in Headers */ = {isa = PBXBuildFile; fileRef = A67B536424F1912900C66670 /* UMCamel_ApplyChargingReportArg.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -190,9 +194,6 @@
 		A6932DA821652C32003A477B /* UMCamel_TPValidityPeriod.m in Sources */ = {isa = PBXBuildFile; fileRef = A62E08E8215D097900D205F0 /* UMCamel_TPValidityPeriod.m */; };
 		A6932DA921652C32003A477B /* UMCamelInvoke.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD361F215E18B4002085BA /* UMCamelInvoke.m */; };
 		A6932DAA21652C32003A477B /* UMCamelObject.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD361B215E18AA002085BA /* UMCamelObject.m */; };
-		A6A9E81D2BC27A6400E79C62 /* ulibasn1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A9E81C2BC27A6400E79C62 /* ulibasn1.framework */; };
-		A6A9E81F2BC27A6400E79C62 /* ulibasn1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6A9E81C2BC27A6400E79C62 /* ulibasn1.framework */; };
-		A6A9E8212BC27AEE00E79C62 /* ulibgsmmap.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A61D2E5E2500CC5D00073061 /* ulibgsmmap.framework */; };
 		A6BD35D2215DFB86002085BA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD35D1215DFB86002085BA /* main.m */; };
 		A6BD35E2215DFD2E002085BA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A6BD35DE215DFD2E002085BA /* AppDelegate.m */; };
 		A6BD35E5215E001C002085BA /* version.h in Headers */ = {isa = PBXBuildFile; fileRef = A6BD35E3215E001C002085BA /* version.h */; };
@@ -411,7 +412,6 @@
 		A61D2E572500CBB200073061 /* UMCamel_FreeFormatData.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_FreeFormatData.m; sourceTree = "<group>"; };
 		A61D2E5A2500CBF200073061 /* UMCamel_Integer4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_Integer4.h; sourceTree = "<group>"; };
 		A61D2E5B2500CBF200073061 /* UMCamel_Integer4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_Integer4.m; sourceTree = "<group>"; };
-		A61D2E5E2500CC5D00073061 /* ulibgsmmap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibgsmmap.framework; path = "/Library/Application Support/FinkTelecomServices/frameworks/ulibgsmmap.framework"; sourceTree = "<absolute>"; };
 		A62E0818215CB26B00D205F0 /* UMLayerCamel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMLayerCamel.h; sourceTree = "<group>"; };
 		A62E0819215CB26B00D205F0 /* UMLayerCamel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMLayerCamel.m; sourceTree = "<group>"; };
 		A62E081C215CB29200D205F0 /* VERSION */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = VERSION; sourceTree = "<group>"; };
@@ -512,6 +512,9 @@
 		A62E08F4215D09C100D205F0 /* UMCamel_IMEI.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_IMEI.m; sourceTree = "<group>"; };
 		A6411ACA2178573200436DE9 /* UMCamel_ACTimeDurationCharging.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_ACTimeDurationCharging.h; sourceTree = "<group>"; };
 		A6411ACB2178573200436DE9 /* UMCamel_ACTimeDurationCharging.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_ACTimeDurationCharging.m; sourceTree = "<group>"; };
+		A643D80E306505FC00F9798D /* libulibgsmmap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libulibgsmmap.a; path = /usr/local/lib/libulibgsmmap.a; sourceTree = "<absolute>"; };
+		A643D80F3065061000F9798D /* libulib.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libulib.a; path = /usr/local/lib/libulib.a; sourceTree = "<absolute>"; };
+		A643D8163065065C00F9798D /* libulibtcap.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libulibtcap.a; path = /usr/local/lib/libulibtcap.a; sourceTree = "<absolute>"; };
 		A652D36C24FBBBEC009D5E6A /* UMCamel_CAMEL_CallResult.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = UMCamel_CAMEL_CallResult.h; path = ulibcamel/UMCamel_CAMEL_CallResult.h; sourceTree = SOURCE_ROOT; };
 		A652D36D24FBBBEC009D5E6A /* UMCamel_CAMEL_CallResult.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = UMCamel_CAMEL_CallResult.m; path = ulibcamel/UMCamel_CAMEL_CallResult.m; sourceTree = SOURCE_ROOT; };
 		A652D37E24FBC21C009D5E6A /* UMCamel_CollectedDigits.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_CollectedDigits.m; sourceTree = "<group>"; };
@@ -815,10 +818,6 @@
 		A65781C41CF54A3600211137 /* ulibcamelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ulibcamelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A65781C91CF54A3600211137 /* ulibcamelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ulibcamelTests.m; sourceTree = "<group>"; };
 		A65781CB1CF54A3600211137 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A66A424621748B1D0083526C /* Makefile.osx.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.osx.in; sourceTree = "<group>"; };
-		A66A424721748B1D0083526C /* Makefile.linux.in */ = {isa = PBXFileReference; lastKnownFileType = text; path = Makefile.linux.in; sourceTree = "<group>"; };
-		A67989E822BB6D280019806C /* ulib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulib.framework; path = "/Library/Application Support/FinkTelecomServices/frameworks/ulib.framework"; sourceTree = "<absolute>"; };
-		A67989E922BB6D280019806C /* ulibtcap.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibtcap.framework; path = "/Library/Application Support/FinkTelecomServices/frameworks/ulibtcap.framework"; sourceTree = "<absolute>"; };
 		A67B535E24F18CD700C66670 /* UMCamel_ApplyChargingArg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_ApplyChargingArg.h; sourceTree = "<group>"; };
 		A67B535F24F18CD700C66670 /* UMCamel_ApplyChargingArg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UMCamel_ApplyChargingArg.m; sourceTree = "<group>"; };
 		A67B536424F1912900C66670 /* UMCamel_ApplyChargingReportArg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UMCamel_ApplyChargingReportArg.h; sourceTree = "<group>"; };
@@ -845,7 +844,6 @@
 		A692B93721941849009072BC /* Inap.zip */ = {isa = PBXFileReference; lastKnownFileType = archive.zip; path = Inap.zip; sourceTree = "<group>"; };
 		A692B93821941849009072BC /* readme.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		A692B93921941852009072BC /* en_30114001v010304p.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = en_30114001v010304p.pdf; sourceTree = "<group>"; };
-		A6A9E81C2BC27A6400E79C62 /* ulibasn1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ulibasn1.framework; path = "/Library/Application Support/FinkTelecomServices/frameworks/ulibasn1.framework"; sourceTree = "<absolute>"; };
 		A6BD35CF215DFB86002085BA /* decode-camel */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "decode-camel"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A6BD35D1215DFB86002085BA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A6BD35DD215DFD2E002085BA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1049,10 +1047,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A67989EB22BB6D280019806C /* ulib.framework in Frameworks */,
-				A6A9E81D2BC27A6400E79C62 /* ulibasn1.framework in Frameworks */,
-				A67989EC22BB6D280019806C /* ulibtcap.framework in Frameworks */,
-				A61D2E5F2500CC5E00073061 /* ulibgsmmap.framework in Frameworks */,
+				A643D8173065065C00F9798D /* libulibtcap.a in Frameworks */,
+				A643D81A3065067B00F9798D /* libulib.a in Frameworks */,
+				A643D81B306506F700F9798D /* libulibgsmmap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1061,6 +1058,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				A65781C51CF54A3600211137 /* ulibcamel.framework in Frameworks */,
+				A643D8113065064000F9798D /* libulib.a in Frameworks */,
+				A643D8143065064700F9798D /* libulibgsmmap.a in Frameworks */,
+				A643D8193065065C00F9798D /* libulibtcap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1068,11 +1068,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A67989EE22BB6D330019806C /* ulib.framework in Frameworks */,
-				A6A9E81F2BC27A6400E79C62 /* ulibasn1.framework in Frameworks */,
 				A6BD35E9215E0874002085BA /* ulibcamel.framework in Frameworks */,
-				A67989F222BB6D3A0019806C /* ulibtcap.framework in Frameworks */,
-				A6A9E8212BC27AEE00E79C62 /* ulibgsmmap.framework in Frameworks */,
+				A643D8123065064000F9798D /* libulib.a in Frameworks */,
+				A643D8153065064700F9798D /* libulibgsmmap.a in Frameworks */,
+				A643D8183065065C00F9798D /* libulibtcap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1694,16 +1693,25 @@
 			name = asn1;
 			sourceTree = "<group>";
 		};
+		A643D80D3065058600F9798D /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				A643D80F3065061000F9798D /* libulib.a */,
+				A643D80E306505FC00F9798D /* libulibgsmmap.a */,
+				A643D8163065065C00F9798D /* libulibtcap.a */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
 		A65781B01CF54A3600211137 = {
 			isa = PBXGroup;
 			children = (
 				A62E081C215CB29200D205F0 /* VERSION */,
-				A66A424721748B1D0083526C /* Makefile.linux.in */,
-				A66A424621748B1D0083526C /* Makefile.osx.in */,
 				A62E081E215CB2A900D205F0 /* doc */,
 				A65781BC1CF54A3600211137 /* ulibcamel */,
 				A65781D91CF54D4300211137 /* Libraries */,
 				A6BD35D0215DFB86002085BA /* decode-camel */,
+				A643D80D3065058600F9798D /* Libraries */,
 				A65781D61CF54CFE00211137 /* Frameworks */,
 				A65781C81CF54A3600211137 /* ulibcamelTests */,
 				A65781BB1CF54A3600211137 /* Products */,
@@ -1757,10 +1765,6 @@
 		A65781D61CF54CFE00211137 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A6A9E81C2BC27A6400E79C62 /* ulibasn1.framework */,
-				A61D2E5E2500CC5D00073061 /* ulibgsmmap.framework */,
-				A67989E822BB6D280019806C /* ulib.framework */,
-				A67989E922BB6D280019806C /* ulibtcap.framework */,
 			);
 			name = Frameworks;
 			path = ulibcamel;
@@ -2386,7 +2390,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -2421,12 +2425,12 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
-				DSTROOT = "/Library/Application Support";
+				DSTROOT = "";
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"/Library/Application Support/FinkTelecomServices/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -2441,13 +2445,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INSTALL_PATH = /FinkTelecomServices/frameworks;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = /usr/local/include;
 				TVOS_DEPLOYMENT_TARGET = 15.6;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WARNING_CFLAGS = "-Wimplicit-fallthrough";
@@ -2458,7 +2466,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
@@ -2493,12 +2501,12 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEPLOYMENT_LOCATION = YES;
 				DEPLOYMENT_POSTPROCESSING = YES;
-				DSTROOT = "/Library/Application Support";
+				DSTROOT = "";
 				ENABLE_MODULE_VERIFIER = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				FRAMEWORK_SEARCH_PATHS = "\"/Library/Application Support/FinkTelecomServices/frameworks\"";
+				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -2507,13 +2515,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				INSTALL_PATH = /FinkTelecomServices/frameworks;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INSTALL_PATH = /usr/local/lib;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
-				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				LIBRARY_SEARCH_PATHS = /usr/local/lib;
+				MACOSX_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = /usr/local/include;
 				TVOS_DEPLOYMENT_TARGET = 15.6;
+				USER_HEADER_SEARCH_PATHS = /usr/local/include;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 				WARNING_CFLAGS = "-Wimplicit-fallthrough";
@@ -2529,19 +2541,12 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 38L827M334;
-				DSTROOT = "/Library/Application Support";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "$(DSTROOT)/$(INSTALL_PATH)";
 				ENABLE_MODULE_VERIFIER = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					"\"/Library/Application Support/FinkTelecomServices/frameworks\"",
-				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ulibcamel/Info.plist;
-				INSTALL_PATH = FinkTelecomServices/frameworks;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -2554,7 +2559,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = "\"/Library/Application Support/FinkTelecomServices/frameworks\"";
 			};
 			name = Debug;
 		};
@@ -2567,19 +2571,12 @@
 				DEAD_CODE_STRIPPING = YES;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 38L827M334;
-				DSTROOT = "/Library/Application Support";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "$(DSTROOT)/$(INSTALL_PATH)";
 				ENABLE_MODULE_VERIFIER = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(LOCAL_LIBRARY_DIR)/Frameworks",
-					"\"/Library/Application Support/FinkTelecomServices/frameworks\"",
-				);
 				FRAMEWORK_VERSION = A;
 				INFOPLIST_FILE = ulibcamel/Info.plist;
-				INSTALL_PATH = FinkTelecomServices/frameworks;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -2592,7 +2589,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = NO;
-				SYSTEM_FRAMEWORK_SEARCH_PATHS = "\"/Library/Application Support/FinkTelecomServices/frameworks\"";
 			};
 			name = Release;
 		};
@@ -2619,6 +2615,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ulibcamel",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fink-telecom.--PRODUCT-NAME-rfc1034identifier-";
@@ -2650,6 +2650,10 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ulibcamel",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fink-telecom.--PRODUCT-NAME-rfc1034identifier-";
@@ -2686,6 +2690,10 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INSTALL_PATH = bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ulibcamel",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -2723,6 +2731,10 @@
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INSTALL_PATH = bin;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ulibcamel",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 15.0;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fink-telecom.--PRODUCT-NAME-rfc1034identifier-";

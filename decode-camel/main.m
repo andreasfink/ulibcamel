@@ -6,7 +6,7 @@
 //  Copyright © 2018 Andreas Fink (andreas@fink.org). All rights reserved.
 //
 
-#import <ulib/ulib.h>
+#import <ulibgsmmap/ulibgsmmap.h>
 
 #import "AppDelegate.h"
 
